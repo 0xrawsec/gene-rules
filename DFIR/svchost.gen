@@ -1,0 +1,33 @@
+{
+"Name": "SvcHostHijack",
+"Tags": ["SvcHost", "Hijack", "Sysmon"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 6,
+  "Author": "@0xrawsec"
+  },
+"Matches": [
+  "$a: Image ~= '(?i:\\\\svchost.exe$)'",
+  "$b: ParentImage ~= '(?i:\\\\services.exe$)'"
+  ],
+"Condition": "$a and !$b"
+}
+
+{
+"Name": "SvcHostImageLoaded",
+"Tags": ["SvcHost", "ImageLoaded", "Sysmon"],
+"Meta": {
+  "EventIDs": [7],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 0,
+  "Author": "@0xrawsec",
+  "Comment": "Just an informational rule that can be further used to spot weird image loaded"
+  },
+"Matches": [
+  "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'"
+  ],
+"Condition": "$im"
+}

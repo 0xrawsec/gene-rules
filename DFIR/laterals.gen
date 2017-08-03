@@ -1,0 +1,60 @@
+{
+"Name": "AnonymousNetworkLogon",
+"Tags": ["Lateral", "Security"],
+"Meta": {
+  "EventIDs": [4624],
+  "Channels": ["Security"],
+  "Computers": [],
+  "Criticality": 5,
+  "Author": "@0xrawsec"
+  },
+"Matches": [
+	"$logt: LogonType = '3'",
+	"$kerb: AuthenticationPackageName = 'Kerberos'",
+	"$user: TargetUserName = 'ANONYMOUS LOGON'",
+	"$iplh1: IpAddress = '-'",
+	"$iplh2: IpAddress = '127.0.0.1'"
+  ],
+"Condition": "$logt and !$kerb and $user and !$iplh1 and !$iplh2"
+}
+
+{
+"Name": "ExplicitNetworkLogon",
+"Tags": ["Lateral", "Security"],
+"Meta": {
+  "EventIDs": [4624],
+  "Channels": ["Security"],
+  "Computers": [],
+  "Criticality": 7,
+  "Author": "@0xrawsec"
+  },
+"Matches": [
+	"$logt: LogonType = '3'",
+	"$kerb: AuthenticationPackageName = 'Kerberos'",
+	"$user: TargetUserName = 'ANONYMOUS LOGON'",
+	"$iplh1: IpAddress = '-'",
+	"$iplh2: IpAddress = '127.0.0.1'",
+	"$enddol: TargetUserName ~= '\\$$'"
+  ],
+"Condition": "$logt and !$kerb and !$user and !$iplh1 and !$iplh2 and !$enddol"
+}
+
+{
+"Name": "RemoteRunas",
+"Tags": ["Lateral", "Security"],
+"Meta": {
+  "EventIDs": [4648],
+  "Channels": ["Security"],
+  "Computers": [],
+  "Criticality": 7,
+  "Author": "@0xrawsec",
+  "Comment": "Experimental"
+  },
+"Matches": [
+	"$iplh1: IpAddress = '-'",
+	"$iplh2: IpAddress = '127.0.0.1'",
+	"$iplh3: IpAddress = '::1'",
+  "$wlpn: ProcessName ~= 'C:\\\\Windows\\\\System32\\\\winlogon\\.exe'"
+  ],
+"Condition": "!$iplh1 and !$iplh2 and !$iplh3 and !$wlpn"
+}

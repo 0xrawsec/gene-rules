@@ -1,0 +1,33 @@
+{
+"Name": "UserTempExec",
+"Tags": ["Heuristics", "Exec", "Sysmon"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 6,
+  "Author": "@0xrawsec"
+  },
+"Matches": [
+  "$pi: ParentImage ~= '^C:\\\\Users\\\\.*\\\\AppData\\\\Local\\\\Temp\\\\'",
+  "$i: Image ~= '^C:\\\\Users\\\\.*\\\\AppData\\\\Local\\\\Temp\\\\'"
+  ],
+"Condition": "$pi or $i"
+}
+
+{
+"Name": "WindowsTempExec",
+"Tags": ["Heuristics", "Exec", "Sysmon"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 4,
+  "Author": "@0xrawsec"
+  },
+"Matches": [
+  "$wtpi: ParentImage ~= '^C:\\\\Windows\\\\Temp'",
+  "$wti: Image ~= '^C:\\\\Windows\\\\Temp'"
+  ],
+"Condition": "$wtpi or $wti"
+}
