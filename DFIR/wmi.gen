@@ -1,0 +1,31 @@
+{
+"Name": "WMICreatedProcess",
+"Tags": ["WMI"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 7,
+  "Author": "@0xrawsec",
+  "Comment": "This rule catches the processes spawned by WMI"
+  },
+"Matches": [
+  "$wmi1: ParentImage ~= '(?i:\\\\wmic.exe$)'",
+  "$wmi2: ParentImage ~= '(?i:\\\\wmiprvse.exe$)'"
+  ],
+"Condition": "$wmi1 or $wmi2"
+}
+{
+"Name": "WMIEvents",
+"Tags": ["WMI"],
+"Meta": {
+  "EventIDs": [19, 20, 21],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 7,
+  "Author": "@0xrawsec",
+  "Comment": "This rule catches any WMI events"
+  },
+"Matches": [],
+"Condition": ""
+}
