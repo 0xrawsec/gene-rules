@@ -54,7 +54,8 @@
 	"$iplh1: IpAddress = '-'",
 	"$iplh2: IpAddress = '127.0.0.1'",
 	"$iplh3: IpAddress = '::1'",
-  "$wlpn: ProcessName ~= 'C:\\\\Windows\\\\System32\\\\winlogon\\.exe'"
+  "$wlpn: ProcessName ~= 'C:\\\\Windows\\\\System32\\\\winlogon\\.exe'",
+  "$wltsn: TargetServerName = 'localhost'"
   ],
-"Condition": "!$iplh1 and !$iplh2 and !$iplh3 and !$wlpn"
+"Condition": "!$iplh1 and !$iplh2 and !$iplh3 and !$wlpn and !$wltsn"
 }

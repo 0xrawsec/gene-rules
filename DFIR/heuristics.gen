@@ -6,7 +6,8 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 6,
-  "Author": "@0xrawsec"
+  "Author": "@0xrawsec",
+  "Comment": "Looks for execution from windows local Temp"
   },
 "Matches": [
   "$pi: ParentImage ~= '^C:\\\\Users\\\\.*\\\\AppData\\\\Local\\\\Temp\\\\'",
@@ -23,11 +24,50 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 4,
-  "Author": "@0xrawsec"
+  "Author": "@0xrawsec",
+  "Comment": "Looks for execution from windows Temp"
   },
 "Matches": [
   "$wtpi: ParentImage ~= '^C:\\\\Windows\\\\Temp'",
   "$wti: Image ~= '^C:\\\\Windows\\\\Temp'"
   ],
 "Condition": "$wtpi or $wti"
+}
+
+{
+"Name": "LargeCL512",
+"Tags": ["Heuristics", "CL"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 3,
+  "Author": "@0xrawsec",
+  "Comment": "Match command line larger than 512 characters"
+  },
+"Matches": [
+  "$lcl: CommandLine ~= '.{512,}'",
+  "$wlp1: Image ~= '^C:\\\\Program Files.*?\\\\Mozilla Firefox\\\\firefox\\.exe$'",
+  "$wlp2: Image ~= '^C:\\\\Program Files.*?\\\\Google\\\\Chrome\\\\Application\\\\chrome\\.exe$'"
+  ],
+"Condition": "$lcl and !$wlp1 and !$wlp2"
+}
+
+{
+"Name": "LargeCL999",
+"Tags": ["Heuristics", "CL"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 4,
+  "Author": "@0xrawsec",
+  "Comment": "Go regexp has a limitation of 1000 repetition so cannot match more reps"
+  },
+"Matches": [
+  "$lcl: CommandLine ~= '.{999,}'",
+  "$wlp1: Image ~= '^C:\\\\Program Files.*?\\\\Mozilla Firefox\\\\firefox\\.exe$'",
+  "$wlp2: Image ~= '^C:\\\\Program Files.*?\\\\Google\\\\Chrome\\\\Application\\\\chrome\\.exe$'"
+  ],
+"Condition": "$lcl and !$wlp1 and !$wlp2"
 }

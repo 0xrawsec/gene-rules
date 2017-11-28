@@ -1,0 +1,59 @@
+{
+"Name": "PowershellExecEnc",
+"Tags": ["Powershell"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 5,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Author": "0xrawsec"
+  },
+"Matches": [
+  "$i: Image ~= '(?i:powershell.exe$)'",
+  "$enc: CommandLine ~= '(?i: -(e|enc) )'"
+  ],
+"Condition": "$i and $enc"
+}
+
+{
+"Name": "PowershellNetConn",
+"Tags": ["Powershell","Network"],
+"Meta": {
+  "EventIDs": [3],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 5,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Author": "0xrawsec"
+  },
+"Matches": [
+  "$ps: Image ~= '(?i:powershell.exe$)'",
+  "$net: Initiated ~= 'true'"
+  ],
+"Condition": "$ps and $net"
+}
+
+{
+"Name": "PowershellHijack",
+"Tags": ["Powershell", "Hijack"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 0
+  },
+"Matches": [
+  "$a: Image ~= '(?i:powershell.exe$)'",
+  "$h1: Hashes ~= 'IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453$'",
+  "$h2: Hashes ~= 'IMPHASH=5E0145CEF36FA9BFBA7DE33AA683B8ED$'",
+  "$h3: Hashes ~= 'IMPHASH=8A3B31A96A31F368ECEBDFE0ED7459AB$'"
+  ],
+"Condition": "!$a and ($h1 or $h2 or $h3)"
+}

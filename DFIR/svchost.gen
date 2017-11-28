@@ -5,7 +5,7 @@
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 6,
+  "Criticality": 7,
   "Author": "@0xrawsec"
   },
 "Matches": [
@@ -30,4 +30,41 @@
   "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'"
   ],
 "Condition": "$im"
+}
+
+{
+"Name": "SvcHostUnsignedDll",
+"Tags": ["SvcHost", "ImageLoaded", "Sysmon"],
+"Meta": {
+  "EventIDs": [7],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 6,
+  "Author": "@0xrawsec",
+  "Comment": "Just an informational rule that can be further used to spot weird image loaded"
+  },
+"Matches": [
+  "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'",
+  "$unsigned: Signed = 'false'"
+  ],
+"Condition": "$im and $unsigned"
+}
+
+{
+"Name": "SvcHostNotWindowsSignedDLL",
+"Tags": ["SvcHost", "ImageLoaded", "Sysmon"],
+"Meta": {
+  "EventIDs": [7],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 5,
+  "Author": "@0xrawsec",
+  "Comment": "Just an informational rule that can be further used to spot weird image loaded"
+  },
+"Matches": [
+  "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'",
+  "$mw: Signature = 'Microsoft Windows'",
+  "$mc: Signature = 'Microsoft Corporation'"
+  ],
+"Condition": "$im and !$mw and !$mc"
 }

@@ -1,0 +1,19 @@
+{
+"Name": "RemoteThread",
+"Tags": ["RemoteThread", "Sysmon"],
+"Meta": {
+  "EventIDs": [8],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 5,
+  "Author": "@0xrawsec",
+  "Comment": "This rule catches any unusual CreateRemoteThread events"
+  },
+"Matches": [
+  "$svchost: SourceImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\svchost\\.exe$)'",
+  "$conhost: TargetImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\conhost\\.exe$)'",
+  "$wlp1: SourceImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\csrss\\.exe$)'",
+  "$wlp2: SourceImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\wbem\\\\WmiPrvSE\\.exe$)'"
+],
+"Condition": "!$wlp1 and !$wlp2 and !($svchost and $conhost)"
+}
