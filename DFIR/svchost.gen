@@ -9,10 +9,11 @@
   "Author": "@0xrawsec"
   },
 "Matches": [
-  "$im: Image ~= '(?i:\\\\svchost.exe$)'",
-  "$wlpath: Image ~= '(?i:c:\\\\windows\\\\system32\\\\svchost.exe$)'"
+  "$im: Image ~= '(?i:\\\\svchost)'",
+  "$sys32path: Image ~= '(?i:c:\\\\windows\\\\system32\\\\svchost.exe$)'",
+  "$syswowpath: Image ~= '(?i:c:\\\\windows\\\\syswow64\\\\svchost.exe$)'"
   ],
-"Condition": "$im and !$wlpath"
+"Condition": "$im and !$sys32path and !$syswowpath"
 }
 
 {
