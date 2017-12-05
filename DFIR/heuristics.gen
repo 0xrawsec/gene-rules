@@ -71,3 +71,20 @@
   ],
 "Condition": "$lcl and !$wlp1 and !$wlp2"
 }
+
+{
+"Name": "LargeBase64",
+"Tags": ["Heuristics", "CL"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 4,
+  "Author": "@0xrawsec",
+  "Comment": "Go regexp has a limitation of 1000 repetition so cannot match more reps"
+  },
+"Matches": [
+  "$lb64: CommandLine ~= '[0-9A-Za-z]{512,}'"
+  ],
+"Condition": "$lb64"
+}

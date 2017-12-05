@@ -15,6 +15,7 @@
   ],
 "Condition": "$wmi1 or $wmi2"
 }
+
 {
 "Name": "WMIEvents",
 "Tags": ["WMI"],

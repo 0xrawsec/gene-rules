@@ -5,7 +5,7 @@
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 10,
+  "Criticality": 8,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
     "::ParentProcessGuid = ProcessGuid"
@@ -15,7 +15,7 @@
 "Matches": [
   "$excel: ParentImage ~= '(?i:excel\\.exe$)'",
   "$word: ParentImage ~= '(?i:word\\.exe$)'",
-  "$ppt: ParentImage ~= '(?i:powerpoint\\.exe$)'",
+  "$ppt: ParentImage ~= '(?i:powerpnt\\.exe$)'",
   "$b: Image ~= '(?i:rundll32\\.exe$)'",
   "$c: Image ~= '(?i:powershell\\.exe$)'",
   "$d: Image ~= '(?i:wscript\\.exe$)'",
@@ -38,8 +38,27 @@
 "Matches": [
   "$excel: Image ~= '(?i:excel\\.exe$)'",
   "$word: Image ~= '(?i:word\\.exe$)'",
-  "$ppt: Image ~= '(?i:powerpoint\\.exe$)'",
+  "$ppt: Image ~= '(?i:powerpnt\\.exe$)'",
   "$net: Initiated ~= 'true'"
   ],
 "Condition": "($excel or $word or $ppt) and $net"
+}
+
+{
+"Name": "FromDownloadedDocument",
+"Tags": ["Office","Download"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 0,
+  "Author": "0xrawsec"
+  },
+"Matches": [
+  "$excel: ParentImage ~= '(?i:excel\\.exe$)'",
+  "$word: ParentImage ~= '(?i:word\\.exe$)'",
+  "$ppt: ParentImage ~= '(?i:powerpnt\\.exe$)'",
+  "$pcl: ParentCommandLine ~= '(?i:appdata\\\\local\\\\microsoft\\\\windows\\\\temporary internet files\\\\)'"
+  ],
+"Condition": "($excel or $word or $ppt) and $pcl"
 }

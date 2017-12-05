@@ -38,6 +38,24 @@
 }
 
 {
+  "Name": "HeuristicVaultcliDll",
+  "Tags": ["Mimikatz", "Credentials", "DLL"],
+  "Meta": {
+    "EventIDs": [7],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Traces": [],
+    "Criticality": 6,
+    "Author": "0xrawsec"
+  },
+  "Matches": [
+    "$il1: ImageLoaded ~= '(?i:\\\\vaultcli.dll$)'",
+    "$system32: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\[^\\\\]*?\\.exe)'"
+  ],
+  "Condition": "$il1 and !$system32"
+}
+
+{
   "Name": "PowershellSamlibDll",
   "Tags": ["Mimikatz", "Credentials", "Powershell", "DLL"],
   "Meta": {
