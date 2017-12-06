@@ -1,0 +1,50 @@
+{
+"Name": "DriverLoadedUnusualPath",
+"Tags": ["DriverLoaded"],
+"Meta": {
+  "EventIDs": [6],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 5,
+  "Author": "@0xrawsec"
+  },
+"Matches": [
+  "$uspath1: ImageLoaded ~= '(?i:C:\\\\Windows\\\\System32)'"
+  ],
+"Condition": "!$uspath1"
+}
+
+{
+"Name": "DriverLoadedNotValidSig",
+"Tags": ["DriverLoaded", "Signature"],
+"Meta": {
+  "EventIDs": [6],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 3,
+  "Author": "@0xrawsec",
+  "Comments":"It may happens that drivers have not valid signatures"
+  },
+"Matches": [
+  "$valid: SignatureStatus = 'Valid'"
+  ],
+"Condition": "!$valid"
+}
+
+{
+"Name": "DriverLoadedSuspiciousSigStatus",
+"Tags": ["DriverLoaded", "Signature"],
+"Meta": {
+  "EventIDs": [6],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 7,
+  "Author": "@0xrawsec",
+  "Comments":"Experimental"
+  },
+"Matches": [
+  "$valid: SignatureStatus = 'Valid'",
+  "$unavailable: SignatureStatus = 'Unavailable'"
+  ],
+"Condition": "!$valid and !$unavailable"
+}
