@@ -1,0 +1,23 @@
+{
+"Name": "Regsvr32ApplockerBypass",
+"Tags": ["Regsvr32", "AppLockerBypass","Sysmon"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Criticality": 10,
+  "Author": "@0xrawsec"
+  },
+"Matches": [
+  "$im: Image ~= '(?i:^c:\\\\windows\\\\system32\\\\regsvr32.exe$)'",
+  "$sw1: Image ~= '(?i:/n)'",
+  "$sw2: Image ~= '(?i:/s)'",
+  "$sw3: Image ~= '(?i:/u)'",
+  "$sw4: Image ~= '(?i:/i:)'"
+  ],
+"Condition": "$im and $sw1 and $sw2 and $sw3 and $sw4"
+}

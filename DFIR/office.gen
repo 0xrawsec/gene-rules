@@ -13,16 +13,38 @@
   "Author": "0xrawsec"
   },
 "Matches": [
-  "$excel: ParentImage ~= '(?i:excel\\.exe$)'",
-  "$word: ParentImage ~= '(?i:word\\.exe$)'",
-  "$ppt: ParentImage ~= '(?i:powerpnt\\.exe$)'",
+  "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
   "$b: Image ~= '(?i:rundll32\\.exe$)'",
   "$c: Image ~= '(?i:powershell\\.exe$)'",
   "$d: Image ~= '(?i:wscript\\.exe$)'",
   "$e: Image ~= '(?i:cscript\\.exe$)'",
-  "$f: Image ~= '(?i:cmd\\.exe$)'"
+  "$f: Image ~= '(?i:cmd\\.exe$)'",
+  "$fp1: CommandLine ~= '(?i:^C:\\\\Windows\\\\System32\\\\rundll32\\.exe shell32\\.dll,OpenAs_RunDLL)'"
   ],
-"Condition": "($excel or $word) and ($b or $c or $d or $e or $f)"
+"Condition": "$pimsoffice and !$fp1 and ($b or $c or $d or $e or $f)"
+}
+
+{
+"Name": "OfficeDropper",
+"Tags": ["Office", "Dropper"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 8,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Author": "0xrawsec",
+  "Comment": "Experimental rule to catch MS Office based droppers"
+  },
+"Matches": [
+  "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
+  "$windowsdir: Image ~= '(?i:^C:\\\\Windows\\\\)'",
+  "$programfile: Image ~= '(?i:^(C:\\\\Program Files.*?\\\\|C:\\\\PROGRA~2\\\\))'"
+  ],
+"Condition": "$pimsoffice and !($windowsdir or $programfile)"
 }
 
 {
@@ -32,16 +54,14 @@
   "EventIDs": [3],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 5,
+  "Criticality": 3,
   "Author": "0xrawsec"
   },
 "Matches": [
-  "$excel: Image ~= '(?i:excel\\.exe$)'",
-  "$word: Image ~= '(?i:word\\.exe$)'",
-  "$ppt: Image ~= '(?i:powerpnt\\.exe$)'",
+  "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
   "$net: Initiated ~= 'true'"
   ],
-"Condition": "($excel or $word or $ppt) and $net"
+"Condition": "$pimsoffice and $net"
 }
 
 {
@@ -55,10 +75,8 @@
   "Author": "0xrawsec"
   },
 "Matches": [
-  "$excel: ParentImage ~= '(?i:excel\\.exe$)'",
-  "$word: ParentImage ~= '(?i:word\\.exe$)'",
-  "$ppt: ParentImage ~= '(?i:powerpnt\\.exe$)'",
+  "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
   "$pcl: ParentCommandLine ~= '(?i:appdata\\\\local\\\\microsoft\\\\windows\\\\temporary internet files\\\\)'"
   ],
-"Condition": "($excel or $word or $ppt) and $pcl"
+"Condition": "$pimsoffice and $pcl"
 }

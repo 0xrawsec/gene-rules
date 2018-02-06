@@ -1,0 +1,21 @@
+{
+"Name": "7zExec",
+"Tags": ["Archive", "Exec", "Sysmon"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 4,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Author": "@0xrawsec",
+  "Comment": "Execution from 7z archive"
+  },
+"Matches": [
+  "$pi: ParentImage ~= '(?i:\\\\7zFM\\.exe$)'",
+  "$i: Image ~= '^C:\\\\Users\\\\.*\\\\AppData\\\\Local\\\\Temp\\\\'"
+  ],
+"Condition": "$pi and $i"
+}

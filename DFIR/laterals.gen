@@ -25,7 +25,7 @@
   "EventIDs": [4624],
   "Channels": ["Security"],
   "Computers": [],
-  "Criticality": 7,
+  "Criticality": 5,
   "Author": "@0xrawsec"
   },
 "Matches": [
@@ -40,13 +40,13 @@
 }
 
 {
-"Name": "RemoteRunas",
+"Name": "AlternateExplicitCredentialUse",
 "Tags": ["Lateral", "Security"],
 "Meta": {
   "EventIDs": [4648],
   "Channels": ["Security"],
   "Computers": [],
-  "Criticality": 7,
+  "Criticality": 4,
   "Author": "@0xrawsec",
   "Comment": "Experimental"
   },

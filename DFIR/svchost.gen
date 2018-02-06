@@ -6,6 +6,10 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 7,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
   "Author": "@0xrawsec"
   },
 "Matches": [
@@ -42,7 +46,7 @@
   "Computers": [],
   "Criticality": 6,
   "Author": "@0xrawsec",
-  "Comment": "Just an informational rule that can be further used to spot weird image loaded"
+  "Comment": "Images loaded by svchost and not signed"
   },
 "Matches": [
   "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'",
@@ -60,7 +64,7 @@
   "Computers": [],
   "Criticality": 5,
   "Author": "@0xrawsec",
-  "Comment": "Just an informational rule that can be further used to spot weird image loaded"
+  "Comment": "Images loaded by svchost and not signed by Windows"
   },
 "Matches": [
   "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'",
@@ -84,14 +88,9 @@
   },
   "Matches": [
     "$svchost: TargetImage ~= '(?i:windows\\\\system32\\\\svchost\\.exe$)'",
-    "$wlim1: SourceImage ~= '(?i:windows\\\\system32\\\\svchost\\.exe$)'",
-    "$wlim2: SourceImage ~= '(?i:windows\\\\system32\\\\lsm\\.exe$)'",
-    "$wlim3: SourceImage ~= '(?i:windows\\\\system32\\\\lsass\\.exe$)'",
-    "$wlim4: SourceImage ~= '(?i:windows\\\\system32\\\\consent\\.exe$)'",
-    "$wlim5: SourceImage ~= '(?i:windows\\\\system32\\\\services\\.exe$)'",
-    "$wlim6: SourceImage ~= '(?i:windows\\\\system32\\\\wermgr\\.exe$)'"
+    "$system32: SourceImage ~= '(?i:C:\\\\Windows\\\\System32\\\\[^\\\\]*?\\.exe)'"
   ],
-  "Condition": "$svchost and !$wlim1 and !$wlim2 and !$wlim3 and !$wlim4 and !$wlim5 and !$wlim6"
+  "Condition": "$svchost and !$system32"
 }
 
 {

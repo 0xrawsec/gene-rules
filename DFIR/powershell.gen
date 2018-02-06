@@ -41,19 +41,46 @@
 }
 
 {
-"Name": "PowershellHijack",
-"Tags": ["Powershell", "Hijack"],
+"Name": "PowershellLargeCL",
+"Tags": ["Heuristics", "CL"],
 "Meta": {
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 0
+  "Criticality": 4,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Author": "@0xrawsec",
+  "Comment": "Match command line larger than 512 characters"
   },
 "Matches": [
-  "$a: Image ~= '(?i:powershell.exe$)'",
-  "$h1: Hashes ~= 'IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453$'",
-  "$h2: Hashes ~= 'IMPHASH=5E0145CEF36FA9BFBA7DE33AA683B8ED$'",
-  "$h3: Hashes ~= 'IMPHASH=8A3B31A96A31F368ECEBDFE0ED7459AB$'"
+  "$lcl: CommandLine ~= '.{512,}'",
+  "$ps: Image ~= '(?i:powershell.exe$)'"
   ],
-"Condition": "!$a and ($h1 or $h2 or $h3)"
+"Condition": "$lcl and $ps"
+}
+
+
+{
+"Name": "PowershellEmbeddedC#",
+"Tags": ["Powershell", "EmbeddedCode"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 5,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Author": "@0xrawsec",
+  "Comment": "Powershell Script embedding C#"
+  },
+"Matches": [
+  "$ps: ParentImage ~= '(?i:powershell.exe$)'",
+  "$csc: Image ~= '(?i:\\\\csc.exe$)'"
+  ],
+"Condition": "$csc and $ps"
 }

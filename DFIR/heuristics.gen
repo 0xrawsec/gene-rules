@@ -5,7 +5,11 @@
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 6,
+  "Criticality": 4,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
   "Author": "@0xrawsec",
   "Comment": "Looks for execution from windows local Temp"
   },
@@ -23,7 +27,7 @@
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 4,
+  "Criticality": 3,
   "Author": "@0xrawsec",
   "Comment": "Looks for execution from windows Temp"
   },
@@ -41,16 +45,17 @@
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 3,
+  "Criticality": 2,
   "Author": "@0xrawsec",
   "Comment": "Match command line larger than 512 characters"
   },
 "Matches": [
   "$lcl: CommandLine ~= '.{512,}'",
   "$wlp1: Image ~= '^C:\\\\Program Files.*?\\\\Mozilla Firefox\\\\firefox\\.exe$'",
-  "$wlp2: Image ~= '^C:\\\\Program Files.*?\\\\Google\\\\Chrome\\\\Application\\\\chrome\\.exe$'"
+  "$wlp2: Image ~= '^C:\\\\Program Files.*?\\\\Google\\\\Chrome\\\\Application\\\\chrome\\.exe$'",
+  "$wlp3: Image ~= '(?i:Java.*\\\\jp2launcher.exe$)'"
   ],
-"Condition": "$lcl and !$wlp1 and !$wlp2"
+"Condition": "$lcl and !$wlp1 and !$wlp2 and !$wlp3"
 }
 
 {
@@ -60,16 +65,17 @@
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 4,
+  "Criticality": 3,
   "Author": "@0xrawsec",
   "Comment": "Go regexp has a limitation of 1000 repetition so cannot match more reps"
   },
 "Matches": [
   "$lcl: CommandLine ~= '.{999,}'",
   "$wlp1: Image ~= '^C:\\\\Program Files.*?\\\\Mozilla Firefox\\\\firefox\\.exe$'",
-  "$wlp2: Image ~= '^C:\\\\Program Files.*?\\\\Google\\\\Chrome\\\\Application\\\\chrome\\.exe$'"
+  "$wlp2: Image ~= '^C:\\\\Program Files.*?\\\\Google\\\\Chrome\\\\Application\\\\chrome\\.exe$'",
+  "$wlp3: Image ~= '(?i:Java.*\\\\jp2launcher.exe$)'"
   ],
-"Condition": "$lcl and !$wlp1 and !$wlp2"
+"Condition": "$lcl and !$wlp1 and !$wlp2 and !$wlp3"
 }
 
 {
@@ -79,12 +85,28 @@
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 4,
-  "Author": "@0xrawsec",
-  "Comment": "Go regexp has a limitation of 1000 repetition so cannot match more reps"
+  "Criticality": 3,
+  "Author": "@0xrawsec"
   },
 "Matches": [
   "$lb64: CommandLine ~= '[0-9A-Za-z]{512,}'"
   ],
 "Condition": "$lb64"
+}
+
+{
+"Name": "ExecDownloadedDocument",
+"Tags": ["Exec","Download"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 4,
+  "Author": "0xrawsec",
+  "Comments": "Catches Executables started from internet TEMP directory"
+  },
+"Matches": [
+  "$image: Image ~= '(?i:appdata\\\\local\\\\microsoft\\\\windows\\\\temporary internet files\\\\)'"
+  ],
+"Condition": "$image"
 }

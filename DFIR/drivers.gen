@@ -5,13 +5,14 @@
   "EventIDs": [6],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 5,
+  "Criticality": 4,
   "Author": "@0xrawsec"
   },
 "Matches": [
-  "$uspath1: ImageLoaded ~= '(?i:C:\\\\Windows\\\\System32)'"
+  "$uspath1: ImageLoaded ~= '(?i:C:\\\\Windows\\\\System32)'",
+  "$uspath2: ImageLoaded ~= '(?i:C:\\\\Windows\\\\System32\\\\drivers)'"
   ],
-"Condition": "!$uspath1"
+"Condition": "!$uspath1 and !$uspath2"
 }
 
 {

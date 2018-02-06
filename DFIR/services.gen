@@ -1,0 +1,42 @@
+{
+"Name": "SuspiciousService",
+"Tags": ["SvcHost", "ImageLoaded", "Sysmon"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 4,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Author": "@0xrawsec",
+  "Comment": "Tries to spot suspicious processes spawned by services.exe"
+  },
+"Matches": [
+  "$parent: ParentImage ~= '(?i:C:\\\\Windows\\\\(System32|SysWOW64)\\\\services\\.exe)'",
+  "$windows: Image ~= '(?i:C:\\\\Windows\\\\)'",
+  "$programfile: Image ~= '(?i:C:\\\\(PROGRA~2|Program Files.*?)\\\\.*)'"
+  ],
+"Condition": "$parent and !$windows and !$programfile"
+}
+
+{
+"Name": "SuspiciousServiceInstallation",
+"Tags": ["Services", "Registry", "Sysmon"],
+"Meta": {
+  "EventIDs": [13],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 8,
+  "Author": "@0xrawsec",
+  "Comment": "Tries to spot suspicious service installation"
+  },
+"Matches": [
+    "$eventtype: EventType = 'SetValue'",
+    "$key1: TargetObject ~= '(?i:^HKLM\\\\System\\\\CurrentControlSet\\\\services\\\\.*?\\\\ImagePath$)'",
+    "$key2: TargetObject ~= '(?i:^HKLM\\\\System\\\\CurrentControlSet\\\\services\\\\.*?\\\\Parameters\\\\ServiceDll$)'",
+    "$windows: Details ~= '(?i:C:\\\\Windows)'"
+  ],
+"Condition": "$eventtype and ($key1 or $key2) and !$windows"
+}

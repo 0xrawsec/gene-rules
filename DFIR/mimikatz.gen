@@ -5,12 +5,15 @@
     "EventIDs": [7],
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
-    "Traces": [],
+    "Traces": [
+      "*::ProcessGuid = ProcessGuid",
+      "::ParentProcessGuid = ProcessGuid"
+    ],
     "Criticality": 7,
     "Author": "0xrawsec"
   },
   "Matches": [
-    "$il1: ImageLoaded ~= '(?i:\\\\bcryptprimitives.dll$)''",
+    "$il1: ImageLoaded ~= '(?i:\\\\bcryptprimitives\\.dll$)''",
     "$system32: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\[^\\\\]*?\\.exe)'",
     "$programfile: Image ~= '(?i:C:\\\\Program Files.*?\\\\.*)'"
   ],
@@ -24,7 +27,10 @@
     "EventIDs": [7],
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
-    "Traces": [],
+    "Traces": [
+      "*::ProcessGuid = ProcessGuid",
+      "::ParentProcessGuid = ProcessGuid"
+    ],
     "Criticality": 6,
     "Author": "0xrawsec"
   },
@@ -44,7 +50,10 @@
     "EventIDs": [7],
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
-    "Traces": [],
+    "Traces": [
+      "*::ProcessGuid = ProcessGuid",
+      "::ParentProcessGuid = ProcessGuid"
+    ],
     "Criticality": 6,
     "Author": "0xrawsec"
   },
@@ -62,7 +71,10 @@
     "EventIDs": [7],
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
-    "Traces": [],
+    "Traces": [
+      "*::ProcessGuid = ProcessGuid",
+      "::ParentProcessGuid = ProcessGuid"
+    ],
     "Criticality": 8,
     "Author": "0xrawsec"
   },
@@ -80,7 +92,10 @@
     "EventIDs": [7],
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
-    "Traces": [],
+    "Traces": [
+      "*::ProcessGuid = ProcessGuid",
+      "::ParentProcessGuid = ProcessGuid"
+    ],
     "Criticality": 8,
     "Author": "0xrawsec"
   },
@@ -98,7 +113,10 @@
     "EventIDs": [10],
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
-    "Traces": [],
+    "Traces": [
+      "*::ProcessGuid = ProcessGuid",
+      "::ParentProcessGuid = ProcessGuid"
+    ],
     "Criticality": 10,
     "Author": "0xrawsec"
   },

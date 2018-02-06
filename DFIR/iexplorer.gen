@@ -1,11 +1,16 @@
 {
-"Name": "IEExploit",
-"Tags": ["IE", "Exploit"],
+"Name": "IESuspiciousChild",
+"Tags": ["IE"],
 "Meta": {
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 10
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Criticality": 5,
+  "Author": "0xrawsec"
   },
 "Matches": [
   "$a: ParentImage ~= '(?i:iexplore\\.exe$)'",

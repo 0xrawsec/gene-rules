@@ -1,0 +1,10 @@
+
+'(?i:^C:\\\\Windows\\\\)'
+'(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'
+
+# Any .exe under C:\Windows\System32
+'(?i:C:\\\\Windows\\\\System32\\\\[^\\\\]*?\\.exe)'
+
+# Anything under C:\Program Files and C:\Program Files (x86)
+'(?i:C:\\\\Program Files.*?\\\\.*)'
+'(?i:C:\\\\(PROGRA~2|Program Files.*?)\\\\.*)'

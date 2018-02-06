@@ -10,10 +10,11 @@
   "Comment": "This rule catches the processes spawned by WMI"
   },
 "Matches": [
-  "$wmi1: ParentImage ~= '(?i:\\\\wmic.exe$)'",
-  "$wmi2: ParentImage ~= '(?i:\\\\wmiprvse.exe$)'"
+  "$wmi1: ParentImage ~= '(?i:\\\\wmic\\.exe$)'",
+  "$wmi2: ParentImage ~= '(?i:\\\\wmiprvse\\.exe$)'",
+  "$wlproc1: Image ~= '(?i:C:\\\\windows\\\\(syswow64|system32)\\\\WerFault\\.exe)'"
   ],
-"Condition": "$wmi1 or $wmi2"
+"Condition": "!$wlproc1 and ($wmi1 or $wmi2)"
 }
 
 {
