@@ -10,11 +10,10 @@
   "Comment": "This rule catches the processes spawned by WMI"
   },
 "Matches": [
-  "$wmi1: ParentImage ~= '(?i:\\\\wmic\\.exe$)'",
-  "$wmi2: ParentImage ~= '(?i:\\\\wmiprvse\\.exe$)'",
+  "$wmi: ParentImage ~= '(?i:\\\\(wmic|wmiprvse)\\.exe$)'",
   "$wlproc1: Image ~= '(?i:C:\\\\windows\\\\(syswow64|system32)\\\\WerFault\\.exe)'"
   ],
-"Condition": "!$wlproc1 and ($wmi1 or $wmi2)"
+"Condition": "!$wlproc1 and $wmi"
 }
 
 {
@@ -26,7 +25,7 @@
   "Computers": [],
   "Criticality": 7,
   "Author": "@0xrawsec",
-  "Comment": "This rule catches any WMI events"
+  "Comment": "This rule catches any WMI events. Any of them needs to be checked."
   },
 "Matches": [],
 "Condition": ""

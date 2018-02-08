@@ -96,7 +96,7 @@
 
 {
 "Name": "ExecDownloadedDocument",
-"Tags": ["Exec","Download"],
+"Tags": ["Heuristics", "Exec","Download"],
 "Meta": {
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
@@ -109,4 +109,21 @@
   "$image: Image ~= '(?i:appdata\\\\local\\\\microsoft\\\\windows\\\\temporary internet files\\\\)'"
   ],
 "Condition": "$image"
+}
+
+{
+"Name": "EmbeddedHTTPLinkInCL",
+"Tags": ["Heuristics", "HTTP", "CL"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 3,
+  "Author": "0xrawsec",
+  "Comments": "Contains heuristics to detect embedded http links in CL"
+  },
+"Matches": [
+  "$http: CommandLine ~= '(?i:https?://)'"
+  ],
+"Condition": "$http"
 }

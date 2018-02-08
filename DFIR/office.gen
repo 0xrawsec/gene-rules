@@ -1,5 +1,5 @@
 {
-"Name": "OfficeThreat",
+"Name": "DocumentThreat",
 "Tags": ["Office", "Threat"],
 "Meta": {
   "EventIDs": [1],
@@ -14,14 +14,34 @@
   },
 "Matches": [
   "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
-  "$b: Image ~= '(?i:rundll32\\.exe$)'",
-  "$c: Image ~= '(?i:powershell\\.exe$)'",
-  "$d: Image ~= '(?i:wscript\\.exe$)'",
-  "$e: Image ~= '(?i:cscript\\.exe$)'",
-  "$f: Image ~= '(?i:cmd\\.exe$)'",
+  "$susp: Image ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'",
   "$fp1: CommandLine ~= '(?i:^C:\\\\Windows\\\\System32\\\\rundll32\\.exe shell32\\.dll,OpenAs_RunDLL)'"
   ],
-"Condition": "$pimsoffice and !$fp1 and ($b or $c or $d or $e or $f)"
+"Condition": "$pimsoffice and !$fp1 and $susp"
+}
+
+{
+"Name": "OutlookThreat",
+"Tags": ["Office", "Threat"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 6,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Author": "0xrawsec",
+  "Comment": "This is an experimental rule so it might raise some FP",
+  "Todo": "Increase Criticality if not much FP"
+  },
+"Matches": [
+  "$pimoutlook: ParentImage ~= '(?i:outlook\\.exe$)'",
+  "$susp: Image ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'",
+  "$fp1: CommandLine ~= '(?i:^C:\\\\Windows\\\\System32\\\\rundll32\\.exe shell32\\.dll,OpenAs_RunDLL)'"
+  ],
+"Condition": "$pimoutlook and !$fp1 and $susp"
 }
 
 {
@@ -72,7 +92,8 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 0,
-  "Author": "0xrawsec"
+  "Author": "0xrawsec",
+  "Comment": "This rule is used as a simple informative tag"
   },
 "Matches": [
   "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
