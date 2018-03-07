@@ -21,6 +21,28 @@
 }
 
 {
+"Name": "SvcHostBadParent",
+"Tags": ["SvcHost", "Heuristics", "Sysmon"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 7,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Author": "@0xrawsec",
+  "Comments": "Wrong svchost parent"
+  },
+"Matches": [
+  "$svchost: Image ~= '(?i:^c:\\\\windows\\\\sys(tem32|wow64)\\\\svchost.exe$)'",
+  "$pservices: ParentImage ~= '(?i:^C:\\\\Windows\\\\sys(tem32|wow64)\\\\services.exe$)'"
+  ],
+"Condition": "$svchost and !$pservices"
+}
+
+{
 "Name": "SvcHostImageLoaded",
 "Tags": ["SvcHost", "ImageLoaded", "Sysmon"],
 "Meta": {
@@ -29,7 +51,8 @@
   "Computers": [],
   "Criticality": 0,
   "Author": "@0xrawsec",
-  "Comment": "Just an informational rule that can be further used to spot weird image loaded"
+  "Comment": "Just an informational rule that can be further used to spot weird image loaded",
+  "Disable": true
   },
 "Matches": [
   "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'"
@@ -88,9 +111,11 @@
   },
   "Matches": [
     "$svchost: TargetImage ~= '(?i:windows\\\\system32\\\\svchost\\.exe$)'",
-    "$system32: SourceImage ~= '(?i:C:\\\\Windows\\\\System32\\\\[^\\\\]*?\\.exe)'"
+    "$system32: SourceImage ~= '(?i:C:\\\\Windows\\\\System32\\\\[^\\\\]*?\\.exe)'",
+    "$wl1: SourceImage ~= '(?i:C:\\\\Program Files.*?\\\\Windows Defender\\\\.*?\\.exe)'",
+    "$wl2: SourceImage ~= '(?i:C:\\\\Windows\\\\sys(tem32|wow64)\\\\wbem\\\\wmiprvse\\.exe)'"
   ],
-  "Condition": "$svchost and !$system32"
+  "Condition": "$svchost and !($system32 or $wl1 or $wl2)"
 }
 
 {

@@ -20,5 +20,5 @@
   "$fp2: CommandLine ~= '(?i:^C:\\\\Windows\\\\System32\\\\rundll32\\.exe shell32\\.dll,SHCreateLocalServerRunDll)'",
   "$fp3: CommandLine ~= '(?i:\"C:\\\\windows\\\\system32\\\\rundll32\\.exe\" C:\\\\windows\\\\system32\\\\shell32\\.dll,OpenAs_RunDLL )'"
   ],
-"Condition": "$ie and !$fp1 and !$fp2 and !$fp3 and $susp"
+"Condition": "$susp and $ie and !$fp1 and !$fp2 and !$fp3"
 }

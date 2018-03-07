@@ -7,7 +7,8 @@
   "Computers": [],
   "Criticality": 5,
   "Author": "@0xrawsec",
-  "Comment": "This rule catches any unusual CreateRemoteThread events"
+  "Comment": "This rule catches any unusual CreateRemoteThread events. This rule has been disabled because it did not prove its usefulness",
+  "Disable": true
   },
 "Matches": [
   "$svchost: SourceImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\svchost\\.exe$)'",

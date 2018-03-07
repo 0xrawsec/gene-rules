@@ -1,5 +1,6 @@
+
 {
-"Name": "DocumentThreat",
+"Name": "Maldoc",
 "Tags": ["Office", "Threat"],
 "Meta": {
   "EventIDs": [1],
@@ -15,7 +16,7 @@
 "Matches": [
   "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
   "$susp: Image ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'",
-  "$fp1: CommandLine ~= '(?i:^C:\\\\Windows\\\\System32\\\\rundll32\\.exe shell32\\.dll,OpenAs_RunDLL)'"
+  "$fp1: CommandLine ~= '(?i:^C:\\\\Windows\\\\System32\\\\rundll32\\.exe.*?shell32\\.dll,OpenAs_RunDLL)'"
   ],
 "Condition": "$pimsoffice and !$fp1 and $susp"
 }
@@ -39,13 +40,31 @@
 "Matches": [
   "$pimoutlook: ParentImage ~= '(?i:outlook\\.exe$)'",
   "$susp: Image ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'",
-  "$fp1: CommandLine ~= '(?i:^C:\\\\Windows\\\\System32\\\\rundll32\\.exe shell32\\.dll,OpenAs_RunDLL)'"
+  "$fp: CommandLine ~= '(?i:(shell32\\.dll,OpenAs_RunDLL|mshtml\\.dll.*?,PrintHTML))'"
   ],
-"Condition": "$pimoutlook and !$fp1 and $susp"
+"Condition": "$pimoutlook and !$fp and $susp"
 }
 
 {
 "Name": "OfficeDropper",
+"Tags": ["Office", "Dropper"],
+"Meta": {
+  "EventIDs": [11],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 8,
+  "Author": "0xrawsec",
+  "Comments": "Experimental rule to detect executable creations under Root directory. Criticality has to be adjusted accordingly."
+  },
+"Matches": [
+  "$office: Image ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
+  "$target: TargetFilename ~= '(?i:(\\.acm|\\.ax|\\.bat|\\.cmd|\\.com|\\.cpl|\\.dic|\\.dll|\\.drv|\\.ds|\\.efi|\\.exe|\\.grm|\\.iec|\\.ime|\\.js|\\.jse|\\.lex|\\.msstyles|\\.mui|\\.ocx|\\.olb|\\.ps1|\\.rll|\\.rs|\\.scr|\\.sys|\\.tlb|\\.tsp|\\.vb|\\.vbe|\\.vbs|\\.vbscript|\\.ws|\\.wsf)$)'"
+  ],
+"Condition": "$office and $target"
+}
+
+{
+"Name": "OfficeDropperExec",
 "Tags": ["Office", "Dropper"],
 "Meta": {
   "EventIDs": [1],
@@ -75,7 +94,8 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 3,
-  "Author": "0xrawsec"
+  "Author": "0xrawsec",
+  "Disable": true
   },
 "Matches": [
   "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",

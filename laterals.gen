@@ -59,3 +59,23 @@
   ],
 "Condition": "!$iplh1 and !$iplh2 and !$iplh3 and !$wlpn and !$wltsn"
 }
+
+{
+"Name": "HeurCLWithCreds",
+"Tags": ["Heuristics", "Lateral"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 5,
+  "Author": "0xrawsec",
+  "Comments": "Experimental rule to catch command lines taking credentials as arguments."
+  },
+"Matches": [
+  "$ruser: CommandLine ~= '(?i: /U )'",
+  "$rhost: CommandLine ~= '(?i: /S )'",
+  "$rpwd: CommandLine ~= '(?i: /P )'"
+  ],
+"Condition": "$ruser and $rhost and $rpwd"
+}
+

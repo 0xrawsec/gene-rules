@@ -17,6 +17,26 @@
 }
 
 {
+"Name": "LateralWMI",
+"Tags": ["WMI", "Lateral"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 7,
+  "Author": "@0xrawsec",
+  "Comment": "This rule catches lateral movement done with WMI"
+  },
+"Matches": [
+  "$wmi: Image ~= '(?i:\\\\wmic\\.exe$)'",
+  "$node: CommandLine ~= '(?i:/node:)'",
+  "$user: CommandLine ~= '(?i:/user:)'",
+  "$pwd: CommandLine ~= '(?i:/password:)'"
+  ],
+"Condition": "$wmi and $node and $user and $pwd"
+}
+
+{
 "Name": "WMIEvents",
 "Tags": ["WMI"],
 "Meta": {

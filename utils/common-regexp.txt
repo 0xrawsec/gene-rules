@@ -11,3 +11,6 @@
 
 # Suspicious Images
 "$susp: Image ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'"
+
+# Parent is Explorer.exe
+"$parent: ParentImage ~= '(?i:C:\\\\windows\\\\explorer.exe)'",

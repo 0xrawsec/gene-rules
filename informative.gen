@@ -1,0 +1,33 @@
+{
+"Name": "InfoSuspiciousParent",
+"Tags": ["Info"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 0,
+  "Author": "0xrawsec",
+  "Comments": "Informative rule to tag suspicious parent command line"
+  },
+"Matches": [
+  "$susp: ParentImage ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'"
+  ],
+"Condition": "$susp"
+}
+
+{
+  "Name": "InfoRemotePath",
+  "Tags": ["Info", "Lateral"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 0,
+    "Author": "0xrawsec",
+    "Comment": "Heuristic to catch remote path in command line"
+  },
+  "Matches": [
+    "$rpath: CommandLine ~= '(?i:\\\\\\\\[\\w\\.]+)'"
+  ],
+  "Condition": "$rpath"
+}

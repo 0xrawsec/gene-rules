@@ -10,7 +10,9 @@
       "::ParentProcessGuid = ProcessGuid"
     ],
     "Criticality": 7,
-    "Author": "0xrawsec"
+    "Author": "0xrawsec",
+    "Comments": "DLL loaded by Mimikatz but also by some others. Disbled because too many FPs",
+    "Disable": true
   },
   "Matches": [
     "$il1: ImageLoaded ~= '(?i:\\\\bcryptprimitives\\.dll$)''",

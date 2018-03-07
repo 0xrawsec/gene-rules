@@ -20,5 +20,5 @@
   "$sw3: CommandLine ~= '(?i: /u )'",
   "$sw4: CommandLine ~= '(?i: /i:)'"
   ],
-"Condition": "$im and $sw1 and $sw2 and $sw3 and $sw4"
+"Condition": "$im and $sw4 and $sw3 and $sw2 and $sw1"
 }

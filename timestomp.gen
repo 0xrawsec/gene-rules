@@ -1,0 +1,16 @@
+{
+"Name": "Timestomping",
+"Tags": ["Timestomp"],
+"Meta": {
+  "EventIDs": [2],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 6,
+  "Author": "@0xrawsec",
+  "Comment": ""
+  },
+"Matches": [
+  "$target: TargetFilename ~= '(?i:^C:\\\\Users\\\\.*?\\\\AppData\\\\Roaming\\\\Microsoft\\\\Windows\\\\Recent\\\\CustomDestinations)\\\\[A-Z0-9]{20}.temp$'"
+  ],
+"Condition": "!$target"
+}

@@ -1,0 +1,118 @@
+{
+  "Name": "SystemInfo.exe",
+  "Tags": ["Tool"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 2,
+    "Author": "0xrawsec",
+    "Comment": "SystemInfo execution"
+  },
+  "Matches": [
+    "$exe: Image ~= '(?i:\\\\systeminfo.exe$)'"
+  ],
+  "Condition": "$exe"
+}
+
+{
+  "Name": "Tasklist.exe",
+  "Tags": ["Tool"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 2,
+    "Author": "0xrawsec",
+    "Comment": "Tasklist execution"
+  },
+  "Matches": [
+    "$exe: Image ~= '(?i:\\\\tasklist.exe$)'"
+  ],
+  "Condition": "$exe"
+}
+
+{
+  "Name": "Xcopy.exe",
+  "Tags": ["Tool"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 2,
+    "Author": "0xrawsec",
+    "Comment": "xcopy execution"
+  },
+  "Matches": [
+    "$exe: Image ~= '(?i:\\\\xcopy.exe$)'"
+  ],
+  "Condition": "$exe"
+}
+
+{
+  "Name": "Net.exe",
+  "Tags": ["Tool"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 2,
+    "Author": "0xrawsec",
+    "Comment": "net.exe execution"
+  },
+  "Matches": [
+    "$exe: Image ~= '(?i:\\\\net1?.exe$)'"
+  ],
+  "Condition": "$exe"
+}
+
+{
+  "Name": "Taskkill.exe",
+  "Tags": ["Tool"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 2,
+    "Author": "0xrawsec",
+    "Comment": "taskkill.exe execution"
+  },
+  "Matches": [
+    "$exe: Image ~= '(?i:\\\\taskkill.exe$)'"
+  ],
+  "Condition": "$exe"
+}
+
+{
+  "Name": "Reg.exe",
+  "Tags": ["Tool"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 2,
+    "Author": "0xrawsec",
+    "Comment": "reg.exe execution"
+  },
+  "Matches": [
+    "$exe: Image ~= '(?i:\\\\reg.exe$)'"
+  ],
+  "Condition": "$exe"
+}
+
+{
+  "Name": "Ping.exe",
+  "Tags": ["Tool"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 2,
+    "Author": "0xrawsec",
+    "Comment": "ping.exe execution"
+  },
+  "Matches": [
+    "$exe: Image ~= '(?i:\\\\ping.exe$)'"
+  ],
+  "Condition": "$exe"
+}

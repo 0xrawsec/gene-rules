@@ -1,0 +1,47 @@
+{
+"Name": "SysmonStateChanged",
+"Tags": ["Sysmon"],
+"Meta": {
+  "EventIDs": [4],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 6,
+  "Author": "@0xrawsec",
+  "Comment": ""
+  },
+"Matches": [],
+"Condition": ""
+}
+
+{
+"Name": "SysmonConfigChanged",
+"Tags": ["Sysmon"],
+"Meta": {
+  "EventIDs": [16],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 8,
+  "Author": "@0xrawsec",
+  "Comment": ""
+  },
+"Matches": [],
+"Condition": ""
+}
+
+{
+"Name": "SysmonFingerprinting",
+"Tags": ["Sysmon"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 6,
+  "Author": "@0xrawsec",
+  "Comment": ""
+  },
+"Matches": [
+    "$sysmon: Product = 'Sysinternals Sysmon'",
+    "$arg: CommandLine ~= '(?i:\\s-c\\s*$)'"
+],
+"Condition": "$sysmon and $arg"
+}

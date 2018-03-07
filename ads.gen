@@ -1,0 +1,49 @@
+{
+"Name": "NewADS",
+"Tags": ["ADS"],
+"Meta": {
+  "EventIDs": [15],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 5,
+  "Author": "0xrawsec",
+  "Comments": "Catch all ADS creation events"
+  },
+"Matches": [
+  ],
+"Condition": ""
+}
+
+{
+"Name": "ExecutableADS",
+"Tags": ["ADS"],
+"Meta": {
+  "EventIDs": [15],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 10,
+  "Author": "0xrawsec",
+  "Comments": "Heuristics trying to catch EXE in ADS. If it is an EXE it is very likely the IMPHASH field is not null."
+  },
+"Matches": [
+  "$impash:  Hash ~= '(?i:(IMPHASH=00000000000000000000000000000000))'"
+  ],
+"Condition": "!$impash"
+}
+
+{
+"Name": "HeurADSInCL",
+"Tags": ["Heuristics", "ADS"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 5,
+  "Author": "0xrawsec",
+  "Comments": "Aims at catching the ADS like strings in CL"
+  },
+"Matches": [
+  "$ads:  CommandLine ~= '(?i:\\.[a-z0-9]{2,5}:\\w*?\\.[a-z0-9]{2,5})'"
+  ],
+"Condition": "$ads"
+}

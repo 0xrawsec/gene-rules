@@ -1,0 +1,22 @@
+{
+"Name": "AutomatedRecursiveDir",
+"Tags": ["Cmd"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 5,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Author": "@0xrawsec",
+  "Comment": "Recursive directory listing"
+  },
+"Matches": [
+  "$parent: ParentImage ~= '(?i:C:\\\\windows\\\\explorer.exe)'",
+  "$exe: Image ~= '(?i:\\\\cmd.exe$)'",
+  "$cmd: CommandLine ~= '(?i:dir.*?/s)'"
+  ],
+"Condition": "!$parent and $exe and $cmd"
+}

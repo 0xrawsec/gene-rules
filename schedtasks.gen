@@ -1,0 +1,54 @@
+{
+  "Name": "NewScheduledTask",
+  "Tags": ["ScheduledTasks"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 4,
+    "Author": "0xrawsec",
+    "Comment": "Experimental rule to catch scheduled tasks creation"
+  },
+  "Matches": [
+    "$schtasks: Image ~= '(?i:^c:\\\\windows\\\\system32\\\\schtasks\\.exe$)'",
+    "$create: CommandLine ~= '(?i:/(xml|create))'",
+    "$remote: CommandLine ~= '(?i:/S )'"
+  ],
+  "Condition": "$schtasks and !$remote and $create"
+}
+
+{
+  "Name": "RunningScheduledTask",
+  "Tags": ["ScheduledTasks"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 3,
+    "Author": "0xrawsec",
+    "Comment": "Experimental rule to catch running scheduled tasks"
+  },
+  "Matches": [
+    "$schtasks: ParentImage ~= '(?i:^c:\\\\windows\\\\system32\\\\schtasks\\.exe$)'"
+  ],
+  "Condition": "$schtasks"
+}
+
+{
+  "Name": "NewRemoteScheduledTask",
+  "Tags": ["ScheduledTasks", "Lateral"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 7,
+    "Author": "0xrawsec",
+    "Comment": "Experimental rule to catch remote scheduled tasks creation"
+  },
+  "Matches": [
+    "$schtasks: Image ~= '(?i:^c:\\\\windows\\\\system32\\\\schtasks\\.exe$)'",
+    "$create: CommandLine ~= '(?i:/(create|xml))'",
+    "$remote: CommandLine ~= '(?i:/S )'"
+  ],
+  "Condition": "$schtasks and $remote and $create "
+}

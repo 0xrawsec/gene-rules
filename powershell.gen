@@ -1,6 +1,6 @@
 {
 "Name": "PowershellExecEnc",
-"Tags": ["Powershell"],
+"Tags": ["Powershell", "Heuristics"],
 "Meta": {
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
@@ -13,7 +13,7 @@
   "Author": "0xrawsec"
   },
 "Matches": [
-  "$i: Image ~= '(?i:powershell.exe$)'",
+  "$i: Image ~= '(?i:\\\\powershell.exe$)'",
   "$enc: CommandLine ~= '(?i: -(e|enc) )'"
   ],
 "Condition": "$i and $enc"
@@ -31,10 +31,11 @@
     "*::ProcessGuid = ProcessGuid",
     "::ParentProcessGuid = ProcessGuid"
   ],
-  "Author": "0xrawsec"
+  "Author": "0xrawsec",
+  "Disable": true
   },
 "Matches": [
-  "$ps: Image ~= '(?i:powershell.exe$)'",
+  "$ps: Image ~= '(?i:\\\\powershell.exe$)'",
   "$net: Initiated ~= 'true'"
   ],
 "Condition": "$ps and $net"
@@ -57,15 +58,36 @@
   },
 "Matches": [
   "$lcl: CommandLine ~= '.{512,}'",
-  "$ps: Image ~= '(?i:powershell.exe$)'"
+  "$ps: Image ~= '(?i:\\\\powershell.exe$)'"
   ],
 "Condition": "$lcl and $ps"
 }
 
-
 {
 "Name": "PowershellEmbeddedC#",
 "Tags": ["Powershell", "EmbeddedCode"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 3,
+  "Traces": [
+    "*::ProcessGuid = ProcessGuid",
+    "::ParentProcessGuid = ProcessGuid"
+  ],
+  "Author": "@0xrawsec",
+  "Comment": "Powershell Script embedding C#"
+  },
+"Matches": [
+  "$ps: ParentImage ~= '(?i:\\\\powershell.exe$)'",
+  "$csc: Image ~= '(?i:\\\\csc.exe$)'"
+  ],
+"Condition": "$csc and $ps"
+}
+
+{
+"Name": "PowershellStdin",
+"Tags": ["Powershell"],
 "Meta": {
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
@@ -76,11 +98,11 @@
     "::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "@0xrawsec",
-  "Comment": "Powershell Script embedding C#"
+  "Comment": "Powershell reads command from stdin"
   },
 "Matches": [
-  "$ps: ParentImage ~= '(?i:powershell.exe$)'",
-  "$csc: Image ~= '(?i:\\\\csc.exe$)'"
+  "$ps: Image ~= '(?i:\\\\powershell.exe$)'",
+  "$arg: CommandLine ~= '(?i:-command\\s+-)'"
   ],
-"Condition": "$csc and $ps"
+"Condition": "$ps and $arg"
 }
