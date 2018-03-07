@@ -30,13 +30,28 @@
   },
 "Matches": [
 	"$logt: LogonType = '3'",
-	"$kerb: AuthenticationPackageName = 'Kerberos'",
 	"$user: TargetUserName = 'ANONYMOUS LOGON'",
 	"$iplh1: IpAddress = '-'",
 	"$iplh2: IpAddress = '127.0.0.1'",
 	"$enddol: TargetUserName ~= '\\$$'"
   ],
-"Condition": "$logt and !$kerb and !$user and !$iplh1 and !$iplh2 and !$enddol"
+"Condition": "$logt and !($user or $iplh1 or $iplh2 or $enddol)"
+}
+
+{
+"Name": "PsExec4624",
+"Tags": ["Lateral", "Security"],
+"Meta": {
+  "EventIDs": [4624],
+  "Channels": ["Security"],
+  "Computers": [],
+  "Criticality": 5,
+  "Author": "@0xrawsec"
+  },
+"Matches": [
+	"$psexec: ProcessName ~= '(?i:\\\\PSEXESVC\\.exe$)'"
+  ],
+"Condition": "$psexec"
 }
 
 {
@@ -78,4 +93,5 @@
   ],
 "Condition": "$ruser and $rhost and $rpwd"
 }
+
 
