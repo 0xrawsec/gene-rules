@@ -10,7 +10,7 @@
     "Comment": "SystemInfo execution"
   },
   "Matches": [
-    "$exe: Image ~= '(?i:\\\\systeminfo.exe$)'"
+    "$exe: Image ~= '(?i:\\\\systeminfo\\.exe$)'"
   ],
   "Condition": "$exe"
 }
@@ -27,7 +27,7 @@
     "Comment": "Tasklist execution"
   },
   "Matches": [
-    "$exe: Image ~= '(?i:\\\\tasklist.exe$)'"
+    "$exe: Image ~= '(?i:\\\\tasklist\\.exe$)'"
   ],
   "Condition": "$exe"
 }
@@ -44,7 +44,7 @@
     "Comment": "xcopy execution"
   },
   "Matches": [
-    "$exe: Image ~= '(?i:\\\\xcopy.exe$)'"
+    "$exe: Image ~= '(?i:\\\\xcopy\\.exe$)'"
   ],
   "Condition": "$exe"
 }
@@ -61,7 +61,7 @@
     "Comment": "net.exe execution"
   },
   "Matches": [
-    "$exe: Image ~= '(?i:\\\\net1?.exe$)'"
+    "$exe: Image ~= '(?i:\\\\net1?\\.exe$)'"
   ],
   "Condition": "$exe"
 }
@@ -78,7 +78,7 @@
     "Comment": "taskkill.exe execution"
   },
   "Matches": [
-    "$exe: Image ~= '(?i:\\\\taskkill.exe$)'"
+    "$exe: Image ~= '(?i:\\\\taskkill\\.exe$)'"
   ],
   "Condition": "$exe"
 }
@@ -95,7 +95,7 @@
     "Comment": "reg.exe execution"
   },
   "Matches": [
-    "$exe: Image ~= '(?i:\\\\reg.exe$)'"
+    "$exe: Image ~= '(?i:\\\\reg\\.exe$)'"
   ],
   "Condition": "$exe"
 }
@@ -112,7 +112,24 @@
     "Comment": "ping.exe execution"
   },
   "Matches": [
-    "$exe: Image ~= '(?i:\\\\ping.exe$)'"
+    "$exe: Image ~= '(?i:\\\\ping\\.exe$)'"
+  ],
+  "Condition": "$exe"
+}
+
+{
+  "Name": "Nbtstat.exe",
+  "Tags": ["Tool"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 2,
+    "Author": "0xrawsec",
+    "Comment": "Nbtstat.exe execution"
+  },
+  "Matches": [
+    "$exe: Image ~= '(?i:\\\\nbtstat\\.exe$)'"
   ],
   "Condition": "$exe"
 }

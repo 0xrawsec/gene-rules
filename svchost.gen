@@ -92,9 +92,11 @@
 "Matches": [
   "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'",
   "$mw: Signature = 'Microsoft Windows'",
-  "$mc: Signature = 'Microsoft Corporation'"
+  "$mc: Signature = 'Microsoft Corporation'",
+  "$mwcp: Signature = 'Microsoft Windows Component Publisher'",
+  "$mwp: Signature = 'Microsoft Windows Publisher'"
   ],
-"Condition": "$im and !$mw and !$mc"
+"Condition": "$im and !($mw or $mc or $mwcp or $mwp)"
 }
 
 {

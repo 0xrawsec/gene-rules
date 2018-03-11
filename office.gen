@@ -16,7 +16,7 @@
 "Matches": [
   "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
   "$susp: Image ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'",
-  "$fp1: CommandLine ~= '(?i:^C:\\\\Windows\\\\System32\\\\rundll32\\.exe.*?shell32\\.dll,OpenAs_RunDLL)'"
+  "$fp1: CommandLine ~= '(?i:shell32\\.dll,(OpenAs_RunDLL|SHCreateLocalServerRunDll|Control_RunDLL))'"
   ],
 "Condition": "$pimsoffice and !$fp1 and $susp"
 }

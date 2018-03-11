@@ -228,11 +228,11 @@
   "Computers": [],
   "Criticality": 6,
   "Author": "@0xrawsec",
-  "Comment": "Tools usually used from command line, should not be used from other binaries"
+  "Comment": "Tools usually used from scripts, should not be used directlty from that many other binaries. Tasklist.exe has been removed because too many FPS"
   },
 "Matches": [
-  "$tools: Image ~= '(?i:\\\\(ping|systeminfo|net|tasklist|taskkill|xcopy)\\.exe$)'",
-  "$parent: ParentImage ~= '(?i:C:\\\\Windows\\\\.*\\\\(powershell|cmd)\\.exe$)'"
+  "$tools: Image ~= '(?i:\\\\(ping|systeminfo|net|taskkill|xcopy|reg|nbtstat)\\.exe$)'",
+  "$parent: ParentImage ~= '(?i:C:\\\\Windows\\\\.*\\\\(powershell|cmd|wscript|cscript|msiexec)\\.exe$)'"
   ],
 "Condition": "$tools and !$parent"
 }
@@ -246,7 +246,8 @@
   "Computers": [],
   "Criticality": 5,
   "Author": "@0xrawsec",
-  "Comment": "Heuristic to catch Shell started from other processes than explorer.exe"
+  "Comment": "Heuristic to catch Shell started from other processes than explorer.exe",
+  "Disable": true
   },
 "Matches": [
   "$shell: Image ~= '(?i:\\\\(powershell|cmd)\\.exe$)'",
