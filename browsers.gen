@@ -1,6 +1,6 @@
 {
-"Name": "IESuspiciousChild",
-"Tags": ["IE"],
+"Name": "BrowserSuspiciousChild",
+"Tags": ["Browser"],
 "Meta": {
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
@@ -14,11 +14,12 @@
   "Comment": "Experimental rule that look for suspicious browser child processes. Might raise FPs."
   },
 "Matches": [
-  "$ie: ParentImage ~= '(?i:iexplore\\.exe$)'",
+  "$browser: ParentImage ~= '(?i:\\\\(iexplore|firefox|chrome|MicrosoftEdge|opera|vivaldi)\\.exe$)'",
   "$susp: Image ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'",
   "$fp1: CommandLine ~= 'C:\\\\(w|W)indows\\\\(s|S)ystem32\\\\inetcpl\\.cpl,ClearMyTracksByProcess'",
   "$fp2: CommandLine ~= '(?i:^C:\\\\Windows\\\\System32\\\\rundll32\\.exe shell32\\.dll,SHCreateLocalServerRunDll)'",
-  "$fp3: CommandLine ~= '(?i:\"C:\\\\windows\\\\system32\\\\rundll32\\.exe\" C:\\\\windows\\\\system32\\\\shell32\\.dll,OpenAs_RunDLL )'"
+  "$fp3: CommandLine ~= '(?i:\"C:\\\\windows\\\\system32\\\\rundll32\\.exe\" C:\\\\windows\\\\system32\\\\shell32\\.dll,OpenAs_RunDLL )'",
+  "$allowed: CommandLine ~= '(?i:rundll32\\.exe.*?(shell32\\.dll\"{0,1},(OpenAs_RunDLL|SHCreateLocalServerRunDll)|inetcpl\\.cpl\"{0,1},ClearMyTracksByProcess|ieframe.dll\"{0,1},OpenURL))'"
   ],
-"Condition": "$susp and $ie and !$fp1 and !$fp2 and !$fp3"
+"Condition": "$browser and $susp and !$allowed"
 }

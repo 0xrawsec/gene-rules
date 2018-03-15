@@ -36,8 +36,8 @@
   "Comments": "Wrong svchost parent"
   },
 "Matches": [
-  "$svchost: Image ~= '(?i:^c:\\\\windows\\\\sys(tem32|wow64)\\\\svchost.exe$)'",
-  "$pservices: ParentImage ~= '(?i:^C:\\\\Windows\\\\sys(tem32|wow64)\\\\services.exe$)'"
+  "$svchost: Image ~= '(?i:^c:\\\\windows\\\\sys(tem32|wow64)\\\\svchost\\.exe$)'",
+  "$pservices: ParentImage ~= '(?i:^C:\\\\Windows\\\\sys(tem32|wow64)\\\\(services|svchost)\\.exe$)'"
   ],
 "Condition": "$svchost and !$pservices"
 }
