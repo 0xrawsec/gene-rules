@@ -9,7 +9,7 @@
   "Criticality": 8,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "0xrawsec"
   },
@@ -31,7 +31,7 @@
   "Criticality": 6,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "0xrawsec",
   "Comment": "This is an experimental rule so it might raise some FP",
@@ -73,7 +73,7 @@
   "Criticality": 8,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "0xrawsec",
   "Comment": "Experimental rule to catch MS Office based droppers"

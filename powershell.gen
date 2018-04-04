@@ -8,7 +8,7 @@
   "Criticality": 5,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "0xrawsec"
   },
@@ -29,7 +29,7 @@
   "Criticality": 5,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "0xrawsec",
   "Disable": true
@@ -51,7 +51,7 @@
   "Criticality": 4,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "@0xrawsec",
   "Comment": "Match command line larger than 512 characters"
@@ -73,7 +73,7 @@
   "Criticality": 3,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "@0xrawsec",
   "Comment": "Powershell Script embedding C#"
@@ -95,7 +95,7 @@
   "Criticality": 5,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "@0xrawsec",
   "Comment": "Powershell reads command from stdin"

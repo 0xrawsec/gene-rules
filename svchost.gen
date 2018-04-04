@@ -8,7 +8,7 @@
   "Criticality": 7,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "@0xrawsec"
   },
@@ -30,7 +30,7 @@
   "Criticality": 7,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "@0xrawsec",
   "Comments": "Wrong svchost parent"

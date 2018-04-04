@@ -8,7 +8,7 @@
   "Criticality": 5,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "@0xrawsec",
   "Comment": "Recursive directory listing"

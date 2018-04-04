@@ -7,7 +7,7 @@
   "Computers": [],
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Criticality": 10,
   "Author": "@0xrawsec",

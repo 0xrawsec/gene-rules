@@ -8,7 +8,7 @@
   "Criticality": 4,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "@0xrawsec",
   "Comment": "Execution from 7z archive"

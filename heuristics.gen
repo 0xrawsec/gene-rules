@@ -8,7 +8,7 @@
   "Criticality": 4,
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
-    "::ParentProcessGuid = ProcessGuid"
+    "*::ParentProcessGuid = ProcessGuid"
   ],
   "Author": "@0xrawsec",
   "Comment": "Looks for execution from windows local Temp"
