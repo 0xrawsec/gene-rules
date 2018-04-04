@@ -9,7 +9,7 @@
   "Author": "@0xrawsec"
   },
 "Matches": [
-  "$im: Image ~= '(?i:\\\\wevtutil.exe$)'",
+  "$im: Image ~= '(?i:\\\\wevtutil\\.exe$)'",
   "$cmd: CommandLine ~= '(?i: cl | clear-log )'"
   ],
 "Condition": "$im and $cmd"

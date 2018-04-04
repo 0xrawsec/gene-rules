@@ -23,7 +23,7 @@
 
 {
 "Name": "SuspiciousServiceInstallation",
-"Tags": ["Services", "Registry", "Sysmon"],
+"Tags": ["Services", "Registry", "Autorun"],
 "Meta": {
   "EventIDs": [13],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],

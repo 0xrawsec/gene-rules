@@ -1,0 +1,18 @@
+{
+  "Name": "NotWhitelisted",
+  "Tags": ["Whitelist"],
+  "Meta": {
+    "EventIDs": [1, 6, 7],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 8,
+    "Author": "0xrawsec",
+    "Comment": "Check if a hash is not in whitelist container"
+  },
+  "Matches": [
+    "$md5: extract('MD5=(?P<md5>[A-F0-9]{32})', Hashes) in whitelist",
+    "$sha1: extract('SHA1=(?P<sha1>[A-F0-9]{40})', Hashes) in whitelist",
+    "$sha256: extract('SHA256=(?P<sha256>[A-F0-9]{64})', Hashes) in whitelist"
+  ],
+  "Condition": "!($md5 and $sha1 and $sha256)"
+}

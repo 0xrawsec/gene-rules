@@ -1,0 +1,18 @@
+{
+"Name": "BlacklistedDomain",
+"Tags": ["DNS"],
+"Meta": {
+  "EventIDs": [],
+  "Channels": ["Microsoft-Windows-DNS-Client/Operational"],
+  "Computers": [],
+  "Criticality": 10,
+  "Author": "@0xrawsec",
+  "Comment": ""
+  },
+"Matches": [
+    "$domainBL: extract('(?P<dom>\\w+\\.\\w+$)',QueryName) in blacklist'",
+    "$subdomainBL: extract('(?P<sub>\\w+\\.\\w+\\.\\w+$)',QueryName) in blacklist'",
+    "$subsubdomainBL: extract('(?P<subsub>\\w+\\.\\w+\\.\\w+\\.\\w+$)',QueryName) in blacklist'"
+  ],
+"Condition": "$domainBL or $subdomainBL or $subsubdomainBL"
+}

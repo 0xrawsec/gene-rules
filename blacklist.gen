@@ -1,0 +1,35 @@
+{
+  "Name": "BlacklistedHash",
+  "Tags": ["Blacklist"],
+  "Meta": {
+    "EventIDs": [1, 6, 7],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "0xrawsec",
+    "Comment": "Check if any hash is known in the blacklist container"
+  },
+  "Matches": [
+    "$md5: extract('MD5=(?P<md5>[A-F0-9]{32})', Hashes) in blacklist",
+    "$sha1: extract('SHA1=(?P<sha1>[A-F0-9]{40})', Hashes) in blacklist",
+    "$sha256: extract('SHA256=(?P<sha256>[A-F0-9]{64})', Hashes) in blacklist"
+  ],
+  "Condition": "$md5 or $sha1 or $sha256"
+}
+
+{
+  "Name": "BlacklistedImphash",
+  "Tags": ["Blacklist"],
+  "Meta": {
+    "EventIDs": [1, 6, 7],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 8,
+    "Author": "0xrawsec",
+    "Comment": "Check if any hash is known in the blacklist container"
+  },
+  "Matches": [
+    "$imphash: extract('IMPHASH=(?P<imphash>[A-F0-9]{32})', Hashes) in blacklist"
+  ],
+  "Condition": "$imphash"
+}

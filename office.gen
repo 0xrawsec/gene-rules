@@ -54,7 +54,7 @@
   "Computers": [],
   "Criticality": 8,
   "Author": "0xrawsec",
-  "Comments": "Experimental rule to detect executable creations under Root directory. Criticality has to be adjusted accordingly."
+  "Comments": "Experimental rule to detect executable created by MSOffice tools."
   },
 "Matches": [
   "$office: Image ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",

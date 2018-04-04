@@ -128,3 +128,55 @@
   ],
   "Condition": "$lsass and $ct"
 }
+
+{
+  "Name": "NTLMDowngradeAttack",
+  "Tags": ["Credentials", "Lsass"],
+  "Meta": {
+    "EventIDs": [13],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "0xrawsec",
+    "Comments": "Rules to catch NTLM downgrade attack",
+    "Links:" :[
+      "https://www.optiv.com/blog/post-exploitation-using-netntlm-downgrade-attacks",
+      "https://github.com/eladshamir/Internal-Monologue"
+    ]
+  },
+  "Matches": [
+    "$ntlmminclientsec: TargetObject ~= '^(?i:HKLM\\\\SYSTEM\\\\CurrentControlSet\\\\Control\\\\Lsa\\\\MSV1_0\\\\NtlmMinClientSec)'",
+    "$lmcompatlevel: TargetObject ~= '^(?i:HKLM\\\\SYSTEM\\\\CurrentControlSet\\\\Control\\\\Lsa\\\\LMCompatibilityLevel)'",
+    "$restsendntlmtraffic: TargetObject ~= '^(?i:HKLM\\\\System\\\\CurrentControlSet\\\\Control\\\\Lsa\\\\MSV1_0\\\\RestrictSendingNTLMTraffic)'",
+    "$setval: EventType = 'SetValue'",
+    "$v0x0: Details = 'DWORD (0x00000000)'",
+    "$v0x1: Details = 'DWORD (0x00000001)'",
+    "$v0x2: Details = 'DWORD (0x00000002)'"
+  ],
+  "Condition": "($lmcompatlevel and $setval and ($v0x0 or $v0x1 or $v0x2)) or ($restsendntlmtraffic and $setval and $v0x0) or $ntlmminclientsec"
+}
+
+{
+  "Name": "NTLMDowngradeAttackSecurity",
+  "Tags": ["Credentials"],
+  "Meta": {
+    "EventIDs": [4657],
+    "Channels": ["Security"],
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "0xrawsec",
+    "Comments": "Rules to catch NTLM downgrade attack but with Registry audit policy enabled",
+    "Links:" :[
+      "https://www.optiv.com/blog/post-exploitation-using-netntlm-downgrade-attacks",
+      "https://github.com/eladshamir/Internal-Monologue"
+    ]
+  },
+  "Matches": [
+    "$msv1key: ObjectName ~= '(?i:\\\\SYSTEM\\\\ControlSet.*?\\\\Control\\\\Lsa\\\\MSV1_0)'",
+    "$lsakey: ObjectName ~= '(?i:\\\\SYSTEM\\\\ControlSet.*?\\\\Control\\\\Lsa)'",
+    "$restsendntlmtraffic:  ObjectValueName = 'RestrictSendingNTLMTraffic'" ,
+    "$lmcompatlevel:  ObjectValueName = 'LMCompatibilityLevel'" ,
+    "$ntlmminclientsec:  ObjectValueName = 'NtlmMinClientSec'"
+  ],
+  "Condition": "($lsakey and $lmcompatlevel) or ($msv1key and ($restsendntlmtraffic or $ntlmminclientsec)) "
+}

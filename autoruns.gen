@@ -1,0 +1,18 @@
+{
+"Name": "NewAutorun",
+"Tags": ["Registry", "Autorun"],
+"Meta": {
+  "EventIDs": [13],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 8,
+  "Author": "@0xrawsec",
+  "Comment": "Spot new autoruns"
+  },
+"Matches": [
+    "$eventtype: EventType = 'SetValue'",
+    "$run: TargetObject ~= '(?i:^HKLM\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run)'",
+    "$runonce: TargetObject ~= '(?i:^HKLM\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\RunOnce)'"
+  ],
+"Condition": "$eventtype and ($run or $runonce)"
+}
