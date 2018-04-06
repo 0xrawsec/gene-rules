@@ -33,7 +33,6 @@
       "*::ProcessGuid = ProcessGuid",
       "*::ParentProcessGuid = ProcessGuid"
     ],
-    ],
     "Criticality": 6,
     "Author": "0xrawsec"
   },
