@@ -1,5 +1,5 @@
 {
-"Name": "WMICreatedProcess",
+"Name": "WMIChildProcess",
 "Tags": ["WMI"],
 "Meta": {
   "EventIDs": [1],
@@ -11,9 +11,9 @@
   },
 "Matches": [
   "$wmi: ParentImage ~= '(?i:\\\\(wmic|wmiprvse)\\.exe$)'",
-  "$wlproc1: Image ~= '(?i:C:\\\\windows\\\\(syswow64|system32)\\\\WerFault\\.exe)'"
+  "$wlproc: Image ~= '(?i:C:\\\\windows\\\\(syswow64|system32)\\\\(WerFault|csrss|wininit|conhost|winlogon)\\.exe)'"
   ],
-"Condition": "!$wlproc1 and $wmi"
+"Condition": "!$wlproc and $wmi"
 }
 
 {
@@ -37,13 +37,32 @@
 }
 
 {
+"Name": "WMIApplockerBypassAttempt",
+"Tags": ["WMI"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 7,
+  "Author": "@0xrawsec",
+  "Comment": "WMI Applocker Bypass attempt",
+  "Link": "https://subt0x11.blogspot.nl/2018/04/wmicexe-whitelisting-bypass-hacking.html?m=1"
+  },
+"Matches": [
+  "$wmi: Image ~= '(?i:\\\\wmic\\.exe$)'",
+  "$format: CommandLine ~= '(?i:/format:.*\\.xsl)'"
+  ],
+"Condition": "$wmi and $format"
+}
+
+{
 "Name": "WMIEvents",
 "Tags": ["WMI"],
 "Meta": {
   "EventIDs": [19, 20, 21],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 7,
+  "Criticality": 8,
   "Author": "@0xrawsec",
   "Comment": "This rule catches any WMI events. Any of them needs to be checked."
   },

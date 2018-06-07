@@ -9,8 +9,8 @@
   "Author": "@0xrawsec"
   },
 "Matches": [
-  "$uspath1: ImageLoaded ~= '(?i:C:\\\\Windows\\\\System32)'",
-  "$uspath2: ImageLoaded ~= '(?i:C:\\\\Windows\\\\System32\\\\drivers)'"
+  "$uspath1: ImageLoaded ~= '(?i:C:\\\\Windows\\\\Sys(wow64|tem32))'",
+  "$uspath2: ImageLoaded ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\drivers)'"
   ],
 "Condition": "!$uspath1 and !$uspath2"
 }

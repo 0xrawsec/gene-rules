@@ -51,12 +51,13 @@
   },
 "Matches": [
   "$lcl: CommandLine ~= '.{512,}'",
+  "$llcl: CommandLine ~= '.{999,}'",
   "$wlp1: Image ~= '^C:\\\\Program Files.*?\\\\Mozilla Firefox\\\\firefox\\.exe$'",
   "$wlp2: Image ~= '^C:\\\\Program Files.*?\\\\Google\\\\Chrome\\\\Application\\\\chrome\\.exe$'",
   "$wlp3: Image ~= '(?i:Java.*\\\\jp2launcher.exe$)'",
   "$wlp4: Image ~= '(?i:\\\\(java\\.exe))'"
   ],
-"Condition": "$lcl and !$wlp1 and !$wlp2 and !$wlp3 and !$wlp4"
+"Condition": "$lcl and !($llcl or $wlp1 or $wlp2 $wlp3 or $wlp4)"
 }
 
 {
@@ -108,9 +109,28 @@
   "Comments": "Catches Executables started from internet TEMP directory"
   },
 "Matches": [
-  "$image: Image ~= '(?i:appdata\\\\local\\\\microsoft\\\\windows\\\\temporary internet files\\\\)'"
+  "$path1: Image ~= '(?i:appdata\\\\local\\\\microsoft\\\\windows\\\\temporary internet files\\\\)'",
+  "$path2: Image ~= '(?i:\\\\Downloads\\\\)'"
   ],
-"Condition": "$image"
+"Condition": "$path1 or $path2"
+}
+
+{
+"Name": "DownloadPath",
+"Tags": ["Heuristics", "Exec","Download"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 1,
+  "Author": "0xrawsec",
+  "Comments": "Catches command lines containing download paths"
+  },
+"Matches": [
+  "$path1: CommandLine ~= '(?i:\\\\Downloads\\\\)'",
+  "$path2: CommandLine ~= '(?i:appdata\\\\local\\\\microsoft\\\\windows\\\\temporary internet files\\\\)'"
+  ],
+"Condition": "$path1 or $path2"
 }
 
 {
@@ -160,7 +180,7 @@
   "Comments": "Experimental rule to detect executable creations under Root directory. Criticality has to be adjusted accordingly."
   },
 "Matches": [
-  "$target: TargetFilename ~= '(?i:c:\\\\[^\\\\]*?(\\.acm|\\.ax|\\.bat|\\.cmd|\\.com|\\.cpl|\\.dic|\\.dll|\\.drv|\\.ds|\\.efi|\\.exe|\\.grm|\\.iec|\\.ime|\\.js|\\.jse|\\.lex|\\.msstyles|\\.mui|\\.ocx|\\.olb|\\.ps1|\\.rll|\\.rs|\\.scr|\\.sys|\\.tlb|\\.tsp|\\.vb|\\.vbe|\\.vbs|\\.vbscript|\\.ws|\\.wsf)$)'"
+  "$target: TargetFilename ~= '(?i:c:\\\\[^\\\\]*?({{exec-exts}}|{{script-exts}})$)'"
   ],
 "Condition": "$target"
 }
@@ -172,13 +192,13 @@
   "EventIDs": [11],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 5,
+  "Criticality": 7,
   "Author": "0xrawsec",
-  "Comments": "Experimental rule to detect executable creations under Root directory. Criticality has to be adjusted accordingly."
+  "Comments": "Experimental rule to detect any executable creation by something not located under Windows directory"
   },
 "Matches": [
   "$system: Image ~= '(?i:C:\\\\Windows)'",
-  "$target: TargetFilename ~= '(?i:c:\\\\.*(\\.acm|\\.ax|\\.bat|\\.cmd|\\.com|\\.cpl|\\.dic|\\.dll|\\.drv|\\.ds|\\.efi|\\.exe|\\.grm|\\.iec|\\.ime|\\.js|\\.jse|\\.lex|\\.msstyles|\\.mui|\\.ocx|\\.olb|\\.ps1|\\.rll|\\.rs|\\.scr|\\.sys|\\.tlb|\\.tsp|\\.vb|\\.vbe|\\.vbs|\\.vbscript|\\.ws|\\.wsf)$)'"
+  "$target: TargetFilename ~= '(?i:c:\\\\.*({{exec-exts}}|{{script-exts}})$)'"
   ],
 "Condition": "!$system and $target"
 }
@@ -192,11 +212,11 @@
   "Computers": [],
   "Criticality": 8,
   "Author": "0xrawsec",
-  "Comments": "Experimental rule to detect files dropped by common utilities"
+  "Comments": "Experimental rule to detect executable files dropped by common utilities"
   },
 "Matches": [
-  "$susp: Image ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'",
-  "$target: TargetFilename ~= '(?i:(\\.acm|\\.ax|\\.bat|\\.cmd|\\.com|\\.cpl|\\.dic|\\.dll|\\.drv|\\.ds|\\.efi|\\.exe|\\.grm|\\.iec|\\.ime|\\.js|\\.jse|\\.lex|\\.msstyles|\\.mui|\\.ocx|\\.olb|\\.ps1|\\.rll|\\.rs|\\.scr|\\.sys|\\.tlb|\\.tsp|\\.vb|\\.vbe|\\.vbs|\\.vbscript|\\.ws|\\.wsf)$)'"
+  "$susp: Image ~= '{{suspicious}}$'",
+  "$target: TargetFilename ~= '({{exec-exts}}|{{script-exts}})$'"
   ],
 "Condition": "$susp and $target"
 }
@@ -213,7 +233,7 @@
   "Comments": "Heuristics catching image loaded for which extension is unknown"
   },
 "Matches": [
-  "$knownext: ImageLoaded ~= '(?i:(\\.acm|\\.ax|\\.com|\\.cpl|\\.dic|\\.dll|\\.drv|\\.ds|\\.efi|\\.exe|\\.grm|\\.iec|\\.ime|\\.lex|\\.msstyles|\\.mui|\\.ocx|\\.olb|\\.rll|\\.rs|\\.scr|\\.sys|\\.tlb|\\.tsp)$)'"
+  "$knownext: ImageLoaded ~= '{{exec-exts}}$'"
   ],
 "Condition": "!$knownext"
 }
@@ -228,17 +248,17 @@
   "Computers": [],
   "Criticality": 6,
   "Author": "@0xrawsec",
-  "Comment": "Tools usually used from scripts, should not be used directlty from that many other binaries. Tasklist.exe has been removed because too many FPS"
+  "Comment": "Tools usually used from scripts, should not be used directlty from that many other binaries."
   },
 "Matches": [
-  "$tools: Image ~= '(?i:\\\\(ping|systeminfo|net|taskkill|xcopy|reg|nbtstat)\\.exe$)'",
+  "$tools: Image ~= '(?i:\\\\(ping|systeminfo|net1?|xcopy|nbtstat)\\.exe$)'",
   "$parent: ParentImage ~= '(?i:C:\\\\Windows\\\\.*\\\\(powershell|cmd|wscript|cscript|msiexec)\\.exe$)'"
   ],
 "Condition": "$tools and !$parent"
 }
 
 {
-"Name": "HeurAutoShell",
+"Name": "HeurSpawnShell",
 "Tags": ["Heuristics"],
 "Meta": {
   "EventIDs": [1],
@@ -246,12 +266,62 @@
   "Computers": [],
   "Criticality": 5,
   "Author": "@0xrawsec",
-  "Comment": "Heuristic to catch Shell started from other processes than explorer.exe",
-  "Disable": true
+  "Comment": "Heuristic to catch Shell applications started from other processes than explorer.exe, cmd or powershell",
+  "Disable": false
   },
 "Matches": [
   "$shell: Image ~= '(?i:\\\\(powershell|cmd)\\.exe$)'",
-  "$explorer: ParentImage ~= '(?i:c:\\\\Windows\\\\Explorer\\.exe$)'"
+  "$validparent: ParentImage ~= '(?i:(c:\\\\Windows\\\\Explorer\\.exe|c:\\\\Windows\\\\.*\\\\(powershell|cmd)\\.exe)$)'"
   ],
-"Condition": "$shell and !$explorer"
+"Condition": "$shell and !$validparent"
 }
+
+{
+  "Name": "HeurMaliciousAccess",
+  "Tags": ["Browser"],
+  "Meta": {
+    "EventIDs": [10],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Traces": [
+      "*::ProcessGuid = ProcessGuid",
+      "*::ParentProcessGuid = ProcessGuid"
+    ],
+    "Criticality": 8,
+    "Author": "0xrawsec",
+    "Comments": "Experimental rule to catch malicious accesses to Windows binaries. Not widely tested."
+  },
+  "Matches": [
+    "$ct: CallTrace ~= 'UNKNOWN'",
+    "$whitelist: SourceImage ~= '(?i:{{system}}(sdiagnhost)\\.exe)'",
+    "$windows: TargetImage ~= '(?i:C:\\\\Windows\\\\)'",
+    "$write: GrantedAccess &= '0x20'",
+    "$read: GrantedAccess &= '0x10'"
+  ],
+  "Condition": "$windows and $ct and ($write or $read) and !$whitelist"
+}
+
+{
+  "Name": "HeurRemotePayload",
+  "Tags": ["Heuristics"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Traces": [
+      "*::ProcessGuid = ProcessGuid",
+      "*::ParentProcessGuid = ProcessGuid"
+    ],
+    "Criticality": 7,
+    "Author": "0xrawsec",
+    "Comments": "Heuristic to catch command line fetching remote payload"
+  },
+  "Matches": [
+    "$susp: Image ~= '({{suspicious}}|(?i:\\\\wmic\\.exe))'",
+    "$rempld: CommandLine ~= '(?i:(\\\\\\\\.*?\\\\|https?://).*\\.\\w{2,5})'"
+
+  ],
+  "Condition": "$susp and $rempld"
+}
+
+

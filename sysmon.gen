@@ -37,11 +37,51 @@
   "Computers": [],
   "Criticality": 6,
   "Author": "@0xrawsec",
-  "Comment": ""
+  "Comment": "Experimental rules to catch Sysmon configuration enumeration via Sysmon executable"
   },
 "Matches": [
     "$sysmon: Product = 'Sysinternals Sysmon'",
+    "$sysmonim: Image ~= '(?i:C:\\\\Windows\\\\.*sysmon.*)'",
     "$arg: CommandLine ~= '(?i:\\s-c\\s*$)'"
 ],
-"Condition": "$sysmon and $arg"
+"Condition": "($sysmon or $sysmonim) and $arg"
+}
+
+{
+"Name": "SysmonRegFingerprinting",
+"Tags": ["Sysmon"],
+"Meta": {
+  "EventIDs": [12],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 7,
+  "Author": "@0xrawsec",
+  "Comment": "Experimental rule to catch sysmon config fingerprinting in registry by another process than sysmon itself"
+  },
+"Matches": [
+    "$create: EventType = 'CreateKey'",
+    "$sysmon: Image ~= '(?i:C:\\\\Windows\\\\Sysmon.exe)'",
+    "$target: TargetObject ~= '(?i:^HKLM\\\\System\\\\CurrentControlSet\\\\services\\\\SysmonDrv\\\\Parameters)'"
+],
+"Condition": "$target and $create and !$sysmon"
+}
+
+{
+"Name": "SysmonConfigTampering",
+"Tags": ["Sysmon"],
+"Meta": {
+  "EventIDs": [12, 13],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 10,
+  "Author": "@0xrawsec",
+  "Comment": "Experimental rule to catch sysmon config tampering by another process than sysmon itself "
+  },
+"Matches": [
+    "$set: EventType = 'SetValue'",
+    "$del: EventType = 'DeleteValue'",
+    "$sysmon: Image ~= '(?i:C:\\\\Windows\\\\Sysmon.exe)'",
+    "$target: TargetObject ~= '(?i:HKLM\\\\System\\\\CurrentControlSet\\\\services\\\\SysmonDrv\\\\Parameters\\\\(Options|HashingAlgorithm|Rules))'"
+],
+"Condition": "$target and ($set or $del) and !$sysmon"
 }

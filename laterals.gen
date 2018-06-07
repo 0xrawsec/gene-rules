@@ -1,4 +1,23 @@
 {
+"Name": "LogonFromExternal",
+"Tags": ["Lateral", "Security"],
+"Meta": {
+  "EventIDs": [4624],
+  "Channels": ["Security"],
+  "Computers": [],
+  "Criticality": 10,
+  "Author": "@0xrawsec"
+  },
+"Matches": [
+	"$iplh1: IpAddress = '-'",
+	"$iplh2: IpAddress = '127.0.0.1'",
+	"$iplh3: IpAddress = '::1'",
+  "$privip: IpAddress ~= '{{priv-ipv4}}'"
+  ],
+"Condition": "!($privip or $iplh1 or $iplh2 or $iplh3)"
+}
+
+{
 "Name": "AnonymousNetworkLogon",
 "Tags": ["Lateral", "Security"],
 "Meta": {
@@ -94,4 +113,19 @@
 "Condition": "$ruser and $rhost and $rpwd"
 }
 
-
+{
+"Name": "PrivUserLogon",
+"Tags": ["Heuristics", "Lateral"],
+"Meta": {
+  "EventIDs": [4672],
+  "Channels": ["Security"],
+  "Computers": [],
+  "Criticality": 5,
+  "Author": "0xrawsec",
+  "Comments": "",
+  "Disable": true
+  },
+"Matches": [
+  ],
+"Condition": ""
+}

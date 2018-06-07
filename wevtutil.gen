@@ -14,3 +14,19 @@
   ],
 "Condition": "$im and $cmd"
 }
+
+{
+"Name": "SecurityLogClearing",
+"Tags": ["PostExploit"],
+"Meta": {
+  "EventIDs": [1102],
+  "Channels": ["Security"],
+  "Computers": [],
+  "Criticality": 8,
+  "Author": "@0xrawsec",
+  "Comments": "Catch Security logs clearing event"
+  },
+"Matches": [
+  ],
+"Condition": ""
+}

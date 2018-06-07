@@ -10,7 +10,7 @@
     "Comment": "New user created"
   },
   "Matches": [
-    "$net: Image ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\net\\.exe)'",
+    "$net: Image ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\net1?\\.exe)'",
     "$command: CommandLine ~= 'user.*/ADD'"
   ],
   "Condition": "$net and $command"
@@ -28,7 +28,7 @@
     "Comment": "User added to local Administrators"
   },
   "Matches": [
-    "$net: Image ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\net\\.exe)'",
+    "$net: Image ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\net1?\\.exe)'",
     "$command: CommandLine ~= '(?i:localgroup\\s+Administrators.*?/ADD)'"
   ],
   "Condition": "$net and $command"

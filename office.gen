@@ -1,6 +1,6 @@
 
 {
-"Name": "Maldoc",
+"Name": "MSOfficeThreat",
 "Tags": ["Office", "Threat"],
 "Meta": {
   "EventIDs": [1],
@@ -14,35 +14,11 @@
   "Author": "0xrawsec"
   },
 "Matches": [
-  "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
-  "$susp: Image ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'",
+  "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
+  "$susp: Image ~= '{{suspicious}}$'",
   "$fp1: CommandLine ~= '(?i:shell32\\.dll,(OpenAs_RunDLL|SHCreateLocalServerRunDll|Control_RunDLL))'"
   ],
 "Condition": "$pimsoffice and !$fp1 and $susp"
-}
-
-{
-"Name": "OutlookThreat",
-"Tags": ["Office", "Threat"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 6,
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
-  ],
-  "Author": "0xrawsec",
-  "Comment": "This is an experimental rule so it might raise some FP",
-  "Todo": "Increase Criticality if not much FP"
-  },
-"Matches": [
-  "$pimoutlook: ParentImage ~= '(?i:outlook\\.exe$)'",
-  "$susp: Image ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'",
-  "$fp: CommandLine ~= '(?i:(shell32\\.dll,OpenAs_RunDLL|mshtml\\.dll.*?,PrintHTML))'"
-  ],
-"Condition": "$pimoutlook and !$fp and $susp"
 }
 
 {
@@ -57,8 +33,8 @@
   "Comments": "Experimental rule to detect executable created by MSOffice tools."
   },
 "Matches": [
-  "$office: Image ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
-  "$target: TargetFilename ~= '(?i:(\\.acm|\\.ax|\\.bat|\\.cmd|\\.com|\\.cpl|\\.dic|\\.dll|\\.drv|\\.ds|\\.efi|\\.exe|\\.grm|\\.iec|\\.ime|\\.js|\\.jse|\\.lex|\\.msstyles|\\.mui|\\.ocx|\\.olb|\\.ps1|\\.rll|\\.rs|\\.scr|\\.sys|\\.tlb|\\.tsp|\\.vb|\\.vbe|\\.vbs|\\.vbscript|\\.ws|\\.wsf)$)'"
+  "$office: Image ~= '{{msoffice}}$'",
+  "$target: TargetFilename ~= '({{exec-exts}}|{{script-exts}})$'"
   ],
 "Condition": "$office and $target"
 }
@@ -79,11 +55,10 @@
   "Comment": "Experimental rule to catch MS Office based droppers"
   },
 "Matches": [
-  "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
-  "$windowsdir: Image ~= '(?i:^C:\\\\Windows\\\\)'",
-  "$programfile: Image ~= '(?i:^(C:\\\\Program Files.*?\\\\|C:\\\\PROGRA~2\\\\))'"
+  "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
+  "$whitelisted: Image ~= '^({{windows}}|{{programfiles}}|{{appv}})'"
   ],
-"Condition": "$pimsoffice and !($windowsdir or $programfile)"
+"Condition": "$pimsoffice and !$whitelisted"
 }
 
 {
@@ -98,7 +73,7 @@
   "Disable": true
   },
 "Matches": [
-  "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
+  "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
   "$net: Initiated ~= 'true'"
   ],
 "Condition": "$pimsoffice and $net"
@@ -116,7 +91,7 @@
   "Comment": "This rule is used as a simple informative tag"
   },
 "Matches": [
-  "$pimsoffice: ParentImage ~= '(?i:(excel\\.exe|word\\.exe|powerpnt\\.exe)$)'",
+  "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
   "$pcl: ParentCommandLine ~= '(?i:appdata\\\\local\\\\microsoft\\\\windows\\\\temporary internet files\\\\)'"
   ],
 "Condition": "$pimsoffice and $pcl"

@@ -33,7 +33,6 @@
       "*::ProcessGuid = ProcessGuid",
       "*::ParentProcessGuid = ProcessGuid"
     ],
-    ],
     "Criticality": 6,
     "Author": "0xrawsec"
   },
@@ -107,6 +106,28 @@
     "$ps: Image ~= '(?i:\\\\powershell\\.exe$)'"
   ],
   "Condition": "$ps and $il"
+}
+
+{
+  "Name": "SuspiciousLsassAccess",
+  "Tags": ["Mimikatz", "Credentials", "Lsass"],
+  "Meta": {
+    "EventIDs": [10],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Traces": [
+      "*::ProcessGuid = ProcessGuid",
+      "*::ParentProcessGuid = ProcessGuid"
+    ],
+    "Criticality": 8,
+    "Author": "0xrawsec"
+  },
+  "Matches": [
+    "$ctwdef: CallTrace ~= '(?i:windows defender)'",
+    "$ga: GrantedAccess &= '0x10'",
+    "$lsass: TargetImage ~= '(?i:\\\\lsass\\.exe$)'"
+  ],
+  "Condition": "$lsass and $ga and !$ctwdef"
 }
 
 {

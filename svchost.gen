@@ -14,10 +14,9 @@
   },
 "Matches": [
   "$im: Image ~= '(?i:\\\\svchost)'",
-  "$sys32path: Image ~= '(?i:c:\\\\windows\\\\system32\\\\svchost.exe$)'",
-  "$syswowpath: Image ~= '(?i:c:\\\\windows\\\\syswow64\\\\svchost.exe$)'"
+  "$svchost: Image ~= '(?i:c:\\\\windows\\\\sys(tem32|wow64)\\\\svchost.exe$)'"
   ],
-"Condition": "$im and !$sys32path and !$syswowpath"
+"Condition": "$im and !$svchost"
 }
 
 {
@@ -112,8 +111,8 @@
     "Author": "0xrawsec"
   },
   "Matches": [
-    "$svchost: TargetImage ~= '(?i:windows\\\\system32\\\\svchost\\.exe$)'",
-    "$system32: SourceImage ~= '(?i:C:\\\\Windows\\\\System32\\\\[^\\\\]*?\\.exe)'",
+    "$svchost: TargetImage ~= '(?i:windows\\\\sys(tem32|wow64)\\\\svchost\\.exe$)'",
+    "$system32: SourceImage ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\[^\\\\]*?\\.exe)'",
     "$wl1: SourceImage ~= '(?i:C:\\\\Program Files.*?\\\\Windows Defender\\\\.*?\\.exe)'",
     "$wl2: SourceImage ~= '(?i:C:\\\\Windows\\\\sys(tem32|wow64)\\\\wbem\\\\wmiprvse\\.exe)'"
   ],
@@ -134,7 +133,37 @@
   },
   "Matches": [
     "$ct: CallTrace ~= 'UNKNOWN'",
-    "$svchost: TargetImage ~= '(?i:windows\\\\system32\\\\svchost\\.exe$)'"
+    "$svchost: TargetImage ~= '(?i:windows\\\\sys(tem32|wow64)\\\\svchost\\.exe$)'"
   ],
   "Condition": "$svchost and $ct"
+}
+
+{
+  "Name": "SvcHostSuspiciousNetConn",
+  "Tags": ["SvcHost"],
+  "Meta": {
+    "EventIDs": [3],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Traces": [],
+    "Criticality": 6,
+    "Comments": "Try to spot weird svchost connections",
+    "Author": "0xrawsec",
+    "Comments": "Disabled because of FPs",
+    "Disable": true
+  },
+  "Matches": [
+    "$svchost: Image ~= '(?i:windows\\\\sys(wow64|tem32)\\\\svchost\\.exe$)'",
+    "$dstbootps: DestinationPortName = 'bootps'",
+    "$dstldap: DestinationPortName = 'ldap'",
+    "$dstntp: DestinationPortName = 'ntp'",
+    "$dstdomain: DestinationPortName = 'domain'",
+    "$dstepmap: DestinationPortName = 'epmap'",
+    "$srcbootpc: SourcePortName = 'bootpc'",
+    "$dstmulticast: DestinationIp ~= '(?i:^(224|23(2|3|4)|239\\.))'",
+    "$dstlocalhost: DestinationIp = '127.0.0.1'",
+    "$dstprivip: DestinationIp ~= '{{priv-ipv4}}'",
+    "$init: Initiated = 'true'"
+  ],
+  "Condition": "$svchost and $init and !($dstmulticast or $dstlocalhost) and !($srcbootpc and $dstbootps) and !(($dstldap or $dstntp or $dstdomain or $dstepmap) and $dstprivip)"
 }

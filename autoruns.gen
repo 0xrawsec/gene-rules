@@ -11,8 +11,9 @@
   },
 "Matches": [
     "$eventtype: EventType = 'SetValue'",
-    "$run: TargetObject ~= '(?i:^HKLM\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run)'",
-    "$runonce: TargetObject ~= '(?i:^HKLM\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\RunOnce)'"
+    "$run: TargetObject ~= '(?i:\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run)'",
+    "$runonce: TargetObject ~= '(?i:\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\RunOnce)'",
+    "$uimls: TargetObject ~= '(?i:\\\\Environment\\\\UserInitMprLogonScript$)'"
   ],
-"Condition": "$eventtype and ($run or $runonce)"
+"Condition": "$eventtype and ($run or $runonce or $uimls)"
 }

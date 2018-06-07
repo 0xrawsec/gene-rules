@@ -1,0 +1,89 @@
+{
+  "Name": "PublicIPNetConn",
+  "Tags": ["Network"],
+  "Meta": {
+    "EventIDs": [3],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Traces": [],
+    "Criticality": 1,
+    "Comments": "",
+    "Author": "0xrawsec"
+  },
+  "Matches": [
+    "$privdir: Image ~= '^({{programfiles}}|{{system}})'",
+    "$browser: Image ~= '{{browsers}}$'",
+    "$dstmulticast: DestinationIp ~= '(?i:^(224|23(2|3|4)|239\\.))'",
+    "$dstlocalhostv6: DestinationIp = '0:0:0:0:0:0:0:1'",
+    "$dstprivip: DestinationIp ~= '{{priv-ipv4}}'",
+    "$init: Initiated = 'true'"
+  ],
+  "Condition": "!($dstmulticast or $dstprivip or ($browser and $privdir) or $dstlocalhostv6) and $init"
+}
+
+{
+  "Name": "SuspiciousHTTP",
+  "Tags": ["Network"],
+  "Meta": {
+    "EventIDs": [3],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Traces": [],
+    "Criticality": 6,
+    "Comments": "Connections to HTTP standard port from other software than browsers",
+    "Author": "0xrawsec"
+  },
+  "Matches": [
+    "$browser: Image ~= '{{browsers}}$'",
+    "$dstprivip: DestinationIp ~= '{{priv-ipv4}}'",
+    "$init: Initiated = 'true'",
+    "$http: DestinationPort = '80'",
+    "$https: DestinationPort = '443'"
+  ],
+  "Condition": "$init and ($http or $https) and !$browser"
+}
+
+{
+  "Name": "UnkPrivDstPort",
+  "Tags": ["Network"],
+  "Meta": {
+    "EventIDs": [3],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Traces": [],
+    "Criticality": 6,
+    "Comments": "Unknown network protocol on private IP address range",
+    "Author": "0xrawsec"
+  },
+  "Matches": [
+    "$dstlocalhostv6: DestinationIp = '0:0:0:0:0:0:0:1'",
+    "$dstlocalhost: DestinationIp = '127.0.0.1'",
+    "$dstprivip: DestinationIp ~= '{{priv-ipv4}}'",
+    "$unk: DestinationPortName ~= '^$'",
+    "$system: Image ~= '^{{system}}'",
+    "$init: Initiated = 'true'"
+  ],
+  "Condition": "!$system and $dstprivip and !($dstlocalhost or $dstlocalhostv6) and $unk and $init"
+}
+
+{
+  "Name": "UnkDstPort",
+  "Tags": ["Network"],
+  "Meta": {
+    "EventIDs": [3],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Traces": [],
+    "Criticality": 8,
+    "Comments": "Unknown network protocol on private IP address range",
+    "Author": "0xrawsec"
+  },
+  "Matches": [
+    "$dstlocalhost: DestinationIp = '127.0.0.1'",
+    "$dstprivip: DestinationIp ~= '{{priv-ipv4}}'",
+    "$unk: DestinationPortName ~= '^$'",
+    "$system: Image ~= '^{{system}}'",
+    "$init: Initiated = 'true'"
+  ],
+  "Condition": "!$system and !$dstprivip and !$dstlocalhost and $unk and $init"
+}

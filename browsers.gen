@@ -9,14 +9,54 @@
     "*::ProcessGuid = ProcessGuid",
     "*::ParentProcessGuid = ProcessGuid"
   ],
-  "Criticality": 5,
+  "Criticality": 6,
   "Author": "0xrawsec",
   "Comment": "Experimental rule that look for suspicious browser child processes. Might raise FPs."
   },
 "Matches": [
-  "$browser: ParentImage ~= '(?i:\\\\(iexplore|firefox|chrome|MicrosoftEdge|opera|vivaldi)\\.exe$)'",
-  "$susp: Image ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'",
+  "$browser: ParentImage ~= '{{browsers}}$'",
+  "$susp: Image ~= '{{suspicious}}$'",
   "$allowed: CommandLine ~= '(?i:rundll32\\.exe.*?(shell32\\.dll\"{0,1},(OpenAs_RunDLL|SHCreateLocalServerRunDll)|inetcpl\\.cpl\"{0,1},ClearMyTracksByProcess|ieframe.dll\"{0,1},OpenURL))'"
   ],
 "Condition": "$browser and $susp and !$allowed"
+}
+
+{
+  "Name": "HeurBrowserInjection",
+  "Tags": ["Browser"],
+  "Meta": {
+    "EventIDs": [10],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Traces": [
+      "*::ProcessGuid = ProcessGuid",
+      "*::ParentProcessGuid = ProcessGuid"
+    ],
+    "Criticality": 8,
+    "Author": "0xrawsec",
+    "Comments": "Experimental rule to catch malicious browser access. Not widely tested."
+  },
+  "Matches": [
+    "$ct: CallTrace ~= 'UNKNOWN'",
+    "$browser: TargetImage ~= '{{browsers}}$'",
+    "$write: GrantedAccess &= '0x20'"
+  ],
+  "Condition": "$browser and $ct and $write"
+}
+
+{
+"Name": "BrowserChild",
+"Tags": ["Browser"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 0,
+  "Author": "0xrawsec",
+  "Comment": "Informative rule to flag process started by browser"
+  },
+"Matches": [
+  "$browser: ParentImage ~= '{{browsers}}$'"
+  ],
+"Condition": "$browser"
 }

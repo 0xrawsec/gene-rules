@@ -31,25 +31,7 @@
   },
   "Matches": [
     "$certutil: Image ~= '(?i:^c:\\\\windows\\\\sys(tem32|wow64)\\\\certutil\\.exe$)'",
-    "$suspdecode: CommandLine ~= '(?i: -decode.*\\.acm|\\.ax|\\.bat|\\.cmd|\\.com|\\.cpl|\\.dic|\\.dll|\\.drv|\\.ds|\\.efi|\\.exe|\\.grm|\\.iec|\\.ime|\\.js|\\.jse|\\.lex|\\.msstyles|\\.mui|\\.ocx|\\.olb|\\.ps1|\\.rll|\\.rs|\\.scr|\\.sys|\\.tlb|\\.tsp|\\.vb|\\.vbe|\\.vbs|\\.vbscript|\\.ws|\\.wsf)'"
+    "$suspdecode: CommandLine ~= '(?i: -decode.*({{exec-exts}}|{{script-exts}}))'"
   ],
   "Condition": "$certutil and $suspdecode"
-}
-
-{
-"Name": "CertutilDropper",
-"Tags": ["Tools", "Dropper"],
-"Meta": {
-  "EventIDs": [11],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "Author": "0xrawsec",
-  "Comments": "Experimental rule to detect executable created by Certutil"
-  },
-"Matches": [
-    "$certutil: Image ~= '(?i:^c:\\\\windows\\\\sys(tem32|wow64)\\\\certutil\\.exe$)'",
-    "$target: TargetFilename ~= '(?i:(\\.acm|\\.ax|\\.bat|\\.cmd|\\.com|\\.cpl|\\.dic|\\.dll|\\.drv|\\.ds|\\.efi|\\.exe|\\.grm|\\.iec|\\.ime|\\.js|\\.jse|\\.lex|\\.msstyles|\\.mui|\\.ocx|\\.olb|\\.ps1|\\.rll|\\.rs|\\.scr|\\.sys|\\.tlb|\\.tsp|\\.vb|\\.vbe|\\.vbs|\\.vbscript|\\.ws|\\.wsf)$)'"
-  ],
-"Condition": "$certutil and $target"
 }

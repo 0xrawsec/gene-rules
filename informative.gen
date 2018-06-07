@@ -10,7 +10,7 @@
   "Comments": "Informative rule to tag suspicious parent command line"
   },
 "Matches": [
-  "$susp: ParentImage ~= '(?i:(rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32)\\.exe$)'"
+  "$susp: ParentImage ~= '{{suspicious}}$'"
   ],
 "Condition": "$susp"
 }

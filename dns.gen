@@ -16,3 +16,20 @@
   ],
 "Condition": "$domainBL or $subdomainBL or $subsubdomainBL"
 }
+
+{
+"Name": "SuspiciousDomain",
+"Tags": ["DNS", "Heuristics"],
+"Meta": {
+  "EventIDs": [],
+  "Channels": ["Microsoft-Windows-DNS-Client/Operational"],
+  "Computers": [],
+  "Criticality": 6,
+  "Author": "@0xrawsec",
+  "Comment": "Domain name with more than 50 characters"
+  },
+"Matches": [
+    "$ldomain: QueryName ~= '.{50,}'"
+  ],
+"Condition": "$ldomain"
+}
