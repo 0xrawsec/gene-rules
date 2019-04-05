@@ -198,9 +198,10 @@
   },
 "Matches": [
   "$system: Image ~= '(?i:C:\\\\Windows)'",
+  "$browsers: Image ~= '{{browsers}}'",
   "$target: TargetFilename ~= '(?i:c:\\\\.*({{exec-exts}}|{{script-exts}})$)'"
   ],
-"Condition": "!$system and $target"
+"Condition": "!($system or $browsers) and $target"
 }
 
 {
@@ -323,5 +324,3 @@
   ],
   "Condition": "$susp and $rempld"
 }
-
-

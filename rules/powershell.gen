@@ -106,3 +106,22 @@
   ],
 "Condition": "$ps and $arg"
 }
+
+{
+"Name": "PSC#Win32API",
+"Tags": ["Powershell", "C#", "ScriptBlock"],
+"Meta": {
+  "EventIDs": [],
+  "Channels": ["Microsoft-Windows-PowerShell/Operational"],
+  "Computers": [],
+  "Criticality": 7,
+  "Author": "@0xrawsec",
+  "Comment": "Powershell embedding C# calling interesting Win32 APIs"
+  },
+"Matches": [
+  "$api: ScriptBlockText ~= '(?i:(OpenProcess|OpenThread|SetThreadContext|OpenThreadToken|GetProcAddress|OpenThreadToken|OpenProcessToken|CreateProcess))'"
+  ],
+"Condition": "$api"
+}
+
+

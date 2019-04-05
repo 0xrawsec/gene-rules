@@ -5,13 +5,30 @@
   "EventIDs": [15],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 5,
+  "Criticality": 0,
   "Author": "0xrawsec",
   "Comments": "Catch all ADS creation events"
   },
 "Matches": [
   ],
 "Condition": ""
+}
+
+{
+"Name": "SuspiciousADS",
+"Tags": ["ADS"],
+"Meta": {
+  "EventIDs": [15],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 8,
+  "Author": "0xrawsec",
+  "Comments": "Catch ADS with suspicious extension"
+  },
+"Matches": [
+    "$target: TargetFilename ~= '(?i:({{script-exts}}|{{exec-exts}}))$'"
+  ],
+"Condition": "$target"
 }
 
 {

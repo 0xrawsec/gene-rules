@@ -22,14 +22,14 @@
 }
 
 {
-  "Name": "SuspiciousHTTP",
+  "Name": "NoBrowserHTTP",
   "Tags": ["Network"],
   "Meta": {
     "EventIDs": [3],
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
     "Traces": [],
-    "Criticality": 6,
+    "Criticality": 5,
     "Comments": "Connections to HTTP standard port from other software than browsers",
     "Author": "0xrawsec"
   },

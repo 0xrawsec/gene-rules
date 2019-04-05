@@ -31,4 +31,4 @@ exec-exts: '(?i:(\.acm|\.ax|\.com|\.cpl|\.dic|\.dll|\.drv|\.ds|\.efi|\.exe|\.grm
 
 # Exe to monitor
 suspicious: '(?i:\\(certutil|rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32|msbuild|installutil|regasm)\.exe)'
-msoffice: '(?i:\\(excel|word|powerpnt|outlook)\.exe)'
+msoffice: '(?i:\\(excel|winword|powerpnt|outlook)\.exe)'

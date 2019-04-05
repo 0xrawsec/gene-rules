@@ -38,10 +38,11 @@
   },
   "Matches": [
     "$ct: CallTrace ~= 'UNKNOWN'",
-    "$browser: TargetImage ~= '{{browsers}}$'",
+    "$src: SourceImage ~= '{{browsers}}$'",
+    "$dst: TargetImage ~= '{{browsers}}$'",
     "$write: GrantedAccess &= '0x20'"
   ],
-  "Condition": "$browser and $ct and $write"
+  "Condition": "$dst and !$src and $ct and $write"
 }
 
 {
