@@ -125,9 +125,11 @@
   "Matches": [
     "$ctwdef: CallTrace ~= '(?i:windows defender)'",
     "$ga: GrantedAccess &= '0x10'",
-    "$lsass: TargetImage ~= '(?i:\\\\lsass\\.exe$)'"
+    "$lsass: TargetImage ~= '(?i:\\\\lsass\\.exe$)'",
+    "$wmiprvse: SourceImage ~= '(?i:{{system}}wbem\\\\wmiprvse\\.exe)'",
+    "$taskmgr: SourceImage ~= '(?i:{{system}}taskmgr\\.exe)'"
   ],
-  "Condition": "$lsass and $ga and !$ctwdef"
+  "Condition": "$lsass and $ga and !($ctwdef or $wmiprvse or $taskmgr)"
 }
 
 {
