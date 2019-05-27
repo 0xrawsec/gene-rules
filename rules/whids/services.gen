@@ -1,0 +1,17 @@
+{
+"Name": "FakeSvcHost",
+"Tags": ["WHIDS"],
+"Meta": {
+  "EventIDs": [1,3],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 8,
+  "Author": "0xrawsec",
+  "Comments": "Experimental rule to catch svchost process hosting no services"
+  },
+"Matches": [
+    "$svchost: Image ~= '(?i:{{system}}svchost\\.exe)'",
+    "$naservices: Services = 'N/A'"
+  ],
+"Condition": "$svchost and $naservices"
+}
