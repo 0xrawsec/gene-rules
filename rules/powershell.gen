@@ -14,7 +14,7 @@
   },
 "Matches": [
   "$i: Image ~= '(?i:\\\\powershell.exe$)'",
-  "$enc: CommandLine ~= '(?i: -(e|enc) )'"
+  "$enc: CommandLine ~= '(?i: (-|/)e[ncodedcommands]* )'"
   ],
 "Condition": "$i and $enc"
 }
@@ -102,7 +102,7 @@
   },
 "Matches": [
   "$ps: Image ~= '(?i:\\\\powershell.exe$)'",
-  "$arg: CommandLine ~= '(?i:-command\\s+-)'"
+  "$arg: CommandLine ~= '(?i: (-|/)c[ommand]*\\s+-)'"
   ],
 "Condition": "$ps and $arg"
 }
@@ -119,7 +119,7 @@
   "Comment": "Powershell embedding C# calling interesting Win32 APIs"
   },
 "Matches": [
-  "$api: ScriptBlockText ~= '(?i:(OpenProcess|OpenThread|SetThreadContext|OpenThreadToken|GetProcAddress|OpenThreadToken|OpenProcessToken|CreateProcess))'"
+  "$api: ScriptBlockText ~= '(?i:(OpenProcess|OpenThread|SetThreadContext|OpenThreadToken|GetProcAddress|OpenThreadToken|OpenProcessToken|CreateProcess|WriteProcessMemory|ReadProcessMemory|VirtualAlloc))'"
   ],
 "Condition": "$api"
 }

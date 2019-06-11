@@ -144,6 +144,13 @@
       "*::ParentProcessGuid = ProcessGuid"
     ],
     "Criticality": 10,
+    "ATTACK": [
+      {
+        "ID": "T1003",
+        "Tactic": "Credential Access",
+        "Reference": "https://attack.mitre.org/techniques/T1003/"
+      }
+    ],
     "Author": "0xrawsec"
   },
   "Matches": [

@@ -1,13 +1,13 @@
 {
-"Name": "GenericProcessInjection",
+"Name": "SuspWriteAccess",
 "Tags": ["WHIDS"],
 "Meta": {
   "EventIDs": [10],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 8,
+  "Criticality": 5,
   "Author": "0xrawsec",
-  "Comments": "Experimental rule to catch generic process injection (write access to a foreign process without being its parent). Won't catch process hollowing since the parent injects into the child."
+  "Comments": "Experimental rule to catch generic process injection (write access to a foreign process without being its parent). Won't catch process hollowing since the parent injects into the child. NB: works only in WHIDS since SourceIsParent is set by the IDS."
   },
 "Matches": [
     "$ga: GrantedAccess &= '0x20'",

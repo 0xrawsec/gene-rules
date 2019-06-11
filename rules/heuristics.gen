@@ -324,3 +324,21 @@
   ],
   "Condition": "$susp and $rempld"
 }
+
+{
+"Name": "HeurCallShellcode",
+"Tags": ["Heuristics", "RemoteThread", "Sysmon"],
+"Meta": {
+  "EventIDs": [8],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 6,
+  "Author": "@0xrawsec",
+  "Comment": "Observed pattern when some injected shellcode gets executed. It was also observed in legitimate use cases. If observed with other suspicious events it might deserve attention."
+  },
+"Matches": [
+  "$stfunc: StartFunction = ''",
+  "$stmod: StartModule = ''"
+],
+"Condition": "$stfunc and $stmod"
+}
