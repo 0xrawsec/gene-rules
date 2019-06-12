@@ -5,9 +5,10 @@
   "EventIDs": [10],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 5,
+  "Criticality": 4,
   "Author": "0xrawsec",
-  "Comments": "Experimental rule to catch generic process injection (write access to a foreign process without being its parent). Won't catch process hollowing since the parent injects into the child. NB: works only in WHIDS since SourceIsParent is set by the IDS."
+  "Comments": "Experimental rule to catch generic process injection (write access to a foreign process without being its parent). Won't catch process hollowing since the parent injects into the child. NB: works only in WHIDS since SourceIsParent is set by the IDS.",
+  "Disable": true
   },
 "Matches": [
     "$ga: GrantedAccess &= '0x20'",
