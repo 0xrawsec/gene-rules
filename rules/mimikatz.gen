@@ -61,9 +61,10 @@
   },
   "Matches": [
     "$il1: ImageLoaded ~= '(?i:\\\\vaultcli.dll$)'",
-    "$system32: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\[^\\\\]*?\\.exe)'"
+    "$system32: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\[^\\\\]*?\\.exe)'",
+    "$searchui: Image ~= '(?i:{{systemapps}}.*?\\\\searchui\\.exe)'"
   ],
-  "Condition": "$il1 and !$system32"
+  "Condition": "$il1 and !($system32 or $searchui)"
 }
 
 {
@@ -99,7 +100,9 @@
       "*::ParentProcessGuid = ProcessGuid"
     ],
     "Criticality": 8,
-    "Author": "0xrawsec"
+    "Author": "0xrawsec",
+    "Comments": "Disabled because too noisy on win10",
+    "Disable": true
   },
   "Matches": [
     "$il: ImageLoaded ~= '(?i:\\\\bcryptprimitives.dll$)'",

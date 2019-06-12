@@ -36,9 +36,10 @@
     "$eventtype: EventType = 'SetValue'",
     "$key1: TargetObject ~= '(?i:^HKLM\\\\System\\\\CurrentControlSet\\\\services\\\\.*?\\\\ImagePath$)'",
     "$key2: TargetObject ~= '(?i:^HKLM\\\\System\\\\CurrentControlSet\\\\services\\\\.*?\\\\Parameters\\\\ServiceDll$)'",
-    "$systemroot: Details ~= '(?i:%%SystemRoot%%)'"
+    "$systemroot: Details ~= '(?i:%%SystemRoot%%)'",
+    "$service: Image ~= '(?i:C:\\\\Windows\\\\system32\\\\services.exe)'"
   ],
-"Condition": "$eventtype and ($key1 or $key2) and !$systemroot"
+"Condition": "$eventtype and ($key1 or $key2) and !($systemroot or $service)"
 }
 
 {

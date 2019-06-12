@@ -8,7 +8,8 @@
     "Traces": [],
     "Criticality": 1,
     "Comments": "",
-    "Author": "0xrawsec"
+    "Author": "0xrawsec",
+    "Disable": true
   },
   "Matches": [
     "$privdir: Image ~= '^({{programfiles}}|{{system}})'",
@@ -31,7 +32,8 @@
     "Traces": [],
     "Criticality": 5,
     "Comments": "Connections to HTTP standard port from other software than browsers",
-    "Author": "0xrawsec"
+    "Author": "0xrawsec",
+    "Disable": true
   },
   "Matches": [
     "$browser: Image ~= '{{browsers}}$'",

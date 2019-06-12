@@ -10,6 +10,13 @@
     "*::ProcessGuid = ProcessGuid",
     "*::ParentProcessGuid = ProcessGuid"
   ],
+  "ATTACK": [
+    {
+      "ID": "T1202",
+      "Tactic": "Defense Evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1202/"
+    }
+  ],
   "Author": "0xrawsec"
   },
 "Matches": [
@@ -97,6 +104,13 @@
     "*::ProcessGuid = ProcessGuid",
     "*::ParentProcessGuid = ProcessGuid"
   ],
+  "ATTACK": [
+    {
+      "ID": "T1202",
+      "Tactic": "Defense Evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1202/"
+    }
+  ],
   "Author": "@0xrawsec",
   "Comment": "Powershell reads command from stdin"
   },
@@ -122,6 +136,31 @@
   "$api: ScriptBlockText ~= '(?i:(OpenProcess|OpenThread|SetThreadContext|OpenThreadToken|GetProcAddress|OpenThreadToken|OpenProcessToken|CreateProcess|WriteProcessMemory|ReadProcessMemory|VirtualAlloc))'"
   ],
 "Condition": "$api"
+}
+
+{
+"Name": "PSInvokeExpression",
+"Tags": ["Powershell"],
+"Meta": {
+  "EventIDs": [4103],
+  "Channels": ["Microsoft-Windows-PowerShell/Operational"],
+  "Computers": [],
+  "Criticality": 6,
+  "Author": "@0xrawsec",
+  "Comment": "Powershell making use of Invoke-Expression cmdlet. May require filtering depending on environment",
+  "ATTACK": [
+    {
+      "ID": "T1202",
+      "Tactic": "Defense Evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1202/"
+    }
+  ],
+  "Author": "0xrawsec"
+  },
+"Matches": [
+  "$ci: Payload ~= 'CommandInvocation\\(Invoke-Expression\\)'"
+  ],
+"Condition": "$ci"
 }
 
 

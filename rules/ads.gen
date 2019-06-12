@@ -10,8 +10,10 @@
   "Comments": "Catch all ADS creation events"
   },
 "Matches": [
+  "$broker: Image ~= '(?i:C:\\\\Windows\\\\system32\\\\browser_broker.exe)'",
+  "$target: TargetFilename ~= '(?i::Zone\\.Identifier$)'"
   ],
-"Condition": ""
+"Condition": "!($broker and $target)"
 }
 
 {
@@ -43,9 +45,10 @@
   "Comments": "Heuristics trying to catch EXE in ADS. If it is an EXE it is very likely the IMPHASH field is not null."
   },
 "Matches": [
+  "$unk:  Hash = 'Unknown'",
   "$impash:  Hash ~= '(?i:(IMPHASH=00000000000000000000000000000000))'"
   ],
-"Condition": "!$impash"
+"Condition": "!($impash or $unk)"
 }
 
 {

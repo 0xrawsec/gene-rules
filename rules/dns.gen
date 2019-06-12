@@ -18,7 +18,26 @@
 }
 
 {
-"Name": "SuspiciousDomain",
+"Name": "SysmonBlacklistedDomain",
+"Tags": ["DNS", "Sysmon"],
+"Meta": {
+  "EventIDs": [22],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 10,
+  "Author": "@0xrawsec",
+  "Comment": ""
+  },
+"Matches": [
+    "$domainBL: extract('(?P<dom>\\w+\\.\\w+$)',QueryName) in blacklist'",
+    "$subdomainBL: extract('(?P<sub>\\w+\\.\\w+\\.\\w+$)',QueryName) in blacklist'",
+    "$subsubdomainBL: extract('(?P<subsub>\\w+\\.\\w+\\.\\w+\\.\\w+$)',QueryName) in blacklist'"
+  ],
+"Condition": "$domainBL or $subdomainBL or $subsubdomainBL"
+}
+
+{
+"Name": "HeurLongDomain",
 "Tags": ["DNS", "Heuristics"],
 "Meta": {
   "EventIDs": [],
@@ -32,4 +51,38 @@
     "$ldomain: QueryName ~= '.{50,}'"
   ],
 "Condition": "$ldomain"
+}
+
+{
+"Name": "HeurSysmonLongDomain",
+"Tags": ["DNS", "Heuristics", "Sysmon"],
+"Meta": {
+  "EventIDs": [22],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 6,
+  "Author": "@0xrawsec",
+  "Comment": "Domain name with more than 50 characters"
+  },
+"Matches": [
+    "$ldomain: QueryName ~= '.{50,}'"
+  ],
+"Condition": "$ldomain"
+}
+
+{
+"Name": "HeurDnsFromSuspicious",
+"Tags": ["DNS", "Heuristics"],
+"Meta": {
+  "EventIDs": [22],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 5,
+  "Author": "@0xrawsec",
+  "Comment": "DNS query from executables often used by malware. Might trigger some FPs that would need to be whitelisted."
+  },
+"Matches": [
+    "$susp: Image ~= '{{suspicious}}$'"
+  ],
+"Condition": "$susp"
 }

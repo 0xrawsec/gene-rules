@@ -93,13 +93,14 @@
   "$mw: Signature = 'Microsoft Windows'",
   "$mc: Signature = 'Microsoft Corporation'",
   "$mwcp: Signature = 'Microsoft Windows Component Publisher'",
-  "$mwp: Signature = 'Microsoft Windows Publisher'"
+  "$mwp: Signature = 'Microsoft Windows Publisher'",
+  "$mw3pt: Signature = 'Microsoft Windows 3rd party Component'"
   ],
-"Condition": "$im and !($mw or $mc or $mwcp or $mwp)"
+"Condition": "$im and !($mw or $mc or $mwcp or $mwp or $mw3pt)"
 }
 
 {
-  "Name": "SuspiciousSvchostAccess",
+  "Name": "StopSvchostAccess",
   "Tags": ["Invoke-Phant0m", "SvcHost"],
   "Meta": {
     "EventIDs": [10],
@@ -114,9 +115,12 @@
     "$svchost: TargetImage ~= '(?i:windows\\\\sys(tem32|wow64)\\\\svchost\\.exe$)'",
     "$system32: SourceImage ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\[^\\\\]*?\\.exe)'",
     "$wl1: SourceImage ~= '(?i:C:\\\\Program Files.*?\\\\Windows Defender\\\\.*?\\.exe)'",
-    "$wl2: SourceImage ~= '(?i:C:\\\\Windows\\\\sys(tem32|wow64)\\\\wbem\\\\wmiprvse\\.exe)'"
+    "$wl2: SourceImage ~= '(?i:C:\\\\Windows\\\\sys(tem32|wow64)\\\\wbem\\\\wmiprvse\\.exe)'",
+    "$wl3: SourceImage ~= '(?i:C:\\\\Windows\\\\sysmon(64)?\\.exe)'",
+    "$stopresume: GrantedAccess &= '0x0800'",
+    "$terminate: GrantedAccess &= '0x0001'"
   ],
-  "Condition": "$svchost and !($system32 or $wl1 or $wl2)"
+  "Condition": "$svchost and ($stopresume or $terminate) and !($system32 or $wl1 or $wl2 or $wl3)"
 }
 
 {

@@ -294,7 +294,7 @@
   },
   "Matches": [
     "$ct: CallTrace ~= 'UNKNOWN'",
-    "$whitelist: SourceImage ~= '(?i:{{system}}(sdiagnhost)\\.exe)'",
+    "$whitelist: SourceImage ~= '(?i:{{system}}(sdiagnhost|svchost)\\.exe)'",
     "$windows: TargetImage ~= '(?i:C:\\\\Windows\\\\)'",
     "$write: GrantedAccess &= '0x20'",
     "$read: GrantedAccess &= '0x10'"

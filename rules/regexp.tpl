@@ -11,6 +11,7 @@
 # Paths
 windows: '(?i:C:\\Windows\\)'
 system: '(?i:C:\\Windows\\Sys(wow64|tem32)\\)'
+systemapps: '(?i:C:\\Windows\\SystemApps\\)'
 programfiles: '(?i:C:\\(PROGRA~2|Program Files.*?)\\)'
 ## Likely AppV default path
 ## if not using AppV replace by '^$'
@@ -27,7 +28,7 @@ browsers: '(?i:\\(iexplore|firefox|chrome|MicrosoftEdge|opera|vivaldi)\.exe)'
 
 #Extensions
 script-exts: '(?i:(\.ps1|\.bat|\.cmd|\.vb|\.vbs|\.vbscript|\.vbe|\.js|\.jse|\.ws|\.wsf))'
-exec-exts: '(?i:(\.acm|\.ax|\.com|\.cpl|\.dic|\.dll|\.drv|\.ds|\.efi|\.exe|\.grm|\.iec|\.ime|\.lex|\.msstyles|\.mui|\.ocx|\.olb|\.rll|\.rs|\.scr|\.sys|\.tlb|\.tsp))'
+exec-exts: '(?i:(\.acm|\.ax|\.com|\.cpl|\.dic|\.dll|\.drv|\.ds|\.efi|\.exe|\.grm|\.iec|\.ime|\.lex|\.msstyles|\.mui|\.ocx|\.olb|\.rll|\.rs|\.scr|\.sys|\.tlb|\.tsp|\.winmd|\.node))'
 
 # Exe to monitor
 suspicious: '(?i:\\(certutil|rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32|msbuild|installutil|regasm)\.exe)'
