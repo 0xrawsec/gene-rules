@@ -1,0 +1,39 @@
+{
+    "Name": "HeurMaliciousAccess",
+    "Tags": ["Heuristics", "WHIDS"],
+    "Meta": {
+      "EventIDs": [10],
+      "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+      "Computers": [],
+      "Criticality": 8,
+      "Author": "0xrawsec",
+      "Comments": "Experimental rule to catch malicious accesses to Windows binaries. This works only with WHIDS with hooks enabled."
+    },
+    "Matches": [
+      "$ct: CallTrace ~= 'UNKNOWN'",
+      "$whitelist: SourceImage ~= '(?i:{{system}}(sdiagnhost|svchost)\\.exe)'",
+      "$windows: TargetImage ~= '(?i:C:\\\\Windows\\\\)'",
+      "$write: GrantedAccess &= '0x20'",
+      "$read: GrantedAccess &= '0x10'",
+      "$sip: SourceIsParent = 'false'"
+    ],
+    "Condition": "$sip and $windows and $ct and ($write or $read) and !$whitelist"
+  }
+
+{
+"Name": "HeurPersistentRAT",
+"Tags": ["Heuristics", "WHIDS"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 8,
+  "Author": "@0xrawsec",
+  "Comment": "Experimental rule to detect some persistent RATs (i.e. interesting tools to monitor being called and not being a descendant process from the Explorer typical of an interactive session)"
+  },
+"Matches": [
+    "$anc: Ancestors ~= '(?i:C:\\\\Windows\\\\explorer\\.exe)'",
+    "$tools: Image ~= '(?i:\\\\(ping|systeminfo|net1?|xcopy|nbtstat|bitsadmin|netstat)\\.exe$)'"
+  ],
+"Condition": "$tools and !$anc"
+}

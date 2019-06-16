@@ -180,6 +180,8 @@
   "Comments": "Experimental rule to detect executable creations under Root directory. Criticality has to be adjusted accordingly."
   },
 "Matches": [
+  "$smss: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\smss\\.exe)'",
+  "$pageswap: TargetFilename ~= '(?i:C:\\\\(page|swap)file\\.sys)'",
   "$target: TargetFilename ~= '(?i:c:\\\\[^\\\\]*?({{exec-exts}}|{{script-exts}})$)'"
   ],
 "Condition": "$target"
@@ -217,7 +219,8 @@
   },
 "Matches": [
   "$susp: Image ~= '{{suspicious}}$'",
-  "$target: TargetFilename ~= '({{exec-exts}}|{{script-exts}})$'"
+  "$target: TargetFilename ~= '({{exec-exts}}|{{script-exts}})$'",
+  "$poltest: TargetFilename ~= '(?i:C:\\\\Users\\\\.*?\\\\AppData\\\\Local\\\\Temp\\\\__PSScriptPolicyTest_.*?\\.ps1)'"
   ],
 "Condition": "$susp and $target"
 }
@@ -275,31 +278,6 @@
   "$validparent: ParentImage ~= '(?i:(c:\\\\Windows\\\\Explorer\\.exe|c:\\\\Windows\\\\.*\\\\(powershell|cmd)\\.exe)$)'"
   ],
 "Condition": "$shell and !$validparent"
-}
-
-{
-  "Name": "HeurMaliciousAccess",
-  "Tags": ["Browser"],
-  "Meta": {
-    "EventIDs": [10],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-    "Computers": [],
-    "Traces": [
-      "*::ProcessGuid = ProcessGuid",
-      "*::ParentProcessGuid = ProcessGuid"
-    ],
-    "Criticality": 8,
-    "Author": "0xrawsec",
-    "Comments": "Experimental rule to catch malicious accesses to Windows binaries. Not widely tested."
-  },
-  "Matches": [
-    "$ct: CallTrace ~= 'UNKNOWN'",
-    "$whitelist: SourceImage ~= '(?i:{{system}}(sdiagnhost|svchost)\\.exe)'",
-    "$windows: TargetImage ~= '(?i:C:\\\\Windows\\\\)'",
-    "$write: GrantedAccess &= '0x20'",
-    "$read: GrantedAccess &= '0x10'"
-  ],
-  "Condition": "$windows and $ct and ($write or $read) and !$whitelist"
 }
 
 {

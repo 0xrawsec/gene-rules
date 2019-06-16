@@ -107,7 +107,7 @@
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
     "Traces": [],
-    "Criticality": 5,
+    "Criticality": 7,
     "Comments": "Suspicious Process Access to SvcHost",
     "Author": "0xrawsec"
   },
