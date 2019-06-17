@@ -222,7 +222,7 @@
   "$target: TargetFilename ~= '({{exec-exts}}|{{script-exts}})$'",
   "$poltest: TargetFilename ~= '(?i:C:\\\\Users\\\\.*?\\\\AppData\\\\Local\\\\Temp\\\\__PSScriptPolicyTest_.*?\\.ps1)'"
   ],
-"Condition": "$susp and $target"
+"Condition": "$susp and $target and !$poltest"
 }
 
 {
