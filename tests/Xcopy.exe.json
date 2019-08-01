@@ -1,0 +1,52 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "xcopy  C:\\commander.exe \\\\calderadc\\c$\\commander.exe",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Extended Copy Utility",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=0A49CA5B46210824AC22D0B8DC43EF5E7B6D2989,MD5=20CF8728C55A8743AAC86FB8D30EA898,SHA256=32EE791AA61BFE60A28A788663E15376DA83D7B20E133F6F96F77C54F262FCC1,IMPHASH=46A0EA2A9F4C86BD33243A6B3C8ED68F",
+      "Image": "C:\\Windows\\System32\\xcopy.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-3AE3-5AC7-0000-002039031400}",
+      "LogonId": "0x140339",
+      "ParentCommandLine": "cmd.exe /c echo F | xcopy C:\\commander.exe \\\\calderadc\\c$\\commander.exe",
+      "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+      "ParentProcessGuid": "{49F1AF32-3AE3-5AC7-0000-00107C031400}",
+      "ParentProcessId": "2944",
+      "ProcessGuid": "{49F1AF32-3AE3-5AC7-0000-00102D081400}",
+      "ProcessId": "1216",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "914689",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

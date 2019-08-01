@@ -1,0 +1,62 @@
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\winlogon.exe|C:\\Windows\\System32\\userinit.exe|C:\\Windows\\explorer.exe|\\\\VBOXSVR\\test\\ProcessHollowing-github\\Process-Hollowing-master\\executables\\ProcessHollowing.exe",
+      "CommandLine": "svchost",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "\\\\VBOXSVR\\test\\ProcessHollowing-github\\Process-Hollowing-master\\executables\\",
+      "Description": "Host Process for Windows Services",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "SHA1=FA8AE0BBD70F986259303E90FB70F730AAE0AE99,MD5=A7296C1245EE76768D581C6330DADE06,SHA256=5BE0DE7F915BA819D4BA048DB7A2A87F6F3253FDD4865DC418181A0D6A031CAA,IMPHASH=EC10F5BE711CB724C2D4D18A3C10AD6D",
+      "Image": "C:\\Windows\\SysWOW64\\svchost.exe",
+      "ImageSize": "45448",
+      "IntegrityLevel": "Medium",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-0020a1320300}",
+      "LogonId": "0x332a1",
+      "OriginalFileName": "svchost.exe",
+      "ParentCommandLine": "\"\\\\VBOXSVR\\test\\ProcessHollowing-github\\Process-Hollowing-master\\executables\\ProcessHollowing.exe\" ",
+      "ParentImage": "\\\\VBOXSVR\\test\\ProcessHollowing-github\\Process-Hollowing-master\\executables\\ProcessHollowing.exe",
+      "ParentIntegrityLevel": "Medium",
+      "ParentProcessGuid": "{515cd0d1-52c8-5d3f-0000-0010397e2c00}",
+      "ParentProcessId": "6600",
+      "ParentProcessIntegrity": "5.17",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-52c9-5d3f-0000-0010b4f62c00}",
+      "ProcessId": "8060",
+      "ProcessIntegrity": "15.01",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "Services": "N/A",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7691550",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

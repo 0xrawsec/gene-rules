@@ -1,0 +1,49 @@
+{
+  "Event": {
+    "EventData": {
+      "DestinationHostname": "caldera-server",
+      "DestinationIp": "192.168.58.254",
+      "DestinationIsIpv6": "false",
+      "DestinationPort": "8888",
+      "DestinationPortName": "",
+      "Image": "C:\\Program Files\\cagent\\cagent.exe",
+      "Initiated": "true",
+      "ProcessGuid": "{49F1AF32-328B-5AC7-0000-0010974F0100}",
+      "ProcessId": "1220",
+      "Protocol": "tcp",
+      "SourceHostname": "CALDERA01.caldera.loc",
+      "SourceIp": "192.168.58.101",
+      "SourceIsIpv6": "false",
+      "SourcePort": "49727",
+      "SourcePortName": "",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "3",
+      "EventRecordID": "1402320",
+      "Execution": {
+        "ProcessID": "1424",
+        "ThreadID": "1680"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "3",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

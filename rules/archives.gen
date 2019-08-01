@@ -6,6 +6,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 5,
+  "ATTACK": [
+    {
+      "ID": "T1193",
+      "Tactic": "initial-access",
+      "Reference": "https://attack.mitre.org/techniques/T1193"
+    }
+  ],
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
     "*::ParentProcessGuid = ProcessGuid"
@@ -29,6 +36,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 5,
+  "ATTACK": [
+    {
+      "ID": "T1193",
+      "Tactic": "initial-access",
+      "Reference": "https://attack.mitre.org/techniques/T1193"
+    }
+  ],
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
     "*::ParentProcessGuid = ProcessGuid"

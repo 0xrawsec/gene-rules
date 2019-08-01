@@ -1,0 +1,208 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"systeminfo\" ",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Displays system information",
+      "FileVersion": "6.3.9600.16384 (winblue_rtm.130821-1623)",
+      "Hashes": "SHA1=7D7AB9FD711F9B670F2977A78EF2914DB4ECDBB8,MD5=4EAD4E81DB8B24F6D29B3C71FE48DBB9,SHA256=03D2EF40E7C019A526B1AEC22B273F1C4D407973DF7F8BD5028C31CCACA9A492,IMPHASH=6012687C99DFEFA15CCE0632B5445521",
+      "Image": "C:\\Windows\\System32\\systeminfo.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{8C352DC7-3AEA-5A94-0000-002097241100}",
+      "LogonId": "0x112497",
+      "ParentCommandLine": "C:\\Windows\\PSEXESVC.exe",
+      "ParentImage": "C:\\Windows\\PSEXESVC.exe",
+      "ParentProcessGuid": "{8C352DC7-3AE9-5A94-0000-0010501F1100}",
+      "ParentProcessId": "1872",
+      "ProcessGuid": "{8C352DC7-3AEA-5A94-0000-00106C261100}",
+      "ProcessId": "2964",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "104668",
+      "Execution": {
+        "ProcessID": "1508",
+        "ThreadID": "1960"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"crater.exe\" ",
+      "Company": " ",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": " ",
+      "FileVersion": "0.0.0.0",
+      "Hashes": "SHA1=0BDEB7F7EC9281E4CBAC0B3245B7B61EA3B9AB6C,MD5=F62CD73327B30C468ECEA1A68AB4D095,SHA256=38E28F4A22206BA506C8FF60A78EB18A93027E91CF45E817EA60EF28D2E5C3C7,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+      "Image": "C:\\Windows\\crater.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{8C352DC7-3904-5AC7-0000-0020C94E1200}",
+      "LogonId": "0x124ec9",
+      "ParentCommandLine": "C:\\Windows\\PSEXESVC.exe",
+      "ParentImage": "C:\\Windows\\PSEXESVC.exe",
+      "ParentProcessGuid": "{8C352DC7-3903-5AC7-0000-001011491200}",
+      "ParentProcessId": "2616",
+      "ProcessGuid": "{8C352DC7-3904-5AC7-0000-00108F501200}",
+      "ProcessId": "1760",
+      "Product": " ",
+      "TerminalSessionId": "0",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "236921",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"crater.exe\" ",
+      "Company": " ",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": " ",
+      "FileVersion": "0.0.0.0",
+      "Hashes": "SHA1=0BDEB7F7EC9281E4CBAC0B3245B7B61EA3B9AB6C,MD5=F62CD73327B30C468ECEA1A68AB4D095,SHA256=38E28F4A22206BA506C8FF60A78EB18A93027E91CF45E817EA60EF28D2E5C3C7,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+      "Image": "C:\\Windows\\crater.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{8C352DC7-3995-5AC7-0000-0020506E1200}",
+      "LogonId": "0x126e50",
+      "ParentCommandLine": "C:\\Windows\\PSEXESVC.exe",
+      "ParentImage": "C:\\Windows\\PSEXESVC.exe",
+      "ParentProcessGuid": "{8C352DC7-3995-5AC7-0000-0010FE681200}",
+      "ParentProcessId": "892",
+      "ProcessGuid": "{8C352DC7-3995-5AC7-0000-001001701200}",
+      "ProcessId": "1876",
+      "Product": " ",
+      "TerminalSessionId": "0",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "237392",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"crater.exe\" ",
+      "Company": " ",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": " ",
+      "FileVersion": "0.0.0.0",
+      "Hashes": "SHA1=0BDEB7F7EC9281E4CBAC0B3245B7B61EA3B9AB6C,MD5=F62CD73327B30C468ECEA1A68AB4D095,SHA256=38E28F4A22206BA506C8FF60A78EB18A93027E91CF45E817EA60EF28D2E5C3C7,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+      "Image": "C:\\Windows\\crater.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{8C352DC7-3A26-5AC7-0000-0020448B1200}",
+      "LogonId": "0x128b44",
+      "ParentCommandLine": "C:\\Windows\\PSEXESVC.exe",
+      "ParentImage": "C:\\Windows\\PSEXESVC.exe",
+      "ParentProcessGuid": "{8C352DC7-3A26-5AC7-0000-0010F1851200}",
+      "ParentProcessId": "2660",
+      "ProcessGuid": "{8C352DC7-3A26-5AC7-0000-0010F08C1200}",
+      "ProcessId": "1916",
+      "Product": " ",
+      "TerminalSessionId": "0",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "237824",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

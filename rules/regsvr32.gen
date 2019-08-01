@@ -10,6 +10,13 @@
     "*::ParentProcessGuid = ProcessGuid"
   ],
   "Criticality": 10,
+  "ATTACK": [
+    {
+      "ID": "T1117",
+      "Tactic": "execution",
+      "Reference": "https://attack.mitre.org/techniques/T1117"
+    }
+  ],
   "Author": "@0xrawsec",
   "Comment": "Rule that triggers on malicious use of regsvr32.exe (see: metasploit regsvr32_applocker_bypass_server exploit)"
   },

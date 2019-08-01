@@ -78,25 +78,21 @@
 }
 
 {
-"Name": "SvcHostNotWindowsSignedDLL",
+"Name": "SvcHostUntrustedDLL",
 "Tags": ["SvcHost", "ImageLoaded", "Sysmon"],
 "Meta": {
   "EventIDs": [7],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 5,
+  "Criticality": 7,
   "Author": "@0xrawsec",
-  "Comment": "Images loaded by svchost and not signed by Windows"
+  "Comment": "Images loaded by svchost and not signed by Windows. Needs to be ajusted according to the environment."
   },
 "Matches": [
   "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'",
-  "$mw: Signature = 'Microsoft Windows'",
-  "$mc: Signature = 'Microsoft Corporation'",
-  "$mwcp: Signature = 'Microsoft Windows Component Publisher'",
-  "$mwp: Signature = 'Microsoft Windows Publisher'",
-  "$mw3pt: Signature = 'Microsoft Windows 3rd party Component'"
+  "$trusted: Signature ~= '{{trusted-dll-sig}}'"
   ],
-"Condition": "$im and !($mw or $mc or $mwcp or $mwp or $mw3pt)"
+"Condition": "$im and !$trusted"
 }
 
 {

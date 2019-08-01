@@ -1,0 +1,195 @@
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-19 21:12:41.008",
+      "Image": "\\\\VBOXSVR\\Temp\\WMIExplorer.exe",
+      "PreviousCreationUtcTime": "2017-09-19 21:12:48.180",
+      "ProcessGuid": "49F1AF32-8845-59C1-0000-0010C0C04800",
+      "ProcessId": "3176",
+      "TargetFilename": "C:\\Users\\Gen Eric\\AppData\\Local\\WmiExplorer\\WMIExplorer.exe_Url_zxoaq0zqhtmgfi3vxczqtzuzxpkatljy\\2.0.0.0\\423q4j22.newcfg",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "2",
+      "EventRecordID": "815092",
+      "Execution": {
+        "ProcessID": "1332",
+        "ThreadID": "1924"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "2",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "4"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-19 21:12:41.008",
+      "Image": "\\\\VBOXSVR\\Temp\\WMIExplorer.exe",
+      "PreviousCreationUtcTime": "2017-09-19 21:15:52.508",
+      "ProcessGuid": "49F1AF32-8845-59C1-0000-0010C0C04800",
+      "ProcessId": "3176",
+      "TargetFilename": "C:\\Users\\Gen Eric\\AppData\\Local\\WmiExplorer\\WMIExplorer.exe_Url_zxoaq0zqhtmgfi3vxczqtzuzxpkatljy\\2.0.0.0\\hnpfrf1v.newcfg",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "2",
+      "EventRecordID": "821141",
+      "Execution": {
+        "ProcessID": "1332",
+        "ThreadID": "1924"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "2",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "4"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-19 21:12:41.008",
+      "Image": "\\\\VBOXSVR\\Temp\\WMIExplorer.exe",
+      "PreviousCreationUtcTime": "2017-09-19 21:19:10.970",
+      "ProcessGuid": "49F1AF32-89C4-59C1-0000-0010CC0B0900",
+      "ProcessId": "2832",
+      "TargetFilename": "C:\\Users\\Gen Eric\\AppData\\Local\\WmiExplorer\\WMIExplorer.exe_Url_zxoaq0zqhtmgfi3vxczqtzuzxpkatljy\\2.0.0.0\\mcisa2ei.newcfg",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "2",
+      "EventRecordID": "861574",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1876"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "2",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "4"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-05-23 21:28:32.000",
+      "Image": "C:\\Windows\\Explorer.EXE",
+      "PreviousCreationUtcTime": "2018-05-23 21:29:59.527",
+      "ProcessGuid": "{49F1AF32-DC26-5B05-0000-001016DF0400}",
+      "ProcessId": "2284",
+      "TargetFilename": "C:\\Users\\CALDUS~1\\AppData\\Local\\Temp\\TEMP1_~1.ZIP\\test.vbs",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "2",
+      "EventRecordID": "908816",
+      "Execution": {
+        "ProcessID": "1404",
+        "ThreadID": "1732"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "2",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "4"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2010-11-21 03:23:56.000",
+      "Image": "C:\\Windows\\Explorer.EXE",
+      "PreviousCreationUtcTime": "2018-05-23 21:52:27.744",
+      "ProcessGuid": "{49F1AF32-DC26-5B05-0000-001016DF0400}",
+      "ProcessId": "2284",
+      "TargetFilename": "C:\\Users\\CALDUS~1\\AppData\\Local\\Temp\\TEMP1_~1.ZIP\\malware.exe",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "2",
+      "EventRecordID": "915844",
+      "Execution": {
+        "ProcessID": "1404",
+        "ThreadID": "1732"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "2",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "4"
+    }
+  }
+}

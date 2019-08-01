@@ -7,6 +7,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 8,
+  "ATTACK": [
+    {
+      "ID": "T1193",
+      "Tactic": "initial-access",
+      "Reference": "https://attack.mitre.org/techniques/T1193"
+    }
+  ],
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
     "*::ParentProcessGuid = ProcessGuid"
@@ -29,6 +36,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 8,
+  "ATTACK": [
+    {
+      "ID": "T1193",
+      "Tactic": "initial-access",
+      "Reference": "https://attack.mitre.org/techniques/T1193"
+    }
+  ],
   "Author": "0xrawsec",
   "Comments": "Experimental rule to detect executable created by MSOffice tools."
   },
@@ -47,6 +61,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 8,
+  "ATTACK": [
+    {
+      "ID": "T1193",
+      "Tactic": "initial-access",
+      "Reference": "https://attack.mitre.org/techniques/T1193"
+    }
+  ],
   "Traces": [
     "*::ProcessGuid = ProcessGuid",
     "*::ParentProcessGuid = ProcessGuid"

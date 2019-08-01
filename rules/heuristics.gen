@@ -184,7 +184,7 @@
   "$pageswap: TargetFilename ~= '(?i:C:\\\\(page|swap)file\\.sys)'",
   "$target: TargetFilename ~= '(?i:c:\\\\[^\\\\]*?({{exec-exts}}|{{script-exts}})$)'"
   ],
-"Condition": "$target"
+"Condition": "$target and !($smss and $pageswap)"
 }
 
 {

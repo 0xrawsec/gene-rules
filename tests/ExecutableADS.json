@@ -1,0 +1,78 @@
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-02-23 13:17:31.176",
+      "Hash": "SHA1=E8B4D84A28E5EA17272416EC45726964FDF25883,MD5=09F7401D56F2393C6CA534FF0241A590,SHA256=6766717B8AFAFE46B5FD66C7082CCCE6B382CBEA982C73CB651E35DC8187ACE1,IMPHASH=68E56344CAB250384904953E978B70A9",
+      "Image": "C:\\Windows\\system32\\cmd.exe",
+      "ProcessGuid": "{49F1AF32-12C5-5A90-0000-00100AEA0B00}",
+      "ProcessId": "2100",
+      "TargetFilename": "C:\\Users\\CALDUS~1\\AppData\\Local\\Temp\\test.txt:malicious.exe",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1274680",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-02-23 13:21:35.152",
+      "Hash": "SHA1=E8B4D84A28E5EA17272416EC45726964FDF25883,MD5=09F7401D56F2393C6CA534FF0241A590,SHA256=6766717B8AFAFE46B5FD66C7082CCCE6B382CBEA982C73CB651E35DC8187ACE1,IMPHASH=68E56344CAB250384904953E978B70A9",
+      "Image": "C:\\Windows\\system32\\cmd.exe",
+      "ProcessGuid": "{49F1AF32-12C5-5A90-0000-00100AEA0B00}",
+      "ProcessId": "2100",
+      "TargetFilename": "C:\\Users\\CALDUS~1\\AppData\\Local\\Temp\\test2.txt:malicious.exe",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1275071",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}

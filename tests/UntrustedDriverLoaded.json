@@ -1,0 +1,76 @@
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=2D2C9DE6A65205521D38612D0B6556DA56C9DA1D,MD5=74CC8905700C74D50B8E4EB93021FF1A,SHA256=63F1D203FD33CA31465F917D245B80D237B82EECACE9911DD9347BD7501E791A,IMPHASH=0AD99AB07319C49E4B4CB24F50171FDE",
+      "ImageLoaded": "C:\\Windows\\System32\\VBoxDisp.dll",
+      "Signature": "Oracle Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "6",
+      "EventRecordID": "836203",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "6",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=8206E2D8374F5E7BF626E47D56D2431EDC939652,MD5=DE7FCC77F4A503AF4CA6A47D49B3713D,SHA256=4BFAA99393F635CD05D91A64DE73EDB5639412C129E049F0FE34F88517A10FC6,IMPHASH=CB86059F4B291991E735BECBD4C669CB",
+      "ImageLoaded": "C:\\Windows\\System32\\drivers\\npf.sys",
+      "Signature": "Riverbed Technology",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "6",
+      "EventRecordID": "842106",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "6",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

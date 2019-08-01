@@ -6,6 +6,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 8,
+  "ATTACK": [
+    {
+      "ID": "T1070",
+      "Tactic": "defense-evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1070"
+    }
+  ],
   "Author": "@0xrawsec"
   },
 "Matches": [
@@ -23,6 +30,13 @@
   "Channels": ["Security"],
   "Computers": [],
   "Criticality": 8,
+  "ATTACK": [
+    {
+      "ID": "T1070",
+      "Tactic": "defense-evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1070"
+    }
+  ],
   "Author": "@0xrawsec",
   "Comments": "Catch Security logs clearing event"
   },

@@ -1,0 +1,656 @@
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=5BB9F53636EFAFDD30023D44BE1BE55BF7C7B7D5,MD5=AA2CD9D9FC5D196CAA6F8FD5979E3F14,SHA256=12E6642CF6413BDF5388BEE663080FA299591B2BA023D069286F3BE9647547C8,IMPHASH=01F3D0FE6FB9D9DF24620E67AFC143C7",
+      "Image": "C:\\Windows\\SysWOW64\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\AppData\\Local\\cdnver.dll",
+      "ProcessGuid": "{49F1AF32-0032-5AD6-0000-0010903F0E00}",
+      "ProcessId": "812",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "36799",
+      "Execution": {
+        "ProcessID": "2948",
+        "ThreadID": "3036"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=5BB9F53636EFAFDD30023D44BE1BE55BF7C7B7D5,MD5=AA2CD9D9FC5D196CAA6F8FD5979E3F14,SHA256=12E6642CF6413BDF5388BEE663080FA299591B2BA023D069286F3BE9647547C8,IMPHASH=01F3D0FE6FB9D9DF24620E67AFC143C7",
+      "Image": "C:\\Windows\\SysWOW64\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\AppData\\Local\\cdnver.dll",
+      "ProcessGuid": "{49F1AF32-0032-5AD6-0000-0010903F0E00}",
+      "ProcessId": "812",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "36800",
+      "Execution": {
+        "ProcessID": "2948",
+        "ThreadID": "3036"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=5BB9F53636EFAFDD30023D44BE1BE55BF7C7B7D5,MD5=AA2CD9D9FC5D196CAA6F8FD5979E3F14,SHA256=12E6642CF6413BDF5388BEE663080FA299591B2BA023D069286F3BE9647547C8,IMPHASH=01F3D0FE6FB9D9DF24620E67AFC143C7",
+      "Image": "C:\\Windows\\SysWOW64\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\AppData\\Local\\cdnver.dll",
+      "ProcessGuid": "{49F1AF32-0032-5AD6-0000-0010903F0E00}",
+      "ProcessId": "812",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "36801",
+      "Execution": {
+        "ProcessID": "2948",
+        "ThreadID": "3036"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=5BB9F53636EFAFDD30023D44BE1BE55BF7C7B7D5,MD5=AA2CD9D9FC5D196CAA6F8FD5979E3F14,SHA256=12E6642CF6413BDF5388BEE663080FA299591B2BA023D069286F3BE9647547C8,IMPHASH=01F3D0FE6FB9D9DF24620E67AFC143C7",
+      "Image": "C:\\Windows\\SysWOW64\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\AppData\\Local\\cdnver.dll",
+      "ProcessGuid": "{49F1AF32-0032-5AD6-0000-0010903F0E00}",
+      "ProcessId": "812",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "36802",
+      "Execution": {
+        "ProcessID": "2948",
+        "ThreadID": "3036"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=6F0D044342C28BFD9430E3121A09B51289372A63,MD5=C99C6E70B3625D0E5600B361007B6CA1,SHA256=3F5387067A5F49B55272536496EC4B78FBE19FF08C694D5406170624E38A1647,IMPHASH=CF64E167AFEBC68456561D5B48F14173",
+      "Image": "C:\\Windows\\System32\\rundll32.exe",
+      "ImageLoaded": "C:\\PROGRA~1\\COMMON~1\\MICROS~1\\OFFICE12\\MSOXMLMF.DLL",
+      "ProcessGuid": "49F1AF32-9A5E-5A1E-0000-0010C8AA1500",
+      "ProcessId": "1556",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "80558",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1948"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=7A783002F801C3A843ECDC2835CCCACA7E0997FA,MD5=6CC9F0CBBB6A1FACA78FF64045EAFBCA,SHA256=8A40399733979DADAFE62214FB4DFD681C6C200F1D349EE5FD691C7B876F4F8A,IMPHASH=9FFB2610B37BAABBC88392CD288253E6",
+      "Image": "C:\\Windows\\System32\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\Desktop\\sublimetext3_2017-09-07T22-42-01+02-00\\sublime_text.exe",
+      "ProcessGuid": "49F1AF32-87C3-59C1-0000-001031AC3A00",
+      "ProcessId": "320",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "808722",
+      "Execution": {
+        "ProcessID": "1332",
+        "ThreadID": "1932"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=7A783002F801C3A843ECDC2835CCCACA7E0997FA,MD5=6CC9F0CBBB6A1FACA78FF64045EAFBCA,SHA256=8A40399733979DADAFE62214FB4DFD681C6C200F1D349EE5FD691C7B876F4F8A,IMPHASH=9FFB2610B37BAABBC88392CD288253E6",
+      "Image": "C:\\Windows\\System32\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\Desktop\\sublimetext3_2017-09-07T22-42-01+02-00\\sublime_text.exe",
+      "ProcessGuid": "49F1AF32-8970-59C1-0000-00107C270700",
+      "ProcessId": "2920",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "853000",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=7A783002F801C3A843ECDC2835CCCACA7E0997FA,MD5=6CC9F0CBBB6A1FACA78FF64045EAFBCA,SHA256=8A40399733979DADAFE62214FB4DFD681C6C200F1D349EE5FD691C7B876F4F8A,IMPHASH=9FFB2610B37BAABBC88392CD288253E6",
+      "Image": "C:\\Windows\\System32\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\Desktop\\sublimetext3_2017-09-07T22-42-01+02-00\\sublime_text.exe",
+      "ProcessGuid": "49F1AF32-8970-59C1-0000-00107C270700",
+      "ProcessId": "2920",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "853002",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=7A783002F801C3A843ECDC2835CCCACA7E0997FA,MD5=6CC9F0CBBB6A1FACA78FF64045EAFBCA,SHA256=8A40399733979DADAFE62214FB4DFD681C6C200F1D349EE5FD691C7B876F4F8A,IMPHASH=9FFB2610B37BAABBC88392CD288253E6",
+      "Image": "C:\\Windows\\System32\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\Desktop\\sublimetext3_2017-09-07T22-42-01+02-00\\sublime_text.exe",
+      "ProcessGuid": "49F1AF32-8970-59C1-0000-00107C270700",
+      "ProcessId": "2920",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "853001",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=7A783002F801C3A843ECDC2835CCCACA7E0997FA,MD5=6CC9F0CBBB6A1FACA78FF64045EAFBCA,SHA256=8A40399733979DADAFE62214FB4DFD681C6C200F1D349EE5FD691C7B876F4F8A,IMPHASH=9FFB2610B37BAABBC88392CD288253E6",
+      "Image": "C:\\Windows\\System32\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\Desktop\\sublimetext3_2017-09-07T22-42-01+02-00\\sublime_text.exe",
+      "ProcessGuid": "49F1AF32-8970-59C1-0000-00107C270700",
+      "ProcessId": "2920",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "853003",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=7A783002F801C3A843ECDC2835CCCACA7E0997FA,MD5=6CC9F0CBBB6A1FACA78FF64045EAFBCA,SHA256=8A40399733979DADAFE62214FB4DFD681C6C200F1D349EE5FD691C7B876F4F8A,IMPHASH=9FFB2610B37BAABBC88392CD288253E6",
+      "Image": "C:\\Windows\\System32\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\Desktop\\sublimetext3_2017-09-07T22-42-01+02-00\\sublime_text.exe",
+      "ProcessGuid": "49F1AF32-8970-59C1-0000-00107C270700",
+      "ProcessId": "2920",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "852999",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=6F0D044342C28BFD9430E3121A09B51289372A63,MD5=C99C6E70B3625D0E5600B361007B6CA1,SHA256=3F5387067A5F49B55272536496EC4B78FBE19FF08C694D5406170624E38A1647,IMPHASH=CF64E167AFEBC68456561D5B48F14173",
+      "Image": "C:\\Windows\\System32\\rundll32.exe",
+      "ImageLoaded": "C:\\PROGRA~1\\COMMON~1\\MICROS~1\\OFFICE12\\MSOXMLMF.DLL",
+      "ProcessGuid": "49F1AF32-4AD9-59DB-0000-00105EAE1100",
+      "ProcessId": "2528",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "49377",
+      "Execution": {
+        "ProcessID": "2160",
+        "ThreadID": "2380"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=5BB9F53636EFAFDD30023D44BE1BE55BF7C7B7D5,MD5=AA2CD9D9FC5D196CAA6F8FD5979E3F14,SHA256=12E6642CF6413BDF5388BEE663080FA299591B2BA023D069286F3BE9647547C8,IMPHASH=01F3D0FE6FB9D9DF24620E67AFC143C7",
+      "Image": "C:\\Windows\\SysWOW64\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\AppData\\Local\\cdnver.dll",
+      "ProcessGuid": "49F1AF32-64CD-5A74-0000-001040C80900",
+      "ProcessId": "2692",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "105406",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1976"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=5BB9F53636EFAFDD30023D44BE1BE55BF7C7B7D5,MD5=AA2CD9D9FC5D196CAA6F8FD5979E3F14,SHA256=12E6642CF6413BDF5388BEE663080FA299591B2BA023D069286F3BE9647547C8,IMPHASH=01F3D0FE6FB9D9DF24620E67AFC143C7",
+      "Image": "C:\\Windows\\SysWOW64\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\AppData\\Local\\cdnver.dll",
+      "ProcessGuid": "49F1AF32-64CD-5A74-0000-001040C80900",
+      "ProcessId": "2692",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "105407",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1976"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=5BB9F53636EFAFDD30023D44BE1BE55BF7C7B7D5,MD5=AA2CD9D9FC5D196CAA6F8FD5979E3F14,SHA256=12E6642CF6413BDF5388BEE663080FA299591B2BA023D069286F3BE9647547C8,IMPHASH=01F3D0FE6FB9D9DF24620E67AFC143C7",
+      "Image": "C:\\Windows\\SysWOW64\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\AppData\\Local\\cdnver.dll",
+      "ProcessGuid": "49F1AF32-64CD-5A74-0000-001040C80900",
+      "ProcessId": "2692",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "105405",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1976"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=5BB9F53636EFAFDD30023D44BE1BE55BF7C7B7D5,MD5=AA2CD9D9FC5D196CAA6F8FD5979E3F14,SHA256=12E6642CF6413BDF5388BEE663080FA299591B2BA023D069286F3BE9647547C8,IMPHASH=01F3D0FE6FB9D9DF24620E67AFC143C7",
+      "Image": "C:\\Windows\\SysWOW64\\rundll32.exe",
+      "ImageLoaded": "C:\\Users\\Gen Eric\\AppData\\Local\\cdnver.dll",
+      "ProcessGuid": "49F1AF32-64CD-5A74-0000-001040C80900",
+      "ProcessId": "2692",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "105404",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1976"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

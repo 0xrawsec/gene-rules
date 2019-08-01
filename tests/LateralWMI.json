@@ -1,0 +1,156 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"wmic\" /node:calderadc.caldera.loc /user:\"caldera\\administrator\" /password:\"Admin123456\" process call create \"C:\\commander.exe -d -f\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "WMI Commandline Utility",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=071A645A88E4236281E58B90A5D50A2AC80E26E5,MD5=FD902835DEAEF4091799287736F3A028,SHA256=DA3AD32583644BD20116F0479C178F7C7C0B730728F4C02A438C0D19378C83D9,IMPHASH=15585CB74052B4739A900FCB332F06EA",
+      "Image": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-356A-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\commander.exe -f",
+      "ParentImage": "C:\\commander.exe",
+      "ParentProcessGuid": "{49F1AF32-38A7-5AC7-0000-0010869A0A00}",
+      "ParentProcessId": "920",
+      "ProcessGuid": "{49F1AF32-3AE6-5AC7-0000-0010FA181400}",
+      "ProcessId": "2208",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "914937",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"wmic\" /node:calderadc.caldera.loc /user:\"caldera\\administrator\" /password:\"Admin123456\" process call create \"C:\\commander.exe -d -f\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "WMI Commandline Utility",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=071A645A88E4236281E58B90A5D50A2AC80E26E5,MD5=FD902835DEAEF4091799287736F3A028,SHA256=DA3AD32583644BD20116F0479C178F7C7C0B730728F4C02A438C0D19378C83D9,IMPHASH=15585CB74052B4739A900FCB332F06EA",
+      "Image": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-356A-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\commander.exe -f",
+      "ParentImage": "C:\\commander.exe",
+      "ParentProcessGuid": "{49F1AF32-38A7-5AC7-0000-0010869A0A00}",
+      "ParentProcessId": "920",
+      "ProcessGuid": "{49F1AF32-3B60-5AC7-0000-001086C41400}",
+      "ProcessId": "2484",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "917156",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"wmic\" /node:calderadc.caldera.loc /user:\"caldera\\administrator\" /password:\"Admin123456\" process call create \"C:\\commander.exe -d -f\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "WMI Commandline Utility",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=071A645A88E4236281E58B90A5D50A2AC80E26E5,MD5=FD902835DEAEF4091799287736F3A028,SHA256=DA3AD32583644BD20116F0479C178F7C7C0B730728F4C02A438C0D19378C83D9,IMPHASH=15585CB74052B4739A900FCB332F06EA",
+      "Image": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-356A-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\commander.exe -f",
+      "ParentImage": "C:\\commander.exe",
+      "ParentProcessGuid": "{49F1AF32-38A7-5AC7-0000-0010869A0A00}",
+      "ParentProcessId": "920",
+      "ProcessGuid": "{49F1AF32-3BDB-5AC7-0000-00105C451800}",
+      "ProcessId": "1884",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "919654",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

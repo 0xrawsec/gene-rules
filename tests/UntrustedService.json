@@ -1,0 +1,52 @@
+{
+  "Event": {
+    "EventData": {
+      "Company": "Oracle Corporation",
+      "Description": "VirtualBox Guest Additions Service",
+      "FileVersion": "6.0.8.130520",
+      "Hashes": "SHA1=AE49D900887E95D7B3040BFD2C888D3439F94035,MD5=3001126B78719A1189A0A5270DA316A0,SHA256=9A66844E7ADA8E2D1D454136D68413CE74D90004BAD754D79DAA1A020A27E86C,IMPHASH=6A98677D1BE25D4274AAA7C9C37E832F",
+      "Image": "C:\\Windows\\System32\\VBoxService.exe",
+      "ImageLoaded": "C:\\Windows\\System32\\VBoxService.exe",
+      "ImageLoadedSize": "2732048",
+      "IntegrityLevel": "System",
+      "OriginalFileName": "?",
+      "ParentCommandLine": "C:\\Windows\\system32\\services.exe",
+      "ParentImage": "C:\\Windows\\System32\\services.exe",
+      "ProcessGuid": "{515cd0d1-4af8-5d3f-0000-0010b4430100}",
+      "ProcessId": "1488",
+      "Product": "Oracle VM VirtualBox Guest Additions",
+      "RuleName": "",
+      "Signature": "Oracle Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "7682610",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "6868"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "Event": {
+    "EventData": {
+      "Company": "Microsoft Corporation",
+      "Description": "Credential Vault Client Library",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=44DC590DD72167F2D6D1DA3F090AE78F4639488B,MD5=44B9C66177651F3F53C87B665D58D17A,SHA256=3FC426115FF87570889DB28D71970B82B525D2A4B9A00EDD273BF083B77A05CE,IMPHASH=7D6ED7ACA02A139D2A9B357556EE29CB",
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ImageLoaded": "C:\\Windows\\System32\\vaultcli.dll",
+      "ProcessGuid": "{49F1AF32-38AF-5AC7-0000-00103FDE0A00}",
+      "ProcessId": "2300",
+      "Product": "Microsoft® Windows® Operating System",
+      "Signature": "Microsoft Windows",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "884440",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1736"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Company": "Microsoft Corporation",
+      "Description": "Credential Vault Client Library",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=44DC590DD72167F2D6D1DA3F090AE78F4639488B,MD5=44B9C66177651F3F53C87B665D58D17A,SHA256=3FC426115FF87570889DB28D71970B82B525D2A4B9A00EDD273BF083B77A05CE,IMPHASH=7D6ED7ACA02A139D2A9B357556EE29CB",
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ImageLoaded": "C:\\Windows\\System32\\vaultcli.dll",
+      "ProcessGuid": "{49F1AF32-3AD5-5AC7-0000-001036B91300}",
+      "ProcessId": "2520",
+      "Product": "Microsoft® Windows® Operating System",
+      "Signature": "Microsoft Windows",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "914581",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Company": "Microsoft Corporation",
+      "Description": "Credential Vault Client Library",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=44DC590DD72167F2D6D1DA3F090AE78F4639488B,MD5=44B9C66177651F3F53C87B665D58D17A,SHA256=3FC426115FF87570889DB28D71970B82B525D2A4B9A00EDD273BF083B77A05CE,IMPHASH=7D6ED7ACA02A139D2A9B357556EE29CB",
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ImageLoaded": "C:\\Windows\\System32\\vaultcli.dll",
+      "ProcessGuid": "{49F1AF32-3D63-5AC7-0000-0010C5D92300}",
+      "ProcessId": "1664",
+      "Product": "Microsoft® Windows® Operating System",
+      "Signature": "Microsoft Windows",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "929284",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Company": "Microsoft Corporation",
+      "Description": "Credential Vault Client Library",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=44DC590DD72167F2D6D1DA3F090AE78F4639488B,MD5=44B9C66177651F3F53C87B665D58D17A,SHA256=3FC426115FF87570889DB28D71970B82B525D2A4B9A00EDD273BF083B77A05CE,IMPHASH=7D6ED7ACA02A139D2A9B357556EE29CB",
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ImageLoaded": "C:\\Windows\\System32\\vaultcli.dll",
+      "ProcessGuid": "{49F1AF32-3D73-5AC7-0000-001015282400}",
+      "ProcessId": "2596",
+      "Product": "Microsoft® Windows® Operating System",
+      "Signature": "Microsoft Windows",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "929803",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Company": "Microsoft Corporation",
+      "Description": "Credential Vault Client Library",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=44DC590DD72167F2D6D1DA3F090AE78F4639488B,MD5=44B9C66177651F3F53C87B665D58D17A,SHA256=3FC426115FF87570889DB28D71970B82B525D2A4B9A00EDD273BF083B77A05CE,IMPHASH=7D6ED7ACA02A139D2A9B357556EE29CB",
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ImageLoaded": "C:\\Windows\\System32\\vaultcli.dll",
+      "ProcessGuid": "{49F1AF32-3DFC-5AC7-0000-0010D7162500}",
+      "ProcessId": "1840",
+      "Product": "Microsoft® Windows® Operating System",
+      "Signature": "Microsoft Windows",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "932564",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Company": "Microsoft Corporation",
+      "Description": "Credential Vault Client Library",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=44DC590DD72167F2D6D1DA3F090AE78F4639488B,MD5=44B9C66177651F3F53C87B665D58D17A,SHA256=3FC426115FF87570889DB28D71970B82B525D2A4B9A00EDD273BF083B77A05CE,IMPHASH=7D6ED7ACA02A139D2A9B357556EE29CB",
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ImageLoaded": "C:\\Windows\\System32\\vaultcli.dll",
+      "ProcessGuid": "{49F1AF32-3E0C-5AC7-0000-001022B82500}",
+      "ProcessId": "1912",
+      "Product": "Microsoft® Windows® Operating System",
+      "Signature": "Microsoft Windows",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "934846",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Company": "Microsoft Corporation",
+      "Description": "Credential Vault Client Library",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=44DC590DD72167F2D6D1DA3F090AE78F4639488B,MD5=44B9C66177651F3F53C87B665D58D17A,SHA256=3FC426115FF87570889DB28D71970B82B525D2A4B9A00EDD273BF083B77A05CE,IMPHASH=7D6ED7ACA02A139D2A9B357556EE29CB",
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ImageLoaded": "C:\\Windows\\System32\\vaultcli.dll",
+      "ProcessGuid": "{49F1AF32-3E97-5AC7-0000-00107D622900}",
+      "ProcessId": "1752",
+      "Product": "Microsoft® Windows® Operating System",
+      "Signature": "Microsoft Windows",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "940254",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Company": "Microsoft Corporation",
+      "Description": "Credential Vault Client Library",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=44DC590DD72167F2D6D1DA3F090AE78F4639488B,MD5=44B9C66177651F3F53C87B665D58D17A,SHA256=3FC426115FF87570889DB28D71970B82B525D2A4B9A00EDD273BF083B77A05CE,IMPHASH=7D6ED7ACA02A139D2A9B357556EE29CB",
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ImageLoaded": "C:\\Windows\\System32\\vaultcli.dll",
+      "ProcessGuid": "{49F1AF32-3EA9-5AC7-0000-00100AB02900}",
+      "ProcessId": "2512",
+      "Product": "Microsoft® Windows® Operating System",
+      "Signature": "Microsoft Windows",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "940752",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

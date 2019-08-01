@@ -15,9 +15,9 @@
       "$windows: TargetImage ~= '(?i:C:\\\\Windows\\\\)'",
       "$write: GrantedAccess &= '0x20'",
       "$read: GrantedAccess &= '0x10'",
-      "$sip: SourceIsParent = 'false'"
+      "$srcisparent: SourceProcessGUID = @TargetParentProcessGuid"
     ],
-    "Condition": "$sip and $windows and $ct and ($write or $read) and !$whitelist"
+    "Condition": "!$srcisparent and $windows and $ct and ($write or $read) and !$whitelist"
   }
 
 {
@@ -32,8 +32,9 @@
   "Comment": "Experimental rule to detect some persistent RATs (i.e. interesting tools to monitor being called and not being a descendant process from the Explorer typical of an interactive session)"
   },
 "Matches": [
+    "$exist: Ancestors ~= '.'",
     "$anc: Ancestors ~= '(?i:C:\\\\Windows\\\\explorer\\.exe)'",
-    "$tools: Image ~= '(?i:\\\\(ping|systeminfo|net1?|xcopy|nbtstat|bitsadmin|netstat)\\.exe$)'"
+    "$tools: Image ~= '{{admintools}}'"
   ],
-"Condition": "$tools and !$anc"
+"Condition": "$exist and $tools and !$anc"
 }

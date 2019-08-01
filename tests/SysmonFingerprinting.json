@@ -1,0 +1,200 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Windows\\Sysmon.exe\"  -c",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Hashes": "SHA1=1C426D2D4EA362EBDB9CE5BF10513E28CB3305E3,MD5=472EF374C6F796769C7A3A1C7158DF51,SHA256=2E2CE2F3FBB2A00AD374AF9419B41F8DD09244E299D5FB32326B0B775857ECF7,IMPHASH=0E09E3A56B6DBC84CB2CA1DF6A6FCEAE",
+      "Image": "C:\\Windows\\Sysmon.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-0020A88D0100",
+      "LogonId": "0x00018da8",
+      "ParentCommandLine": "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "49F1AF32-9930-5A1E-0000-0010593C0A00",
+      "ParentProcessId": "2412",
+      "ProcessGuid": "49F1AF32-9A17-5A1E-0000-0010EC730F00",
+      "ProcessId": "2164",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "62976",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Windows\\Sysmon.exe\"  -c",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Hashes": "SHA1=1C426D2D4EA362EBDB9CE5BF10513E28CB3305E3,MD5=472EF374C6F796769C7A3A1C7158DF51,SHA256=2E2CE2F3FBB2A00AD374AF9419B41F8DD09244E299D5FB32326B0B775857ECF7,IMPHASH=0E09E3A56B6DBC84CB2CA1DF6A6FCEAE",
+      "Image": "C:\\Windows\\Sysmon.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-0020A88D0100",
+      "LogonId": "0x00018da8",
+      "ParentCommandLine": "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "49F1AF32-9930-5A1E-0000-0010593C0A00",
+      "ParentProcessId": "2412",
+      "ProcessGuid": "49F1AF32-9A17-5A1E-0000-0010EC730F00",
+      "ProcessId": "2164",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "62976",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Windows\\Sysmon.exe\"  -c",
+      "Company": "Sysinternals - www.sysinternals.com",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "System activity monitor",
+      "FileVersion": "7.01",
+      "Hashes": "SHA1=CE9EDBEA1937D593BF6CBA4D9CA57D66F1680FDF,MD5=447D5C542422576FAB5212D185DA546B,SHA256=DE2D6B0260566EF4A485AD3FFB4A57095419AC503C3A405CB62C5F698A5D6950,IMPHASH=0E09E3A56B6DBC84CB2CA1DF6A6FCEAE",
+      "Image": "C:\\Windows\\Sysmon.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{49F1AF32-11F0-5A90-0000-002047700900}",
+      "LogonId": "0x97047",
+      "ParentCommandLine": "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "{49F1AF32-11F1-5A90-0000-00107E7D0900}",
+      "ParentProcessId": "2856",
+      "ProcessGuid": "{49F1AF32-12A3-5A90-0000-001005850B00}",
+      "ProcessId": "2064",
+      "Product": "Sysinternals Sysmon",
+      "TerminalSessionId": "1",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "1272030",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Windows\\Sysmon.exe\"  -c",
+      "Company": "Sysinternals - www.sysinternals.com",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "System activity monitor",
+      "FileVersion": "7.01",
+      "Hashes": "SHA1=CE9EDBEA1937D593BF6CBA4D9CA57D66F1680FDF,MD5=447D5C542422576FAB5212D185DA546B,SHA256=DE2D6B0260566EF4A485AD3FFB4A57095419AC503C3A405CB62C5F698A5D6950,IMPHASH=0E09E3A56B6DBC84CB2CA1DF6A6FCEAE",
+      "Image": "C:\\Windows\\Sysmon.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{49F1AF32-11F0-5A90-0000-002047700900}",
+      "LogonId": "0x97047",
+      "ParentCommandLine": "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "{49F1AF32-11F1-5A90-0000-00107E7D0900}",
+      "ParentProcessId": "2856",
+      "ProcessGuid": "{49F1AF32-12FD-5A90-0000-001055070C00}",
+      "ProcessId": "292",
+      "Product": "Sysinternals Sysmon",
+      "TerminalSessionId": "1",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "1273397",
+      "Execution": {
+        "ProcessID": "2612",
+        "ThreadID": "1576"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

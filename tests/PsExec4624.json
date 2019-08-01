@@ -1,0 +1,216 @@
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Negotiate",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "-",
+      "IpPort": "-",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{BF460CE6-137B-3A69-2400-22F1FEBD45E2}",
+      "LogonProcessName": "Advapi  ",
+      "LogonType": "2",
+      "ProcessId": "0x750",
+      "ProcessName": "C:\\Windows\\PSEXESVC.exe",
+      "SubjectDomainName": "CALDERA",
+      "SubjectLogonId": "0x3e7",
+      "SubjectUserName": "CALDERADC$",
+      "SubjectUserSid": "S-1-5-18",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x112497",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "CALDERADC",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "8114",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "2680"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Negotiate",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "-",
+      "IpPort": "-",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{B5B240D9-9BB0-E7A0-0E39-8FF8E69CC445}",
+      "LogonProcessName": "Advapi  ",
+      "LogonType": "2",
+      "ProcessId": "0xa38",
+      "ProcessName": "C:\\Windows\\PSEXESVC.exe",
+      "SubjectDomainName": "CALDERA",
+      "SubjectLogonId": "0x3e7",
+      "SubjectUserName": "CALDERADC$",
+      "SubjectUserSid": "S-1-5-18",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x124ec9",
+      "TargetUserName": "administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "CALDERADC",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "8941",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1204"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Negotiate",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "-",
+      "IpPort": "-",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{6A1F2304-3533-990A-8D19-D509996AD74E}",
+      "LogonProcessName": "Advapi  ",
+      "LogonType": "2",
+      "ProcessId": "0x37c",
+      "ProcessName": "C:\\Windows\\PSEXESVC.exe",
+      "SubjectDomainName": "CALDERA",
+      "SubjectLogonId": "0x3e7",
+      "SubjectUserName": "CALDERADC$",
+      "SubjectUserSid": "S-1-5-18",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x126e50",
+      "TargetUserName": "administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "CALDERADC",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "8977",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1204"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Negotiate",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "-",
+      "IpPort": "-",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{29394E89-2E0C-A052-0840-3DB8AA39675A}",
+      "LogonProcessName": "Advapi  ",
+      "LogonType": "2",
+      "ProcessId": "0xa64",
+      "ProcessName": "C:\\Windows\\PSEXESVC.exe",
+      "SubjectDomainName": "CALDERA",
+      "SubjectLogonId": "0x3e7",
+      "SubjectUserName": "CALDERADC$",
+      "SubjectUserSid": "S-1-5-18",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x128b44",
+      "TargetUserName": "administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "CALDERADC",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9032",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "2716"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}

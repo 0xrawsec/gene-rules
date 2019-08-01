@@ -6,6 +6,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 10,
+  "ATTACK": [
+    {
+      "ID": "T1093",
+      "Tactic": "defense-evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1093"
+    }
+  ],
   "Author": "0xrawsec",
   "Comments": "Experimental rule to catch polymorphic code"
   },
@@ -24,6 +31,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 8,
+  "ATTACK": [
+    {
+      "ID": "T1093",
+      "Tactic": "defense-evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1093"
+    }
+  ],
   "Author": "0xrawsec",
   "Comments": "Experimental rule to catch polymorphic code"
   },

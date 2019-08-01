@@ -1,17 +1,27 @@
 {
-"Name": "FakeSvcHost",
-"Tags": ["WHIDS"],
-"Meta": {
-  "EventIDs": [1,3],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "Author": "0xrawsec",
-  "Comments": "Experimental rule to catch svchost process hosting no services"
+  "Name": "UntrustedService",
+  "Tags": ["WHIDS"],
+  "Meta": {
+    "EventIDs": [7],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "ATTACK": [
+      {
+        "ID": "T1035",
+        "Tactic": "Execution",
+        "Reference": "https://attack.mitre.org/techniques/T1035/"
+      }
+    ],
+    "Criticality": 10,
+    "Disable": false,
+    "Author": "0xrawsec",
+    "Comments": "Rule to catch services with an untrusted signature.",
+    "Requirements": "Hook enabled in Whids"
   },
-"Matches": [
-    "$svchost: Image ~= '(?i:{{system}}svchost\\.exe)'",
-    "$naservices: Services = 'N/A'"
+  "Matches": [
+    "$loaded: ImageLoaded ~= '(?i:\\.exe$)'",
+    "$pservice: ParentImage ~= '(?i:{{system}}services\\.exe)'",
+    "$trusted: Signature ~= '{{trusted-dll-sig}}'"
   ],
-"Condition": "$svchost and $naservices"
+  "Condition": "$loaded and $pservice and !$trusted"
 }

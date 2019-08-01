@@ -1,0 +1,156 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Windows\\system32\\wevtutil.exe\"  cl Application",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Eventing Command Line Utility",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=BDCF4B78B6D6F45EDC9D226CE05B7ADC3B366248,MD5=DAB04A7A5F67D2DA07FC968EEC76A5D2,SHA256=0DD7D2A9E56AE356591C1792EFB68A90FD76A7787E0B597FCBC4EF1FA514B601,IMPHASH=5CEEBCE34342598E6A5DC5278D7D430D",
+      "Image": "C:\\Windows\\System32\\wevtutil.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{49F1AF32-11F0-5A90-0000-002047700900}",
+      "LogonId": "0x97047",
+      "ParentCommandLine": "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "{49F1AF32-11F1-5A90-0000-00107E7D0900}",
+      "ParentProcessId": "2856",
+      "ProcessGuid": "{49F1AF32-869B-5A90-0000-001017121500}",
+      "ProcessId": "2560",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "1",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "1300196",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Windows\\system32\\wevtutil.exe\"  cl Security",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Eventing Command Line Utility",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=BDCF4B78B6D6F45EDC9D226CE05B7ADC3B366248,MD5=DAB04A7A5F67D2DA07FC968EEC76A5D2,SHA256=0DD7D2A9E56AE356591C1792EFB68A90FD76A7787E0B597FCBC4EF1FA514B601,IMPHASH=5CEEBCE34342598E6A5DC5278D7D430D",
+      "Image": "C:\\Windows\\System32\\wevtutil.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{49F1AF32-11F0-5A90-0000-002047700900}",
+      "LogonId": "0x97047",
+      "ParentCommandLine": "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "{49F1AF32-11F1-5A90-0000-00107E7D0900}",
+      "ParentProcessId": "2856",
+      "ProcessGuid": "{49F1AF32-86A2-5A90-0000-0010C0151500}",
+      "ProcessId": "3032",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "1",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "1300237",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Windows\\system32\\wevtutil.exe\"  clear-log Security",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Eventing Command Line Utility",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=BDCF4B78B6D6F45EDC9D226CE05B7ADC3B366248,MD5=DAB04A7A5F67D2DA07FC968EEC76A5D2,SHA256=0DD7D2A9E56AE356591C1792EFB68A90FD76A7787E0B597FCBC4EF1FA514B601,IMPHASH=5CEEBCE34342598E6A5DC5278D7D430D",
+      "Image": "C:\\Windows\\System32\\wevtutil.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{49F1AF32-11F0-5A90-0000-002047700900}",
+      "LogonId": "0x97047",
+      "ParentCommandLine": "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "{49F1AF32-11F1-5A90-0000-00107E7D0900}",
+      "ParentProcessId": "2856",
+      "ProcessGuid": "{49F1AF32-872F-5A90-0000-0010621C1500}",
+      "ProcessId": "904",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "1",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "1300375",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

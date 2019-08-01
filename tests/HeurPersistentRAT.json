@@ -1,0 +1,1281 @@
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\nbtstat.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "TCP/IP NetBios Information",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "SHA1=5AA269F216EC8B4DB21B534347565F0AFBAD2CA0,MD5=FE50B9B5B68ED5B2B6E328A5B7D8D9B5,SHA256=40ABBD7EBDB3CD6FA60E9AF4A584E99D7295DD10D97FECCFEAF5183F5A943C54,IMPHASH=207F3D1F113DEB58D9E4C6ACA8E0FA3F",
+      "Image": "C:\\Windows\\System32\\nbtstat.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "nbtinfo.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\PING.EXE\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "TCP/IP Ping Command",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "SHA1=565505D129A019780E351E615A29722AEF479380,MD5=F3F3D2B0196B9A00E91838888E76B5F6,SHA256=E9EF80A7849F1CF02CB5FB8396FF9E270CB9006F30294A52C6490A72B373BE00,IMPHASH=8C3BE1286CDAD6AC1136D0BB6C83FF41",
+      "Image": "C:\\Windows\\System32\\PING.EXE",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "ping.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae2-5d3f-0000-001025633000}",
+      "ProcessId": "7464",
+      "ProcessIntegrity": "-1",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692381",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "jq",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "TCP/IP Ping Command",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "SHA1=565505D129A019780E351E615A29722AEF479380,MD5=F3F3D2B0196B9A00E91838888E76B5F6,SHA256=E9EF80A7849F1CF02CB5FB8396FF9E270CB9006F30294A52C6490A72B373BE00,IMPHASH=8C3BE1286CDAD6AC1136D0BB6C83FF41",
+      "Image": "C:\\Windows\\System32\\PING.EXE",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "ping.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae2-5d3f-0000-001025633000}",
+      "ProcessId": "7464",
+      "ProcessIntegrity": "-1",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692385",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\systeminfo.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Displays system information",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "SHA1=BB6CD4B5CFE97EB64C071ADA39AC3B5F2F252FD6,MD5=4E678D82DDE61AAACA201F9636507F9E,SHA256=F5B4FB293ADA97A8C4B92BB380747DA1D71336F144332C95DDEF3F8522F7CE87,IMPHASH=C5985EAB8C1ED292344936A4595C1438",
+      "Image": "C:\\Windows\\System32\\systeminfo.exe",
+      "ImageSize": "102912",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "sysinfo.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae5-5d3f-0000-0010526e3000}",
+      "ProcessId": "3700",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692397",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\net.exe\" use",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Net Command",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "SHA1=5B9EA3C45A11D4AEB1B1AC0F72C4C19308FC7D0B,MD5=A63DF9A6E9098CC189F2A3EFC37600F6,SHA256=96CDFD7B263947A6A7C0DB54141A6B8D7777DB0A03A17CBF95666D98422F937B,IMPHASH=57F0C47AE2A1A2C06C8B987372AB0B07",
+      "Image": "C:\\Windows\\System32\\net.exe",
+      "ImageSize": "57856",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "net.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5af9-5d3f-0000-0010d7fe3000}",
+      "ProcessId": "2044",
+      "ProcessIntegrity": "-1",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692511",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\xcopy.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Extended Copy Utility",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "SHA1=D24758D001250861625EEF40809735789DF0B51B,MD5=F359375C36D2C540DFF1141B11BF2F7F,SHA256=C61FA91DAC2B19B10ED137A8550E9B0AE47415D1DFDD12A783CE811E101F2E71,IMPHASH=35EA203988B3D2B863842077BCE520C7",
+      "Image": "C:\\Windows\\System32\\xcopy.exe",
+      "ImageSize": "47616",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "XCOPY.EXE",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5afc-5d3f-0000-0010b6123100}",
+      "ProcessId": "7508",
+      "ProcessIntegrity": "-1",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692534",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\bitsadmin.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "BITS administration utility",
+      "FileVersion": "7.8.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "SHA1=282DA9EE622F01CC63352E53FDC3D4A75CEEB6FD,MD5=A23A7A6B6F8E1A5D913EA119F5F2ED1A,SHA256=EAAE8536D554D0E86D8540A8B34DB2649BD884843F389495D0B6E91636C6CF54,IMPHASH=B0A3CFF8CFDE112945189719F82F9EA9",
+      "Image": "C:\\Windows\\System32\\bitsadmin.exe",
+      "ImageSize": "212480",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "bitsadmin.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5b05-5d3f-0000-001012293100}",
+      "ProcessId": "4136",
+      "ProcessIntegrity": "-1",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692574",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\net1.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\net1.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\netstat.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\netstat.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\powershell.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\powershell.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\wscript.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\wscript.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\arp.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\arp.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\at.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\at.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\certutil.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\certutil.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\dsquery.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\dsquery.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\ipconfig.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\ipconfig.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\netsh.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\netsh.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\reg.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\reg.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\route.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\route.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\wininit.exe|C:\\Windows\\System32\\services.exe|C:\\Windows\\System32\\svchost.exe",
+      "CommandLine": "\"C:\\Windows\\system32\\schtasks.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Fake Event",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "Fake Event",
+      "Image": "C:\\Windows\\System32\\schtasks.exe",
+      "ImageSize": "21504",
+      "IntegrityLevel": "High",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-002038320300}",
+      "LogonId": "0x33238",
+      "OriginalFileName": "fake.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "High",
+      "ParentProcessGuid": "{515cd0d1-5ad8-5d3f-0000-001065c92f00}",
+      "ParentProcessId": "4844",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-5ae0-5d3f-0000-0010cf463000}",
+      "ProcessId": "5264",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "7692359",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

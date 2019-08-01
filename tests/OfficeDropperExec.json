@@ -1,0 +1,96 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "C:\\Programdata\\Q7Y9F5Z1.exe",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\Documents\\",
+      "Hashes": "SHA1=8D6DB316EA4E348021CB59CF3C6EC65C390F0497,MD5=36524C90CA1FAC2102E7653DFADB31B2,SHA256=FF808D0A12676BFAC88FD26F955154F8884F2BB7C534B9936510FD6296C543E8,IMPHASH=7CFC69E858A62E1E5A68D5510338C173",
+      "Image": "C:\\ProgramData\\Q7Y9F5Z1.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "{49F1AF32-651B-5ABB-0000-00205D120100}",
+      "LogonId": "0x1125d",
+      "ParentCommandLine": "\"C:\\Program Files (x86)\\Microsoft Office\\Office12\\EXCEL.EXE\" /e",
+      "ParentImage": "C:\\Program Files (x86)\\Microsoft Office\\Office12\\EXCEL.EXE",
+      "ParentProcessGuid": "{49F1AF32-001D-5AD6-0000-0010A0430D00}",
+      "ParentProcessId": "2700",
+      "ProcessGuid": "{49F1AF32-0032-5AD6-0000-00104E2E0E00}",
+      "ProcessId": "2884",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "36378",
+      "Execution": {
+        "ProcessID": "2948",
+        "ThreadID": "3028"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "C:\\Programdata\\Q1S5F1P6.exe",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\Documents\\",
+      "Hashes": "SHA1=8D6DB316EA4E348021CB59CF3C6EC65C390F0497,MD5=36524C90CA1FAC2102E7653DFADB31B2,SHA256=FF808D0A12676BFAC88FD26F955154F8884F2BB7C534B9936510FD6296C543E8,IMPHASH=7CFC69E858A62E1E5A68D5510338C173",
+      "Image": "C:\\ProgramData\\Q1S5F1P6.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-6417-5A74-0000-002065780100",
+      "LogonId": "0x00017865",
+      "ParentCommandLine": "\"C:\\Program Files (x86)\\Microsoft Office\\Office12\\EXCEL.EXE\" /e",
+      "ParentImage": "C:\\Program Files (x86)\\Microsoft Office\\Office12\\EXCEL.EXE",
+      "ParentProcessGuid": "49F1AF32-64C3-5A74-0000-0010122C0900",
+      "ParentProcessId": "1940",
+      "ProcessGuid": "49F1AF32-64CC-5A74-0000-001069AB0900",
+      "ProcessId": "2688",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "104856",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1964"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

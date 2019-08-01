@@ -1,0 +1,156 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "C:\\commander.exe",
+      "Company": " ",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": " ",
+      "FileVersion": "0.0.0.0",
+      "Hashes": "SHA1=0BDEB7F7EC9281E4CBAC0B3245B7B61EA3B9AB6C,MD5=F62CD73327B30C468ECEA1A68AB4D095,SHA256=38E28F4A22206BA506C8FF60A78EB18A93027E91CF45E817EA60EF28D2E5C3C7,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+      "Image": "C:\\commander.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{8C352DC7-3282-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\Windows\\system32\\services.exe",
+      "ParentImage": "C:\\Windows\\System32\\services.exe",
+      "ParentProcessGuid": "{8C352DC7-3282-5AC7-0000-0010A85F0000}",
+      "ParentProcessId": "444",
+      "ProcessGuid": "{8C352DC7-3D94-5AC7-0000-00109A7E1300}",
+      "ProcessId": "1876",
+      "Product": " ",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "241060",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "C:\\commander.exe",
+      "Company": " ",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": " ",
+      "FileVersion": "0.0.0.0",
+      "Hashes": "SHA1=0BDEB7F7EC9281E4CBAC0B3245B7B61EA3B9AB6C,MD5=F62CD73327B30C468ECEA1A68AB4D095,SHA256=38E28F4A22206BA506C8FF60A78EB18A93027E91CF45E817EA60EF28D2E5C3C7,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+      "Image": "C:\\commander.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{8C352DC7-3282-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\Windows\\system32\\services.exe",
+      "ParentImage": "C:\\Windows\\System32\\services.exe",
+      "ParentProcessGuid": "{8C352DC7-3282-5AC7-0000-0010A85F0000}",
+      "ParentProcessId": "444",
+      "ProcessGuid": "{8C352DC7-3E2E-5AC7-0000-0010788D1300}",
+      "ProcessId": "2104",
+      "Product": " ",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "241309",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "C:\\commander.exe",
+      "Company": " ",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": " ",
+      "FileVersion": "0.0.0.0",
+      "Hashes": "SHA1=0BDEB7F7EC9281E4CBAC0B3245B7B61EA3B9AB6C,MD5=F62CD73327B30C468ECEA1A68AB4D095,SHA256=38E28F4A22206BA506C8FF60A78EB18A93027E91CF45E817EA60EF28D2E5C3C7,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+      "Image": "C:\\commander.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{8C352DC7-3282-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\Windows\\system32\\services.exe",
+      "ParentImage": "C:\\Windows\\System32\\services.exe",
+      "ParentProcessGuid": "{8C352DC7-3282-5AC7-0000-0010A85F0000}",
+      "ParentProcessId": "444",
+      "ProcessGuid": "{8C352DC7-3ECD-5AC7-0000-001008A31300}",
+      "ProcessId": "1924",
+      "Product": " ",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "241640",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

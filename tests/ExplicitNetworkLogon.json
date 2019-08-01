@@ -1,0 +1,1998 @@
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49591",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{C505CF35-4BE9-A88B-9A06-459095A66DC4}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x111b58",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "8076",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1040"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1840",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49604",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{4832046F-58D8-1424-41E5-1515E6628905}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x111b98",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "8083",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "2680"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1840",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49426",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{15B3EFAD-4853-9196-765D-A0990B78A32E}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x124671",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "8914",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1096"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1840",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49434",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{60C81D04-A354-8CDE-5EBA-F45ACAC8C08F}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x1246bb",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "8916",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1096"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49538",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{527B89D0-27BC-8E07-5AF4-A7B4C04AAAE7}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x1297e7",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9045",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49542",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{527B89D0-27BC-8E07-5AF4-A7B4C04AAAE7}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x129802",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9049",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49542",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{527B89D0-27BC-8E07-5AF4-A7B4C04AAAE7}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x129861",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9055",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "NTLM",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49542",
+      "KeyLength": "128",
+      "LmPackageName": "NTLM V2",
+      "LogonGuid": "{00000000-0000-0000-0000-000000000000}",
+      "LogonProcessName": "NtLmSsp ",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x129820",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "CALDERA02",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9052",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "NTLM",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49551",
+      "KeyLength": "128",
+      "LmPackageName": "NTLM V2",
+      "LogonGuid": "{00000000-0000-0000-0000-000000000000}",
+      "LogonProcessName": "NtLmSsp ",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x12b108",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "CALDERA02",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9071",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1204"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49551",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{1C0C32D7-976A-7E9F-EE98-4F78E82981B5}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x12b0ed",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9068",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1204"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49551",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{1C0C32D7-976A-7E9F-EE98-4F78E82981B5}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x12b166",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9074",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1204"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49565",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{CDD83BBA-9140-F446-4E9B-D922AD497386}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x12b4a0",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9084",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "NTLM",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49565",
+      "KeyLength": "128",
+      "LmPackageName": "NTLM V2",
+      "LogonGuid": "{00000000-0000-0000-0000-000000000000}",
+      "LogonProcessName": "NtLmSsp ",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x12b4bb",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "CALDERA02",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9087",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49565",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{CDD83BBA-9140-F446-4E9B-D922AD497386}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x12b51c",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9090",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1204"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49577",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{AE36B894-6C40-259C-CC4C-62D15D218D7F}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x12c493",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9104",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49581",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{AE36B894-6C40-259C-CC4C-62D15D218D7F}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x12c4ad",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9108",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "NTLM",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49581",
+      "KeyLength": "128",
+      "LmPackageName": "NTLM V2",
+      "LogonGuid": "{00000000-0000-0000-0000-000000000000}",
+      "LogonProcessName": "NtLmSsp ",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x12c4c8",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "CALDERA02",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9111",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49581",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{AE36B894-6C40-259C-CC4C-62D15D218D7F}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x12c54a",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9114",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1840",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49593",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{883F8345-45BA-36E7-3B67-1DEDED676C0A}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x1314aa",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9127",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1204"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49577",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{AE36B894-6C40-259C-CC4C-62D15D218D7F}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x13158b",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9135",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1204"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49600",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{32EDC873-3EDF-146D-A110-F20383617655}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x1315b1",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9139",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1204"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49600",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{32EDC873-3EDF-146D-A110-F20383617655}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x1315ce",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9142",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1204"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49624",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{0B8408A8-9463-9558-1AC4-22B2A8F12233}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x132f66",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9181",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49629",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{EF1ED319-4756-BDDC-C90C-A8B3B6EA4EAC}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x132f85",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9185",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49629",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{EF1ED319-4756-BDDC-C90C-A8B3B6EA4EAC}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x132fa5",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9188",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49653",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{9DF82D35-A618-BDA5-AF80-A3E6E2AA30D1}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x133f13",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9203",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49658",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{9DF82D35-A618-BDA5-AF80-A3E6E2AA30D1}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x133f2f",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9207",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49658",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{9DF82D35-A618-BDA5-AF80-A3E6E2AA30D1}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x133f4c",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9210",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49686",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{945A6A30-B110-C8B2-B059-93F1A5D8D903}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x13577b",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9251",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "2732"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49696",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{6F75F973-5D72-D596-9C31-D1DB02DC254D}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x1358b6",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9257",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "2732"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1833",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49718",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{7E0B4D2E-9C27-463B-CE3B-964C257BC3DF}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x1368c5",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9268",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "3000"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1840",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49754",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{645C23AE-0790-74B8-F5CB-AC01F86A08C1}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x137cba",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9301",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "2432"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1840",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49760",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{83FAC0F6-9ECE-B90F-3403-72CA77ABB9C1}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x137e65",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9316",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "1920"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1840",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49791",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{9021211F-B4E4-F848-6723-D7E0D9E6DF57}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x138b72",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9328",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "2732"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1840",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49797",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{B5400154-5CCE-0F1A-B4A6-62BF50298183}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x138d44",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9346",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "440"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1840",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49829",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{DDB8CCC4-4F11-0601-298D-E4018D3F491A}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x13a08b",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9380",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "440"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "AuthenticationPackageName": "Kerberos",
+      "ImpersonationLevel": "%%1840",
+      "IpAddress": "192.168.58.102",
+      "IpPort": "49835",
+      "KeyLength": "0",
+      "LmPackageName": "-",
+      "LogonGuid": "{02E36F26-4884-09BF-EB32-8F0CB05B8592}",
+      "LogonProcessName": "Kerberos",
+      "LogonType": "3",
+      "ProcessId": "0x0",
+      "ProcessName": "-",
+      "SubjectDomainName": "-",
+      "SubjectLogonId": "0x0",
+      "SubjectUserName": "-",
+      "SubjectUserSid": "S-1-0-0",
+      "TargetDomainName": "CALDERA",
+      "TargetLogonId": "0x13a2d4",
+      "TargetUserName": "Administrator",
+      "TargetUserSid": "S-1-5-21-610196800-1665352633-2058931075-500",
+      "TransmittedServices": "-",
+      "WorkstationName": "",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4624",
+      "EventRecordID": "9395",
+      "Execution": {
+        "ProcessID": "452",
+        "ThreadID": "2364"
+      },
+      "Keywords": "0x8020000000000000",
+      "Level": "0",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "12544",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "1"
+    }
+  }
+}

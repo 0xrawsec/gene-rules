@@ -6,6 +6,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 7,
+  "ATTACK": [
+    {
+      "ID": "T1047",
+      "Tactic": "execution",
+      "Reference": "https://attack.mitre.org/techniques/T1047"
+    }
+  ],
   "Author": "@0xrawsec",
   "Comment": "This rule catches the processes spawned by WMI"
   },
@@ -44,6 +51,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 7,
+  "ATTACK": [
+    {
+      "ID": "T1220",
+      "Tactic": "execution",
+      "Reference": "https://attack.mitre.org/techniques/T1220"
+    }
+  ],
   "Author": "@0xrawsec",
   "Comment": "WMI Applocker Bypass attempt",
   "Link": "https://subt0x11.blogspot.nl/2018/04/wmicexe-whitelisting-bypass-hacking.html?m=1"
@@ -62,7 +76,14 @@
   "EventIDs": [19, 20, 21],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 8,
+  "Criticality": 10,
+  "ATTACK": [
+    {
+      "ID": "T1084",
+      "Tactic": "persistence",
+      "Reference": "https://attack.mitre.org/techniques/T1084"
+    }
+  ],
   "Author": "@0xrawsec",
   "Comment": "This rule catches any WMI events. Any of them needs to be checked."
   },

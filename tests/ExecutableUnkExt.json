@@ -1,0 +1,943 @@
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=8E0E75F9A601C95AF68D22EC89D297012ACD1222,MD5=C17139EAF939964142C7A1AEEE02DC81,SHA256=88B56C86F5A9E6DA5E357EFDC5C62B6DDF4F314F682BC953A03D0F4CD2E7C768,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe",
+      "ImageLoaded": "C:\\Windows\\SysWOW64\\ieapfltr.dat",
+      "ProcessGuid": "49F1AF32-9938-5A1E-0000-00107F920A00",
+      "ProcessId": "2748",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "46225",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1948"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=8E0E75F9A601C95AF68D22EC89D297012ACD1222,MD5=C17139EAF939964142C7A1AEEE02DC81,SHA256=88B56C86F5A9E6DA5E357EFDC5C62B6DDF4F314F682BC953A03D0F4CD2E7C768,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe",
+      "ImageLoaded": "C:\\Windows\\SysWOW64\\ieapfltr.dat",
+      "ProcessGuid": "49F1AF32-9973-5A1E-0000-001074090C00",
+      "ProcessId": "1720",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "49758",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=1C8AFB34A17AC28963C3AEA64B6875870AB23CD6,MD5=AB301A53D90321C7E90AB068BE056B7C,SHA256=DA44096FF47C921171B189044E15940D3E3202326992A8F1F18E70B71F991C4D,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasbase.vdm",
+      "ProcessGuid": "49F1AF32-9976-5A1E-0000-00108F5A0C00",
+      "ProcessId": "2468",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "51269",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1948"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=1C8AFB34A17AC28963C3AEA64B6875870AB23CD6,MD5=AB301A53D90321C7E90AB068BE056B7C,SHA256=DA44096FF47C921171B189044E15940D3E3202326992A8F1F18E70B71F991C4D,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasbase.vdm",
+      "ProcessGuid": "49F1AF32-9976-5A1E-0000-00108F5A0C00",
+      "ProcessId": "2468",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "51270",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1948"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=FD62601F2AE8730FB1BEF20D245617AF1672D2DC,MD5=05BDFE6C94405696D81FCDAA496BCC89,SHA256=3177FBF913282A7383ED6D66E076F1F3392E6066075F21E73F044A12413899E6,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasdlta.vdm",
+      "ProcessGuid": "49F1AF32-9976-5A1E-0000-00108F5A0C00",
+      "ProcessId": "2468",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "51310",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1948"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=FD62601F2AE8730FB1BEF20D245617AF1672D2DC,MD5=05BDFE6C94405696D81FCDAA496BCC89,SHA256=3177FBF913282A7383ED6D66E076F1F3392E6066075F21E73F044A12413899E6,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasdlta.vdm",
+      "ProcessGuid": "49F1AF32-9976-5A1E-0000-00108F5A0C00",
+      "ProcessId": "2468",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "51313",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1948"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=8E0E75F9A601C95AF68D22EC89D297012ACD1222,MD5=C17139EAF939964142C7A1AEEE02DC81,SHA256=88B56C86F5A9E6DA5E357EFDC5C62B6DDF4F314F682BC953A03D0F4CD2E7C768,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe",
+      "ImageLoaded": "C:\\Windows\\SysWOW64\\ieapfltr.dat",
+      "ProcessGuid": "49F1AF32-9980-5A1E-0000-001001FA0C00",
+      "ProcessId": "1628",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "53180",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=8E0E75F9A601C95AF68D22EC89D297012ACD1222,MD5=C17139EAF939964142C7A1AEEE02DC81,SHA256=88B56C86F5A9E6DA5E357EFDC5C62B6DDF4F314F682BC953A03D0F4CD2E7C768,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe",
+      "ImageLoaded": "C:\\Windows\\SysWOW64\\ieapfltr.dat",
+      "ProcessGuid": "49F1AF32-99C4-5A1E-0000-0010804D0E00",
+      "ProcessId": "2552",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "58152",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=258432B68517E5D99BA97A091CD6D8A6ABEA1543,MD5=252A115A2A497034B1C7F800F299D2C1,SHA256=749FD1BA716B2C4781A072A6883C0566F72E1B402A60EF69BF394EB1D016FEB9,IMPHASH=A004CABE97348986C31AFBF4F331CDF1",
+      "Image": "C:\\Program Files\\Vector35\\BinaryNinja\\binaryninja.exe",
+      "ImageLoaded": "C:\\Program Files\\Vector35\\BinaryNinja\\plugins\\DLLs\\_ctypes.pyd",
+      "ProcessGuid": "49F1AF32-99FE-5A1E-0000-0010BF150F00",
+      "ProcessId": "2092",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "62149",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1948"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=FC0865C95216A46AF85E5D7867F599189556DFE0,MD5=BF3BF556CEC633F69320305ECDFC6D99,SHA256=E1E56D941661A0E44B5C68D1A0E13363D0C4708D1963A6226D044B2D0F34B26D,IMPHASH=4BA8622998C96B88FFC6115478ABC17F",
+      "Image": "C:\\Program Files\\Vector35\\BinaryNinja\\binaryninja.exe",
+      "ImageLoaded": "C:\\Program Files\\Vector35\\BinaryNinja\\plugins\\DLLs\\_socket.pyd",
+      "ProcessGuid": "49F1AF32-99FE-5A1E-0000-0010BF150F00",
+      "ProcessId": "2092",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "62152",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1948"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=7AF69F3B79A19B7A9D3728E988D4017D112E6562,MD5=97645B861FCD32B6BD824D78411E9127,SHA256=C4846D109B3474FEC7C55D8CA07E1AB2DA2743044A157DC864403234BE5B320F,IMPHASH=A9EF008AC04955E7F6B1A764E73B4891",
+      "Image": "C:\\Program Files\\Vector35\\BinaryNinja\\binaryninja.exe",
+      "ImageLoaded": "C:\\Program Files\\Vector35\\BinaryNinja\\plugins\\DLLs\\_ssl.pyd",
+      "ProcessGuid": "49F1AF32-99FE-5A1E-0000-0010BF150F00",
+      "ProcessId": "2092",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "62161",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1948"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=1C8AFB34A17AC28963C3AEA64B6875870AB23CD6,MD5=AB301A53D90321C7E90AB068BE056B7C,SHA256=DA44096FF47C921171B189044E15940D3E3202326992A8F1F18E70B71F991C4D,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasbase.vdm",
+      "ProcessGuid": "49F1AF32-D180-59DC-0000-00103E790600",
+      "ProcessId": "2936",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "40236",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1952"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=1C8AFB34A17AC28963C3AEA64B6875870AB23CD6,MD5=AB301A53D90321C7E90AB068BE056B7C,SHA256=DA44096FF47C921171B189044E15940D3E3202326992A8F1F18E70B71F991C4D,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasbase.vdm",
+      "ProcessGuid": "49F1AF32-D180-59DC-0000-00103E790600",
+      "ProcessId": "2936",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "40237",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1952"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=FD62601F2AE8730FB1BEF20D245617AF1672D2DC,MD5=05BDFE6C94405696D81FCDAA496BCC89,SHA256=3177FBF913282A7383ED6D66E076F1F3392E6066075F21E73F044A12413899E6,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasdlta.vdm",
+      "ProcessGuid": "49F1AF32-D180-59DC-0000-00103E790600",
+      "ProcessId": "2936",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "40263",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1952"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=FD62601F2AE8730FB1BEF20D245617AF1672D2DC,MD5=05BDFE6C94405696D81FCDAA496BCC89,SHA256=3177FBF913282A7383ED6D66E076F1F3392E6066075F21E73F044A12413899E6,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasdlta.vdm",
+      "ProcessGuid": "49F1AF32-D180-59DC-0000-00103E790600",
+      "ProcessId": "2936",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "40262",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1952"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=1C8AFB34A17AC28963C3AEA64B6875870AB23CD6,MD5=AB301A53D90321C7E90AB068BE056B7C,SHA256=DA44096FF47C921171B189044E15940D3E3202326992A8F1F18E70B71F991C4D,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasbase.vdm",
+      "ProcessGuid": "49F1AF32-2155-59C2-0000-0010086D0700",
+      "ProcessId": "2768",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "973256",
+      "Execution": {
+        "ProcessID": "1384",
+        "ThreadID": "1960"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=1C8AFB34A17AC28963C3AEA64B6875870AB23CD6,MD5=AB301A53D90321C7E90AB068BE056B7C,SHA256=DA44096FF47C921171B189044E15940D3E3202326992A8F1F18E70B71F991C4D,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasbase.vdm",
+      "ProcessGuid": "49F1AF32-2155-59C2-0000-0010086D0700",
+      "ProcessId": "2768",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "973255",
+      "Execution": {
+        "ProcessID": "1384",
+        "ThreadID": "1960"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=FD62601F2AE8730FB1BEF20D245617AF1672D2DC,MD5=05BDFE6C94405696D81FCDAA496BCC89,SHA256=3177FBF913282A7383ED6D66E076F1F3392E6066075F21E73F044A12413899E6,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasdlta.vdm",
+      "ProcessGuid": "49F1AF32-2155-59C2-0000-0010086D0700",
+      "ProcessId": "2768",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "973301",
+      "Execution": {
+        "ProcessID": "1384",
+        "ThreadID": "1960"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=FD62601F2AE8730FB1BEF20D245617AF1672D2DC,MD5=05BDFE6C94405696D81FCDAA496BCC89,SHA256=3177FBF913282A7383ED6D66E076F1F3392E6066075F21E73F044A12413899E6,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasdlta.vdm",
+      "ProcessGuid": "49F1AF32-2155-59C2-0000-0010086D0700",
+      "ProcessId": "2768",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "973302",
+      "Execution": {
+        "ProcessID": "1384",
+        "ThreadID": "1960"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=1C8AFB34A17AC28963C3AEA64B6875870AB23CD6,MD5=AB301A53D90321C7E90AB068BE056B7C,SHA256=DA44096FF47C921171B189044E15940D3E3202326992A8F1F18E70B71F991C4D,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasbase.vdm",
+      "ProcessGuid": "49F1AF32-89CB-59C1-0000-0010FB440900",
+      "ProcessId": "2556",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "861516",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=1C8AFB34A17AC28963C3AEA64B6875870AB23CD6,MD5=AB301A53D90321C7E90AB068BE056B7C,SHA256=DA44096FF47C921171B189044E15940D3E3202326992A8F1F18E70B71F991C4D,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasbase.vdm",
+      "ProcessGuid": "49F1AF32-89CB-59C1-0000-0010FB440900",
+      "ProcessId": "2556",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "861515",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=FD62601F2AE8730FB1BEF20D245617AF1672D2DC,MD5=05BDFE6C94405696D81FCDAA496BCC89,SHA256=3177FBF913282A7383ED6D66E076F1F3392E6066075F21E73F044A12413899E6,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasdlta.vdm",
+      "ProcessGuid": "49F1AF32-89CB-59C1-0000-0010FB440900",
+      "ProcessId": "2556",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "861541",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=FD62601F2AE8730FB1BEF20D245617AF1672D2DC,MD5=05BDFE6C94405696D81FCDAA496BCC89,SHA256=3177FBF913282A7383ED6D66E076F1F3392E6066075F21E73F044A12413899E6,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\ProgramData\\Microsoft\\Windows Defender\\Definition Updates\\{93D9851A-B914-4732-862F-61608A214BC5}\\mpasdlta.vdm",
+      "ProcessGuid": "49F1AF32-89CB-59C1-0000-0010FB440900",
+      "ProcessId": "2556",
+      "Signature": "Microsoft Corporation",
+      "SignatureStatus": "Valid",
+      "Signed": "true",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "861542",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

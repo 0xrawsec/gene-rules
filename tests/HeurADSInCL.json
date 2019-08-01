@@ -1,0 +1,208 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "wmic  call process \"test.txt:malicious.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Users\\CALDUS~1\\AppData\\Local\\Temp\\",
+      "Description": "WMI Commandline Utility",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=071A645A88E4236281E58B90A5D50A2AC80E26E5,MD5=FD902835DEAEF4091799287736F3A028,SHA256=DA3AD32583644BD20116F0479C178F7C7C0B730728F4C02A438C0D19378C83D9,IMPHASH=15585CB74052B4739A900FCB332F06EA",
+      "Image": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "{49F1AF32-11B8-5A90-0000-00207BFB0200}",
+      "LogonId": "0x2fb7b",
+      "ParentCommandLine": "\"C:\\Windows\\system32\\cmd.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+      "ParentProcessGuid": "{49F1AF32-12C5-5A90-0000-00100AEA0B00}",
+      "ParentProcessId": "2100",
+      "ProcessGuid": "{49F1AF32-159A-5A90-0000-0010C7DB0C00}",
+      "ProcessId": "2508",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "1",
+      "User": "CALDERA\\calduser1",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "1275332",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "wmic  call process \"test2.txt:malicious.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Users\\CALDUS~1\\AppData\\Local\\Temp\\",
+      "Description": "WMI Commandline Utility",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=071A645A88E4236281E58B90A5D50A2AC80E26E5,MD5=FD902835DEAEF4091799287736F3A028,SHA256=DA3AD32583644BD20116F0479C178F7C7C0B730728F4C02A438C0D19378C83D9,IMPHASH=15585CB74052B4739A900FCB332F06EA",
+      "Image": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "{49F1AF32-11B8-5A90-0000-00207BFB0200}",
+      "LogonId": "0x2fb7b",
+      "ParentCommandLine": "\"C:\\Windows\\system32\\cmd.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+      "ParentProcessGuid": "{49F1AF32-12C5-5A90-0000-00100AEA0B00}",
+      "ParentProcessId": "2100",
+      "ProcessGuid": "{49F1AF32-15A0-5A90-0000-00104DE90C00}",
+      "ProcessId": "2384",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "1",
+      "User": "CALDERA\\calduser1",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "1275533",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "notepad  \"test2.txt:malicious.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Users\\CALDUS~1\\AppData\\Local\\Temp\\",
+      "Description": "Notepad",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=7EB0139D2175739B3CCB0D1110067820BE6ABD29,MD5=F2C7BB8ACC97F92E987A2D4087D021B1,SHA256=142E1D688EF0568370C37187FD9F2351D7DDEDA574F8BFA9B0FA4EF42DB85AA2,IMPHASH=38934EE4AAAAA8DAB7C73508BC6715CA",
+      "Image": "C:\\Windows\\System32\\notepad.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "{49F1AF32-11B8-5A90-0000-00207BFB0200}",
+      "LogonId": "0x2fb7b",
+      "ParentCommandLine": "\"C:\\Windows\\system32\\cmd.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+      "ParentProcessGuid": "{49F1AF32-12C5-5A90-0000-00100AEA0B00}",
+      "ParentProcessId": "2100",
+      "ProcessGuid": "{49F1AF32-15A9-5A90-0000-001032F10C00}",
+      "ProcessId": "1888",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "1",
+      "User": "CALDERA\\calduser1",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "1275603",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "wmic  process call create \"test2.txt:malicious.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Users\\CALDUS~1\\AppData\\Local\\Temp\\",
+      "Description": "WMI Commandline Utility",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=071A645A88E4236281E58B90A5D50A2AC80E26E5,MD5=FD902835DEAEF4091799287736F3A028,SHA256=DA3AD32583644BD20116F0479C178F7C7C0B730728F4C02A438C0D19378C83D9,IMPHASH=15585CB74052B4739A900FCB332F06EA",
+      "Image": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "{49F1AF32-11B8-5A90-0000-00207BFB0200}",
+      "LogonId": "0x2fb7b",
+      "ParentCommandLine": "\"C:\\Windows\\system32\\cmd.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+      "ParentProcessGuid": "{49F1AF32-12C5-5A90-0000-00100AEA0B00}",
+      "ParentProcessId": "2100",
+      "ProcessGuid": "{49F1AF32-15BD-5A90-0000-00100DF60C00}",
+      "ProcessId": "1544",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "1",
+      "User": "CALDERA\\calduser1",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "1275658",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

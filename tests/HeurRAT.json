@@ -1,0 +1,312 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"systeminfo\" ",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Displays system information",
+      "FileVersion": "6.3.9600.16384 (winblue_rtm.130821-1623)",
+      "Hashes": "SHA1=7D7AB9FD711F9B670F2977A78EF2914DB4ECDBB8,MD5=4EAD4E81DB8B24F6D29B3C71FE48DBB9,SHA256=03D2EF40E7C019A526B1AEC22B273F1C4D407973DF7F8BD5028C31CCACA9A492,IMPHASH=6012687C99DFEFA15CCE0632B5445521",
+      "Image": "C:\\Windows\\System32\\systeminfo.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{8C352DC7-3AEA-5A94-0000-002097241100}",
+      "LogonId": "0x112497",
+      "ParentCommandLine": "C:\\Windows\\PSEXESVC.exe",
+      "ParentImage": "C:\\Windows\\PSEXESVC.exe",
+      "ParentProcessGuid": "{8C352DC7-3AE9-5A94-0000-0010501F1100}",
+      "ParentProcessId": "1872",
+      "ProcessGuid": "{8C352DC7-3AEA-5A94-0000-00106C261100}",
+      "ProcessId": "2964",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "104668",
+      "Execution": {
+        "ProcessID": "1508",
+        "ThreadID": "1960"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"systeminfo.exe\" /fo csv",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Displays system information",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=F4124883BEF7C340F90A7237DDC9606902106863,MD5=DEBEA7D13C96687CAB4248DE0B6A2CE8,SHA256=58D1231E9BD2848E5014E1968CF10B043FCEBF411EF0E7D7F75B6A41867DFB61,IMPHASH=26836CD06EB32E4DA9DE1CE8D9DB287C",
+      "Image": "C:\\Windows\\System32\\systeminfo.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-356A-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\commander.exe -f",
+      "ParentImage": "C:\\commander.exe",
+      "ParentProcessGuid": "{49F1AF32-38A7-5AC7-0000-0010869A0A00}",
+      "ParentProcessId": "920",
+      "ProcessGuid": "{49F1AF32-38BF-5AC7-0000-0010542C0B00}",
+      "ProcessId": "808",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "884591",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"nbtstat\" -n",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "TCP/IP NetBios Information",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=68DBA140959ED155F720060C5466F5FD90A176F6,MD5=D6A9FE571146099D6D75A8E4E7871506,SHA256=F63D1A87E8D264321BD2EF30B017758EF77CF741849F3F7F214BB169C0C9A461,IMPHASH=FD8908AC8524F3754D53A83833416369",
+      "Image": "C:\\Windows\\System32\\nbtstat.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-356A-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\commander.exe -f",
+      "ParentImage": "C:\\commander.exe",
+      "ParentProcessGuid": "{49F1AF32-38A7-5AC7-0000-0010869A0A00}",
+      "ParentProcessId": "920",
+      "ProcessGuid": "{49F1AF32-38D6-5AC7-0000-0010643B0D00}",
+      "ProcessId": "2912",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "898632",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"systeminfo.exe\" /fo csv /S calderadc.caldera.loc /U caldera\\administrator /p Admin123456",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Displays system information",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=F4124883BEF7C340F90A7237DDC9606902106863,MD5=DEBEA7D13C96687CAB4248DE0B6A2CE8,SHA256=58D1231E9BD2848E5014E1968CF10B043FCEBF411EF0E7D7F75B6A41867DFB61,IMPHASH=26836CD06EB32E4DA9DE1CE8D9DB287C",
+      "Image": "C:\\Windows\\System32\\systeminfo.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-356A-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\commander.exe -f",
+      "ParentImage": "C:\\commander.exe",
+      "ParentProcessGuid": "{49F1AF32-38A7-5AC7-0000-0010869A0A00}",
+      "ParentProcessId": "920",
+      "ProcessGuid": "{49F1AF32-3ACD-5AC7-0000-00106BA81300}",
+      "ProcessId": "596",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "913762",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"net\" time \\\\calderadc.caldera.loc",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Net Command",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=B25697B250631BB09D27E259A2D280CFA97CA456,MD5=63DD6FBAABF881385899FD39DF13DCE3,SHA256=3B9AD8E2C1D03FF941A7C9192A605F31671B107DEF6FF503A71A0FB2C5BBD659,IMPHASH=96B4B43C2313DC3C3237F7C32A9F8812",
+      "Image": "C:\\Windows\\System32\\net.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-356A-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\commander.exe -f",
+      "ParentImage": "C:\\commander.exe",
+      "ParentProcessGuid": "{49F1AF32-38A7-5AC7-0000-0010869A0A00}",
+      "ParentProcessId": "920",
+      "ProcessGuid": "{49F1AF32-3C57-5AC7-0000-0010F33F1B00}",
+      "ProcessId": "2580",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "921756",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "C:\\Windows\\system32\\net1 time \\\\calderadc.caldera.loc",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Net Command",
+      "FileVersion": "6.1.7601.17514 (win7sp1_rtm.101119-1850)",
+      "Hashes": "SHA1=B885470C69CAEA77043B96DC1875C346EC3DA0B0,MD5=3B6928BC39E5530CEAD1E99269E7B1EE,SHA256=0F084CCC40CBF7C3C7472DDAD609B5FD31AACAFA44E23F9EC7E9E2184713B986,IMPHASH=72AA515B1963995C201E36DE48594F61",
+      "Image": "C:\\Windows\\System32\\net1.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-356A-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "\"net\" time \\\\calderadc.caldera.loc",
+      "ParentImage": "C:\\Windows\\System32\\net.exe",
+      "ParentProcessGuid": "{49F1AF32-3C57-5AC7-0000-0010F33F1B00}",
+      "ParentProcessId": "2580",
+      "ProcessGuid": "{49F1AF32-3C57-5AC7-0000-00100F431B00}",
+      "ProcessId": "2632",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "921799",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

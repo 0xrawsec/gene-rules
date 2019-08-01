@@ -123,6 +123,13 @@
       "*::ParentProcessGuid = ProcessGuid"
     ],
     "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1003",
+        "Tactic": "Credential Access",
+        "Reference": "https://attack.mitre.org/techniques/T1003/"
+      }
+    ],
     "Author": "0xrawsec"
   },
   "Matches": [
@@ -172,6 +179,13 @@
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
     "Criticality": 10,
+    "ATTACK": [
+      {
+        "ID": "T1003",
+        "Tactic": "Credential Access",
+        "Reference": "https://attack.mitre.org/techniques/T1003/"
+      }
+    ],
     "Author": "0xrawsec",
     "Comments": "Rules to catch NTLM downgrade attack",
     "Links:" :[
@@ -199,6 +213,13 @@
     "Channels": ["Security"],
     "Computers": [],
     "Criticality": 10,
+    "ATTACK": [
+      {
+        "ID": "T1003",
+        "Tactic": "Credential Access",
+        "Reference": "https://attack.mitre.org/techniques/T1003/"
+      }
+    ],
     "Author": "0xrawsec",
     "Comments": "Rules to catch NTLM downgrade attack but with Registry audit policy enabled",
     "Links:" :[

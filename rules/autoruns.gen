@@ -6,6 +6,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 8,
+  "ATTACK": [
+    {
+      "ID": "T1060",
+      "Tactic": "persistence",
+      "Reference": "https://attack.mitre.org/techniques/T1060"
+    }
+  ],
   "Author": "@0xrawsec",
   "Comment": "Spot new autoruns"
   },

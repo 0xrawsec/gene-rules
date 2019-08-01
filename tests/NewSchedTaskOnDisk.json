@@ -1,0 +1,456 @@
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-07 21:44:33.156",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "49F1AF32-C9E0-59DC-0000-0010AEBE0000",
+      "ProcessId": "936",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\Microsoft\\Windows\\DiskDiagnostic\\Microsoft-Windows-DiskDiagnosticDataCollector",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "4305",
+      "Execution": {
+        "ProcessID": "2860",
+        "ThreadID": "1848"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2009-07-14 04:57:06.723",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "49F1AF32-98FC-5A1E-0000-00103CF30000",
+      "ProcessId": "928",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\Microsoft\\Windows Defender\\MP Scheduled Scan",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "105111",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2009-07-14 04:57:06.723",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "49F1AF32-D0E6-59DC-0000-0010C4EE0000",
+      "ProcessId": "920",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\Microsoft\\Windows Defender\\MP Scheduled Scan",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "49219",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1936"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2009-07-14 04:57:06.723",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "{49F1AF32-11AF-5A90-0000-0010C7F40000}",
+      "ProcessId": "872",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\Microsoft\\Windows Defender\\MP Scheduled Scan",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "1273344",
+      "Execution": {
+        "ProcessID": "2612",
+        "ThreadID": "1576"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2009-07-14 04:57:06.723",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "49F1AF32-20D4-59C2-0000-00105BE80000",
+      "ProcessId": "928",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\Microsoft\\Windows Defender\\MP Scheduled Scan",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "1019242",
+      "Execution": {
+        "ProcessID": "1384",
+        "ThreadID": "1952"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-16 15:12:14.211",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "49F1AF32-4E57-59BD-0000-001016E80000",
+      "ProcessId": "920",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\EvtxMon",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "823156",
+      "Execution": {
+        "ProcessID": "1332",
+        "ThreadID": "1924"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-16 15:12:14.211",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "49F1AF32-4E57-59BD-0000-001016E80000",
+      "ProcessId": "920",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\EvtxMon",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "823167",
+      "Execution": {
+        "ProcessID": "1332",
+        "ThreadID": "1924"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2009-07-14 04:57:06.723",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "49F1AF32-8952-59C1-0000-0010CAE70000",
+      "ProcessId": "920",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\Microsoft\\Windows Defender\\MP Scheduled Scan",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "875073",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1876"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2009-07-14 04:57:06.723",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "49F1AF32-4474-59DB-0000-00103CBE0000",
+      "ProcessId": "928",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\Microsoft\\Windows Defender\\MP Scheduled Scan",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "6850",
+      "Execution": {
+        "ProcessID": "2160",
+        "ThreadID": "2380"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2009-07-14 04:57:06.723",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "{49F1AF32-3289-5AC7-0000-00104CF50000}",
+      "ProcessId": "876",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\Microsoft\\Windows Defender\\MP Scheduled Scan",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "1356390",
+      "Execution": {
+        "ProcessID": "1424",
+        "ThreadID": "1676"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2009-07-14 04:57:06.723",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "{49F1AF32-356B-5AC7-0000-001036FB0000}",
+      "ProcessId": "872",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\Microsoft\\Windows Defender\\MP Scheduled Scan",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "904987",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-04-06 09:22:36.088",
+      "Image": "C:\\Windows\\system32\\svchost.exe",
+      "ProcessGuid": "{8C352DC7-3285-5AC7-0000-001069D00000}",
+      "ProcessId": "772",
+      "TargetFilename": "C:\\Windows\\System32\\Tasks\\caldera_task1",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "240431",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}

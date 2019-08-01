@@ -6,6 +6,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 6,
+  "ATTACK": [
+    {
+      "ID": "T1085",
+      "Tactic": "execution",
+      "Reference": "https://attack.mitre.org/techniques/T1085"
+    }
+  ],
   "Author": "0xrawsec",
   "Comments": "Experimental rule to try to spot suspicious DLLs loaded using rundll32.exe. Criticality may have to be adjusted."
   },

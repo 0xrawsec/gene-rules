@@ -5,12 +5,14 @@
   "EventIDs": [4],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 6,
+  "Criticality": 8,
   "Author": "@0xrawsec",
   "Comment": ""
   },
-"Matches": [],
-"Condition": ""
+"Matches": [
+  "$start: State = 'Started'"
+],
+"Condition": "!$start"
 }
 
 {

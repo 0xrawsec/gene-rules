@@ -1,0 +1,41 @@
+{
+  "Event": {
+    "EventData": {
+      "Hashes": "SHA1=9208F94662CFE80A92D7B271838ADD91B8616618,MD5=3B367397320C26DBA890B260F80D1B1B,SHA256=50BBE71B4380B5E86E197AF86F5C08266DD6B12344BA4ABDEA604B8C774C4147,IMPHASH=275BEA6369D0DEC294882377BE493DB5",
+      "Image": "C:\\Windows\\System32\\svchost.exe",
+      "ImageLoaded": "C:\\Windows\\System32\\hnetcfg.dll",
+      "ProcessGuid": "49F1AF32-4E57-59BD-0000-001016E80000",
+      "ProcessId": "920",
+      "Signature": "",
+      "SignatureStatus": "Unavailable",
+      "Signed": "false",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "7",
+      "EventRecordID": "826971",
+      "Execution": {
+        "ProcessID": "1332",
+        "ThreadID": "1932"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "7",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Users\\Administrator\\mystery.exe\"  \\\\calderadc -u Administrator -p Admin123456 systeminfo",
+      "Company": "Sysinternals - www.sysinternals.com",
+      "CurrentDirectory": "C:\\Users\\Administrator\\",
+      "Description": "Execute processes remotely",
+      "FileVersion": "2.2",
+      "Hashes": "SHA1=E50D9E3BD91908E13A26B3E23EDEAF577FB3A095,MD5=27304B246C7D5B4E149124D5F93C5B01,SHA256=3337E3875B05E0BFBA69AB926532E3F179E8CFBF162EBB60CE58A0281437A7EF,IMPHASH=C1E59519B5E5D84AF07AFA6F5A8625F1",
+      "Image": "C:\\Users\\Administrator\\mystery.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{49F1AF32-9105-5A90-0000-002034EE0600}",
+      "LogonId": "0x6ee34",
+      "ParentCommandLine": "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "{49F1AF32-9105-5A90-0000-001050FB0600}",
+      "ParentProcessId": "2976",
+      "ProcessGuid": "{49F1AF32-3AD8-5A94-0000-001024561300}",
+      "ProcessId": "2072",
+      "Product": "Sysinternals PsExec",
+      "TerminalSessionId": "1",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "825063",
+      "Execution": {
+        "ProcessID": "1464",
+        "ThreadID": "1680"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Users\\administrator\\mystery.exe\" -accepteula -u caldera\\administrator -p Admin123456 -d -cv C:\\Users\\administrator\\crater.exe \\\\calderadc",
+      "Company": "Sysinternals - www.sysinternals.com",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Execute processes remotely",
+      "FileVersion": "2.2",
+      "Hashes": "SHA1=E50D9E3BD91908E13A26B3E23EDEAF577FB3A095,MD5=27304B246C7D5B4E149124D5F93C5B01,SHA256=3337E3875B05E0BFBA69AB926532E3F179E8CFBF162EBB60CE58A0281437A7EF,IMPHASH=C1E59519B5E5D84AF07AFA6F5A8625F1",
+      "Image": "C:\\Users\\Administrator\\mystery.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-356A-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\commander.exe -f",
+      "ParentImage": "C:\\commander.exe",
+      "ParentProcessGuid": "{49F1AF32-38A7-5AC7-0000-0010869A0A00}",
+      "ParentProcessId": "920",
+      "ProcessGuid": "{49F1AF32-38EC-5AC7-0000-001066C70D00}",
+      "ProcessId": "816",
+      "Product": "Sysinternals PsExec",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "900357",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Users\\administrator\\mystery.exe\" -accepteula -u caldera\\administrator -p Admin123456 -d -cv C:\\Users\\administrator\\crater.exe \\\\calderadc",
+      "Company": "Sysinternals - www.sysinternals.com",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Execute processes remotely",
+      "FileVersion": "2.2",
+      "Hashes": "SHA1=E50D9E3BD91908E13A26B3E23EDEAF577FB3A095,MD5=27304B246C7D5B4E149124D5F93C5B01,SHA256=3337E3875B05E0BFBA69AB926532E3F179E8CFBF162EBB60CE58A0281437A7EF,IMPHASH=C1E59519B5E5D84AF07AFA6F5A8625F1",
+      "Image": "C:\\Users\\Administrator\\mystery.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-356A-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\commander.exe -f",
+      "ParentImage": "C:\\commander.exe",
+      "ParentProcessGuid": "{49F1AF32-38A7-5AC7-0000-0010869A0A00}",
+      "ParentProcessId": "920",
+      "ProcessGuid": "{49F1AF32-3980-5AC7-0000-0010A8600F00}",
+      "ProcessId": "2840",
+      "Product": "Sysinternals PsExec",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "905616",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Users\\administrator\\mystery.exe\" -accepteula -u caldera\\administrator -p Admin123456 -d -cv C:\\Users\\administrator\\crater.exe \\\\calderadc",
+      "Company": "Sysinternals - www.sysinternals.com",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "Execute processes remotely",
+      "FileVersion": "2.2",
+      "Hashes": "SHA1=E50D9E3BD91908E13A26B3E23EDEAF577FB3A095,MD5=27304B246C7D5B4E149124D5F93C5B01,SHA256=3337E3875B05E0BFBA69AB926532E3F179E8CFBF162EBB60CE58A0281437A7EF,IMPHASH=C1E59519B5E5D84AF07AFA6F5A8625F1",
+      "Image": "C:\\Users\\Administrator\\mystery.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-356A-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\commander.exe -f",
+      "ParentImage": "C:\\commander.exe",
+      "ParentProcessGuid": "{49F1AF32-38A7-5AC7-0000-0010869A0A00}",
+      "ParentProcessId": "920",
+      "ProcessGuid": "{49F1AF32-3A11-5AC7-0000-00108D611000}",
+      "ProcessId": "2376",
+      "Product": "Sysinternals PsExec",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "908487",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

@@ -49,3 +49,27 @@
   ],
 "Condition": "!$valid and !$unavailable"
 }
+
+{
+"Name": "UntrustedDriverLoaded",
+"Tags": ["DriverLoaded", "Sysmon"],
+"Meta": {
+  "EventIDs": [6],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 10,
+  "ATTACK": [
+    {
+      "ID": "T1014",
+      "Tactic": "Defense Evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1014/"
+    }
+  ],
+  "Author": "@0xrawsec",
+  "Comment": "Untrusted Driver Loaded. Need to be adjusted according to the environment."
+  },
+"Matches": [
+  "$trusted: Signature ~= '{{trusted-drv-sig}}'"
+  ],
+"Condition": "!$trusted"
+}

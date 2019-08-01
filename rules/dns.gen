@@ -65,9 +65,10 @@
   "Comment": "Domain name with more than 50 characters"
   },
 "Matches": [
-    "$ldomain: QueryName ~= '.{50,}'"
+    "$ldomain: QueryName ~= '.{50,}'",
+    "$ip6: QueryName ~= 'ip6\\.arpa\\.$'"
   ],
-"Condition": "$ldomain"
+"Condition": "$ldomain and !$ip6" 
 }
 
 {

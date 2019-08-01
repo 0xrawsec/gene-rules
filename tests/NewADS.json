@@ -1,0 +1,468 @@
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-02-23 13:17:31.176",
+      "Hash": "SHA1=DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,MD5=D41D8CD98F00B204E9800998ECF8427E,SHA256=E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\system32\\cmd.exe",
+      "ProcessGuid": "{49F1AF32-12C5-5A90-0000-00100AEA0B00}",
+      "ProcessId": "2100",
+      "TargetFilename": "C:\\Users\\calduser1\\AppData\\Local\\Temp\\test.txt",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1274678",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-02-23 13:17:31.176",
+      "Hash": "SHA1=E8B4D84A28E5EA17272416EC45726964FDF25883,MD5=09F7401D56F2393C6CA534FF0241A590,SHA256=6766717B8AFAFE46B5FD66C7082CCCE6B382CBEA982C73CB651E35DC8187ACE1,IMPHASH=68E56344CAB250384904953E978B70A9",
+      "Image": "C:\\Windows\\system32\\cmd.exe",
+      "ProcessGuid": "{49F1AF32-12C5-5A90-0000-00100AEA0B00}",
+      "ProcessId": "2100",
+      "TargetFilename": "C:\\Users\\CALDUS~1\\AppData\\Local\\Temp\\test.txt:malicious.exe",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1274680",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-02-23 13:21:35.152",
+      "Hash": "SHA1=DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,MD5=D41D8CD98F00B204E9800998ECF8427E,SHA256=E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\system32\\cmd.exe",
+      "ProcessGuid": "{49F1AF32-12C5-5A90-0000-00100AEA0B00}",
+      "ProcessId": "2100",
+      "TargetFilename": "C:\\Users\\calduser1\\AppData\\Local\\Temp\\test2.txt",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1275069",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-02-23 13:21:35.152",
+      "Hash": "SHA1=E8B4D84A28E5EA17272416EC45726964FDF25883,MD5=09F7401D56F2393C6CA534FF0241A590,SHA256=6766717B8AFAFE46B5FD66C7082CCCE6B382CBEA982C73CB651E35DC8187ACE1,IMPHASH=68E56344CAB250384904953E978B70A9",
+      "Image": "C:\\Windows\\system32\\cmd.exe",
+      "ProcessGuid": "{49F1AF32-12C5-5A90-0000-00100AEA0B00}",
+      "ProcessId": "2100",
+      "TargetFilename": "C:\\Users\\CALDUS~1\\AppData\\Local\\Temp\\test2.txt:malicious.exe",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1275071",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-02-23 13:12:02.331",
+      "Hash": "SHA1=D7881C84A97C9E561BE3B922D3DE4E40B92F698B,MD5=D2FBBEC1FA75F770A6E7B35FC0F9FEF7,SHA256=8FC081ABA1F36E1D1086A435C8AFD2C9767AC887BC1EA7BD66C2D4251ABD009D,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\Explorer.EXE",
+      "ProcessGuid": "{49F1AF32-11BA-5A90-0000-0010CB6C0300}",
+      "ProcessId": "1760",
+      "TargetFilename": "C:\\Users\\calduser1\\Desktop\\agent-v0.1.0\\sysmon-v7 - Copy.xml",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1275627",
+      "Execution": {
+        "ProcessID": "2612",
+        "ThreadID": "1576"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-02-23 13:12:02.331",
+      "Hash": "SHA1=D59FC84CDD5217C6CF74785703655F78DA6B582B,MD5=FBCCF14D504B7B2DBCB5A5BDA75BD93B,SHA256=EACD09517CE90D34BA562171D15AC40D302F0E691B439F91BE1B6406E25F5913,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\Explorer.EXE",
+      "ProcessGuid": "{49F1AF32-11BA-5A90-0000-0010CB6C0300}",
+      "ProcessId": "1760",
+      "TargetFilename": "C:\\Users\\calduser1\\Desktop\\agent-v0.1.0\\sysmon-v7 - Copy.xml:Zone.Identifier",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1275629",
+      "Execution": {
+        "ProcessID": "2612",
+        "ThreadID": "1576"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-20 08:06:11.801",
+      "Hash": "SHA1=FC998197C1E1D706522F6086C9E7514D913B6653,MD5=A4D83B950999F569F7FEE8D96FB31900,SHA256=E2B67BE4175EB42520681F4621C3AFFBBCF26261383C2AC39CBEF8DAA01026BC,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\system32\\cmd.exe",
+      "ProcessGuid": "49F1AF32-21E3-59C2-0000-00106B811000",
+      "ProcessId": "4000",
+      "TargetFilename": "C:\\Users\\Gen Eric\\AppData\\Local\\Temp\\test.txt",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1017538",
+      "Execution": {
+        "ProcessID": "1384",
+        "ThreadID": "1952"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-20 08:06:11.801",
+      "Hash": "SHA1=17DC34358A2BF7E7D6E78268B3CA7493915BB325,MD5=9D9D384EF6546192D60EFDBB8397CD2D,SHA256=3455A37D9006F5325AC6208E874AE8149FECD8631D981EE78B3AD5B06AD648AB,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\system32\\cmd.exe",
+      "ProcessGuid": "49F1AF32-21E3-59C2-0000-00106B811000",
+      "ProcessId": "4000",
+      "TargetFilename": "C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\test.txt:malicious",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1017540",
+      "Execution": {
+        "ProcessID": "1384",
+        "ThreadID": "1952"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-20 08:06:11.801",
+      "Hash": "SHA1=FC998197C1E1D706522F6086C9E7514D913B6653,MD5=A4D83B950999F569F7FEE8D96FB31900,SHA256=E2B67BE4175EB42520681F4621C3AFFBBCF26261383C2AC39CBEF8DAA01026BC,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\system32\\notepad.exe",
+      "ProcessGuid": "49F1AF32-224E-59C2-0000-001020011100",
+      "ProcessId": "3412",
+      "TargetFilename": "C:\\Users\\Gen Eric\\AppData\\Local\\Temp\\test.txt",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1018067",
+      "Execution": {
+        "ProcessID": "1384",
+        "ThreadID": "1952"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-20 08:06:11.801",
+      "Hash": "SHA1=DA39A3EE5E6B4B0D3255BFEF95601890AFD80709,MD5=D41D8CD98F00B204E9800998ECF8427E,SHA256=E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\system32\\notepad.exe",
+      "ProcessGuid": "49F1AF32-224E-59C2-0000-001020011100",
+      "ProcessId": "3412",
+      "TargetFilename": "C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\test.txt:malicious.txt",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1018069",
+      "Execution": {
+        "ProcessID": "1384",
+        "ThreadID": "1952"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-20 08:06:11.801",
+      "Hash": "SHA1=FC998197C1E1D706522F6086C9E7514D913B6653,MD5=A4D83B950999F569F7FEE8D96FB31900,SHA256=E2B67BE4175EB42520681F4621C3AFFBBCF26261383C2AC39CBEF8DAA01026BC,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\system32\\cmd.exe",
+      "ProcessGuid": "49F1AF32-21E3-59C2-0000-00106B811000",
+      "ProcessId": "4000",
+      "TargetFilename": "C:\\Users\\Gen Eric\\AppData\\Local\\Temp\\test.txt",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1019196",
+      "Execution": {
+        "ProcessID": "1384",
+        "ThreadID": "1952"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-09-20 08:06:11.801",
+      "Hash": "SHA1=17DC34358A2BF7E7D6E78268B3CA7493915BB325,MD5=9D9D384EF6546192D60EFDBB8397CD2D,SHA256=3455A37D9006F5325AC6208E874AE8149FECD8631D981EE78B3AD5B06AD648AB,IMPHASH=00000000000000000000000000000000",
+      "Image": "C:\\Windows\\system32\\cmd.exe",
+      "ProcessGuid": "49F1AF32-21E3-59C2-0000-00106B811000",
+      "ProcessId": "4000",
+      "TargetFilename": "C:\\Users\\GENERI~1\\AppData\\Local\\Temp\\test.txt:malicious.txt",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "15",
+      "EventRecordID": "1019198",
+      "Execution": {
+        "ProcessID": "1384",
+        "ThreadID": "1952"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "15",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}

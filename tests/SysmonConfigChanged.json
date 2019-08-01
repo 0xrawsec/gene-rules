@@ -1,0 +1,105 @@
+{
+  "Event": {
+    "EventData": {
+      "Configuration": "\u000e:\\Program Files\\RawSecTools\\SysmonConfigs\\sysmon-config-master\\skeletons\\sysmon-v6.1.xml",
+      "ConfigurationFileHash": "SHA1=8688E886342384F1736EB4BB82C9FFC83FF1AE86",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "16",
+      "EventRecordID": "1",
+      "Execution": {
+        "ProcessID": "1560",
+        "ThreadID": "2848"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-21-2888932017-1170430559-1631822473-1000"
+      },
+      "Task": "16",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Configuration": "C:\\Users\\calduser1\\Desktop\\agent-v0.1.0\\sysmonnew.xml",
+      "ConfigurationFileHash": "SHA1=8D8B8FAF9F616C2962DEC9D675991F37D7C560E7",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "16",
+      "EventRecordID": "1277144",
+      "Execution": {
+        "ProcessID": "1640",
+        "ThreadID": "804"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-21-610196800-1665352633-2058931075-500"
+      },
+      "Task": "16",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Configuration": "\u000e:\\Program Files\\RawSecTools\\SysmonConfigs\\sysmon-config-master\\skeletons\\sysmon-v6.1.xml",
+      "ConfigurationFileHash": "SHA1=8688E886342384F1736EB4BB82C9FFC83FF1AE86",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "16",
+      "EventRecordID": "1",
+      "Execution": {
+        "ProcessID": "2836",
+        "ThreadID": "2840"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-21-2888932017-1170430559-1631822473-1000"
+      },
+      "Task": "16",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

@@ -1,0 +1,816 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files (x86)\\Internet Explorer\\IEXPLORE.EXE\" SCODEF:832 CREDAT:267521 /prefetch:2",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\Desktop\\",
+      "Hashes": "SHA1=6E59DB3532A3371D53FEF1D2BA12E548D583FFC1,MD5=57235107A9362E763E7CD605EB8CCA55,SHA256=10A49970805EA4E5DD73D938FC7A6F4AC7C3917401614792491124CA14932896,IMPHASH=FC51828B75C4D5037039AC24CC9C9EA2",
+      "Image": "C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-C9E2-59DC-0000-0020DE0B0100",
+      "LogonId": "0x00010bde",
+      "ParentCommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" ",
+      "ParentImage": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+      "ParentProcessGuid": "49F1AF32-98D0-5A1E-0000-0010F69B1E00",
+      "ParentProcessId": "832",
+      "ProcessGuid": "49F1AF32-98D1-5A1E-0000-001040B61E00",
+      "ProcessId": "3040",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "10262",
+      "Execution": {
+        "ProcessID": "2860",
+        "ThreadID": "1848"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files (x86)\\Internet Explorer\\IEXPLORE.EXE\" SCODEF:2464 CREDAT:267521 /prefetch:2",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\Desktop\\",
+      "Hashes": "SHA1=6E59DB3532A3371D53FEF1D2BA12E548D583FFC1,MD5=57235107A9362E763E7CD605EB8CCA55,SHA256=10A49970805EA4E5DD73D938FC7A6F4AC7C3917401614792491124CA14932896,IMPHASH=FC51828B75C4D5037039AC24CC9C9EA2",
+      "Image": "C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-00201F8F0100",
+      "LogonId": "0x00018f1f",
+      "ParentCommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" ",
+      "ParentImage": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+      "ParentProcessGuid": "49F1AF32-9938-5A1E-0000-00101A740A00",
+      "ParentProcessId": "2464",
+      "ProcessGuid": "49F1AF32-9938-5A1E-0000-00107F920A00",
+      "ProcessId": "2748",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "43558",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"2392.0.66691778\\518887647\" -childID 1 -isForBrowser -intPrefs 5:50|6:-1|28:1000|33:20|34:10|43:128|44:10000|49:0|51:400|52:1|53:0|54:0|59:0|60:120|61:120|91:2|92:1|106:5000|117:0|119:0|130:10000|142:-1|147:128|148:10000|149:0|155:24|156:32768|158:0|159:0|167:5|171:1048576|172:100|173:5000|175:600|177:1|186:1|190:0|200:60000| -boolPrefs 1:0|2:0|4:0|26:1|27:1|30:0|35:1|36:0|37:0|38:0|41:1|42:1|45:0|46:0|47:0|48:0|50:0|55:1|56:1|57:0|58:1|62:1|63:1|64:0|65:1|66:1|67:0|68:1|71:0|72:0|75:1|76:1|80:1|81:1|82:1|83:0|85:0|86:0|87:1|88:0|93:1|94:0|100:0|105:0|108:1|109:1|112:1|114:1|118:0|121:1|124:1|125:1|131:0|132:0|133:1|135:0|141:0|143:1|144:0|145:1|146:0|153:0|154:0|157:1|160:0|162:1|164:1|165:0|170:0|174:1|179:0|180:0|181:0|182:1|183:0|184:0|185:1|188:0|192:0|193:0|194:1|195:1|196:0|197:1|198:1|199:1|201:0|202:0|204:0|212:1|213:1|214:0|215:0|216:0| -stringPrefs \"3:7;release|134:3;1.0|151:332; ������78����\t\nj�\u0001\u0002\u0003\u0004_`5\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\u000e\u000f\u0010\u0019$'()*+,-./9:ADR_STUVWXYZ[\\]^_\u00156�q����������������\u0000\u0002\u0014\u00153�d\u001d\u001e���߉\u0014\u0015?]^�\u000e\u000fa������|152:8;moderate|187:38;{8c34c35f-10c7-4945-9179-44c749a2a2c5}|\" -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\"  2392 \"\\\\.\\pipe\\gecko-crash-server-pipe.2392\" tab",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=29B4DBF06A870DA70B7EB815B83DBA7198DEDE29,MD5=753B076DE25092D42841A8DE8A12D8B7,SHA256=1280EFDFB13D186126DCD03D751CD2294ACF0BC7686413BD2EF82246983CC0D5,IMPHASH=A1F39FA5E3F7A0682FB26AFB43AE2FFF",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-00201F8F0100",
+      "LogonId": "0x00018f1f",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-995E-5A1E-0000-00108A500B00",
+      "ParentProcessId": "2392",
+      "ProcessGuid": "49F1AF32-9963-5A1E-0000-001012A50B00",
+      "ProcessId": "576",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "48068",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\pingsender.exe\" https://incoming.telemetry.mozilla.org/submit/telemetry/e2c5ba11-42e5-4aba-9e63-5515afca24c5/main/Firefox/55.0.3/release/20170824053622?v=4 \"C:\\Users\\Gen Eric\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\g0yk5jta.default\\saved-telemetry-pings\\e2c5ba11-42e5-4aba-9e63-5515afca24c5\"",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=C780F2F8EC4FEC2374AF3DD92E9165B000F0E7EF,MD5=11D5FED0947F7FD17DC6224AF70D067B,SHA256=979C35D453CF0ACB52AD43D3CBDAEDC7E58EA2F863111970AAAE0604ED7C96D3,IMPHASH=1A09E503963E559E0A70E8DF58689A34",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\pingsender.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-00201F8F0100",
+      "LogonId": "0x00018f1f",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-995E-5A1E-0000-00108A500B00",
+      "ParentProcessId": "2392",
+      "ProcessGuid": "49F1AF32-9967-5A1E-0000-001089D50B00",
+      "ProcessId": "1868",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "48671",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files (x86)\\Internet Explorer\\IEXPLORE.EXE\" SCODEF:1708 CREDAT:267521 /prefetch:2",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\Desktop\\",
+      "Hashes": "SHA1=6E59DB3532A3371D53FEF1D2BA12E548D583FFC1,MD5=57235107A9362E763E7CD605EB8CCA55,SHA256=10A49970805EA4E5DD73D938FC7A6F4AC7C3917401614792491124CA14932896,IMPHASH=FC51828B75C4D5037039AC24CC9C9EA2",
+      "Image": "C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-00201F8F0100",
+      "LogonId": "0x00018f1f",
+      "ParentCommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" ",
+      "ParentImage": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+      "ParentProcessGuid": "49F1AF32-9973-5A1E-0000-0010EEF90B00",
+      "ParentProcessId": "1708",
+      "ProcessGuid": "49F1AF32-9973-5A1E-0000-001074090C00",
+      "ProcessId": "1720",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "49338",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files (x86)\\Internet Explorer\\IEXPLORE.EXE\" SCODEF:2532 CREDAT:267521 /prefetch:2",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\Desktop\\",
+      "Hashes": "SHA1=6E59DB3532A3371D53FEF1D2BA12E548D583FFC1,MD5=57235107A9362E763E7CD605EB8CCA55,SHA256=10A49970805EA4E5DD73D938FC7A6F4AC7C3917401614792491124CA14932896,IMPHASH=FC51828B75C4D5037039AC24CC9C9EA2",
+      "Image": "C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-00201F8F0100",
+      "LogonId": "0x00018f1f",
+      "ParentCommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" ",
+      "ParentImage": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+      "ParentProcessGuid": "49F1AF32-9980-5A1E-0000-001061EB0C00",
+      "ParentProcessId": "2532",
+      "ProcessGuid": "49F1AF32-9980-5A1E-0000-001001FA0C00",
+      "ProcessId": "1628",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "52421",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"1980.0.1466061067\\176575716\" -childID 1 -isForBrowser -intPrefs 5:50|6:-1|28:1000|33:20|34:10|43:128|44:10000|49:0|51:400|52:1|53:0|54:0|59:0|60:120|61:120|91:2|92:1|106:5000|117:0|119:0|130:10000|142:-1|147:128|148:10000|149:0|155:24|156:32768|158:0|159:0|167:5|171:1048576|172:100|173:5000|175:600|177:1|186:1|190:0|200:60000| -boolPrefs 1:0|2:0|4:0|26:1|27:1|30:0|35:1|36:0|37:0|38:0|41:1|42:1|45:0|46:0|47:0|48:0|50:0|55:1|56:1|57:0|58:1|62:1|63:1|64:0|65:1|66:1|67:0|68:1|71:0|72:0|75:1|76:1|80:1|81:1|82:1|83:0|85:0|86:0|87:1|88:0|93:1|94:0|100:0|105:0|108:1|109:1|112:1|114:1|118:0|121:1|124:1|125:1|131:0|132:0|133:1|135:0|141:0|143:1|144:0|145:1|146:0|153:0|154:0|157:1|160:0|162:1|164:1|165:0|170:0|174:1|179:0|180:0|181:0|182:1|183:0|184:0|185:1|188:0|192:0|193:0|194:1|195:1|196:0|197:1|198:1|199:1|201:0|202:0|204:0|212:1|213:1|214:0|215:0|216:0| -stringPrefs \"3:7;release|134:3;1.0|151:332; ������78����\t\nj�\u0001\u0002\u0003\u0004_`5\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\u000e\u000f\u0010\u0019$'()*+,-./9:ADR_STUVWXYZ[\\]^_\u00156�q����������������\u0000\u0002\u0014\u00153�d\u001d\u001e���߉\u0014\u0015?]^�\u000e\u000fa������|152:8;moderate|187:38;{8c34c35f-10c7-4945-9179-44c749a2a2c5}|\" -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\"  1980 \"\\\\.\\pipe\\gecko-crash-server-pipe.1980\" tab",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=29B4DBF06A870DA70B7EB815B83DBA7198DEDE29,MD5=753B076DE25092D42841A8DE8A12D8B7,SHA256=1280EFDFB13D186126DCD03D751CD2294ACF0BC7686413BD2EF82246983CC0D5,IMPHASH=A1F39FA5E3F7A0682FB26AFB43AE2FFF",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-00201F8F0100",
+      "LogonId": "0x00018f1f",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-9993-5A1E-0000-00100D8D0D00",
+      "ParentProcessId": "1980",
+      "ProcessGuid": "49F1AF32-9994-5A1E-0000-0010B0A20D00",
+      "ProcessId": "2980",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "54654",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files (x86)\\Internet Explorer\\IEXPLORE.EXE\" SCODEF:1144 CREDAT:267521 /prefetch:2",
+      "CurrentDirectory": "C:\\Users\\Gen Eric\\Desktop\\",
+      "Hashes": "SHA1=6E59DB3532A3371D53FEF1D2BA12E548D583FFC1,MD5=57235107A9362E763E7CD605EB8CCA55,SHA256=10A49970805EA4E5DD73D938FC7A6F4AC7C3917401614792491124CA14932896,IMPHASH=FC51828B75C4D5037039AC24CC9C9EA2",
+      "Image": "C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-00201F8F0100",
+      "LogonId": "0x00018f1f",
+      "ParentCommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" ",
+      "ParentImage": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+      "ParentProcessGuid": "49F1AF32-99C4-5A1E-0000-0010C43C0E00",
+      "ParentProcessId": "1144",
+      "ProcessGuid": "49F1AF32-99C4-5A1E-0000-0010804D0E00",
+      "ProcessId": "2552",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "57690",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\pingsender.exe\" https://incoming.telemetry.mozilla.org/submit/telemetry/3e264dfb-43ac-4488-a0c2-89b8fa3a4b18/main/Firefox/55.0.3/release/20170824053622?v=4 \"C:\\Users\\Gen Eric\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\g0yk5jta.default\\saved-telemetry-pings\\3e264dfb-43ac-4488-a0c2-89b8fa3a4b18\"",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=C780F2F8EC4FEC2374AF3DD92E9165B000F0E7EF,MD5=11D5FED0947F7FD17DC6224AF70D067B,SHA256=979C35D453CF0ACB52AD43D3CBDAEDC7E58EA2F863111970AAAE0604ED7C96D3,IMPHASH=1A09E503963E559E0A70E8DF58689A34",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\pingsender.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-00201F8F0100",
+      "LogonId": "0x00018f1f",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-9993-5A1E-0000-00100D8D0D00",
+      "ParentProcessId": "1980",
+      "ProcessGuid": "49F1AF32-99F3-5A1E-0000-001088C00E00",
+      "ProcessId": "1600",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "59871",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"732.0.871255644\\1721350511\" -childID 1 -isForBrowser -intPrefs 5:50|6:-1|28:1000|33:20|34:10|43:128|44:10000|49:0|51:400|52:1|53:0|54:0|59:0|60:120|61:120|91:2|92:1|106:5000|117:0|119:0|130:10000|142:-1|147:128|148:10000|149:0|155:24|156:32768|158:0|159:0|167:5|171:1048576|172:100|173:5000|175:600|177:1|186:1|190:0|200:60000| -boolPrefs 1:0|2:0|4:0|26:1|27:1|30:0|35:1|36:0|37:0|38:0|41:1|42:1|45:0|46:0|47:0|48:0|50:0|55:1|56:1|57:0|58:1|62:1|63:1|64:0|65:1|66:1|67:0|68:1|71:0|72:0|75:1|76:1|80:1|81:1|82:1|83:0|85:0|86:0|87:1|88:0|93:1|94:0|100:0|105:0|108:1|109:1|112:1|114:1|118:0|121:1|124:1|125:1|131:0|132:0|133:1|135:0|141:0|143:1|144:0|145:1|146:0|153:0|154:0|157:1|160:0|162:1|164:1|165:0|170:0|174:1|179:0|180:0|181:0|182:1|183:0|184:0|185:1|188:0|192:0|193:0|194:1|195:1|196:0|197:1|198:1|199:1|201:0|202:0|204:0|212:1|213:1|214:0|215:0|216:0| -stringPrefs \"3:7;release|134:3;1.0|151:332; ������78����\t\nj�\u0001\u0002\u0003\u0004_`5\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\u000e\u000f\u0010\u0019$'()*+,-./9:ADR_STUVWXYZ[\\]^_\u00156�q����������������\u0000\u0002\u0014\u00153�d\u001d\u001e���߉\u0014\u0015?]^�\u000e\u000fa������|152:8;moderate|187:38;{8c34c35f-10c7-4945-9179-44c749a2a2c5}|\" -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\"  732 \"\\\\.\\pipe\\gecko-crash-server-pipe.732\" tab",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=29B4DBF06A870DA70B7EB815B83DBA7198DEDE29,MD5=753B076DE25092D42841A8DE8A12D8B7,SHA256=1280EFDFB13D186126DCD03D751CD2294ACF0BC7686413BD2EF82246983CC0D5,IMPHASH=A1F39FA5E3F7A0682FB26AFB43AE2FFF",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-00201F8F0100",
+      "LogonId": "0x00018f1f",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-99F5-5A1E-0000-001085D40E00",
+      "ParentProcessId": "732",
+      "ProcessGuid": "49F1AF32-99F8-5A1E-0000-00107AEC0E00",
+      "ProcessId": "1252",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "60393",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\pingsender.exe\" https://incoming.telemetry.mozilla.org/submit/telemetry/c3ab7cc3-cce9-4d1f-b1c2-d0325929fb7c/main/Firefox/55.0.3/release/20170824053622?v=4 \"C:\\Users\\Gen Eric\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\g0yk5jta.default\\saved-telemetry-pings\\c3ab7cc3-cce9-4d1f-b1c2-d0325929fb7c\"",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=C780F2F8EC4FEC2374AF3DD92E9165B000F0E7EF,MD5=11D5FED0947F7FD17DC6224AF70D067B,SHA256=979C35D453CF0ACB52AD43D3CBDAEDC7E58EA2F863111970AAAE0604ED7C96D3,IMPHASH=1A09E503963E559E0A70E8DF58689A34",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\pingsender.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-00201F8F0100",
+      "LogonId": "0x00018f1f",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-99F5-5A1E-0000-001085D40E00",
+      "ParentProcessId": "732",
+      "ProcessGuid": "49F1AF32-9A86-5A1E-0000-0010FEB21900",
+      "ProcessId": "3384",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "95376",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"3480.0.1100178599\\1585454833\" -childID 1 -isForBrowser -intPrefs 5:50|6:-1|28:1000|33:20|34:10|43:128|44:10000|49:0|51:400|52:1|53:0|54:0|59:0|60:120|61:120|91:2|92:1|106:5000|117:0|119:0|130:10000|142:-1|147:128|148:10000|149:0|155:24|156:32768|158:0|159:0|167:5|171:1048576|172:100|173:5000|175:600|177:1|186:1|190:0|200:60000| -boolPrefs 1:0|2:0|4:0|26:1|27:1|30:0|35:1|36:0|37:0|38:0|41:1|42:1|45:0|46:0|47:0|48:0|50:0|55:1|56:1|57:0|58:1|62:1|63:1|64:0|65:1|66:1|67:0|68:1|71:0|72:0|75:1|76:1|80:1|81:1|82:1|83:0|85:0|86:0|87:1|88:0|93:1|94:0|100:0|105:0|108:1|109:1|112:1|114:1|118:0|121:1|124:1|125:1|131:0|132:0|133:1|135:0|141:0|143:1|144:0|145:1|146:0|153:0|154:0|157:1|160:0|162:1|164:1|165:0|170:0|174:1|179:0|180:0|181:0|182:1|183:0|184:0|185:1|188:0|192:0|193:0|194:1|195:1|196:0|197:1|198:1|199:1|201:0|202:0|204:0|212:1|213:1|214:0|215:0|216:0| -stringPrefs \"3:7;release|134:3;1.0|151:332; ������78����\t\nj�\u0001\u0002\u0003\u0004_`5\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\u000e\u000f\u0010\u0019$'()*+,-./9:ADR_STUVWXYZ[\\]^_\u00156�q����������������\u0000\u0002\u0014\u00153�d\u001d\u001e���߉\u0014\u0015?]^�\u000e\u000fa������|152:8;moderate|187:38;{8c34c35f-10c7-4945-9179-44c749a2a2c5}|\" -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\"  3480 \"\\\\.\\pipe\\gecko-crash-server-pipe.3480\" tab",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=29B4DBF06A870DA70B7EB815B83DBA7198DEDE29,MD5=753B076DE25092D42841A8DE8A12D8B7,SHA256=1280EFDFB13D186126DCD03D751CD2294ACF0BC7686413BD2EF82246983CC0D5,IMPHASH=A1F39FA5E3F7A0682FB26AFB43AE2FFF",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-98FE-5A1E-0000-00201F8F0100",
+      "LogonId": "0x00018f1f",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-9A89-5A1E-0000-001011251A00",
+      "ParentProcessId": "3480",
+      "ProcessGuid": "49F1AF32-9A8B-5A1E-0000-0010BA911A00",
+      "ProcessId": "3656",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "99279",
+      "Execution": {
+        "ProcessID": "1324",
+        "ThreadID": "1940"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\pingsender.exe\" https://incoming.telemetry.mozilla.org/submit/telemetry/a7c3cc66-0acc-44d7-99ba-7daf613474f1/main/Firefox/55.0.3/release/20170824053622?v=4 \"C:\\Users\\Gen Eric\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\g0yk5jta.default\\saved-telemetry-pings\\a7c3cc66-0acc-44d7-99ba-7daf613474f1\"",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=C780F2F8EC4FEC2374AF3DD92E9165B000F0E7EF,MD5=11D5FED0947F7FD17DC6224AF70D067B,SHA256=979C35D453CF0ACB52AD43D3CBDAEDC7E58EA2F863111970AAAE0604ED7C96D3,IMPHASH=1A09E503963E559E0A70E8DF58689A34",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\pingsender.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-C9E2-59DC-0000-0020DE0B0100",
+      "LogonId": "0x00010bde",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-CD3E-59DC-0000-0010553A0C00",
+      "ParentProcessId": "1140",
+      "ProcessGuid": "49F1AF32-D0BC-59DC-0000-0010DAC31D00",
+      "ProcessId": "3652",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "9302",
+      "Execution": {
+        "ProcessID": "2860",
+        "ThreadID": "1848"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"3732.0.1578749842\\1182380949\" -childID 1 -isForBrowser -intPrefs 5:50|6:-1|28:1000|33:20|34:10|43:128|44:10000|49:0|51:400|52:1|53:0|54:0|59:0|60:120|61:120|91:2|92:1|106:5000|117:0|119:0|130:10000|142:-1|147:128|148:10000|149:0|155:24|156:32768|158:0|159:0|167:5|171:1048576|172:100|173:5000|175:600|177:1|186:1|190:0|200:60000| -boolPrefs 1:0|2:0|4:0|26:1|27:1|30:0|35:1|36:0|37:0|38:0|41:1|42:1|45:0|46:0|47:0|48:0|50:0|55:1|56:1|57:0|58:1|62:1|63:1|64:0|65:1|66:1|67:0|68:1|71:0|72:0|75:1|76:1|80:1|81:1|82:1|83:0|85:0|86:0|87:1|88:0|93:1|94:0|100:0|105:0|108:1|109:1|112:1|114:1|118:0|121:1|124:1|125:1|131:0|132:0|133:1|135:0|141:0|143:1|144:0|145:1|146:0|153:0|154:0|157:1|160:0|162:1|164:1|165:0|170:0|174:1|179:0|180:0|181:0|182:1|183:0|184:0|185:1|188:0|192:0|193:0|194:1|195:1|196:0|197:1|198:1|199:1|201:0|202:0|204:0|212:1|213:1|214:0|215:0|216:0| -stringPrefs \"3:7;release|134:3;1.0|151:332; ������78����\t\nj�\u0001\u0002\u0003\u0004_`5\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\u000e\u000f\u0010\u0019$'()*+,-./9:ADR_STUVWXYZ[\\]^_\u00156�q����������������\u0000\u0002\u0014\u00153�d\u001d\u001e���߉\u0014\u0015?]^�\u000e\u000fa������|152:8;moderate|187:38;{8c34c35f-10c7-4945-9179-44c749a2a2c5}|\" -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\"  3732 \"\\\\.\\pipe\\gecko-crash-server-pipe.3732\" tab",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=29B4DBF06A870DA70B7EB815B83DBA7198DEDE29,MD5=753B076DE25092D42841A8DE8A12D8B7,SHA256=1280EFDFB13D186126DCD03D751CD2294ACF0BC7686413BD2EF82246983CC0D5,IMPHASH=A1F39FA5E3F7A0682FB26AFB43AE2FFF",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-C9E2-59DC-0000-0020DE0B0100",
+      "LogonId": "0x00010bde",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-D0BD-59DC-0000-0010AEFD1D00",
+      "ParentProcessId": "3732",
+      "ProcessGuid": "49F1AF32-D0BF-59DC-0000-0010A6331E00",
+      "ProcessId": "3940",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "11012",
+      "Execution": {
+        "ProcessID": "2860",
+        "ThreadID": "1848"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"2736.0.1009022842\\482037262\" -childID 1 -isForBrowser -intPrefs 5:50|6:-1|28:1000|33:20|34:10|43:128|44:10000|49:0|51:400|52:1|53:0|54:0|59:0|60:120|61:120|91:2|92:1|106:5000|117:0|119:0|130:10000|142:-1|147:128|148:10000|149:0|155:24|156:32768|158:0|159:0|167:5|171:1048576|172:100|173:5000|175:600|177:1|186:1|190:0|200:60000| -boolPrefs 1:0|2:0|4:0|26:1|27:1|30:0|35:1|36:0|37:0|38:0|41:1|42:1|45:0|46:0|47:0|48:0|50:0|55:1|56:1|57:0|58:1|62:1|63:1|64:0|65:1|66:1|67:0|68:1|71:0|72:0|75:1|76:1|80:1|81:1|82:1|83:0|85:0|86:0|87:1|88:0|93:1|94:0|100:0|105:0|108:1|109:1|112:1|114:1|118:0|121:1|124:1|125:1|131:0|132:0|133:1|135:0|141:0|143:1|144:0|145:1|146:0|153:0|154:0|157:1|160:0|162:1|164:1|165:0|170:0|174:1|179:0|180:0|181:0|182:1|183:0|184:0|185:1|188:0|192:0|193:0|194:1|195:1|196:0|197:1|198:1|199:1|201:0|202:0|204:0|212:1|213:1|214:0|215:0|216:0| -stringPrefs \"3:7;release|134:3;1.0|151:332; ������78����\t\nj�\u0001\u0002\u0003\u0004_`5\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\u000e\u000f\u0010\u0019$'()*+,-./9:ADR_STUVWXYZ[\\]^_\u00156�q����������������\u0000\u0002\u0014\u00153�d\u001d\u001e���߉\u0014\u0015?]^�\u000e\u000fa������|152:8;moderate|187:38;{8c34c35f-10c7-4945-9179-44c749a2a2c5}|\" -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\"  2736 \"\\\\.\\pipe\\gecko-crash-server-pipe.2736\" tab",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=29B4DBF06A870DA70B7EB815B83DBA7198DEDE29,MD5=753B076DE25092D42841A8DE8A12D8B7,SHA256=1280EFDFB13D186126DCD03D751CD2294ACF0BC7686413BD2EF82246983CC0D5,IMPHASH=A1F39FA5E3F7A0682FB26AFB43AE2FFF",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-8953-59C1-0000-0020827B0100",
+      "LogonId": "0x00017b82",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-899A-59C1-0000-0010475B0800",
+      "ParentProcessId": "2736",
+      "ProcessGuid": "49F1AF32-899D-59C1-0000-0010B8AB0800",
+      "ProcessId": "2544",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "857811",
+      "Execution": {
+        "ProcessID": "1336",
+        "ThreadID": "1876"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"1396.0.393554087\\1378398706\" -childID 1 -isForBrowser -intPrefs 5:50|6:-1|28:1000|33:20|34:10|43:128|44:10000|49:0|51:400|52:1|53:0|54:0|59:0|60:120|61:120|91:2|92:1|106:5000|117:0|119:0|130:10000|142:-1|147:128|148:10000|149:0|155:24|156:32768|158:0|159:0|167:5|171:1048576|172:100|173:5000|175:600|177:1|186:1|190:0|200:60000| -boolPrefs 1:0|2:0|4:0|26:1|27:1|30:0|35:1|36:0|37:0|38:0|41:1|42:1|45:0|46:0|47:0|48:0|50:0|55:1|56:1|57:0|58:1|62:1|63:1|64:0|65:1|66:1|67:0|68:1|71:0|72:0|75:1|76:1|80:1|81:1|82:1|83:0|85:0|86:0|87:1|88:0|93:1|94:0|100:0|105:0|108:1|109:1|112:1|114:1|118:0|121:1|124:1|125:1|131:0|132:0|133:1|135:0|141:0|143:1|144:0|145:1|146:0|153:0|154:0|157:1|160:0|162:1|164:1|165:0|170:0|174:1|179:0|180:0|181:0|182:1|183:0|184:0|185:1|188:0|192:0|193:0|194:1|195:1|196:0|197:1|198:1|199:1|201:0|202:0|204:0|212:1|213:1|214:0|215:0|216:0| -stringPrefs \"3:7;release|134:3;1.0|151:332; ������78����\t\nj�\u0001\u0002\u0003\u0004_`5\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\u000e\u000f\u0010\u0019$'()*+,-./9:ADR_STUVWXYZ[\\]^_\u00156�q����������������\u0000\u0002\u0014\u00153�d\u001d\u001e���߉\u0014\u0015?]^�\u000e\u000fa������|152:8;moderate|187:38;{8c34c35f-10c7-4945-9179-44c749a2a2c5}|\" -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\"  1396 \"\\\\.\\pipe\\gecko-crash-server-pipe.1396\" tab",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=29B4DBF06A870DA70B7EB815B83DBA7198DEDE29,MD5=753B076DE25092D42841A8DE8A12D8B7,SHA256=1280EFDFB13D186126DCD03D751CD2294ACF0BC7686413BD2EF82246983CC0D5,IMPHASH=A1F39FA5E3F7A0682FB26AFB43AE2FFF",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "IntegrityLevel": "Low",
+      "LogonGuid": "49F1AF32-4E59-59BD-0000-0020F6700100",
+      "LogonId": "0x000170f6",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-8663-59C1-0000-001062293400",
+      "ParentProcessId": "1396",
+      "ProcessGuid": "49F1AF32-8665-59C1-0000-0010434F3400",
+      "ProcessId": "3576",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "729911",
+      "Execution": {
+        "ProcessID": "1332",
+        "ThreadID": "1924"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\uninstall\\helper.exe\" /SetAsDefaultAppUser",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Hashes": "SHA1=4C2765C6B2C5414DEFB56D7540EEC3BD9D53278D,MD5=39479E825D565D6FC44D0B17B09F43EA,SHA256=58EA073D5643C3FDB873EFE9C2597647DADC99B13806ED6B4BC0F543B4F0DC64,IMPHASH=E2A592076B17EF8BFB48B7E03965A3FC",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\uninstall\\helper.exe",
+      "IntegrityLevel": "Medium",
+      "LogonGuid": "49F1AF32-4E59-59BD-0000-0020F6700100",
+      "LogonId": "0x000170f6",
+      "ParentCommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "ParentImage": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ParentProcessGuid": "49F1AF32-8663-59C1-0000-001062293400",
+      "ParentProcessId": "1396",
+      "ProcessGuid": "49F1AF32-8667-59C1-0000-0010DB643400",
+      "ProcessId": "4076",
+      "TerminalSessionId": "1",
+      "User": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "730125",
+      "Execution": {
+        "ProcessID": "1332",
+        "ThreadID": "1924"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

@@ -6,6 +6,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 0,
+  "ATTACK": [
+    {
+      "ID": "T1096",
+      "Tactic": "defense-evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1096"
+    }
+  ],
   "Author": "0xrawsec",
   "Comments": "Catch all ADS creation events"
   },
@@ -24,6 +31,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 8,
+  "ATTACK": [
+    {
+      "ID": "T1096",
+      "Tactic": "defense-evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1096"
+    }
+  ],
   "Author": "0xrawsec",
   "Comments": "Catch ADS with suspicious extension"
   },
@@ -41,6 +55,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 10,
+  "ATTACK": [
+    {
+      "ID": "T1096",
+      "Tactic": "defense-evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1096"
+    }
+  ],
   "Author": "0xrawsec",
   "Comments": "Heuristics trying to catch EXE in ADS. If it is an EXE it is very likely the IMPHASH field is not null."
   },
@@ -59,6 +80,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 5,
+  "ATTACK": [
+    {
+      "ID": "T1096",
+      "Tactic": "defense-evasion",
+      "Reference": "https://attack.mitre.org/techniques/T1096"
+    }
+  ],
   "Author": "0xrawsec",
   "Comments": "Aims at catching the ADS like strings in CL"
   },

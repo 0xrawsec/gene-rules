@@ -1,0 +1,48 @@
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+9c524|C:\\Windows\\System32\\KERNELBASE.dll+2730e|C:\\Windows\\System32\\appresolver.dll+21e48|C:\\Windows\\System32\\appresolver.dll+1eed6|C:\\Windows\\System32\\appresolver.dll+1ec47|C:\\Windows\\Explorer.EXE+2986a|C:\\Windows\\Explorer.EXE+296f8|C:\\Windows\\Explorer.EXE+409b4|C:\\Windows\\Explorer.EXE+765e7|C:\\Windows\\Explorer.EXE+403f4|C:\\Windows\\Explorer.EXE+3f5e5|C:\\Windows\\Explorer.EXE+3eadc|C:\\Windows\\Explorer.EXE+66cd5|C:\\Windows\\Explorer.EXE+712e8|C:\\Windows\\System32\\USER32.dll+1681d|C:\\Windows\\System32\\USER32.dll+163ec|C:\\Windows\\System32\\USER32.dll+51a0|C:\\Windows\\SYSTEM32\\ntdll.dll+9fdb4|UNKNOWN(FFFFF8022B270085)|UNKNOWN(FFFFF40FE007C31C)|UNKNOWN(FFFFF40FE00A519E)|UNKNOWN(FFFFF40FE00A4627)|UNKNOWN(FFFFF40FE00A2715)|UNKNOWN(FFFFF40FE00A1E06)",
+      "GrantedAccess": "0x1410",
+      "RuleName": "",
+      "SourceImage": "C:\\Windows\\FakedEvent.EXE",
+      "SourceIntegrityLevel": "Medium",
+      "SourceProcessGUID": "{515cd0d1-4b0c-5d3f-0000-0010aa7b0500}",
+      "SourceProcessId": "4768",
+      "SourceThreadId": "4932",
+      "SourceUser": "DESKTOP-LJRVE06\\Generic",
+      "TargetImage": "C:\\Windows\\System32\\VBoxTray.exe",
+      "TargetIntegrityLevel": "Medium",
+      "TargetParentProcessGuid": "{deadbeef}",
+      "TargetProcessGUID": "{515cd0d1-4b27-5d3f-0000-0010d0710a00}",
+      "TargetProcessId": "3484",
+      "TargetUser": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "7679371",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

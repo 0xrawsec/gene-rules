@@ -1,0 +1,89 @@
+params:
+    # Gene binary location
+    gene: /path/to/gene/binary
+    # Gene rules location
+    rules: /path/to/gene/rules
+    # Root directory for the test files
+    tests-root: /root/to/test/files
+
+# configure the test cases
+# key: is the rule name (as defined in gene rule)
+# value: is the test file relative to tests-root
+# files may be reused for several test cases
+tests:
+    AutomatedRecursiveDir: AutomatedRecursiveDir.json
+    BrowserChild: BrowserChild.json
+    CertutilSuspDecode: CertutilSuspDecode.json
+    DownloadPath: DownloadPath.json
+    EmbeddedHTTPLinkInCL: EmbeddedHTTPLinkInCL.json
+    EventClearing: EventClearing.json
+    ExecDownloadedDocument: ExecDownloadedDocument.json
+    ExecTimestomping: ExecTimestomping.json
+    ExecutableADS: ExecutableADS.json
+    ExecutableFileCreated: ExecutableFileCreated.json
+    ExecutableUnkExt: ExecutableUnkExt.json
+    ExplicitNetworkLogon: ExplicitNetworkLogon.json
+    Heur7zExec: Heur7zExec.json
+    HeurADSInCL: HeurADSInCL.json
+    HeurCallShellcode: HeurCallShellcode.json
+    HeurCLWithCreds: HeurCLWithCreds.json
+    HeurDropper: HeurDropper.json
+    HeuristicSamlibDll: HeuristicSamlibDll.json
+    HeuristicVaultcliDll: HeuristicVaultcliDll.json
+    HeurPersistentRAT: HeurPersistentRAT.json
+    HeurRAT: HeurRAT.json
+    HeurRemotePayload: HeurRemotePayload.json
+    HeurSpawnShell: HeurSpawnShell.json
+    HeurZipExec: HeurZipExec.json
+    HiddenPsExec: HiddenPsExec.json
+    InfoRemotePath: InfoRemotePath.json
+    InfoSuspiciousParent: InfoSuspiciousParent.json
+    LargeBase64: LargeBase64.json
+    LargeCL512: LargeCL512.json
+    LargeCL999: LargeCL999.json
+    LateralWMI: LateralWMI.json
+    LogonFromExternal: LogonFromExternal.json
+    MaliciousLsassAccess: MaliciousLsassAccess.json
+    MaliciousSvchostAccess: MaliciousSvchostAccess.json
+    MSOfficeThreat: MSOfficeThreat.json
+    Nbtstat.exe: Nbtstat.exe.json
+    Net.exe: Net.exe.json
+    NewADS: NewADS.json
+    NewAutorun: NewAutorun.json
+    NewExeCreatedInRoot: NewExeCreatedInRoot.json
+    NewRemoteScheduledTask: NewRemoteScheduledTask.json
+    NewSchedTaskInReg: NewSchedTaskInReg.json
+    NewSchedTaskOnDisk: NewSchedTaskOnDisk.json
+    OfficeDropperExec: OfficeDropperExec.json
+    OfficeDropper: OfficeDropper.json
+    PowershellExecEnc: PowershellExecEnc.json
+    PowershellLargeCL: PowershellLargeCL.json
+    PowershellSamlibDll: PowershellSamlibDll.json
+    PowershellStdin: PowershellStdin.json
+    PsExec4624: PsExec4624.json
+    PsExecCommand: PsExecCommand.json
+    PsExec: PsExec.json
+    Regsvr32ApplockerBypass: Regsvr32ApplockerBypass.json
+    SecurityLogClearing: SecurityLogClearing.json
+    ServiceDeletion: ServiceDeletion.json
+    StopSvchostAccess: StopSvchostAccess.json
+    SuspiciousADS: SuspiciousADS.json
+    SuspiciousLsassAccess: SuspiciousLsassAccess.json
+    SuspiciousRundll32: SuspiciousRundll32.json
+    SuspiciousServiceCreated: SuspiciousServiceCreated.json
+    SuspiciousService: SuspiciousService.json
+    SvcHostUnsignedDll: SvcHostUnsignedDll.json
+    SvcHostUntrustedDLL: SvcHostUntrustedDLL.json
+    SysmonConfigChanged: SysmonConfigChanged.json
+    SysmonFingerprinting: SysmonFingerprinting.json
+    SysmonStateChanged: SysmonStateChanged.json
+    SystemInfo.exe: SystemInfo.exe.json
+    Tasklist.exe: Tasklist.exe.json
+    UnkPrivDstPort: UnkPrivDstPort.json
+    UntrustedDriverLoaded: UntrustedDriverLoaded.json
+    UserTempExec: UserTempExec.json
+    WindowsTempExec: WindowsTempExec.json
+    WMIChildProcess: WMIChildProcess.json
+    WMIEvents: WMIEvents.json
+    Xcopy.exe: Xcopy.exe.json
+

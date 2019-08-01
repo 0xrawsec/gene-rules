@@ -1,0 +1,156 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "sc.exe \\\\calderadc.caldera.loc create caldera binPath= C:\\commander.exe start= auto",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "A tool to aid in developing services for WindowsNT",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=DB1F81F5E209FED6DF3255F6C820555CF17A839C,MD5=4EBBC2B0AD7F9075AE9D6835D2A62B6E,SHA256=EAAB690EBD8DDF9AE452DE1BC03B73C8154264DBD7A292334733B47A668EBF31,IMPHASH=C8F4DCFEB5FE9D42D74FAA6E2104E850",
+      "Image": "C:\\Windows\\System32\\sc.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-3D6F-5AC7-0000-0020D9182400}",
+      "LogonId": "0x2418d9",
+      "ParentCommandLine": "\"powershell\" -command -",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "{49F1AF32-3D63-5AC7-0000-0010C5D92300}",
+      "ParentProcessId": "1664",
+      "ProcessGuid": "{49F1AF32-3D6F-5AC7-0000-00100C1A2400}",
+      "ProcessId": "3052",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "929317",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "sc.exe \\\\calderadc.caldera.loc create caldera binPath= C:\\commander.exe start= auto",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "A tool to aid in developing services for WindowsNT",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=DB1F81F5E209FED6DF3255F6C820555CF17A839C,MD5=4EBBC2B0AD7F9075AE9D6835D2A62B6E,SHA256=EAAB690EBD8DDF9AE452DE1BC03B73C8154264DBD7A292334733B47A668EBF31,IMPHASH=C8F4DCFEB5FE9D42D74FAA6E2104E850",
+      "Image": "C:\\Windows\\System32\\sc.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-3E08-5AC7-0000-002034592500}",
+      "LogonId": "0x255934",
+      "ParentCommandLine": "\"powershell\" -command -",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "{49F1AF32-3DFC-5AC7-0000-0010D7162500}",
+      "ParentProcessId": "1840",
+      "ProcessGuid": "{49F1AF32-3E08-5AC7-0000-001077592500}",
+      "ProcessId": "2684",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "932571",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "sc.exe \\\\calderadc.caldera.loc create caldera binPath= C:\\commander.exe start= auto",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "A tool to aid in developing services for WindowsNT",
+      "FileVersion": "6.1.7600.16385 (win7_rtm.090713-1255)",
+      "Hashes": "SHA1=DB1F81F5E209FED6DF3255F6C820555CF17A839C,MD5=4EBBC2B0AD7F9075AE9D6835D2A62B6E,SHA256=EAAB690EBD8DDF9AE452DE1BC03B73C8154264DBD7A292334733B47A668EBF31,IMPHASH=C8F4DCFEB5FE9D42D74FAA6E2104E850",
+      "Image": "C:\\Windows\\System32\\sc.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{49F1AF32-3EA6-5AC7-0000-002018A72900}",
+      "LogonId": "0x29a718",
+      "ParentCommandLine": "\"powershell\" -command -",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentProcessGuid": "{49F1AF32-3E97-5AC7-0000-00107D622900}",
+      "ParentProcessId": "1752",
+      "ProcessGuid": "{49F1AF32-3EA6-5AC7-0000-00105BA72900}",
+      "ProcessId": "560",
+      "Product": "Microsoft® Windows® Operating System",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "940261",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

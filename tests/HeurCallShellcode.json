@@ -1,0 +1,43 @@
+{
+  "Event": {
+    "EventData": {
+      "NewThreadId": "2208",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGuid": "49F1AF32-D3BB-59DC-0000-0010BE140900",
+      "SourceProcessId": "948",
+      "StartAddress": "0x0000000000250690",
+      "StartFunction": "",
+      "StartModule": "",
+      "TargetImage": "C:\\Windows\\System32\\notepad.exe",
+      "TargetProcessGuid": "49F1AF32-D423-59DC-0000-001050310B00",
+      "TargetProcessId": "2640",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "8",
+      "EventRecordID": "61733",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1936"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "8",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}

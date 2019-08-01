@@ -1,0 +1,66 @@
+{
+  "Event": {
+    "EventData": {
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1102",
+      "EventRecordID": "1056",
+      "Execution": {
+        "ProcessID": "700",
+        "ThreadID": "1300"
+      },
+      "Keywords": "0x4020000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}",
+        "Name": "Microsoft-Windows-Eventlog"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "104",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "0"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Security",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1102",
+      "EventRecordID": "1057",
+      "Execution": {
+        "ProcessID": "700",
+        "ThreadID": "1636"
+      },
+      "Keywords": "0x4020000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{fc65ddd8-d6ef-4962-83d5-6e5cfe9ce148}",
+        "Name": "Microsoft-Windows-Eventlog"
+      },
+      "Security": {
+        "UserID": ""
+      },
+      "Task": "104",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "0"
+    }
+  }
+}

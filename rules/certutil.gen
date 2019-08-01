@@ -6,6 +6,13 @@
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
     "Criticality": 7,
+    "ATTACK": [
+      {
+        "ID": "T1140",
+        "Tactic": "defense-evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1140"
+      }
+    ],
     "Author": "0xrawsec",
     "Comment": "Experimental rule to catch certutil downloader. Criticality may need to be adjusted"
   },
@@ -26,6 +33,13 @@
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
     "Criticality": 7,
+    "ATTACK": [
+      {
+        "ID": "T1140",
+        "Tactic": "defense-evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1140"
+      }
+    ],
     "Author": "0xrawsec",
     "Comment": "Experimental rule to catch dropper using certutil. Criticality may need to be adjusted"
   },

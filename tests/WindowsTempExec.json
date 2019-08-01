@@ -1,0 +1,48 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "C:\\Windows\\TEMP\\7276A569-F3A6-419B-8132-4804CA5A8E39\\dismhost.exe {322E3077-E172-4373-BAD6-0D79FD0E56C7}",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Hashes": "SHA1=958BE7D02FCA674FB386482090B9A5024D0A1538,MD5=516A5FCE06BB388499238A5F9286CB74,SHA256=9A4B735603297448841758B29D3C387A4CE84E5FD0DAE05622F43CE53B8C85E6,IMPHASH=4814B0801D16B74A024E98A232D111D9",
+      "Image": "C:\\Windows\\Temp\\7276A569-F3A6-419B-8132-4804CA5A8E39\\DismHost.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "49F1AF32-4E56-59BD-0000-0020E7030000",
+      "LogonId": "0x000003e7",
+      "ParentCommandLine": "C:\\Windows\\system32\\CompatTelRunner.exe -m:appraiser.dll -f:DoScheduledTelemetryRun -cv:R4bMnmTMZEGdePAk.1",
+      "ParentImage": "C:\\Windows\\System32\\CompatTelRunner.exe",
+      "ParentProcessGuid": "49F1AF32-87C2-59C1-0000-0010AE963A00",
+      "ParentProcessId": "4036",
+      "ProcessGuid": "49F1AF32-8838-59C1-0000-0010C3C84700",
+      "ProcessId": "3440",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "811124",
+      "Execution": {
+        "ProcessID": "1332",
+        "ThreadID": "1924"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

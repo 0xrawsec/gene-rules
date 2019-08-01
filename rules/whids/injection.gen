@@ -5,14 +5,23 @@
   "EventIDs": [10],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 4,
+  "Criticality": 8,
   "Author": "0xrawsec",
-  "Comments": "Experimental rule to catch generic process injection (write access to a foreign process without being its parent). Won't catch process hollowing since the parent injects into the child. NB: works only in WHIDS since SourceIsParent is set by the IDS.",
-  "Disable": true
+  "Comments": "Experimental rule to catch generic process injection (write access to a foreign process without being its parent). Won't catch process hollowing since the parent injects into the child. NB: works only in WHIDS",
+  "ATTACK": [
+    {
+      "ID": "T1055",
+      "Tactic": "privilege-escalation",
+      "Reference": "https://attack.mitre.org/techniques/T1055"
+    }
+  ]
   },
 "Matches": [
     "$ga: GrantedAccess &= '0x20'",
-    "$ptoc: SourceIsParent = 'false'"
+    "$srcwl: SourceImage ~= '(?i:C:\\\\Windows\\\\System32\\\\(conhost)\\.exe)'",
+    "$srcisparent: SourceProcessGUID = @TargetParentProcessGuid",
+    "$srcistarget: SourceImage = @TargetImage",
+    "$srcissystem: SourceIntegrityLevel = 'System'"
   ],
-"Condition": "$ga and $ptoc"
+"Condition": "$ga and !($srcissystem or $srcwl or $srcisparent or $srcistarget)"
 }

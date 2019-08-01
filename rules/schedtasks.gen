@@ -6,6 +6,13 @@
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
     "Criticality": 4,
+    "ATTACK": [
+      {
+        "ID": "T1053",
+        "Tactic": "privilege-escalation",
+        "Reference": "https://attack.mitre.org/techniques/T1053"
+      }
+    ],
     "Author": "0xrawsec",
     "Comment": "Experimental rule to catch scheduled tasks creation"
   },
@@ -25,6 +32,13 @@
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
     "Criticality": 3,
+    "ATTACK": [
+      {
+        "ID": "T1053",
+        "Tactic": "privilege-escalation",
+        "Reference": "https://attack.mitre.org/techniques/T1053"
+      }
+    ],
     "Author": "0xrawsec",
     "Comment": "Experimental rule to catch running scheduled tasks"
   },
@@ -42,6 +56,13 @@
     "Channels": ["Microsoft-Windows-Sysmon/Operational"],
     "Computers": [],
     "Criticality": 7,
+    "ATTACK": [
+      {
+        "ID": "T1053",
+        "Tactic": "privilege-escalation",
+        "Reference": "https://attack.mitre.org/techniques/T1053"
+      }
+    ],
     "Author": "0xrawsec",
     "Comment": "Experimental rule to catch remote scheduled tasks creation"
   },
@@ -61,6 +82,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 8,
+  "ATTACK": [
+    {
+      "ID": "T1053",
+      "Tactic": "privilege-escalation",
+      "Reference": "https://attack.mitre.org/techniques/T1053"
+    }
+  ],
   "Author": "@0xrawsec",
   "Comment": "Spot new scheduled task via new registry key"
   },
@@ -79,6 +107,13 @@
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
   "Criticality": 8,
+  "ATTACK": [
+    {
+      "ID": "T1053",
+      "Tactic": "privilege-escalation",
+      "Reference": "https://attack.mitre.org/techniques/T1053"
+    }
+  ],
   "Author": "0xrawsec",
   "Comments": "New scheduled task created on disk."
   },

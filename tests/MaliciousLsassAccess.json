@@ -1,0 +1,336 @@
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001A962A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-38AF-5AC7-0000-00103FDE0A00}",
+      "SourceProcessId": "2300",
+      "SourceThreadId": "1760",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "884470",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001A7B2A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3AD5-5AC7-0000-001036B91300}",
+      "SourceProcessId": "2520",
+      "SourceThreadId": "1940",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "914620",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001A822A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3D63-5AC7-0000-0010C5D92300}",
+      "SourceProcessId": "1664",
+      "SourceThreadId": "368",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "929320",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001AB62A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3D73-5AC7-0000-001015282400}",
+      "SourceProcessId": "2596",
+      "SourceThreadId": "2840",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "929816",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001A862A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3DFC-5AC7-0000-0010D7162500}",
+      "SourceProcessId": "1840",
+      "SourceThreadId": "2352",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "932574",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001A9B2A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3E0C-5AC7-0000-001022B82500}",
+      "SourceProcessId": "1912",
+      "SourceThreadId": "1760",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "934910",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001AC22A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3E97-5AC7-0000-00107D622900}",
+      "SourceProcessId": "1752",
+      "SourceThreadId": "1808",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "940264",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|UNKNOWN(000000001AAE2A68)",
+      "GrantedAccess": "0x143a",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceProcessGUID": "{49F1AF32-3EA9-5AC7-0000-00100AB02900}",
+      "SourceProcessId": "2512",
+      "SourceThreadId": "2660",
+      "TargetImage": "C:\\Windows\\system32\\lsass.exe",
+      "TargetProcessGUID": "{49F1AF32-3569-5AC7-0000-001093750000}",
+      "TargetProcessId": "472",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "940762",
+      "Execution": {
+        "ProcessID": "1456",
+        "ThreadID": "1712"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

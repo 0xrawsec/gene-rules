@@ -1,0 +1,190 @@
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-10-09 10:01:34.311",
+      "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\poWERShell.exe",
+      "ProcessGuid": "49F1AF32-48FD-59DB-0000-00108C980D00",
+      "ProcessId": "2180",
+      "TargetFilename": "C:\\Users\\Gen Eric\\AppData\\Local\\Temp\\10454.exe",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "34213",
+      "Execution": {
+        "ProcessID": "2160",
+        "ThreadID": "2380"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-10-09 10:01:34.311",
+      "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\poWERShell.exe",
+      "ProcessGuid": "49F1AF32-48FD-59DB-0000-00108C980D00",
+      "ProcessId": "2180",
+      "TargetFilename": "C:\\Users\\Gen Eric\\AppData\\Local\\Temp\\10454.exe",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "34214",
+      "Execution": {
+        "ProcessID": "2160",
+        "ThreadID": "2380"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-10-09 10:01:34.311",
+      "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\poWERShell.exe",
+      "ProcessGuid": "49F1AF32-48FD-59DB-0000-00108C980D00",
+      "ProcessId": "2180",
+      "TargetFilename": "C:\\Users\\Gen Eric\\AppData\\Local\\Temp\\10454.exe",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "34215",
+      "Execution": {
+        "ProcessID": "2160",
+        "ThreadID": "2380"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2017-10-09 10:01:34.311",
+      "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\poWERShell.exe",
+      "ProcessGuid": "49F1AF32-48FD-59DB-0000-00108C980D00",
+      "ProcessId": "2180",
+      "TargetFilename": "C:\\Users\\Gen Eric\\AppData\\Local\\Temp\\10454.exe",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "34216",
+      "Execution": {
+        "ProcessID": "2160",
+        "ThreadID": "2380"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-02-02 13:16:59.383",
+      "Image": "C:\\Windows\\SysWOW64\\certutil.exe",
+      "ProcessGuid": "49F1AF32-64CB-5A74-0000-00101C630900",
+      "ProcessId": "1924",
+      "TargetFilename": "C:\\ProgramData\\Q1S5F1P6.exe",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "104116",
+      "Execution": {
+        "ProcessID": "1376",
+        "ThreadID": "1964"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "5770385F-C22A-43E0-BF4C-06F5698FFBD9",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}

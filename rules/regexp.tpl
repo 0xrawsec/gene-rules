@@ -32,4 +32,9 @@ exec-exts: '(?i:(\.acm|\.ax|\.com|\.cpl|\.dic|\.dll|\.drv|\.ds|\.efi|\.exe|\.grm
 
 # Exe to monitor
 suspicious: '(?i:\\(certutil|rundll32|powershell|wscript|cscript|cmd|mshta|regsvr32|msbuild|installutil|regasm)\.exe)'
+admintools: '(?i:\\(ping|systeminfo|net1?|xcopy|nbtstat|bitsadmin|netstat|powershell|cmd|wscript|arp|at|certutil|dsquery|ipconfig|netsh|reg|route|schtasks)\.exe$)'
 msoffice: '(?i:\\(excel|winword|powerpnt|outlook)\.exe)'
+
+# Signatures for drivers and DLLs
+trusted-drv-sig: '^(Microsoft Windows)$'
+trusted-dll-sig: '^(Microsoft Windows|Microsoft Corporation|Microsoft Windows Component Publisher|Microsoft Windows Publisher|Microsoft Windows 3rd party Component)$'

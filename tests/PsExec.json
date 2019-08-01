@@ -1,0 +1,208 @@
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "C:\\Windows\\PSEXESVC.exe",
+      "Company": "Sysinternals",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "PsExec Service",
+      "FileVersion": "2.2",
+      "Hashes": "SHA1=A17C21B909C56D93D978014E63FB06926EAEA8E7,MD5=75B55BB34DAC9D02740B9AD6B6820360,SHA256=141B2190F51397DBD0DFDE0E3904B264C91B6F81FEBC823FF0C33DA980B69944,IMPHASH=67012475995FB9027F4511245B57DDEA",
+      "Image": "C:\\Windows\\PSEXESVC.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{8C352DC7-33A5-5A94-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\Windows\\system32\\services.exe",
+      "ParentImage": "C:\\Windows\\System32\\services.exe",
+      "ParentProcessGuid": "{8C352DC7-33A5-5A94-0000-0010CD600000}",
+      "ParentProcessId": "444",
+      "ProcessGuid": "{8C352DC7-3AE9-5A94-0000-0010501F1100}",
+      "ProcessId": "1872",
+      "Product": "Sysinternals PsExec",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "104577",
+      "Execution": {
+        "ProcessID": "1508",
+        "ThreadID": "1960"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "C:\\Windows\\PSEXESVC.exe",
+      "Company": "Sysinternals",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "PsExec Service",
+      "FileVersion": "2.2",
+      "Hashes": "SHA1=A17C21B909C56D93D978014E63FB06926EAEA8E7,MD5=75B55BB34DAC9D02740B9AD6B6820360,SHA256=141B2190F51397DBD0DFDE0E3904B264C91B6F81FEBC823FF0C33DA980B69944,IMPHASH=67012475995FB9027F4511245B57DDEA",
+      "Image": "C:\\Windows\\PSEXESVC.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{8C352DC7-3282-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\Windows\\system32\\services.exe",
+      "ParentImage": "C:\\Windows\\System32\\services.exe",
+      "ParentProcessGuid": "{8C352DC7-3282-5AC7-0000-0010A85F0000}",
+      "ParentProcessId": "444",
+      "ProcessGuid": "{8C352DC7-3903-5AC7-0000-001011491200}",
+      "ProcessId": "2616",
+      "Product": "Sysinternals PsExec",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "236838",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "C:\\Windows\\PSEXESVC.exe",
+      "Company": "Sysinternals",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "PsExec Service",
+      "FileVersion": "2.2",
+      "Hashes": "SHA1=A17C21B909C56D93D978014E63FB06926EAEA8E7,MD5=75B55BB34DAC9D02740B9AD6B6820360,SHA256=141B2190F51397DBD0DFDE0E3904B264C91B6F81FEBC823FF0C33DA980B69944,IMPHASH=67012475995FB9027F4511245B57DDEA",
+      "Image": "C:\\Windows\\PSEXESVC.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{8C352DC7-3282-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\Windows\\system32\\services.exe",
+      "ParentImage": "C:\\Windows\\System32\\services.exe",
+      "ParentProcessGuid": "{8C352DC7-3282-5AC7-0000-0010A85F0000}",
+      "ParentProcessId": "444",
+      "ProcessGuid": "{8C352DC7-3995-5AC7-0000-0010FE681200}",
+      "ProcessId": "892",
+      "Product": "Sysinternals PsExec",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "237313",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "C:\\Windows\\PSEXESVC.exe",
+      "Company": "Sysinternals",
+      "CurrentDirectory": "C:\\Windows\\system32\\",
+      "Description": "PsExec Service",
+      "FileVersion": "2.2",
+      "Hashes": "SHA1=A17C21B909C56D93D978014E63FB06926EAEA8E7,MD5=75B55BB34DAC9D02740B9AD6B6820360,SHA256=141B2190F51397DBD0DFDE0E3904B264C91B6F81FEBC823FF0C33DA980B69944,IMPHASH=67012475995FB9027F4511245B57DDEA",
+      "Image": "C:\\Windows\\PSEXESVC.exe",
+      "IntegrityLevel": "System",
+      "LogonGuid": "{8C352DC7-3282-5AC7-0000-0020E7030000}",
+      "LogonId": "0x3e7",
+      "ParentCommandLine": "C:\\Windows\\system32\\services.exe",
+      "ParentImage": "C:\\Windows\\System32\\services.exe",
+      "ParentProcessGuid": "{8C352DC7-3282-5AC7-0000-0010A85F0000}",
+      "ParentProcessId": "444",
+      "ProcessGuid": "{8C352DC7-3A26-5AC7-0000-0010F1851200}",
+      "ProcessId": "2660",
+      "Product": "Sysinternals PsExec",
+      "TerminalSessionId": "0",
+      "User": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "237745",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

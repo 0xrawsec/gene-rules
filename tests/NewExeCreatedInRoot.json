@@ -1,0 +1,38 @@
+{
+  "Event": {
+    "EventData": {
+      "CreationUtcTime": "2018-04-06 09:16:19.947",
+      "Image": "System",
+      "ProcessGuid": "{8C352DC7-327F-5AC7-0000-0010EB030000}",
+      "ProcessId": "4",
+      "TargetFilename": "C:\\commander.exe",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "11",
+      "EventRecordID": "239376",
+      "Execution": {
+        "ProcessID": "1568",
+        "ThreadID": "1984"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "11",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "2"
+    }
+  }
+}
