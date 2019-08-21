@@ -1,0 +1,288 @@
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+9d8d4|C:\\Windows\\SYSTEM32\\ntdll.dll+899c7|C:\\Windows\\SYSTEM32\\ntdll.dll+89732|\\SystemRoot\\System32\\smss.exe+2089|\\SystemRoot\\System32\\smss.exe+120d|\\SystemRoot\\System32\\smss.exe+1880|\\SystemRoot\\System32\\smss.exe+923e|\\SystemRoot\\System32\\smss.exe+64e1|\\SystemRoot\\System32\\smss.exe+360e|\\SystemRoot\\System32\\smss.exe+31ba|\\SystemRoot\\System32\\smss.exe+2f06|C:\\Windows\\SYSTEM32\\ntdll.dll+6ce7f",
+      "GrantedAccess": "0x1fffff",
+      "RuleName": "",
+      "SourceImage": "C:\\Windows\\System32\\exploit.exe",
+      "SourceIntegrityLevel": "Low",
+      "SourceProcessGUID": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "SourceProcessId": "328",
+      "SourceThreadId": "332",
+      "SourceUser": "NT AUTHORITY\\SYSTEM",
+      "TargetImage": "C:\\Windows\\system32\\exploited.exe",
+      "TargetIntegrityLevel": "System",
+      "TargetParentProcessGuid": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "TargetProcessGUID": "{515cd0d1-4af2-5d3f-0000-00104a490000}",
+      "TargetProcessId": "352",
+      "TargetUser": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "7669145",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+9d8d4|C:\\Windows\\SYSTEM32\\ntdll.dll+899c7|C:\\Windows\\SYSTEM32\\ntdll.dll+89732|\\SystemRoot\\System32\\smss.exe+2089|\\SystemRoot\\System32\\smss.exe+120d|\\SystemRoot\\System32\\smss.exe+1880|\\SystemRoot\\System32\\smss.exe+923e|\\SystemRoot\\System32\\smss.exe+64e1|\\SystemRoot\\System32\\smss.exe+360e|\\SystemRoot\\System32\\smss.exe+31ba|\\SystemRoot\\System32\\smss.exe+2f06|C:\\Windows\\SYSTEM32\\ntdll.dll+6ce7f",
+      "GrantedAccess": "0x1fffff",
+      "RuleName": "",
+      "SourceImage": "C:\\Windows\\System32\\exploit.exe",
+      "SourceIntegrityLevel": "Low",
+      "SourceProcessGUID": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "SourceProcessId": "328",
+      "SourceThreadId": "332",
+      "SourceUser": "NT AUTHORITY\\SYSTEM",
+      "TargetImage": "C:\\Windows\\system32\\exploited.exe",
+      "TargetIntegrityLevel": "Medium",
+      "TargetParentProcessGuid": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "TargetProcessGUID": "{515cd0d1-4af2-5d3f-0000-00104a490000}",
+      "TargetProcessId": "352",
+      "TargetUser": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "7669145",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+9d8d4|C:\\Windows\\SYSTEM32\\ntdll.dll+899c7|C:\\Windows\\SYSTEM32\\ntdll.dll+89732|\\SystemRoot\\System32\\smss.exe+2089|\\SystemRoot\\System32\\smss.exe+120d|\\SystemRoot\\System32\\smss.exe+1880|\\SystemRoot\\System32\\smss.exe+923e|\\SystemRoot\\System32\\smss.exe+64e1|\\SystemRoot\\System32\\smss.exe+360e|\\SystemRoot\\System32\\smss.exe+31ba|\\SystemRoot\\System32\\smss.exe+2f06|C:\\Windows\\SYSTEM32\\ntdll.dll+6ce7f",
+      "GrantedAccess": "0x1fffff",
+      "RuleName": "",
+      "SourceImage": "C:\\Windows\\System32\\exploit.exe",
+      "SourceIntegrityLevel": "Low",
+      "SourceProcessGUID": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "SourceProcessId": "328",
+      "SourceThreadId": "332",
+      "SourceUser": "NT AUTHORITY\\SYSTEM",
+      "TargetImage": "C:\\Windows\\system32\\exploited.exe",
+      "TargetIntegrityLevel": "High",
+      "TargetParentProcessGuid": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "TargetProcessGUID": "{515cd0d1-4af2-5d3f-0000-00104a490000}",
+      "TargetProcessId": "352",
+      "TargetUser": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "7669145",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+9d8d4|C:\\Windows\\SYSTEM32\\ntdll.dll+899c7|C:\\Windows\\SYSTEM32\\ntdll.dll+89732|\\SystemRoot\\System32\\smss.exe+2089|\\SystemRoot\\System32\\smss.exe+120d|\\SystemRoot\\System32\\smss.exe+1880|\\SystemRoot\\System32\\smss.exe+923e|\\SystemRoot\\System32\\smss.exe+64e1|\\SystemRoot\\System32\\smss.exe+360e|\\SystemRoot\\System32\\smss.exe+31ba|\\SystemRoot\\System32\\smss.exe+2f06|C:\\Windows\\SYSTEM32\\ntdll.dll+6ce7f",
+      "GrantedAccess": "0x1fffff",
+      "RuleName": "",
+      "SourceImage": "C:\\Windows\\System32\\exploit.exe",
+      "SourceIntegrityLevel": "Medium",
+      "SourceProcessGUID": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "SourceProcessId": "328",
+      "SourceThreadId": "332",
+      "SourceUser": "NT AUTHORITY\\SYSTEM",
+      "TargetImage": "C:\\Windows\\system32\\exploited.exe",
+      "TargetIntegrityLevel": "System",
+      "TargetParentProcessGuid": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "TargetProcessGUID": "{515cd0d1-4af2-5d3f-0000-00104a490000}",
+      "TargetProcessId": "352",
+      "TargetUser": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "7669145",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+9d8d4|C:\\Windows\\SYSTEM32\\ntdll.dll+899c7|C:\\Windows\\SYSTEM32\\ntdll.dll+89732|\\SystemRoot\\System32\\smss.exe+2089|\\SystemRoot\\System32\\smss.exe+120d|\\SystemRoot\\System32\\smss.exe+1880|\\SystemRoot\\System32\\smss.exe+923e|\\SystemRoot\\System32\\smss.exe+64e1|\\SystemRoot\\System32\\smss.exe+360e|\\SystemRoot\\System32\\smss.exe+31ba|\\SystemRoot\\System32\\smss.exe+2f06|C:\\Windows\\SYSTEM32\\ntdll.dll+6ce7f",
+      "GrantedAccess": "0x1fffff",
+      "RuleName": "",
+      "SourceImage": "C:\\Windows\\System32\\exploit.exe",
+      "SourceIntegrityLevel": "Medium",
+      "SourceProcessGUID": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "SourceProcessId": "328",
+      "SourceThreadId": "332",
+      "SourceUser": "NT AUTHORITY\\SYSTEM",
+      "TargetImage": "C:\\Windows\\system32\\exploited.exe",
+      "TargetIntegrityLevel": "High",
+      "TargetParentProcessGuid": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "TargetProcessGUID": "{515cd0d1-4af2-5d3f-0000-00104a490000}",
+      "TargetProcessId": "352",
+      "TargetUser": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "7669145",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+9d8d4|C:\\Windows\\SYSTEM32\\ntdll.dll+899c7|C:\\Windows\\SYSTEM32\\ntdll.dll+89732|\\SystemRoot\\System32\\smss.exe+2089|\\SystemRoot\\System32\\smss.exe+120d|\\SystemRoot\\System32\\smss.exe+1880|\\SystemRoot\\System32\\smss.exe+923e|\\SystemRoot\\System32\\smss.exe+64e1|\\SystemRoot\\System32\\smss.exe+360e|\\SystemRoot\\System32\\smss.exe+31ba|\\SystemRoot\\System32\\smss.exe+2f06|C:\\Windows\\SYSTEM32\\ntdll.dll+6ce7f",
+      "GrantedAccess": "0x1fffff",
+      "RuleName": "",
+      "SourceImage": "C:\\Windows\\System32\\exploit.exe",
+      "SourceIntegrityLevel": "High",
+      "SourceProcessGUID": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "SourceProcessId": "328",
+      "SourceThreadId": "332",
+      "SourceUser": "NT AUTHORITY\\SYSTEM",
+      "TargetImage": "C:\\Windows\\system32\\exploited.exe",
+      "TargetIntegrityLevel": "System",
+      "TargetParentProcessGuid": "{515cd0d1-4aea-5d3f-0000-00108f300000}",
+      "TargetProcessGUID": "{515cd0d1-4af2-5d3f-0000-00104a490000}",
+      "TargetProcessId": "352",
+      "TargetUser": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "7669145",
+      "Execution": {
+        "ProcessID": "892",
+        "ThreadID": "1536"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

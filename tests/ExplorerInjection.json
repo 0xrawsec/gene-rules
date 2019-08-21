@@ -1,0 +1,50 @@
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+5157a|C:\\Windows\\system32\\KERNELBASE.dll+d817|C:\\Windows\\Microsoft.NET\\Framework64\\v2.0.50727\\mscorwks.dll+2c0e37|UNKNOWN(000007FF002A0A6A)",
+      "GrantedAccess": "0x1f1fff",
+      "RuleName": "",
+      "SourceImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "SourceIntegrityLevel": "Medium",
+      "SourceProcessGUID": "{49F1AF32-95E7-5D48-0000-00107E820800}",
+      "SourceProcessId": "2404",
+      "SourceServices": "N/A",
+      "SourceThreadId": "2624",
+      "SourceUser": "GenEric-PC\\Gen Eric",
+      "TargetImage": "C:\\Windows\\Explorer.EXE",
+      "TargetIntegrityLevel": "Medium",
+      "TargetParentProcessGuid": "{49F1AF32-9595-5D48-0000-00100CCF0400}",
+      "TargetProcessGUID": "{49F1AF32-9596-5D48-0000-0010C6DC0400}",
+      "TargetProcessId": "1140",
+      "TargetServices": "N/A",
+      "TargetUser": "GenEric-PC\\Gen Eric",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "10",
+      "EventRecordID": "7796592",
+      "Execution": {
+        "ProcessID": "1640",
+        "ThreadID": "1848"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "10",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "3"
+    }
+  }
+}

@@ -9,7 +9,7 @@ from datetime import datetime
 
 def load_config(path):
     with open(path) as fd:
-        return yaml.load(fd.read())
+        return yaml.load(fd.read(), Loader=yaml.FullLoader)
 
 def has_test_option(gene_path):
     cmd = [gene_path, "-h"]
@@ -29,8 +29,11 @@ def test(config):
 
     for rule_name, test_file in config["tests"].items():
         fp_test_file = os.path.join(tests_root, test_file)
+        if not os.path.isfile(fp_test_file):
+            raise FileNotFoundError(fp_test_file)
+
         #print("Testing rule {}: {}".format(rule_name, test_file))
-        cmd = [gene_path, "-test", "-r", rules_path, "-n", rule_name, "-j", test_file]
+        cmd = [gene_path, "-test", "-r", rules_path, "-n", rule_name, "-j", fp_test_file]
         start = datetime.now()
         cp = subprocess.run(cmd, capture_output=True, text=True)
         stop = datetime.now()

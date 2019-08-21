@@ -25,3 +25,27 @@
   ],
   "Condition": "$loaded and $pservice and !$trusted"
 }
+
+{
+  "Name": "UnknownServices",
+  "Tags": ["WHIDS"],
+  "Meta": {
+    "EventIDs": [1],
+    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Computers": [],
+    "Criticality": 10,
+    "Disable": false,
+    "Author": "0xrawsec",
+    "Comments": "Rule to catch any non standard windows 10 services",
+    "Requirements": "Hook enabled in Whids"
+  },
+  "Matches": [
+    "$exist: Services ~= '.'",
+    "$na: Services = 'N/A'",
+    "$hosted: Image ~= '(?i:\\\\(lsass|svchost)\\.exe$)'",
+    "$sysmon: Services = '{{sysmon-svc}}'",
+    "$win10shared: Services ~= '{{win10shared}}'",
+    "$win10svcs: Services ~= '{{win10svcs}}'"
+  ],
+  "Condition": "$exist and !($na or $sysmon or ($hosted and $win10shared) or $win10svcs)"
+}

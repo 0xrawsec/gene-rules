@@ -7,7 +7,7 @@
       "Computers": [],
       "Criticality": 8,
       "Author": "0xrawsec",
-      "Comments": "Experimental rule to catch malicious accesses to Windows binaries. This works only with WHIDS with hooks enabled."
+      "Comments": "Experimental rule to catch malicious accesses to Windows binaries. This works only with WHIDS and hooks enabled."
     },
     "Matches": [
       "$ct: CallTrace ~= 'UNKNOWN'",
@@ -29,7 +29,7 @@
   "Computers": [],
   "Criticality": 8,
   "Author": "@0xrawsec",
-  "Comment": "Experimental rule to detect some persistent RATs (i.e. interesting tools to monitor being called and not being a descendant process from the Explorer typical of an interactive session)"
+  "Comments": "Experimental rule to detect some persistent RATs (i.e. interesting tools to monitor being called and not being a descendant process from Explorer.exe, typical for an interactive session)"
   },
 "Matches": [
     "$exist: Ancestors ~= '.'",
@@ -37,4 +37,40 @@
     "$tools: Image ~= '{{admintools}}'"
   ],
 "Condition": "$exist and $tools and !$anc"
+}
+
+{
+"Name": "HeurOfficeThreat",
+"Tags": ["Heuristics", "WHIDS", "MSOffice"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 10,
+  "Author": "@0xrawsec",
+  "Comments": "Generic rule to catch MS Office based malware"
+  },
+"Matches": [
+    "$anc: Ancestors ~= '{{msoffice}}'",
+    "$tools: Image ~= '({{execution}}|{{decode}})'"
+  ],
+"Condition": "$tools and $anc"
+}
+
+{
+"Name": "HeurWebShell",
+"Tags": ["Heuristics", "WHIDS", "WebShell"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 10,
+  "Author": "@0xrawsec",
+  "Comments": "Generic rule to catch webshells"
+  },
+"Matches": [
+    "$anc: Ancestors ~= '{{webservers}}'",
+    "$tools: Image ~= '{{admintools}}'"
+  ],
+"Condition": "$tools and $anc"
 }

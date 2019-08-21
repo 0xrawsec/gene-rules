@@ -1,4 +1,35 @@
 {
+"Name": "ExplorerInjection",
+"Tags": ["WHIDS"],
+"Meta": {
+  "EventIDs": [10],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 10,
+  "Author": "0xrawsec",
+  "Comments": "Attempt to write (inject) into Explorer process. Built up for Windows 10 might generate some FPs on earlier windows versions.",
+  "ATTACK": [
+    {
+      "ID": "T1055",
+      "Tactic": "privilege-escalation",
+      "Reference": "https://attack.mitre.org/techniques/T1055"
+    }
+  ]
+  },
+"Matches": [
+    "$ga: GrantedAccess &= '0x20'",
+    "$srcwl: SourceImage ~= '(?i:C:\\\\Windows\\\\System32\\\\(csrss)\\.exe)'",
+    "$hosted: SourceImage ~= '(?i:\\\\(lsass|svchost)\\.exe$)'",
+    "$win10shared: SourceServices ~= '{{win10shared}}'",
+    "$win10svcs: SourceServices ~= '{{win10svcs}}'",
+    "$sysmon: SourceServices ~= '{{sysmon-svc}}'",
+    "$expl: TargetImage ~= '(?i:C:\\\\Windows\\\\Explorer\\.exe)'",
+    "$srcisparent: SourceProcessGUID = @TargetParentProcessGuid"
+  ],
+"Condition": "$ga and $expl and !($srcisparent or ($hosted and $win10shared) or $win10svcs or $sysmon or $srcwl)"
+}
+
+{
 "Name": "SuspWriteAccess",
 "Tags": ["WHIDS"],
 "Meta": {
@@ -23,5 +54,46 @@
     "$srcistarget: SourceImage = @TargetImage",
     "$srcissystem: SourceIntegrityLevel = 'System'"
   ],
-"Condition": "$ga and !($srcissystem or $srcwl or $srcisparent or $srcistarget)"
+"Condition": "$ga and !($srcwl or $srcissystem or $srcisparent or $srcistarget)"
+}
+
+{
+"Name": "SuspPrivWriteAccess",
+"Tags": ["WHIDS"],
+"Meta": {
+  "EventIDs": [10],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 8,
+  "Author": "0xrawsec",
+  "Comments": "Suspicious Write Access requested by privileged processes. Disabled because it seems there are too many cases (likely leading to easy bypass and possible FPs)",
+  "ATTACK": [
+    {
+      "ID": "T1055",
+      "Tactic": "privilege-escalation",
+      "Reference": "https://attack.mitre.org/techniques/T1055"
+    }
+  ],
+  "Disable": true
+  },
+"Matches": [
+    "$ga: GrantedAccess &= '0x20'",
+
+    "$srcservices: SourceImage ~= '(?i:{{system}}services\\.exe)'",
+    "$srcsrchidx: SourceImage ~= '(?i:{{system}}searchindexer\\.exe)'",
+    "$srccomptel: SourceImage ~= '(?i:{{system}}CompatTelRunner\\.exe)'",
+    "$srcsppsvc: SourceImage ~= '(?i:{{system}}sppsvc\\.exe)'",
+
+    "$tgtsvchost: TargetImage ~= '(?i:{{system}}svchost\\.exe)'",
+    "$tgtprothost: TargetImage ~= '(?i:{{system}}searchprotocolhost\\.exe)'",
+    "$tgtcomptel: TargetImage ~= '(?i:{{system}}CompatTelRunner\\.exe)'",
+    "$tgtsppext: TargetImage ~= '(?i:{{system}}SppExtComObj\\.exe)'",
+
+    "$srcisparent: SourceProcessGUID = @TargetParentProcessGuid",
+    "$srcil: SourceIntegrityLevel ~= '(System|High)'",
+    "$tgtil: TargetIntegrityLevel ~= '(System|High)'",
+    "$srcwl: SourceImage ~= '(?i:{{system}}(lsass|csrss|conhost|consent)\\.exe)'",
+    "$svcwl: SourceServices ~= '^(Schedule|Themes|Winmgmt|{{sysmon-svc}}|BrokerInfrastructure,DcomLaunch,Power,SystemEventsBroker)$'"
+  ],
+"Condition": "$ga and ($srcil and $tgtil) and !($srcisparent or $srcwl or $svcwl or ($srcservices and $tgtsvchost) or ($srccomptel and $tgtcomptel) or ($srcsrchidx and $tgtprothost) or ($srcsppsvc and $tgtsppext))"
 }
