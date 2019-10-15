@@ -18,9 +18,10 @@
   },
 "Matches": [
     "$eventtype: EventType = 'SetValue'",
-    "$run: TargetObject ~= '(?i:\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run)'",
-    "$runonce: TargetObject ~= '(?i:\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\RunOnce)'",
-    "$uimls: TargetObject ~= '(?i:\\\\Environment\\\\UserInitMprLogonScript$)'"
+    "$run: TargetObject ~= '(?i:{{SOFTWARE}}\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run)'",
+    "$runonce: TargetObject ~= '(?i:{{SOFTWARE}}\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\RunOnce)'",
+    "$uimls: TargetObject ~= '(?i:\\\\Environment\\\\UserInitMprLogonScript$)'",
+    "$com: TargetObject ~= '(?i:{{HKCR}}\\\\CLSID)'"
   ],
-"Condition": "$eventtype and ($run or $runonce or $uimls)"
+"Condition": "$eventtype and ($run or $runonce or $uimls or $com)"
 }

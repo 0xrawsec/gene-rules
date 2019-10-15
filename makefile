@@ -10,7 +10,7 @@ test: verify
 	echo "Testing Rules"
 	echo "# Rules Coverage" > tests.md
 	echo  >> tests.md
-	./scripts/tester.py ./scripts/tester.conf | tee -a tests.md
+	./scripts/tester.py ./scripts/tester.conf | sed "s/$$/\n/" | tee -a tests.md
 
 compile: test verify
 	gene -r ./rules -dump '.*' > $(DST)
