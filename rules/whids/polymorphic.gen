@@ -57,7 +57,7 @@
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 8,
+  "Criticality": 5,
   "Author": "0xrawsec",
   "Comments": "Cannot check process integrity because process took too much time to start."
   },

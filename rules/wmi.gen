@@ -1,11 +1,11 @@
 {
-"Name": "WMIChildProcess",
+"Name": "WMIPrvseCommand",
 "Tags": ["WMI"],
 "Meta": {
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 7,
+  "Criticality": 8,
   "ATTACK": [
     {
       "ID": "T1047",
@@ -14,13 +14,30 @@
     }
   ],
   "Author": "@0xrawsec",
-  "Comment": "This rule catches the processes spawned by WMI"
+  "Comment": "This rule catches the processes spawned using WMI."
   },
 "Matches": [
-  "$wmi: ParentImage ~= '(?i:\\\\(wmic|wmiprvse)\\.exe$)'",
-  "$wlproc: Image ~= '(?i:C:\\\\windows\\\\(syswow64|system32)\\\\(WerFault|csrss|wininit|conhost|winlogon)\\.exe)'"
+  "$wmi: ParentImage ~= '(?i:\\\\wmiprvse\\.exe$)'"
   ],
-"Condition": "!$wlproc and $wmi"
+"Condition": "$wmi"
+}
+
+{
+"Name": "SuspWMIC",
+"Tags": ["WMI"],
+"Meta": {
+  "EventIDs": [1],
+  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+  "Computers": [],
+  "Criticality": 8,
+  "Author": "@0xrawsec",
+  "Comment": "WMIC suspicious command line"
+  },
+"Matches": [
+  "$wmic: Image ~= '(?i:\\\\wmic\\.exe$)'",
+  "$proc: CommandLine ~= '(?i:process\\s+call\\s+create)'"
+  ],
+"Condition": "$wmic and $proc"
 }
 
 {
@@ -30,17 +47,15 @@
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 7,
+  "Criticality": 8,
   "Author": "@0xrawsec",
   "Comment": "This rule catches lateral movement done with WMI"
   },
 "Matches": [
   "$wmi: Image ~= '(?i:\\\\wmic\\.exe$)'",
-  "$node: CommandLine ~= '(?i:/node:)'",
-  "$user: CommandLine ~= '(?i:/user:)'",
-  "$pwd: CommandLine ~= '(?i:/password:)'"
+  "$node: CommandLine ~= '(?i:/node:)'"
   ],
-"Condition": "$wmi and $node and $user and $pwd"
+"Condition": "$wmi and $node"
 }
 
 {
@@ -50,7 +65,7 @@
   "EventIDs": [1],
   "Channels": ["Microsoft-Windows-Sysmon/Operational"],
   "Computers": [],
-  "Criticality": 7,
+  "Criticality": 8,
   "ATTACK": [
     {
       "ID": "T1220",

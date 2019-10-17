@@ -47,7 +47,7 @@ msoffice: '(?i:\\(excel|winword|powerpnt|outlook)\.exe)'
 webservers: '(?:\\(tomcat.*?|w3wp|php-cgi|nginx|httpd|apache.*?)\.exe)'
 
 # Signatures for drivers and DLLs
-trusted-drv-sig: '^(Microsoft Windows)$'
+trusted-drv-sig: '^(Microsoft Windows|Microsoft Corporation)$'
 trusted-dll-sig: '^(Microsoft Windows|Microsoft Corporation|Microsoft Windows Component Publisher|Microsoft Windows Publisher|Microsoft Windows 3rd party Component)$'
 
 # Sysmon related

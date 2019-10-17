@@ -1,0 +1,124 @@
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\winlogon.exe|C:\\Windows\\System32\\userinit.exe|C:\\Windows\\explorer.exe|C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "CommandLine": "\"C:\\Windows\\System32\\Wbem\\WMIC.exe\" process call create C:\\Windows\\System32\\notepad.exe",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "\\\\vboxsvr\\test\\Exercises\\notepad-wmi\\",
+      "Description": "WMI Commandline Utility",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "SHA1=CEEA1CA1D843C0CE456E347AFB58286CA60AF848,MD5=29B7D02A3B5F670B5AF2DAF008810863,SHA256=96BEC668680152DF51EC1DE1D5362C64C2ABA1EDA86F9121F517646F5DEC2B72,IMPHASH=2169BDA7AED3E42F1A59C8141542EC0C",
+      "Image": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+      "ImageSize": "508416",
+      "IntegrityLevel": "Medium",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-e1ec-5da6-0000-0020614b0300}",
+      "LogonId": "0x34b61",
+      "OriginalFileName": "wmic.exe",
+      "ParentCommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" ",
+      "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentIntegrityLevel": "Medium",
+      "ParentProcessGuid": "{515cd0d1-e23b-5da6-0000-0010605c1400}",
+      "ParentProcessId": "6944",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-e2c6-5da6-0000-0010e18b1900}",
+      "ProcessId": "2072",
+      "ProcessIntegrity": "-1",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "Services": "N/A",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "11411880",
+      "Execution": {
+        "ProcessID": "2132",
+        "ThreadID": "4820"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\winlogon.exe|C:\\Windows\\System32\\userinit.exe|C:\\Windows\\explorer.exe|C:\\Windows\\System32\\cmd.exe",
+      "CommandLine": "wmic  Process   cAlL cReAte \"C:\\Windows\\System32\\notepad.exe\"",
+      "Company": "Microsoft Corporation",
+      "CurrentDirectory": "C:\\Windows\\",
+      "Description": "WMI Commandline Utility",
+      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
+      "Hashes": "SHA1=CEEA1CA1D843C0CE456E347AFB58286CA60AF848,MD5=29B7D02A3B5F670B5AF2DAF008810863,SHA256=96BEC668680152DF51EC1DE1D5362C64C2ABA1EDA86F9121F517646F5DEC2B72,IMPHASH=2169BDA7AED3E42F1A59C8141542EC0C",
+      "Image": "C:\\Windows\\System32\\wbem\\WMIC.exe",
+      "ImageSize": "508416",
+      "IntegrityLevel": "Medium",
+      "IntegrityTimeout": "false",
+      "LogonGuid": "{515cd0d1-e1ec-5da6-0000-0020614b0300}",
+      "LogonId": "0x34b61",
+      "OriginalFileName": "wmic.exe",
+      "ParentCommandLine": "C:\\Windows\\system32\\cmd.exe /c \"\"\\\\VBOXSVR\\test\\Exercises\\notepad-wmi\\start_notepad_wmi.bat\" \"",
+      "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+      "ParentIntegrityLevel": "Medium",
+      "ParentProcessGuid": "{515cd0d1-e333-5da6-0000-0010d9bb1a00}",
+      "ParentProcessId": "1724",
+      "ParentProcessIntegrity": "0",
+      "ParentUser": "DESKTOP-LJRVE06\\Generic",
+      "ProcessGuid": "{515cd0d1-e334-5da6-0000-0010efd71a00}",
+      "ProcessId": "4240",
+      "ProcessIntegrity": "0",
+      "Product": "Microsoft® Windows® Operating System",
+      "RuleName": "",
+      "Services": "N/A",
+      "TerminalSessionId": "1",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "1",
+      "EventRecordID": "11412272",
+      "Execution": {
+        "ProcessID": "2132",
+        "ThreadID": "4820"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "1",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}

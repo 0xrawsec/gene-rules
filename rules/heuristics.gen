@@ -200,10 +200,11 @@
   },
 "Matches": [
   "$system: Image ~= '(?i:C:\\\\Windows)'",
+  "$defender: Image ~= '(?i:{{programfiles}}Windows Defender\\\\MsMpEng\\.exe)'",
   "$browsers: Image ~= '{{browsers}}'",
   "$target: TargetFilename ~= '(?i:c:\\\\.*({{exec-exts}}|{{script-exts}})$)'"
   ],
-"Condition": "!($system or $browsers) and $target"
+"Condition": "!($system or $browsers or $defender) and $target"
 }
 
 {
