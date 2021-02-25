@@ -1,76 +1,107 @@
 {
-    "Name": "HeurMaliciousAccess",
-    "Tags": ["Heuristics", "WHIDS"],
-    "Meta": {
-      "EventIDs": [10],
-      "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-      "Computers": [],
-      "Criticality": 8,
-      "Author": "0xrawsec",
-      "Comments": "Experimental rule to catch malicious accesses to Windows binaries. This works only with WHIDS and hooks enabled."
-    },
-    "Matches": [
-      "$ct: CallTrace ~= 'UNKNOWN'",
-      "$whitelist: SourceImage ~= '(?i:{{system}}(sdiagnhost|svchost)\\.exe)'",
-      "$windows: TargetImage ~= '(?i:C:\\\\Windows\\\\)'",
-      "$write: GrantedAccess &= '0x20'",
-      "$read: GrantedAccess &= '0x10'",
-      "$srcisparent: SourceProcessGUID = @TargetParentProcessGuid"
-    ],
-    "Condition": "!$srcisparent and $windows and $ct and ($write or $read) and !$whitelist"
-  }
-
-{
-"Name": "HeurPersistentRAT",
-"Tags": ["Heuristics", "WHIDS"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "Author": "@0xrawsec",
-  "Comments": "Experimental rule to detect some persistent RATs (i.e. interesting tools to monitor being called and not being a descendant process from Explorer.exe, typical for an interactive session)"
-  },
-"Matches": [
-    "$exist: Ancestors ~= '.'",
-    "$anc: Ancestors ~= '(?i:C:\\\\Windows\\\\explorer\\.exe)'",
-    "$tools: Image ~= '{{admintools}}'"
+  "Name": "HeurMaliciousAccess",
+  "Tags": [
+    "Heuristics",
+    "WHIDS"
   ],
-"Condition": "$exist and $tools and !$anc"
+  "Meta": {
+    "EventIDs": [
+      10
+    ],
+    "Channels": [
+      "Microsoft-Windows-Sysmon/Operational"
+    ],
+    "Computers": [],
+    "Criticality": 8,
+    "Author": "0xrawsec",
+    "Comments": "Experimental rule to catch malicious accesses to Windows binaries. This works only with WHIDS and hooks enabled."
+  },
+  "Matches": [
+    "$ct: CallTrace ~= 'UNKNOWN'",
+    "$whitelist: SourceImage ~= '(?i:{{system}}(sdiagnhost|svchost)\\.exe)'",
+    "$windows: TargetImage ~= '(?i:C:\\\\Windows\\\\)'",
+    "$write: GrantedAccess &= '0x20'",
+    "$read: GrantedAccess &= '0x10'",
+    "$srcisparent: SourceProcessGUID = @TargetParentProcessGuid"
+  ],
+  "Condition": "!$srcisparent and $windows and $ct and ($write or $read) and !$whitelist"
 }
 
 {
-"Name": "HeurOfficeThreat",
-"Tags": ["Heuristics", "WHIDS", "MSOffice"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "Author": "@0xrawsec",
-  "Comments": "Generic rule to catch MS Office based malware"
+  "Name": "HeurPersistentRAT",
+  "Tags": [
+    "Heuristics",
+    "WHIDS"
+  ],
+  "Meta": {
+    "EventIDs": [
+      1
+    ],
+    "Channels": [
+      "Microsoft-Windows-Sysmon/Operational"
+    ],
+    "Computers": [],
+    "Criticality": 8,
+    "Author": "@0xrawsec",
+    "Comments": "Experimental rule to detect some persistent RATs (i.e. interesting tools to monitor being called and not being a descendant process from Explorer.exe, typical of an interactive session)"
   },
-"Matches": [
+  "Matches": [
+    "$exist: Ancestors ~= '(?i:^System\\|)'",
+    "$anc: Ancestors ~= '(?i:C:\\\\Windows\\\\explorer\\.exe)'",
+    "$schedsvc: ParentServices ~= '^(Schedule|BrokerInfrastructure,DcomLaunch,Power,SystemEventsBroker)$'",
+    "$tools: Image ~= '{{admintools}}'"
+  ],
+  "Condition": "$exist and $tools and !$anc and !$schedsvc"
+}
+
+{
+  "Name": "HeurOfficeThreat",
+  "Tags": [
+    "Heuristics",
+    "WHIDS",
+    "MSOffice"
+  ],
+  "Meta": {
+    "EventIDs": [
+      1
+    ],
+    "Channels": [
+      "Microsoft-Windows-Sysmon/Operational"
+    ],
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "@0xrawsec",
+    "Comments": "Generic rule to catch MS Office based malware"
+  },
+  "Matches": [
     "$anc: Ancestors ~= '{{msoffice}}'",
     "$tools: Image ~= '({{execution}}|{{decode}})'"
   ],
-"Condition": "$tools and $anc"
+  "Condition": "$tools and $anc"
 }
 
 {
-"Name": "HeurWebShell",
-"Tags": ["Heuristics", "WHIDS", "WebShell"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "Author": "@0xrawsec",
-  "Comments": "Generic rule to catch webshells"
+  "Name": "HeurWebShell",
+  "Tags": [
+    "Heuristics",
+    "WHIDS",
+    "WebShell"
+  ],
+  "Meta": {
+    "EventIDs": [
+      1
+    ],
+    "Channels": [
+      "Microsoft-Windows-Sysmon/Operational"
+    ],
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "@0xrawsec",
+    "Comments": "Generic rule to catch webshells"
   },
-"Matches": [
+  "Matches": [
     "$anc: Ancestors ~= '{{webservers}}'",
     "$tools: Image ~= '{{admintools}}'"
   ],
-"Condition": "$tools and $anc"
+  "Condition": "$tools and $anc"
 }

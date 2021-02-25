@@ -1,34 +1,17 @@
 {
   "Event": {
     "EventData": {
-      "Ancestors": "System|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\smss.exe|C:\\Windows\\System32\\winlogon.exe|C:\\Windows\\System32\\userinit.exe|C:\\Windows\\explorer.exe|\\\\VBOXSVR\\test\\ProcessHollowing-github\\Process-Hollowing-master\\executables\\ProcessHollowing.exe",
-      "CommandLine": "svchost",
-      "Company": "Microsoft Corporation",
-      "CurrentDirectory": "\\\\VBOXSVR\\test\\ProcessHollowing-github\\Process-Hollowing-master\\executables\\",
-      "Description": "Host Process for Windows Services",
-      "FileVersion": "10.0.18362.1 (WinBuild.160101.0800)",
-      "Hashes": "SHA1=FA8AE0BBD70F986259303E90FB70F730AAE0AE99,MD5=A7296C1245EE76768D581C6330DADE06,SHA256=5BE0DE7F915BA819D4BA048DB7A2A87F6F3253FDD4865DC418181A0D6A031CAA,IMPHASH=EC10F5BE711CB724C2D4D18A3C10AD6D",
-      "Image": "C:\\Windows\\SysWOW64\\svchost.exe",
-      "ImageSize": "45448",
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ImageHashes": "SHA1=18C2F910FC6E2609362933B8A07BFFA6C64119EB,MD5=6B3FC10BA1FB445C6772D076860B0F3B,SHA256=080A31499728B001B28FA8A386A73A800A190B91B129127E597D8E67549C1D86,IMPHASH=5ED80EE3BE69CAE0F2D23403B0DC50DC",
       "IntegrityLevel": "Medium",
-      "IntegrityTimeout": "false",
-      "LogonGuid": "{515cd0d1-4b01-5d3f-0000-0020a1320300}",
-      "LogonId": "0x332a1",
-      "OriginalFileName": "svchost.exe",
-      "ParentCommandLine": "\"\\\\VBOXSVR\\test\\ProcessHollowing-github\\Process-Hollowing-master\\executables\\ProcessHollowing.exe\" ",
-      "ParentImage": "\\\\VBOXSVR\\test\\ProcessHollowing-github\\Process-Hollowing-master\\executables\\ProcessHollowing.exe",
-      "ParentIntegrityLevel": "Medium",
-      "ParentProcessGuid": "{515cd0d1-52c8-5d3f-0000-0010397e2c00}",
-      "ParentProcessId": "6600",
-      "ParentProcessIntegrity": "5.17",
-      "ParentUser": "DESKTOP-LJRVE06\\Generic",
-      "ProcessGuid": "{515cd0d1-52c9-5d3f-0000-0010b4f62c00}",
-      "ProcessId": "8060",
-      "ProcessIntegrity": "90.16",
-      "Product": "Microsoft® Windows® Operating System",
-      "RuleName": "",
+      "ProcessGuid": "{515cd0d1-6c74-6012-fe01-000000005700}",
+      "ProcessId": "7328",
+      "ProcessIntegrity": "84",
+      "RuleName": "-",
       "Services": "N/A",
-      "TerminalSessionId": "1",
+      "Type": "Image is replaced",
       "User": "DESKTOP-LJRVE06\\Generic",
       "UtcTime": "4242-04-24 13:37:42.422"
     },
@@ -36,11 +19,11 @@
       "Channel": "Microsoft-Windows-Sysmon/Operational",
       "Computer": "BLAHBLAH",
       "Correlation": {},
-      "EventID": "1",
-      "EventRecordID": "7691550",
+      "EventID": "25",
+      "EventRecordID": "43289556",
       "Execution": {
-        "ProcessID": "892",
-        "ThreadID": "1536"
+        "ProcessID": "3864",
+        "ThreadID": "1568"
       },
       "Keywords": "0x8000000000000000",
       "Level": "4",
@@ -52,7 +35,277 @@
       "Security": {
         "UserID": "S-1-5-18"
       },
-      "Task": "1",
+      "Task": "25",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\"",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ImageHashes": "SHA1=18C2F910FC6E2609362933B8A07BFFA6C64119EB,MD5=6B3FC10BA1FB445C6772D076860B0F3B,SHA256=080A31499728B001B28FA8A386A73A800A190B91B129127E597D8E67549C1D86,IMPHASH=5ED80EE3BE69CAE0F2D23403B0DC50DC",
+      "IntegrityLevel": "Medium",
+      "ProcessGuid": "{515cd0d1-6c74-6012-ff01-000000005700}",
+      "ProcessId": "4532",
+      "ProcessIntegrity": "84",
+      "RuleName": "-",
+      "Services": "N/A",
+      "Type": "Image is replaced",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "25",
+      "EventRecordID": "43289564",
+      "Execution": {
+        "ProcessID": "3864",
+        "ThreadID": "1568"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "25",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"4532.0.1541949432\\287863831\" -parentBuildID 20210105180113 -prefsHandle 1448 -prefMapHandle 1440 -prefsLen 1 -prefMapSize 239110 -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\" - 4532 \"\\\\.\\pipe\\gecko-crash-server-pipe.4532\" 1540 gpu",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Image": "&lt;unknown process&gt;",
+      "ImageHashes": "SHA1=18C2F910FC6E2609362933B8A07BFFA6C64119EB,MD5=6B3FC10BA1FB445C6772D076860B0F3B,SHA256=080A31499728B001B28FA8A386A73A800A190B91B129127E597D8E67549C1D86,IMPHASH=5ED80EE3BE69CAE0F2D23403B0DC50DC",
+      "IntegrityLevel": "Medium",
+      "ProcessGuid": "{515cd0d1-6c76-6012-0002-000000005700}",
+      "ProcessId": "3304",
+      "ProcessIntegrity": "84",
+      "RuleName": "-",
+      "Services": "N/A",
+      "Type": "Image is replaced",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "25",
+      "EventRecordID": "43289603",
+      "Execution": {
+        "ProcessID": "3864",
+        "ThreadID": "1568"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "25",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"4532.6.1286637003\\935141821\" -childID 1 -isForBrowser -prefsHandle 2888 -prefMapHandle 2844 -prefsLen 227 -prefMapSize 239110 -parentBuildID 20210105180113 -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\" - 4532 \"\\\\.\\pipe\\gecko-crash-server-pipe.4532\" 2880 tab",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ImageHashes": "SHA1=18C2F910FC6E2609362933B8A07BFFA6C64119EB,MD5=6B3FC10BA1FB445C6772D076860B0F3B,SHA256=080A31499728B001B28FA8A386A73A800A190B91B129127E597D8E67549C1D86,IMPHASH=5ED80EE3BE69CAE0F2D23403B0DC50DC",
+      "IntegrityLevel": "Low",
+      "ProcessGuid": "{515cd0d1-6c76-6012-0202-000000005700}",
+      "ProcessId": "8416",
+      "ProcessIntegrity": "84",
+      "RuleName": "-",
+      "Services": "N/A",
+      "Type": "Image is replaced",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "25",
+      "EventRecordID": "43289687",
+      "Execution": {
+        "ProcessID": "3864",
+        "ThreadID": "1568"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "25",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"4532.13.594169801\\1069912454\" -childID 2 -isForBrowser -prefsHandle 3828 -prefMapHandle 3824 -prefsLen 6565 -prefMapSize 239110 -parentBuildID 20210105180113 -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\" - 4532 \"\\\\.\\pipe\\gecko-crash-server-pipe.4532\" 3836 tab",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ImageHashes": "SHA1=18C2F910FC6E2609362933B8A07BFFA6C64119EB,MD5=6B3FC10BA1FB445C6772D076860B0F3B,SHA256=080A31499728B001B28FA8A386A73A800A190B91B129127E597D8E67549C1D86,IMPHASH=5ED80EE3BE69CAE0F2D23403B0DC50DC",
+      "IntegrityLevel": "Low",
+      "ProcessGuid": "{515cd0d1-6c77-6012-0302-000000005700}",
+      "ProcessId": "8516",
+      "ProcessIntegrity": "84",
+      "RuleName": "-",
+      "Services": "N/A",
+      "Type": "Image is replaced",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "25",
+      "EventRecordID": "43289824",
+      "Execution": {
+        "ProcessID": "3864",
+        "ThreadID": "1568"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "25",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"4532.20.776709015\\150500289\" -childID 3 -isForBrowser -prefsHandle 4828 -prefMapHandle 4840 -prefsLen 7363 -prefMapSize 239110 -parentBuildID 20210105180113 -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\" - 4532 \"\\\\.\\pipe\\gecko-crash-server-pipe.4532\" 4868 tab",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "ImageHashes": "SHA1=18C2F910FC6E2609362933B8A07BFFA6C64119EB,MD5=6B3FC10BA1FB445C6772D076860B0F3B,SHA256=080A31499728B001B28FA8A386A73A800A190B91B129127E597D8E67549C1D86,IMPHASH=5ED80EE3BE69CAE0F2D23403B0DC50DC",
+      "IntegrityLevel": "Low",
+      "ProcessGuid": "{515cd0d1-6c78-6012-0402-000000005700}",
+      "ProcessId": "8904",
+      "ProcessIntegrity": "84",
+      "RuleName": "-",
+      "Services": "N/A",
+      "Type": "Image is replaced",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "25",
+      "EventRecordID": "43290071",
+      "Execution": {
+        "ProcessID": "3864",
+        "ThreadID": "1568"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "25",
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      },
+      "Version": "5"
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\pingsender.exe\" https://incoming.telemetry.mozilla.org/submit/telemetry/046d30f1-46d1-43f5-8ac2-80af398669e9/event/Firefox/84.0.2/release/20210105180113?v=4 C:\\Users\\Generic\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\a3eknlv9.default-release\\saved-telemetry-pings\\046d30f1-46d1-43f5-8ac2-80af398669e9",
+      "CurrentDirectory": "C:\\Program Files\\Mozilla Firefox\\",
+      "Image": "C:\\Program Files\\Mozilla Firefox\\pingsender.exe",
+      "ImageHashes": "SHA1=B85498A9F5B0E62EB9F8D9DB45A2757F672CEB3E,MD5=42B0C9A042CAACC9FD77973948A2C225,SHA256=9F76E116AF9953DFA54529E3584E4E226A8F128C854D065FB1112B1CE05133B8,IMPHASH=AF27FA7223A9B6FE80447A0E6715E632",
+      "IntegrityLevel": "Medium",
+      "ProcessGuid": "{515cd0d1-6c7e-6012-0602-000000005700}",
+      "ProcessId": "9128",
+      "ProcessIntegrity": "84",
+      "RuleName": "-",
+      "Services": "N/A",
+      "Type": "Image is replaced",
+      "User": "DESKTOP-LJRVE06\\Generic",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {},
+      "EventID": "25",
+      "EventRecordID": "43290487",
+      "Execution": {
+        "ProcessID": "3864",
+        "ThreadID": "1568"
+      },
+      "Keywords": "0x8000000000000000",
+      "Level": "4",
+      "Opcode": "0",
+      "Provider": {
+        "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Security": {
+        "UserID": "S-1-5-18"
+      },
+      "Task": "25",
       "TimeCreated": {
         "SystemTime": "4242-04-24 13:37:42.422"
       },

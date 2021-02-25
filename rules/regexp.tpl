@@ -12,7 +12,11 @@
 windows: '(?i:C:\\Windows\\)'
 system: '(?i:C:\\Windows\\Sys(wow64|tem32)\\)'
 systemapps: '(?i:C:\\Windows\\SystemApps\\)'
-programfiles: '(?i:C:\\(PROGRA~2|Program Files.*?)\\)'
+programfiles: '(?i:C:\\(PROGRA~(1|2)|Program Files.*?)\\)'
+windows-apps: '(?i:C:\\(PROGRA~(1|2)|Program Files.*?)\\WindowsApps\\)'
+program-data: '(?i:C:\\(PROGRA~3|ProgramData)\\)'
+users: '(?i:C:\\Users\\)'
+canary: '(?i:C:\\PutYourCanaryHere\\)'
 ## Likely AppV default path
 ## if not using AppV replace by '^$'
 appv: '(?i:C:\\ProgramData\\AppV\\)'

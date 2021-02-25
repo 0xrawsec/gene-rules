@@ -1,68 +1,60 @@
 {
-"Name": "HighlyPolymorphicCode",
-"Tags": ["WHIDS"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "ATTACK": [
-    {
-      "ID": "T1093",
-      "Tactic": "defense-evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1093"
-    }
+  "Name": "HighlyPolymorphicCode",
+  "Tags": [
+    "WHIDS"
   ],
-  "Author": "0xrawsec",
-  "Comments": "Experimental rule to catch polymorphic code"
+  "Meta": {
+    "EventIDs": [
+      25
+    ],
+    "Channels": [
+      "Microsoft-Windows-Sysmon/Operational"
+    ],
+    "Computers": [],
+    "Criticality": 10,
+    "ATTACK": [
+      {
+        "ID": "T1093",
+        "Tactic": "defense-evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1093"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Comments": "Experimental rule to catch polymorphic code"
   },
-"Matches": [
-    "$lowboundproc: ProcessIntegrity >= '50'",
-    "$lowboundpproc: ParentProcessIntegrity >= '50'"
+  "Matches": [
+    "$lowboundproc: ProcessIntegrity >= '50'"
   ],
-"Condition": "$lowboundproc or $lowboundpproc"
+  "Condition": "$lowboundproc"
 }
 
 {
-"Name": "MediumPolymorphicCode",
-"Tags": ["WHIDS"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1093",
-      "Tactic": "defense-evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1093"
-    }
+  "Name": "MediumPolymorphicCode",
+  "Tags": [
+    "WHIDS"
   ],
-  "Author": "0xrawsec",
-  "Comments": "Experimental rule to catch polymorphic code"
+  "Meta": {
+    "EventIDs": [
+      25
+    ],
+    "Channels": [
+      "Microsoft-Windows-Sysmon/Operational"
+    ],
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1093",
+        "Tactic": "defense-evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1093"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Comments": "Experimental rule to catch polymorphic code"
   },
-"Matches": [
+  "Matches": [
     "$lowboundproc: ProcessIntegrity >= '15'",
-    "$upboundproc: ProcessIntegrity < '50'",
-    "$lowboundpproc: ParentProcessIntegrity >= '15'",
-    "$upboundpproc: ParentProcessIntegrity < '50'"
+    "$upboundproc: ProcessIntegrity < '50'"
   ],
-"Condition": "($lowboundproc and $upboundproc) or ($lowboundpproc and $upboundpproc)"
-}
-
-{
-"Name": "IntegrityTimeout",
-"Tags": ["WHIDS"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 5,
-  "Author": "0xrawsec",
-  "Comments": "Cannot check process integrity because process took too much time to start."
-  },
-"Matches": [
-    "$timeout: IntegrityTimeout = 'true'"
-  ],
-"Condition": "$timeout"
+  "Condition": "$lowboundproc and $upboundproc"
 }
