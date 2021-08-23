@@ -1,13 +1,19 @@
 {
   "Name": "AddUser",
-  "Tags": [""],
+  "Tags": [
+    ""
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 10,
     "Author": "0xrawsec",
-    "Comment": "New user created"
+    "Comment": "New user created",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$net: Image ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\net1?\\.exe)'",
@@ -18,14 +24,20 @@
 
 {
   "Name": "NewLocalAdmin",
-  "Tags": [""],
+  "Tags": [
+    ""
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 10,
     "Author": "0xrawsec",
-    "Comment": "User added to local Administrators"
+    "Comment": "User added to local Administrators",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$net: Image ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\net1?\\.exe)'",
@@ -33,3 +45,4 @@
   ],
   "Condition": "$net and $command"
 }
+

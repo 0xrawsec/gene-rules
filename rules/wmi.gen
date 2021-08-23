@@ -1,107 +1,141 @@
 {
-"Name": "WMIPrvseCommand",
-"Tags": ["WMI"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1047",
-      "Tactic": "execution",
-      "Reference": "https://attack.mitre.org/techniques/T1047"
-    }
+  "Name": "WMIPrvseCommand",
+  "Tags": [
+    "WMI"
   ],
-  "Author": "@0xrawsec",
-  "Comment": "This rule catches the processes spawned using WMI."
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1047",
+        "Tactic": "execution",
+        "Reference": "https://attack.mitre.org/techniques/T1047"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Comment": "This rule catches the processes spawned using WMI.",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$wmi: ParentImage ~= '(?i:\\\\wmiprvse\\.exe$)'"
+  "Matches": [
+    "$wmi: ParentImage ~= '(?i:\\\\wmiprvse\\.exe$)'"
   ],
-"Condition": "$wmi"
+  "Condition": "$wmi"
 }
 
 {
-"Name": "SuspWMIC",
-"Tags": ["WMI"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "Author": "@0xrawsec",
-  "Comment": "WMIC suspicious command line"
-  },
-"Matches": [
-  "$wmic: Image ~= '(?i:\\\\wmic\\.exe$)'",
-  "$proc: CommandLine ~= '(?i:process\\s+call\\s+create)'"
+  "Name": "SuspWMIC",
+  "Tags": [
+    "WMI"
   ],
-"Condition": "$wmic and $proc"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "Author": "@0xrawsec",
+    "Comment": "WMIC suspicious command line",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$wmic: Image ~= '(?i:\\\\wmic\\.exe$)'",
+    "$proc: CommandLine ~= '(?i:process\\s+call\\s+create)'"
+  ],
+  "Condition": "$wmic and $proc"
 }
 
 {
-"Name": "LateralWMI",
-"Tags": ["WMI", "Lateral"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "Author": "@0xrawsec",
-  "Comment": "This rule catches lateral movement done with WMI"
-  },
-"Matches": [
-  "$wmi: Image ~= '(?i:\\\\wmic\\.exe$)'",
-  "$node: CommandLine ~= '(?i:/node:)'"
+  "Name": "LateralWMI",
+  "Tags": [
+    "WMI",
+    "Lateral"
   ],
-"Condition": "$wmi and $node"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "Author": "@0xrawsec",
+    "Comment": "This rule catches lateral movement done with WMI",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$wmi: Image ~= '(?i:\\\\wmic\\.exe$)'",
+    "$node: CommandLine ~= '(?i:/node:)'"
+  ],
+  "Condition": "$wmi and $node"
 }
 
 {
-"Name": "WMIApplockerBypassAttempt",
-"Tags": ["WMI"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1220",
-      "Tactic": "execution",
-      "Reference": "https://attack.mitre.org/techniques/T1220"
-    }
+  "Name": "WMIApplockerBypassAttempt",
+  "Tags": [
+    "WMI"
   ],
-  "Author": "@0xrawsec",
-  "Comment": "WMI Applocker Bypass attempt",
-  "Link": "https://subt0x11.blogspot.nl/2018/04/wmicexe-whitelisting-bypass-hacking.html?m=1"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1220",
+        "Tactic": "execution",
+        "Reference": "https://attack.mitre.org/techniques/T1220"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Comment": "WMI Applocker Bypass attempt",
+    "Link": "https://subt0x11.blogspot.nl/2018/04/wmicexe-whitelisting-bypass-hacking.html?m=1",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$wmi: Image ~= '(?i:\\\\wmic\\.exe$)'",
-  "$format: CommandLine ~= '(?i:/format:.*\\.xsl)'"
+  "Matches": [
+    "$wmi: Image ~= '(?i:\\\\wmic\\.exe$)'",
+    "$format: CommandLine ~= '(?i:/format:.*\\.xsl)'"
   ],
-"Condition": "$wmi and $format"
+  "Condition": "$wmi and $format"
 }
 
 {
-"Name": "WMIEvents",
-"Tags": ["WMI"],
-"Meta": {
-  "EventIDs": [19, 20, 21],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "ATTACK": [
-    {
-      "ID": "T1084",
-      "Tactic": "persistence",
-      "Reference": "https://attack.mitre.org/techniques/T1084"
-    }
+  "Name": "WMIEvents",
+  "Tags": [
+    "WMI"
   ],
-  "Author": "@0xrawsec",
-  "Comment": "This rule catches any WMI events. Any of them needs to be checked."
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        19,
+        20,
+        21
+      ]
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "ATTACK": [
+      {
+        "ID": "T1084",
+        "Tactic": "persistence",
+        "Reference": "https://attack.mitre.org/techniques/T1084"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Comment": "This rule catches any WMI events. Any of them needs to be checked.",
+    "Schema": "2.0.0"
   },
-"Matches": [],
-"Condition": ""
+  "Matches": [],
+  "Condition": ""
 }
+

@@ -1,25 +1,32 @@
 {
-"Name": "SuspiciousRundll32",
-"Tags": ["Rundll32"],
-"Meta": {
-  "EventIDs": [7],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 6,
-  "ATTACK": [
-    {
-      "ID": "T1085",
-      "Tactic": "execution",
-      "Reference": "https://attack.mitre.org/techniques/T1085"
-    }
+  "Name": "SuspiciousRundll32",
+  "Tags": [
+    "Rundll32"
   ],
-  "Author": "0xrawsec",
-  "Comments": "Experimental rule to try to spot suspicious DLLs loaded using rundll32.exe. Criticality may have to be adjusted."
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        7
+      ]
+    },
+    "Computers": [],
+    "Criticality": 6,
+    "ATTACK": [
+      {
+        "ID": "T1085",
+        "Tactic": "execution",
+        "Reference": "https://attack.mitre.org/techniques/T1085"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Comments": "Experimental rule to try to spot suspicious DLLs loaded using rundll32.exe. Criticality may have to be adjusted.",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$im: Image ~= '(?i:^c:\\\\windows\\\\sys(wow64|tem32)\\\\rundll32.exe$)'",
-  "$pgfiles: ImageLoaded ~= '(?i:^C:\\\\(PROGRA~2|Program Files.*?)\\\\)'",
-  "$windows: ImageLoaded ~= '(?i:^C:\\\\Windows\\\\)'"
+  "Matches": [
+    "$im: Image ~= '(?i:^c:\\\\windows\\\\sys(wow64|tem32)\\\\rundll32.exe$)'",
+    "$pgfiles: ImageLoaded ~= '(?i:^C:\\\\(PROGRA~2|Program Files.*?)\\\\)'",
+    "$windows: ImageLoaded ~= '(?i:^C:\\\\Windows\\\\)'"
   ],
-"Condition": "$im and !($pgfiles or $windows)"
+  "Condition": "$im and !($pgfiles or $windows)"
 }
+

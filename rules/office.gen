@@ -1,119 +1,146 @@
-
 {
-"Name": "MSOfficeThreat",
-"Tags": ["Office", "Threat"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1193",
-      "Tactic": "initial-access",
-      "Reference": "https://attack.mitre.org/techniques/T1193"
-    }
+  "Name": "MSOfficeThreat",
+  "Tags": [
+    "Office",
+    "Threat"
   ],
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
-  ],
-  "Author": "0xrawsec"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1193",
+        "Tactic": "initial-access",
+        "Reference": "https://attack.mitre.org/techniques/T1193"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
-  "$susp: Image ~= '{{suspicious}}$'",
-  "$fp1: CommandLine ~= '(?i:shell32\\.dll,(OpenAs_RunDLL|SHCreateLocalServerRunDll|Control_RunDLL))'"
+  "Matches": [
+    "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
+    "$susp: Image ~= '{{suspicious}}$'",
+    "$fp1: CommandLine ~= '(?i:shell32\\.dll,(OpenAs_RunDLL|SHCreateLocalServerRunDll|Control_RunDLL))'"
   ],
-"Condition": "$pimsoffice and !$fp1 and $susp"
+  "Condition": "$pimsoffice and !$fp1 and $susp"
 }
 
 {
-"Name": "OfficeDropper",
-"Tags": ["Office", "Dropper"],
-"Meta": {
-  "EventIDs": [11],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1193",
-      "Tactic": "initial-access",
-      "Reference": "https://attack.mitre.org/techniques/T1193"
-    }
+  "Name": "OfficeDropper",
+  "Tags": [
+    "Office",
+    "Dropper"
   ],
-  "Author": "0xrawsec",
-  "Comments": "Experimental rule to detect executable created by MSOffice tools."
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        11
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1193",
+        "Tactic": "initial-access",
+        "Reference": "https://attack.mitre.org/techniques/T1193"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Comments": "Experimental rule to detect executable created by MSOffice tools.",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$office: Image ~= '{{msoffice}}$'",
-  "$target: TargetFilename ~= '({{exec-exts}}|{{script-exts}})$'"
+  "Matches": [
+    "$office: Image ~= '{{msoffice}}$'",
+    "$target: TargetFilename ~= '({{exec-exts}}|{{script-exts}})$'"
   ],
-"Condition": "$office and $target"
+  "Condition": "$office and $target"
 }
 
 {
-"Name": "OfficeDropperExec",
-"Tags": ["Office", "Dropper"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1193",
-      "Tactic": "initial-access",
-      "Reference": "https://attack.mitre.org/techniques/T1193"
-    }
+  "Name": "OfficeDropperExec",
+  "Tags": [
+    "Office",
+    "Dropper"
   ],
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
-  ],
-  "Author": "0xrawsec",
-  "Comment": "Experimental rule to catch MS Office based droppers"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1193",
+        "Tactic": "initial-access",
+        "Reference": "https://attack.mitre.org/techniques/T1193"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Comment": "Experimental rule to catch MS Office based droppers",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
-  "$whitelisted: Image ~= '^({{windows}}|{{programfiles}}|{{appv}})'"
+  "Matches": [
+    "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
+    "$whitelisted: Image ~= '^({{windows}}|{{programfiles}}|{{appv}})'"
   ],
-"Condition": "$pimsoffice and !$whitelisted"
+  "Condition": "$pimsoffice and !$whitelisted"
 }
 
 {
-"Name": "OfficeNetConn",
-"Tags": ["Office","Network"],
-"Meta": {
-  "EventIDs": [3],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 3,
-  "Author": "0xrawsec",
-  "Disable": true
-  },
-"Matches": [
-  "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
-  "$net: Initiated ~= 'true'"
+  "Name": "OfficeNetConn",
+  "Tags": [
+    "Office",
+    "Network"
   ],
-"Condition": "$pimsoffice and $net"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        3
+      ]
+    },
+    "Computers": [],
+    "Criticality": 3,
+    "Author": "0xrawsec",
+    "Disable": true,
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
+    "$net: Initiated ~= 'true'"
+  ],
+  "Condition": "$pimsoffice and $net"
 }
 
 {
-"Name": "FromDownloadedDocument",
-"Tags": ["Office","Download"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 0,
-  "Author": "0xrawsec",
-  "Comment": "This rule is used as a simple informative tag"
-  },
-"Matches": [
-  "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
-  "$pcl: ParentCommandLine ~= '(?i:appdata\\\\local\\\\microsoft\\\\windows\\\\temporary internet files\\\\)'"
+  "Name": "FromDownloadedDocument",
+  "Tags": [
+    "Office",
+    "Download"
   ],
-"Condition": "$pimsoffice and $pcl"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 0,
+    "Author": "0xrawsec",
+    "Comment": "This rule is used as a simple informative tag",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$pimsoffice: ParentImage ~= '{{msoffice}}$'",
+    "$pcl: ParentCommandLine ~= '(?i:appdata\\\\local\\\\microsoft\\\\windows\\\\temporary internet files\\\\)'"
+  ],
+  "Condition": "$pimsoffice and $pcl"
 }
+

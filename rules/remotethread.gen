@@ -1,21 +1,28 @@
 {
-"Name": "RemoteThread",
-"Tags": ["RemoteThread", "Sysmon"],
-"Meta": {
-  "EventIDs": [8],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 5,
-  "Author": "@0xrawsec",
-  "Comment": "This rule catches any unusual CreateRemoteThread events. This rule has been disabled because it did not prove its usefulness",
-  "Disable": true
+  "Name": "RemoteThread",
+  "Tags": [
+    "RemoteThread",
+    "Sysmon"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        8
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "Author": "@0xrawsec",
+    "Comment": "This rule catches any unusual CreateRemoteThread events. This rule has been disabled because it did not prove its usefulness",
+    "Disable": true,
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$svchost: SourceImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\svchost\\.exe$)'",
-  "$conhost: TargetImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\conhost\\.exe$)'",
-  "$wlp1: SourceImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\csrss\\.exe$)'",
-  "$wlp2: SourceImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\wbem\\\\WmiPrvSE\\.exe$)'"
-],
-"Condition": "!$wlp1 and !$wlp2 and !($svchost and $conhost)"
+  "Matches": [
+    "$svchost: SourceImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\svchost\\.exe$)'",
+    "$conhost: TargetImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\conhost\\.exe$)'",
+    "$wlp1: SourceImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\csrss\\.exe$)'",
+    "$wlp2: SourceImage ~= '(?i:^C:\\\\Windows\\\\System32\\\\wbem\\\\WmiPrvSE\\.exe$)'"
+  ],
+  "Condition": "!$wlp1 and !$wlp2 and !($svchost and $conhost)"
 }
 

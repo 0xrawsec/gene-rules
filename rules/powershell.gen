@@ -1,166 +1,190 @@
 {
-"Name": "PowershellExecEnc",
-"Tags": ["Powershell", "Heuristics"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 5,
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
+  "Name": "PowershellExecEnc",
+  "Tags": [
+    "Powershell",
+    "Heuristics"
   ],
-  "ATTACK": [
-    {
-      "ID": "T1202",
-      "Tactic": "Defense Evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1202/"
-    }
-  ],
-  "Author": "0xrawsec"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "ATTACK": [
+      {
+        "ID": "T1202",
+        "Tactic": "Defense Evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1202/"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$i: Image ~= '(?i:\\\\powershell.exe$)'",
-  "$enc: CommandLine ~= '(?i: (-|/)e[ncodedcommands]* )'"
+  "Matches": [
+    "$i: Image ~= '(?i:\\\\powershell.exe$)'",
+    "$enc: CommandLine ~= '(?i: (-|/)e[ncodedcommands]* )'"
   ],
-"Condition": "$i and $enc"
+  "Condition": "$i and $enc"
 }
 
 {
-"Name": "PowershellNetConn",
-"Tags": ["Powershell","Network"],
-"Meta": {
-  "EventIDs": [3],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 5,
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
+  "Name": "PowershellNetConn",
+  "Tags": [
+    "Powershell",
+    "Network"
   ],
-  "Author": "0xrawsec",
-  "Disable": true
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        3
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "Author": "0xrawsec",
+    "Disable": true,
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$ps: Image ~= '(?i:\\\\powershell.exe$)'",
-  "$net: Initiated ~= 'true'"
+  "Matches": [
+    "$ps: Image ~= '(?i:\\\\powershell.exe$)'",
+    "$net: Initiated ~= 'true'"
   ],
-"Condition": "$ps and $net"
+  "Condition": "$ps and $net"
 }
 
 {
-"Name": "PowershellLargeCL",
-"Tags": ["Heuristics", "CL"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 4,
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
+  "Name": "PowershellLargeCL",
+  "Tags": [
+    "Heuristics",
+    "CL"
   ],
-  "Author": "@0xrawsec",
-  "Comment": "Match command line larger than 512 characters"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 4,
+    "Author": "@0xrawsec",
+    "Comment": "Match command line larger than 512 characters",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$lcl: CommandLine ~= '.{512,}'",
-  "$ps: Image ~= '(?i:\\\\powershell.exe$)'"
+  "Matches": [
+    "$lcl: CommandLine ~= '.{512,}'",
+    "$ps: Image ~= '(?i:\\\\powershell.exe$)'"
   ],
-"Condition": "$lcl and $ps"
+  "Condition": "$lcl and $ps"
 }
 
 {
-"Name": "PowershellEmbeddedC#",
-"Tags": ["Powershell", "EmbeddedCode"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 3,
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
+  "Name": "PowershellEmbeddedC#",
+  "Tags": [
+    "Powershell",
+    "EmbeddedCode"
   ],
-  "Author": "@0xrawsec",
-  "Comment": "Powershell Script embedding C#"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 3,
+    "Author": "@0xrawsec",
+    "Comment": "Powershell Script embedding C#",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$ps: ParentImage ~= '(?i:\\\\powershell.exe$)'",
-  "$csc: Image ~= '(?i:\\\\csc.exe$)'"
+  "Matches": [
+    "$ps: ParentImage ~= '(?i:\\\\powershell.exe$)'",
+    "$csc: Image ~= '(?i:\\\\csc.exe$)'"
   ],
-"Condition": "$csc and $ps"
+  "Condition": "$csc and $ps"
 }
 
 {
-"Name": "PowershellStdin",
-"Tags": ["Powershell"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 5,
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
+  "Name": "PowershellStdin",
+  "Tags": [
+    "Powershell"
   ],
-  "ATTACK": [
-    {
-      "ID": "T1202",
-      "Tactic": "Defense Evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1202/"
-    }
-  ],
-  "Author": "@0xrawsec",
-  "Comment": "Powershell reads command from stdin"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "ATTACK": [
+      {
+        "ID": "T1202",
+        "Tactic": "Defense Evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1202/"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Comment": "Powershell reads command from stdin",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$ps: Image ~= '(?i:\\\\powershell.exe$)'",
-  "$arg: CommandLine ~= '(?i: (-|/)c[ommand]*\\s+-)'"
+  "Matches": [
+    "$ps: Image ~= '(?i:\\\\powershell.exe$)'",
+    "$arg: CommandLine ~= '(?i: (-|/)c[ommand]*\\s+-)'"
   ],
-"Condition": "$ps and $arg"
+  "Condition": "$ps and $arg"
 }
 
 {
-"Name": "PSC#Win32API",
-"Tags": ["Powershell", "C#", "ScriptBlock"],
-"Meta": {
-  "EventIDs": [],
-  "Channels": ["Microsoft-Windows-PowerShell/Operational"],
-  "Computers": [],
-  "Criticality": 7,
-  "Author": "@0xrawsec",
-  "Comment": "Powershell embedding C# calling interesting Win32 APIs"
-  },
-"Matches": [
-  "$api: ScriptBlockText ~= '(?i:(OpenProcess|OpenThread|SetThreadContext|OpenThreadToken|GetProcAddress|OpenThreadToken|OpenProcessToken|CreateProcess|WriteProcessMemory|ReadProcessMemory|VirtualAlloc))'"
+  "Name": "PSC#Win32API",
+  "Tags": [
+    "Powershell",
+    "C#",
+    "ScriptBlock"
   ],
-"Condition": "$api"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-PowerShell/Operational": []
+    },
+    "Computers": [],
+    "Criticality": 7,
+    "Author": "@0xrawsec",
+    "Comment": "Powershell embedding C# calling interesting Win32 APIs",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$api: ScriptBlockText ~= '(?i:(OpenProcess|OpenThread|SetThreadContext|OpenThreadToken|GetProcAddress|OpenThreadToken|OpenProcessToken|CreateProcess|WriteProcessMemory|ReadProcessMemory|VirtualAlloc))'"
+  ],
+  "Condition": "$api"
 }
 
 {
-"Name": "PSInvokeExpression",
-"Tags": ["Powershell"],
-"Meta": {
-  "EventIDs": [4103],
-  "Channels": ["Microsoft-Windows-PowerShell/Operational"],
-  "Computers": [],
-  "Criticality": 6,
-  "Author": "@0xrawsec",
-  "Comment": "Powershell making use of Invoke-Expression cmdlet. May require filtering depending on environment",
-  "ATTACK": [
-    {
-      "ID": "T1202",
-      "Tactic": "Defense Evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1202/"
-    }
+  "Name": "PSInvokeExpression",
+  "Tags": [
+    "Powershell"
   ],
-  "Author": "0xrawsec"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-PowerShell/Operational": [
+        4103
+      ]
+    },
+    "Computers": [],
+    "Criticality": 6,
+    "Author": "0xrawsec",
+    "Comment": "Powershell making use of Invoke-Expression cmdlet. May require filtering depending on environment",
+    "ATTACK": [
+      {
+        "ID": "T1202",
+        "Tactic": "Defense Evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1202/"
+      }
+    ],
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$ci: Payload ~= 'CommandInvocation\\(Invoke-Expression\\)'"
+  "Matches": [
+    "$ci: Payload ~= 'CommandInvocation\\(Invoke-Expression\\)'"
   ],
-"Condition": "$ci"
+  "Condition": "$ci"
 }
-
 

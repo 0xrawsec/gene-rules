@@ -1,108 +1,144 @@
 {
-"Name": "BlacklistedDomain",
-"Tags": ["DNS"],
-"Meta": {
-  "EventIDs": [],
-  "Channels": ["Microsoft-Windows-DNS-Client/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "Author": "@0xrawsec",
-  "Comment": ""
+  "Name": "BlacklistedDomain",
+  "Tags": [
+    "DNS"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-DNS-Client/Operational": []
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "@0xrawsec",
+    "Comment": "",
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$domainBL: extract('(?P<dom>\\w+\\.\\w+$)',QueryName) in blacklist'",
     "$subdomainBL: extract('(?P<sub>\\w+\\.\\w+\\.\\w+$)',QueryName) in blacklist'",
     "$subsubdomainBL: extract('(?P<subsub>\\w+\\.\\w+\\.\\w+\\.\\w+$)',QueryName) in blacklist'"
   ],
-"Condition": "$domainBL or $subdomainBL or $subsubdomainBL"
+  "Condition": "$domainBL or $subdomainBL or $subsubdomainBL"
 }
 
 {
-"Name": "DomainInMisp",
-"Tags": ["DNS"],
-"Meta": {
-  "EventIDs": [],
-  "Channels": ["Microsoft-Windows-DNS-Client/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "Author": "@0xrawsec",
-  "Comment": "Domain name present in MISP with IDS flag (misp container assumed)"
+  "Name": "DomainInMisp",
+  "Tags": [
+    "DNS"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-DNS-Client/Operational": []
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "@0xrawsec",
+    "Comment": "Domain name present in MISP with IDS flag (misp container assumed)",
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$domainBL: extract('(?P<dom>\\w+\\.\\w+$)',QueryName) in misp'",
     "$subdomainBL: extract('(?P<sub>\\w+\\.\\w+\\.\\w+$)',QueryName) in misp'",
     "$subsubdomainBL: extract('(?P<subsub>\\w+\\.\\w+\\.\\w+\\.\\w+$)',QueryName) in misp'"
   ],
-"Condition": "$domainBL or $subdomainBL or $subsubdomainBL"
+  "Condition": "$domainBL or $subdomainBL or $subsubdomainBL"
 }
 
 {
-"Name": "SysmonDomainInMisp",
-"Tags": ["DNS", "Sysmon"],
-"Meta": {
-  "EventIDs": [22],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "Author": "@0xrawsec",
-  "Comment": "Domain name present in MISP with IDS flag (misp container assumed)"
+  "Name": "SysmonDomainInMisp",
+  "Tags": [
+    "DNS",
+    "Sysmon"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        22
+      ]
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "@0xrawsec",
+    "Comment": "Domain name present in MISP with IDS flag (misp container assumed)",
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$domainBL: extract('(?P<dom>\\w+\\.\\w+$)',QueryName) in misp'",
     "$subdomainBL: extract('(?P<sub>\\w+\\.\\w+\\.\\w+$)',QueryName) in misp'",
     "$subsubdomainBL: extract('(?P<subsub>\\w+\\.\\w+\\.\\w+\\.\\w+$)',QueryName) in misp'"
   ],
-"Condition": "$domainBL or $subdomainBL or $subsubdomainBL"
+  "Condition": "$domainBL or $subdomainBL or $subsubdomainBL"
 }
 
 {
-"Name": "HeurLongDomain",
-"Tags": ["DNS", "Heuristics"],
-"Meta": {
-  "EventIDs": [],
-  "Channels": ["Microsoft-Windows-DNS-Client/Operational"],
-  "Computers": [],
-  "Criticality": 6,
-  "Author": "@0xrawsec",
-  "Comment": "Domain name with more than 50 characters"
+  "Name": "HeurLongDomain",
+  "Tags": [
+    "DNS",
+    "Heuristics"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-DNS-Client/Operational": []
+    },
+    "Computers": [],
+    "Criticality": 6,
+    "Author": "@0xrawsec",
+    "Comment": "Domain name with more than 50 characters",
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$ldomain: QueryName ~= '.{50,}'"
   ],
-"Condition": "$ldomain"
+  "Condition": "$ldomain"
 }
 
 {
-"Name": "HeurSysmonLongDomain",
-"Tags": ["DNS", "Heuristics", "Sysmon"],
-"Meta": {
-  "EventIDs": [22],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 6,
-  "Author": "@0xrawsec",
-  "Comment": "Domain name with more than 50 characters"
+  "Name": "HeurSysmonLongDomain",
+  "Tags": [
+    "DNS",
+    "Heuristics",
+    "Sysmon"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        22
+      ]
+    },
+    "Computers": [],
+    "Criticality": 6,
+    "Author": "@0xrawsec",
+    "Comment": "Domain name with more than 50 characters",
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$ldomain: QueryName ~= '.{50,}'",
     "$ip6: QueryName ~= 'ip6\\.arpa\\.$'"
   ],
-"Condition": "$ldomain and !$ip6" 
+  "Condition": "$ldomain and !$ip6"
 }
 
 {
-"Name": "HeurDnsFromSuspicious",
-"Tags": ["DNS", "Heuristics"],
-"Meta": {
-  "EventIDs": [22],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 5,
-  "Author": "@0xrawsec",
-  "Comment": "DNS query from executables often used by malware. Might trigger some FPs that would need to be whitelisted."
+  "Name": "HeurDnsFromSuspicious",
+  "Tags": [
+    "DNS",
+    "Heuristics"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        22
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "Author": "@0xrawsec",
+    "Comment": "DNS query from executables often used by malware. Might trigger some FPs that would need to be whitelisted.",
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$susp: Image ~= '{{suspicious}}$'"
   ],
-"Condition": "$susp"
+  "Condition": "$susp"
 }
+

@@ -1,0 +1,29 @@
+{
+  "Name": "Cryptolocker",
+  "Tags": [
+    "WHIDS"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        11
+      ]
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "0xrawsec",
+    "Comments": "Experimental rule to catch, kill and blacklist a generic cryptolocker",
+    "Disable": true,
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$allowed: Image ~= '{{system}}'",
+    "$empty_ext: Extension = ''",
+    "$count_by_ext: CountByExt >= '50'"
+  ],
+  "Condition": "!$empty_ext and $count_by_ext",
+  "Actions": [
+    "kill",
+    "blacklist"
+  ]
+}

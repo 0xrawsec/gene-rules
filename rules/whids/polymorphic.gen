@@ -4,12 +4,11 @@
     "WHIDS"
   ],
   "Meta": {
-    "EventIDs": [
-      25
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        25
+      ]
+    },
     "Computers": [],
     "Criticality": 10,
     "ATTACK": [
@@ -20,7 +19,8 @@
       }
     ],
     "Author": "0xrawsec",
-    "Comments": "Experimental rule to catch polymorphic code"
+    "Comments": "Experimental rule to catch polymorphic code",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$lowboundproc: ProcessIntegrity >= '50'"
@@ -34,12 +34,11 @@
     "WHIDS"
   ],
   "Meta": {
-    "EventIDs": [
-      25
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        25
+      ]
+    },
     "Computers": [],
     "Criticality": 8,
     "ATTACK": [
@@ -50,7 +49,8 @@
       }
     ],
     "Author": "0xrawsec",
-    "Comments": "Experimental rule to catch polymorphic code"
+    "Comments": "Experimental rule to catch polymorphic code",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$lowboundproc: ProcessIntegrity >= '15'",
@@ -58,3 +58,4 @@
   ],
   "Condition": "$lowboundproc and $upboundproc"
 }
+

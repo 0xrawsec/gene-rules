@@ -1,40 +1,44 @@
 {
-"Name": "BrowserSuspiciousChild",
-"Tags": ["Browser"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
+  "Name": "BrowserSuspiciousChild",
+  "Tags": [
+    "Browser"
   ],
-  "Criticality": 6,
-  "Author": "0xrawsec",
-  "Comment": "Experimental rule that look for suspicious browser child processes. Might raise FPs."
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 6,
+    "Author": "0xrawsec",
+    "Comment": "Experimental rule that look for suspicious browser child processes. Might raise FPs.",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$browser: ParentImage ~= '{{browsers}}$'",
-  "$susp: Image ~= '{{suspicious}}$'",
-  "$allowed: CommandLine ~= '(?i:rundll32\\.exe.*?(shell32\\.dll\"{0,1},(OpenAs_RunDLL|SHCreateLocalServerRunDll)|inetcpl\\.cpl\"{0,1},ClearMyTracksByProcess|ieframe.dll\"{0,1},OpenURL))'"
+  "Matches": [
+    "$browser: ParentImage ~= '{{browsers}}$'",
+    "$susp: Image ~= '{{suspicious}}$'",
+    "$allowed: CommandLine ~= '(?i:rundll32\\.exe.*?(shell32\\.dll\"{0,1},(OpenAs_RunDLL|SHCreateLocalServerRunDll)|inetcpl\\.cpl\"{0,1},ClearMyTracksByProcess|ieframe.dll\"{0,1},OpenURL))'"
   ],
-"Condition": "$browser and $susp and !$allowed"
+  "Condition": "$browser and $susp and !$allowed"
 }
 
 {
   "Name": "HeurBrowserInjection",
-  "Tags": ["Browser"],
+  "Tags": [
+    "Browser"
+  ],
   "Meta": {
-    "EventIDs": [10],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        10
+      ]
+    },
     "Computers": [],
-    "Traces": [
-      "*::ProcessGuid = ProcessGuid",
-      "*::ParentProcessGuid = ProcessGuid"
-    ],
     "Criticality": 8,
     "Author": "0xrawsec",
-    "Comments": "Experimental rule to catch malicious browser access. Not widely tested."
+    "Comments": "Experimental rule to catch malicious browser access. Not widely tested.",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$ct: CallTrace ~= 'UNKNOWN'",
@@ -46,18 +50,25 @@
 }
 
 {
-"Name": "BrowserChild",
-"Tags": ["Browser"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 0,
-  "Author": "0xrawsec",
-  "Comment": "Informative rule to flag process started by browser"
-  },
-"Matches": [
-  "$browser: ParentImage ~= '{{browsers}}$'"
+  "Name": "BrowserChild",
+  "Tags": [
+    "Browser"
   ],
-"Condition": "$browser"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 0,
+    "Author": "0xrawsec",
+    "Comment": "Informative rule to flag process started by browser",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$browser: ParentImage ~= '{{browsers}}$'"
+  ],
+  "Condition": "$browser"
 }
+

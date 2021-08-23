@@ -1,9 +1,14 @@
 {
   "Name": "CertutilDownloader",
-  "Tags": ["Tools"],
+  "Tags": [
+    "Tools"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 7,
     "ATTACK": [
@@ -14,7 +19,8 @@
       }
     ],
     "Author": "0xrawsec",
-    "Comment": "Experimental rule to catch certutil downloader. Criticality may need to be adjusted"
+    "Comment": "Experimental rule to catch certutil downloader. Criticality may need to be adjusted",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$certutil: Image ~= '(?i:^c:\\\\windows\\\\sys(tem32|wow64)\\\\certutil\\.exe$)'",
@@ -27,10 +33,15 @@
 
 {
   "Name": "CertutilSuspDecode",
-  "Tags": ["Tools"],
+  "Tags": [
+    "Tools"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 7,
     "ATTACK": [
@@ -41,7 +52,8 @@
       }
     ],
     "Author": "0xrawsec",
-    "Comment": "Experimental rule to catch dropper using certutil. Criticality may need to be adjusted"
+    "Comment": "Experimental rule to catch dropper using certutil. Criticality may need to be adjusted",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$certutil: Image ~= '(?i:^c:\\\\windows\\\\sys(tem32|wow64)\\\\certutil\\.exe$)'",
@@ -49,3 +61,4 @@
   ],
   "Condition": "$certutil and $suspdecode"
 }
+

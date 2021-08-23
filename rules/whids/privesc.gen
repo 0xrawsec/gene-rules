@@ -1,17 +1,22 @@
-
 {
-"Name": "ProcPrivEsc",
-"Tags": ["WHIDS"],
-"Meta": {
-  "EventIDs": [10],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "Author": "0xrawsec",
-  "Comments": "Write Access to a higher process integrity",
-  "ATTACK": []
+  "Name": "ProcPrivEsc",
+  "Tags": [
+    "WHIDS"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        10
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "Author": "0xrawsec",
+    "Comments": "Write Access to a higher process integrity",
+    "ATTACK": [],
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$ga: GrantedAccess &= '0x20'",
     "$srclow: SourceIntegrityLevel = 'Low'",
     "$srcmed: SourceIntegrityLevel = 'Medium'",
@@ -20,25 +25,31 @@
     "$tgthigh: TargetIntegrityLevel = 'High'",
     "$tgtsys: TargetIntegrityLevel = 'System'"
   ],
-"Condition": "$ga and (($srclow and ($tgtmed or $tgthigh or $tgtsys)) or ($srcmed and ($tgthigh or $tgtsys)) or ($srchigh and $tgtsys))"
+  "Condition": "$ga and (($srclow and ($tgtmed or $tgthigh or $tgtsys)) or ($srcmed and ($tgthigh or $tgtsys)) or ($srchigh and $tgtsys))"
 }
 
 {
-"Name": "FilePrivEsc",
-"Tags": ["WHIDS"],
-"Meta": {
-  "EventIDs": [11],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "Author": "0xrawsec",
-  "Comments": "File creation from a medium/low process integrity to sensitive directories.",
-  "ATTACK": []
+  "Name": "FilePrivEsc",
+  "Tags": [
+    "WHIDS"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        11
+      ]
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "0xrawsec",
+    "Comments": "File creation from a medium/low process integrity to sensitive directories.",
+    "ATTACK": [],
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$wl: TargetFilename ~= '(?i:C:\\\\(Users|ProgramData)\\\\.*)'",
     "$il: IntegrityLevel ~= '(Low|Medium)'"
   ],
-"Condition": "$il and !$wl"
+  "Condition": "$il and !$wl"
 }
 

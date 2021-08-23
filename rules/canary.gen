@@ -1,24 +1,25 @@
 {
-    "Name": "CanaryFileRead",
-    "Tags": [
-        "Canary"
-    ],
-    "Meta": {
-        "EventIDs": [
-            4663
-        ],
-        "Channels": [
-            "Security"
-        ],
-        "Computers": [],
-        "Criticality": 10,
-        "Author": "@0xrawsec",
-        "Comment": "Canary File(s) that should not be read in normal circumstances. The canary regex template has to be adjusted for the rule to work.",
-        "Requirements": "FileSystem Audit must be activated at least for the canary directories"
+  "Name": "CanaryFileRead",
+  "Tags": [
+    "Canary"
+  ],
+  "Meta": {
+    "Events": {
+      "Security": [
+        4663
+      ]
     },
-    "Matches": [
-        "$access: AccessMask &= '0x1'",
-        "$canary: ObjectName ~= '{{canary}}'"
-    ],
-    "Condition": "$access and $canary"
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "@0xrawsec",
+    "Comment": "Canary File(s) that should not be read in normal circumstances. The canary regex template has to be adjusted for the rule to work.",
+    "Requirements": "FileSystem Audit must be activated at least for the canary directories",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$access: AccessMask &= '0x1'",
+    "$canary: ObjectName ~= '{{canary}}'"
+  ],
+  "Condition": "$access and $canary"
 }
+

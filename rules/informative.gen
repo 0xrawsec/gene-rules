@@ -1,33 +1,47 @@
 {
-"Name": "InfoSuspiciousParent",
-"Tags": ["Info"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 0,
-  "Author": "0xrawsec",
-  "Comments": "Informative rule to tag suspicious parent command line"
-  },
-"Matches": [
-  "$susp: ParentImage ~= '{{suspicious}}$'"
+  "Name": "InfoSuspiciousParent",
+  "Tags": [
+    "Info"
   ],
-"Condition": "$susp"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 0,
+    "Author": "0xrawsec",
+    "Comments": "Informative rule to tag suspicious parent command line",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$susp: ParentImage ~= '{{suspicious}}$'"
+  ],
+  "Condition": "$susp"
 }
 
 {
   "Name": "InfoRemotePath",
-  "Tags": ["Info", "Lateral"],
+  "Tags": [
+    "Info",
+    "Lateral"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 0,
     "Author": "0xrawsec",
-    "Comment": "Heuristic to catch remote path in command line"
+    "Comment": "Heuristic to catch remote path in command line",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$rpath: CommandLine ~= '(?i:\\\\\\\\[\\w\\.]+)'"
   ],
   "Condition": "$rpath"
 }
+

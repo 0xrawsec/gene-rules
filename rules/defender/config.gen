@@ -1,32 +1,45 @@
 {
-"Name": "DefenderConfigChanged",
-"Tags": ["Defender"],
-"Meta": {
-  "EventIDs": [5007],
-  "Channels": ["Microsoft-Windows-Windows Defender/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "Author": "0xrawsec",
-  "Comments": "Windows Defender Antivirus configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware.",
-  "Link": "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus#windows-defender-av-ids"
+  "Name": "DefenderConfigChanged",
+  "Tags": [
+    "Defender"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Windows Defender/Operational": [
+        5007
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "Author": "0xrawsec",
+    "Comments": "Windows Defender Antivirus configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware.",
+    "Link": "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus#windows-defender-av-ids",
+    "Schema": "2.0.0"
   },
-"Matches": [],
-"Condition": ""
+  "Matches": [],
+  "Condition": ""
 }
 
 {
-"Name": "DefenderFeatureDisabled",
-"Tags": ["Defender"],
-"Meta": {
-  "EventIDs": [5010, 5012],
-  "Channels": ["Microsoft-Windows-Windows Defender/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "Author": "0xrawsec",
-  "Comments": "Antivirus or antispyware disabled",
-  "Link": "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus#windows-defender-av-ids"
+  "Name": "DefenderFeatureDisabled",
+  "Tags": [
+    "Defender"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Windows Defender/Operational": [
+        5010,
+        5012
+      ]
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "0xrawsec",
+    "Comments": "Antivirus or antispyware disabled",
+    "Link": "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus#windows-defender-av-ids",
+    "Schema": "2.0.0"
   },
-"Matches": [],
-"Condition": ""
+  "Matches": [],
+  "Condition": ""
 }
 

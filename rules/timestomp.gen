@@ -1,19 +1,26 @@
 {
-"Name": "ExecTimestomping",
-"Tags": ["Timestomp"],
-"Meta": {
-  "EventIDs": [2],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 6,
-  "Author": "@0xrawsec",
-  "Comment": ""
-  },
-"Matches": [
-  "$exec: TargetFilename ~= '(?i:({{script-exts}}|{{exec-exts}}))'",
-  "$wl1: TargetFilename ~= '(?i:^C:\\\\Users\\\\.*?\\\\AppData\\\\Roaming\\\\Microsoft\\\\Windows\\\\Recent\\\\CustomDestinations)\\\\[A-Z0-9]{20}.temp$'",
-  "$wl2: TargetFilename ~= '(?i:.*~tmp$)'",
-  "$wl3: TargetFilename ~= '(?i:C:\\\\Windows\\\\SoftwareDistribution\\\\Download\\\\)'"
+  "Name": "ExecTimestomping",
+  "Tags": [
+    "Timestomp"
   ],
-"Condition": "$exec and !($wl1 or $wl2 or $wl3)"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        2
+      ]
+    },
+    "Computers": [],
+    "Criticality": 6,
+    "Author": "@0xrawsec",
+    "Comment": "",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$exec: TargetFilename ~= '(?i:({{script-exts}}|{{exec-exts}}))'",
+    "$wl1: TargetFilename ~= '(?i:^C:\\\\Users\\\\.*?\\\\AppData\\\\Roaming\\\\Microsoft\\\\Windows\\\\Recent\\\\CustomDestinations)\\\\[A-Z0-9]{20}.temp$'",
+    "$wl2: TargetFilename ~= '(?i:.*~tmp$)'",
+    "$wl3: TargetFilename ~= '(?i:C:\\\\Windows\\\\SoftwareDistribution\\\\Download\\\\)'"
+  ],
+  "Condition": "$exec and !($wl1 or $wl2 or $wl3)"
 }
+

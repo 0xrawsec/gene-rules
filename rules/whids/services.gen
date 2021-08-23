@@ -1,9 +1,14 @@
 {
   "Name": "UntrustedService",
-  "Tags": ["WHIDS"],
+  "Tags": [
+    "WHIDS"
+  ],
   "Meta": {
-    "EventIDs": [7],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        7
+      ]
+    },
     "Computers": [],
     "ATTACK": [
       {
@@ -16,7 +21,8 @@
     "Disable": false,
     "Author": "0xrawsec",
     "Comments": "Rule to catch services with an untrusted signature.",
-    "Requirements": "Hook enabled in Whids"
+    "Requirements": "Hook enabled in Whids",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$loaded: ImageLoaded ~= '(?i:\\.exe$)'",
@@ -28,16 +34,22 @@
 
 {
   "Name": "UnknownServices",
-  "Tags": ["WHIDS"],
+  "Tags": [
+    "WHIDS"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 10,
     "Disable": false,
     "Author": "0xrawsec",
-    "Comments": "Rule to catch any non standard windows 10 services",
-    "Requirements": "Hook enabled in Whids"
+    "Comments": "Rule to catch any non standard windows 10\u00a0services",
+    "Requirements": "Hook enabled in Whids",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$exist: Services ~= '.'",
@@ -49,3 +61,4 @@
   ],
   "Condition": "$exist and !($na or $sysmon or ($hosted and $win10shared) or $win10svcs)"
 }
+

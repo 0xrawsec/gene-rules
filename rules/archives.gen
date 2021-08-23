@@ -1,58 +1,67 @@
 {
-"Name": "Heur7zExec",
-"Tags": ["Archive", "Exec", "Sysmon"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 5,
-  "ATTACK": [
-    {
-      "ID": "T1193",
-      "Tactic": "initial-access",
-      "Reference": "https://attack.mitre.org/techniques/T1193"
-    }
+  "Name": "Heur7zExec",
+  "Tags": [
+    "Archive",
+    "Exec",
+    "Sysmon"
   ],
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
-  ],
-  "Author": "@0xrawsec",
-  "Comment": "Execution from 7z archive"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "ATTACK": [
+      {
+        "ID": "T1193",
+        "Tactic": "initial-access",
+        "Reference": "https://attack.mitre.org/techniques/T1193"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Comment": "Execution from 7z archive",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$pi: ParentImage ~= '(?i:\\\\7zFM\\.exe$)'",
-  "$i: Image ~= '(?i:^C:\\\\Users\\\\.*\\\\AppData\\\\Local\\\\Temp\\\\)'",
-  "$cl: CommandLine ~= '(\\\\Temp\\\\.*?({{exec-exts}}|{{script-exts}}))'"
+  "Matches": [
+    "$pi: ParentImage ~= '(?i:\\\\7zFM\\.exe$)'",
+    "$i: Image ~= '(?i:^C:\\\\Users\\\\.*\\\\AppData\\\\Local\\\\Temp\\\\)'",
+    "$cl: CommandLine ~= '(\\\\Temp\\\\.*?({{exec-exts}}|{{script-exts}}))'"
   ],
-"Condition": "$pi and ($i or $cl)"
+  "Condition": "$pi and ($i or $cl)"
 }
 
 {
-"Name": "HeurZipExec",
-"Tags": ["Archive", "Exec", "Sysmon"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 5,
-  "ATTACK": [
-    {
-      "ID": "T1193",
-      "Tactic": "initial-access",
-      "Reference": "https://attack.mitre.org/techniques/T1193"
-    }
+  "Name": "HeurZipExec",
+  "Tags": [
+    "Archive",
+    "Exec",
+    "Sysmon"
   ],
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
-  ],
-  "Author": "@0xrawsec",
-  "Comment": "Catch scripts and exe launched directly from ZIP files (using Windows default)"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "ATTACK": [
+      {
+        "ID": "T1193",
+        "Tactic": "initial-access",
+        "Reference": "https://attack.mitre.org/techniques/T1193"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Comment": "Catch scripts and exe launched directly from ZIP files (using Windows default)",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$pi: ParentImage ~= '(?i:C:\\\\Windows\\\\Explorer\\.exe$)'",
-  "$cl: CommandLine ~= '(?i:\\\\Temp.*?\\\\[^\\\\]*\\.zip\\\\[^\\\\]*({{exec-exts}}|{{script-exts}}))'"
+  "Matches": [
+    "$pi: ParentImage ~= '(?i:C:\\\\Windows\\\\Explorer\\.exe$)'",
+    "$cl: CommandLine ~= '(?i:\\\\Temp.*?\\\\[^\\\\]*\\.zip\\\\[^\\\\]*({{exec-exts}}|{{script-exts}}))'"
   ],
-"Condition": "$pi and $cl"
+  "Condition": "$pi and $cl"
 }
+

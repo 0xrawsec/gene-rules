@@ -1,15 +1,20 @@
 {
   "Name": "PublicIPNetConn",
-  "Tags": ["Network"],
+  "Tags": [
+    "Network"
+  ],
   "Meta": {
-    "EventIDs": [3],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        3
+      ]
+    },
     "Computers": [],
-    "Traces": [],
     "Criticality": 1,
     "Comments": "",
     "Author": "0xrawsec",
-    "Disable": true
+    "Disable": true,
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$privdir: Image ~= '^({{programfiles}}|{{system}})'",
@@ -24,16 +29,21 @@
 
 {
   "Name": "NoBrowserHTTP",
-  "Tags": ["Network"],
+  "Tags": [
+    "Network"
+  ],
   "Meta": {
-    "EventIDs": [3],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        3
+      ]
+    },
     "Computers": [],
-    "Traces": [],
     "Criticality": 5,
-    "Comments": "Connections to HTTP standard port from other software than browsers",
+    "Comments": "Connections to HTTP\u00a0standard port from other software than browsers",
     "Author": "0xrawsec",
-    "Disable": true
+    "Disable": true,
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$browser: Image ~= '{{browsers}}$'",
@@ -47,15 +57,20 @@
 
 {
   "Name": "UnkPrivDstPort",
-  "Tags": ["Network"],
+  "Tags": [
+    "Network"
+  ],
   "Meta": {
-    "EventIDs": [3],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        3
+      ]
+    },
     "Computers": [],
-    "Traces": [],
     "Criticality": 6,
     "Comments": "Unknown network protocol on private IP address range",
-    "Author": "0xrawsec"
+    "Author": "0xrawsec",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$dstlocalhostv6: DestinationIp = '0:0:0:0:0:0:0:1'",
@@ -70,15 +85,20 @@
 
 {
   "Name": "UnkDstPort",
-  "Tags": ["Network"],
+  "Tags": [
+    "Network"
+  ],
   "Meta": {
-    "EventIDs": [3],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        3
+      ]
+    },
     "Computers": [],
-    "Traces": [],
     "Criticality": 8,
     "Comments": "Unknown network protocol on private IP address range",
-    "Author": "0xrawsec"
+    "Author": "0xrawsec",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$dstlocalhost: DestinationIp = '127.0.0.1'",
@@ -89,3 +109,4 @@
   ],
   "Condition": "!$system and !$dstprivip and !$dstlocalhost and $unk and $init"
 }
+

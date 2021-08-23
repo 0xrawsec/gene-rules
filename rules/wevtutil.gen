@@ -1,46 +1,58 @@
 {
-"Name": "EventClearing",
-"Tags": ["PostExploit"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1070",
-      "Tactic": "defense-evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1070"
-    }
+  "Name": "EventClearing",
+  "Tags": [
+    "PostExploit"
   ],
-  "Author": "@0xrawsec"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1070",
+        "Tactic": "defense-evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1070"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$im: Image ~= '(?i:\\\\wevtutil\\.exe$)'",
-  "$cmd: CommandLine ~= '(?i: cl | clear-log )'"
+  "Matches": [
+    "$im: Image ~= '(?i:\\\\wevtutil\\.exe$)'",
+    "$cmd: CommandLine ~= '(?i: cl | clear-log )'"
   ],
-"Condition": "$im and $cmd"
+  "Condition": "$im and $cmd"
 }
 
 {
-"Name": "SecurityLogClearing",
-"Tags": ["PostExploit"],
-"Meta": {
-  "EventIDs": [1102],
-  "Channels": ["Security"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1070",
-      "Tactic": "defense-evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1070"
-    }
+  "Name": "SecurityLogClearing",
+  "Tags": [
+    "PostExploit"
   ],
-  "Author": "@0xrawsec",
-  "Comments": "Catch Security logs clearing event"
+  "Meta": {
+    "Events": {
+      "Security": [
+        1102
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1070",
+        "Tactic": "defense-evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1070"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Comments": "Catch Security logs clearing event",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  ],
-"Condition": ""
+  "Matches": [],
+  "Condition": ""
 }
+

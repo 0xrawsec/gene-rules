@@ -1,174 +1,174 @@
 # Rules Coverage
 
-Testing AutomatedRecursiveDir : SUCCESS (time=0.020067s)
+Testing AutomatedRecursiveDir : SUCCESS (time=0.021507s)
 
-Testing BrowserChild : SUCCESS (time=0.020426s)
+Testing BrowserChild : SUCCESS (time=0.021749s)
 
-Testing CertutilSuspDecode : SUCCESS (time=0.020037s)
+Testing CertutilSuspDecode : SUCCESS (time=0.021421s)
 
-Testing DownloadPath : SUCCESS (time=0.020073s)
+Testing DownloadPath : SUCCESS (time=0.021611s)
 
-Testing EmbeddedHTTPLinkInCL : SUCCESS (time=0.020564s)
+Testing EmbeddedHTTPLinkInCL : SUCCESS (time=0.021849s)
 
-Testing EventClearing : SUCCESS (time=0.019883s)
+Testing EventClearing : SUCCESS (time=0.02153s)
 
-Testing ExecDownloadedDocument : SUCCESS (time=0.019542s)
+Testing ExecDownloadedDocument : SUCCESS (time=0.021624s)
 
-Testing ExecTimestomping : SUCCESS (time=0.020063s)
+Testing ExecTimestomping : SUCCESS (time=0.021605s)
 
-Testing ExecutableADS : SUCCESS (time=0.020068s)
+Testing ExecutableADS : SUCCESS (time=0.021756s)
 
-Testing ExecutableFileCreated : SUCCESS (time=0.020488s)
+Testing ExecutableFileCreated : SUCCESS (time=0.021461s)
 
-Testing ExecutableUnkExt : SUCCESS (time=0.019909s)
+Testing ExecutableUnkExt : SUCCESS (time=0.021964s)
 
-Testing ExplicitNetworkLogon : SUCCESS (time=0.021485s)
+Testing ExplicitNetworkLogon : SUCCESS (time=0.022352s)
 
-Testing Heur7zExec : SUCCESS (time=0.019473s)
+Testing Heur7zExec : SUCCESS (time=0.021429s)
 
-Testing HeurADSInCL : SUCCESS (time=0.021045s)
+Testing HeurADSInCL : SUCCESS (time=0.021644s)
 
-Testing HeurCallShellcode : SUCCESS (time=0.020354s)
+Testing HeurCallShellcode : SUCCESS (time=0.021721s)
 
-Testing HeurCLWithCreds : SUCCESS (time=0.019881s)
+Testing HeurCLWithCreds : SUCCESS (time=0.022147s)
 
-Testing HeurDropper : SUCCESS (time=0.019447s)
+Testing HeurDropper : SUCCESS (time=0.022154s)
 
-Testing HeuristicSamlibDll : SUCCESS (time=0.020003s)
+Testing HeuristicSamlibDll : SUCCESS (time=0.021868s)
 
-Testing HeuristicVaultcliDll : SUCCESS (time=0.020811s)
+Testing HeuristicVaultcliDll : SUCCESS (time=0.027194s)
 
-Testing HeurPersistentRAT : SUCCESS (time=0.021005s)
+Testing HeurPersistentRAT : SUCCESS (time=0.023391s)
 
-Testing HeurRAT : SUCCESS (time=0.019928s)
+Testing HeurRAT : SUCCESS (time=0.021704s)
 
-Testing HeurRemotePayload : SUCCESS (time=0.020912s)
+Testing HeurRemotePayload : SUCCESS (time=0.022533s)
 
-Testing HeurSpawnShell : SUCCESS (time=0.021141s)
+Testing HeurSpawnShell : SUCCESS (time=0.022825s)
 
-Testing HeurZipExec : SUCCESS (time=0.01994s)
+Testing HeurZipExec : SUCCESS (time=0.022125s)
 
-Testing HiddenPsExec : SUCCESS (time=0.01997s)
+Testing HiddenPsExec : SUCCESS (time=0.022002s)
 
-Testing LargeBase64 : SUCCESS (time=0.041942s)
+Testing LargeBase64 : SUCCESS (time=0.048387s)
 
-Testing LargeCL512 : SUCCESS (time=0.022431s)
+Testing LargeCL512 : SUCCESS (time=0.027798s)
 
-Testing LargeCL999 : SUCCESS (time=0.086484s)
+Testing LargeCL999 : SUCCESS (time=0.088392s)
 
-Testing LateralWMI : SUCCESS (time=0.020195s)
+Testing LateralWMI : SUCCESS (time=0.022759s)
 
-Testing LogonFromExternal : SUCCESS (time=0.021907s)
+Testing LogonFromExternal : SUCCESS (time=0.024383s)
 
-Testing MaliciousLsassAccess : SUCCESS (time=0.019817s)
+Testing MaliciousLsassAccess : SUCCESS (time=0.021659s)
 
-Testing MaliciousSvchostAccess : SUCCESS (time=0.01985s)
+Testing MaliciousSvchostAccess : SUCCESS (time=0.021753s)
 
-Testing MSOfficeThreat : SUCCESS (time=0.021375s)
+Testing MSOfficeThreat : SUCCESS (time=0.023361s)
 
-Testing Nbtstat.exe : SUCCESS (time=0.020026s)
+Testing Nbtstat.exe : SUCCESS (time=0.021806s)
 
-Testing Net.exe : SUCCESS (time=0.020058s)
+Testing Net.exe : SUCCESS (time=0.021478s)
 
-Testing NewADS : SUCCESS (time=0.019599s)
+Testing NewADS : SUCCESS (time=0.021662s)
 
-Testing NewAutorun : SUCCESS (time=0.02009s)
+Testing NewAutorun : SUCCESS (time=0.021426s)
 
-Testing NewExeCreatedInRoot : SUCCESS (time=0.019969s)
+Testing NewExeCreatedInRoot : SUCCESS (time=0.021404s)
 
-Testing NewRemoteScheduledTask : SUCCESS (time=0.020171s)
+Testing NewRemoteScheduledTask : SUCCESS (time=0.021663s)
 
-Testing NewSchedTaskInReg : SUCCESS (time=0.020241s)
+Testing NewSchedTaskInReg : SUCCESS (time=0.021587s)
 
-Testing NewSchedTaskOnDisk : SUCCESS (time=0.020159s)
+Testing NewSchedTaskOnDisk : SUCCESS (time=0.021636s)
 
-Testing OfficeDropperExec : SUCCESS (time=0.01987s)
+Testing OfficeDropperExec : SUCCESS (time=0.021909s)
 
-Testing OfficeDropper : SUCCESS (time=0.019592s)
+Testing OfficeDropper : SUCCESS (time=0.02189s)
 
-Testing PowershellExecEnc : SUCCESS (time=0.020395s)
+Testing PowershellExecEnc : SUCCESS (time=0.022656s)
 
-Testing PowershellLargeCL : SUCCESS (time=0.039883s)
+Testing PowershellLargeCL : SUCCESS (time=0.041322s)
 
-Testing PowershellSamlibDll : SUCCESS (time=0.019875s)
+Testing PowershellSamlibDll : SUCCESS (time=0.022051s)
 
-Testing PowershellStdin : SUCCESS (time=0.020258s)
+Testing PowershellStdin : SUCCESS (time=0.021248s)
 
-Testing PsExec4624 : SUCCESS (time=0.019531s)
+Testing PsExec4624 : SUCCESS (time=0.021871s)
 
-Testing PsExecCommand : SUCCESS (time=0.020157s)
+Testing PsExecCommand : SUCCESS (time=0.021845s)
 
-Testing PsExec : SUCCESS (time=0.019893s)
+Testing PsExec : SUCCESS (time=0.021589s)
 
-Testing Regsvr32ApplockerBypass : SUCCESS (time=0.019711s)
+Testing Regsvr32ApplockerBypass : SUCCESS (time=0.021592s)
 
-Testing SecurityLogClearing : SUCCESS (time=0.019586s)
+Testing SecurityLogClearing : SUCCESS (time=0.021527s)
 
-Testing ServiceDeletion : SUCCESS (time=0.02225s)
+Testing ServiceDeletion : SUCCESS (time=0.021525s)
 
-Testing StopSvchostAccess : SUCCESS (time=0.021009s)
+Testing StopSvchostAccess : SUCCESS (time=0.021333s)
 
-Testing SuspiciousADS : SUCCESS (time=0.019801s)
+Testing SuspiciousADS : SUCCESS (time=0.021313s)
 
-Testing SuspiciousLsassAccess : SUCCESS (time=0.022572s)
+Testing SuspiciousLsassAccess : SUCCESS (time=0.023146s)
 
-Testing SuspiciousRundll32 : SUCCESS (time=0.020441s)
+Testing SuspiciousRundll32 : SUCCESS (time=0.02209s)
 
-Testing SuspiciousServiceCreated : SUCCESS (time=0.020764s)
+Testing SuspiciousServiceCreated : SUCCESS (time=0.022056s)
 
-Testing SuspiciousService : SUCCESS (time=0.020202s)
+Testing SuspiciousService : SUCCESS (time=0.022858s)
 
-Testing SvcHostUnsignedDll : SUCCESS (time=0.020216s)
+Testing SvcHostUnsignedDll : SUCCESS (time=0.021989s)
 
-Testing SvcHostUntrustedDLL : SUCCESS (time=0.019599s)
+Testing SvcHostUntrustedDLL : SUCCESS (time=0.021508s)
 
-Testing SysmonConfigChanged : SUCCESS (time=0.019526s)
+Testing SysmonConfigChanged : SUCCESS (time=0.021974s)
 
-Testing SysmonFingerprinting : SUCCESS (time=0.020657s)
+Testing SysmonFingerprinting : SUCCESS (time=0.02216s)
 
-Testing SysmonStateChanged : SUCCESS (time=0.021151s)
+Testing SysmonStateChanged : SUCCESS (time=0.021032s)
 
-Testing SystemInfo.exe : SUCCESS (time=0.021478s)
+Testing SystemInfo.exe : SUCCESS (time=0.021731s)
 
-Testing Tasklist.exe : SUCCESS (time=0.021198s)
+Testing Tasklist.exe : SUCCESS (time=0.023007s)
 
-Testing UnkPrivDstPort : SUCCESS (time=0.021412s)
+Testing UnkPrivDstPort : SUCCESS (time=0.022667s)
 
-Testing UntrustedDriverLoaded : SUCCESS (time=0.021766s)
+Testing UntrustedDriverLoaded : SUCCESS (time=0.022263s)
 
-Testing UserTempExec : SUCCESS (time=0.021248s)
+Testing UserTempExec : SUCCESS (time=0.028463s)
 
-Testing WindowsTempExec : SUCCESS (time=0.021134s)
+Testing WindowsTempExec : SUCCESS (time=0.034321s)
 
-Testing WMIPrvseCommand : SUCCESS (time=0.022156s)
+Testing WMIPrvseCommand : SUCCESS (time=0.032442s)
 
-Testing WMIEvents : SUCCESS (time=0.021476s)
+Testing WMIEvents : SUCCESS (time=0.030811s)
 
-Testing Xcopy.exe : SUCCESS (time=0.021295s)
+Testing Xcopy.exe : SUCCESS (time=0.031992s)
 
-Testing SuspWriteAccess : SUCCESS (time=0.021229s)
+Testing SuspWriteAccess : SUCCESS (time=0.036335s)
 
-Testing HighlyPolymorphicCode : SUCCESS (time=0.021826s)
+Testing HighlyPolymorphicCode : SUCCESS (time=0.031668s)
 
-Testing MediumPolymorphicCode : SUCCESS (time=0.021709s)
+Testing MediumPolymorphicCode : SUCCESS (time=0.042281s)
 
-Testing HeurMaliciousAccess : SUCCESS (time=0.021503s)
+Testing HeurMaliciousAccess : SUCCESS (time=0.043305s)
 
-Testing UntrustedService : SUCCESS (time=0.022225s)
+Testing UntrustedService : SUCCESS (time=0.041928s)
 
-Testing PSC#Win32API : SUCCESS (time=0.031765s)
+Testing PSC#Win32API : SUCCESS (time=0.065513s)
 
-Testing HeurOfficeThreat : SUCCESS (time=0.024633s)
+Testing HeurOfficeThreat : SUCCESS (time=0.046495s)
 
-Testing HeurWebShell : SUCCESS (time=0.034165s)
+Testing HeurWebShell : SUCCESS (time=0.048137s)
 
-Testing ExplorerInjection : SUCCESS (time=0.021826s)
+Testing ExplorerInjection : SUCCESS (time=0.035099s)
 
-Testing FilePrivEsc : SUCCESS (time=0.022268s)
+Testing FilePrivEsc : SUCCESS (time=0.03302s)
 
-Testing ProcPrivEsc : SUCCESS (time=0.021946s)
+Testing ProcPrivEsc : SUCCESS (time=0.031417s)
 
-Testing SuspWMIC : SUCCESS (time=0.021926s)
+Testing SuspWMIC : SUCCESS (time=0.02617s)
 
-Testing HeurSuspFileWrite : SUCCESS (time=0.030749s)
+Testing HeurSuspFileWrite : SUCCESS (time=0.032317s)
 

@@ -1,31 +1,36 @@
 {
-"Name": "Regsvr32ApplockerBypass",
-"Tags": ["Regsvr32", "AppLockerBypass","Sysmon"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
+  "Name": "Regsvr32ApplockerBypass",
+  "Tags": [
+    "Regsvr32",
+    "AppLockerBypass",
+    "Sysmon"
   ],
-  "Criticality": 10,
-  "ATTACK": [
-    {
-      "ID": "T1117",
-      "Tactic": "execution",
-      "Reference": "https://attack.mitre.org/techniques/T1117"
-    }
-  ],
-  "Author": "@0xrawsec",
-  "Comment": "Rule that triggers on malicious use of regsvr32.exe (see: metasploit regsvr32_applocker_bypass_server exploit)"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "ATTACK": [
+      {
+        "ID": "T1117",
+        "Tactic": "execution",
+        "Reference": "https://attack.mitre.org/techniques/T1117"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Comment": "Rule that triggers on malicious use of regsvr32.exe (see:\u00a0metasploit regsvr32_applocker_bypass_server exploit)",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$im: Image ~= '(?i:^c:\\\\windows\\\\sys(wow64|tem32)\\\\regsvr32.exe$)'",
-  "$sw1: CommandLine ~= '(?i: /n )'",
-  "$sw2: CommandLine ~= '(?i: /s )'",
-  "$sw3: CommandLine ~= '(?i: /u )'",
-  "$sw4: CommandLine ~= '(?i: /i:)'"
+  "Matches": [
+    "$im: Image ~= '(?i:^c:\\\\windows\\\\sys(wow64|tem32)\\\\regsvr32.exe$)'",
+    "$sw1: CommandLine ~= '(?i: /n )'",
+    "$sw2: CommandLine ~= '(?i: /s )'",
+    "$sw3: CommandLine ~= '(?i: /u )'",
+    "$sw4: CommandLine ~= '(?i: /i:)'"
   ],
-"Condition": "$im and $sw4 and $sw3 and $sw2 and $sw1"
+  "Condition": "$im and $sw4 and $sw3 and $sw2 and $sw1"
 }
+

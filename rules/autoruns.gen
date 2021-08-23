@@ -1,27 +1,35 @@
 {
-"Name": "NewAutorun",
-"Tags": ["Registry", "Autorun"],
-"Meta": {
-  "EventIDs": [13],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1060",
-      "Tactic": "persistence",
-      "Reference": "https://attack.mitre.org/techniques/T1060"
-    }
+  "Name": "NewAutorun",
+  "Tags": [
+    "Registry",
+    "Autorun"
   ],
-  "Author": "@0xrawsec",
-  "Comment": "Spot new autoruns"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        13
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1060",
+        "Tactic": "persistence",
+        "Reference": "https://attack.mitre.org/techniques/T1060"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Comment": "Spot new autoruns",
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$eventtype: EventType = 'SetValue'",
     "$run: TargetObject ~= '(?i:{{SOFTWARE}}\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run)'",
     "$runonce: TargetObject ~= '(?i:{{SOFTWARE}}\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\RunOnce)'",
     "$uimls: TargetObject ~= '(?i:\\\\Environment\\\\UserInitMprLogonScript$)'",
     "$com: TargetObject ~= '(?i:{{HKCR}}\\\\CLSID)'"
   ],
-"Condition": "$eventtype and ($run or $runonce or $uimls or $com)"
+  "Condition": "$eventtype and ($run or $runonce or $uimls or $com)"
 }
+

@@ -1,9 +1,14 @@
 {
   "Name": "NewScheduledTask",
-  "Tags": ["ScheduledTasks"],
+  "Tags": [
+    "ScheduledTasks"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 4,
     "ATTACK": [
@@ -14,7 +19,8 @@
       }
     ],
     "Author": "0xrawsec",
-    "Comment": "Experimental rule to catch scheduled tasks creation"
+    "Comment": "Experimental rule to catch scheduled tasks creation",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$schtasks: Image ~= '(?i:^c:\\\\windows\\\\sys(tem32|wow64)\\\\schtasks\\.exe$)'",
@@ -26,10 +32,15 @@
 
 {
   "Name": "RunningScheduledTask",
-  "Tags": ["ScheduledTasks"],
+  "Tags": [
+    "ScheduledTasks"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 3,
     "ATTACK": [
@@ -40,7 +51,8 @@
       }
     ],
     "Author": "0xrawsec",
-    "Comment": "Experimental rule to catch running scheduled tasks"
+    "Comment": "Experimental rule to catch running scheduled tasks",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$schtasks: ParentImage ~= '(?i:^c:\\\\windows\\\\system32\\\\schtasks\\.exe$)'"
@@ -50,10 +62,16 @@
 
 {
   "Name": "NewRemoteScheduledTask",
-  "Tags": ["ScheduledTasks", "Lateral"],
+  "Tags": [
+    "ScheduledTasks",
+    "Lateral"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 7,
     "ATTACK": [
@@ -64,7 +82,8 @@
       }
     ],
     "Author": "0xrawsec",
-    "Comment": "Experimental rule to catch remote scheduled tasks creation"
+    "Comment": "Experimental rule to catch remote scheduled tasks creation",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$schtasks: Image ~= '(?i:^c:\\\\windows\\\\system32\\\\schtasks\\.exe$)'",
@@ -75,50 +94,65 @@
 }
 
 {
-"Name": "NewSchedTaskInReg",
-"Tags": ["Registry", "Autorun", "ScheduledTasks"],
-"Meta": {
-  "EventIDs": [13],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1053",
-      "Tactic": "privilege-escalation",
-      "Reference": "https://attack.mitre.org/techniques/T1053"
-    }
+  "Name": "NewSchedTaskInReg",
+  "Tags": [
+    "Registry",
+    "Autorun",
+    "ScheduledTasks"
   ],
-  "Author": "@0xrawsec",
-  "Comment": "Spot new scheduled task via new registry key"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        13
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1053",
+        "Tactic": "privilege-escalation",
+        "Reference": "https://attack.mitre.org/techniques/T1053"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Comment": "Spot new scheduled task via new registry key",
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$eventtype: EventType = 'SetValue'",
     "$newid: TargetObject ~= '(?i:\\\\SOFTWARE\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Schedule\\\\TaskCache\\\\Tree\\\\.*?\\\\Id$)'"
   ],
-"Condition": "$eventtype and $newid"
+  "Condition": "$eventtype and $newid"
 }
 
 {
-"Name": "NewSchedTaskOnDisk",
-"Tags": ["ScheduledTasks"],
-"Meta": {
-  "EventIDs": [11],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1053",
-      "Tactic": "privilege-escalation",
-      "Reference": "https://attack.mitre.org/techniques/T1053"
-    }
+  "Name": "NewSchedTaskOnDisk",
+  "Tags": [
+    "ScheduledTasks"
   ],
-  "Author": "0xrawsec",
-  "Comments": "New scheduled task created on disk."
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        11
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1053",
+        "Tactic": "privilege-escalation",
+        "Reference": "https://attack.mitre.org/techniques/T1053"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Comments": "New scheduled task created on disk.",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$target: TargetFilename ~= '(?i:^C:\\\\Windows\\\\Sys(tem32|wow64)\\\\Tasks\\\\)'"
+  "Matches": [
+    "$target: TargetFilename ~= '(?i:^C:\\\\Windows\\\\Sys(tem32|wow64)\\\\Tasks\\\\)'"
   ],
-"Condition": "$target"
+  "Condition": "$target"
 }
+

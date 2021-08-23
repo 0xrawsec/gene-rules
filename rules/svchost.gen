@@ -1,135 +1,175 @@
 {
-"Name": "SvcHostMimic",
-"Tags": ["SvcHost", "Sysmon"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 7,
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
+  "Name": "SvcHostMimic",
+  "Tags": [
+    "SvcHost",
+    "Sysmon"
   ],
-  "Author": "@0xrawsec"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 7,
+    "Author": "@0xrawsec",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$im: Image ~= '(?i:\\\\svchost)'",
-  "$svchost: Image ~= '(?i:c:\\\\windows\\\\sys(tem32|wow64)\\\\svchost.exe$)'"
+  "Matches": [
+    "$im: Image ~= '(?i:\\\\svchost)'",
+    "$svchost: Image ~= '(?i:c:\\\\windows\\\\sys(tem32|wow64)\\\\svchost.exe$)'"
   ],
-"Condition": "$im and !$svchost"
+  "Condition": "$im and !$svchost"
 }
 
 {
-"Name": "SvcHostBadParent",
-"Tags": ["SvcHost", "Heuristics", "Sysmon"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 7,
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
+  "Name": "SvcHostBadParent",
+  "Tags": [
+    "SvcHost",
+    "Heuristics",
+    "Sysmon"
   ],
-  "Author": "@0xrawsec",
-  "Comments": "Wrong svchost parent"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 7,
+    "Author": "@0xrawsec",
+    "Comments": "Wrong svchost parent",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$svchost: Image ~= '(?i:^c:\\\\windows\\\\sys(tem32|wow64)\\\\svchost\\.exe$)'",
-  "$pservices: ParentImage ~= '(?i:^C:\\\\Windows\\\\sys(tem32|wow64)\\\\(services|svchost)\\.exe$)'"
+  "Matches": [
+    "$svchost: Image ~= '(?i:^c:\\\\windows\\\\sys(tem32|wow64)\\\\svchost\\.exe$)'",
+    "$pservices: ParentImage ~= '(?i:^C:\\\\Windows\\\\sys(tem32|wow64)\\\\(services|svchost)\\.exe$)'"
   ],
-"Condition": "$svchost and !$pservices"
+  "Condition": "$svchost and !$pservices"
 }
 
 {
-"Name": "SvcHostImageLoaded",
-"Tags": ["SvcHost", "ImageLoaded", "Sysmon"],
-"Meta": {
-  "EventIDs": [7],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 0,
-  "Author": "@0xrawsec",
-  "Comment": "Just an informational rule that can be further used to spot weird image loaded",
-  "Disable": true
-  },
-"Matches": [
-  "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'"
+  "Name": "SvcHostImageLoaded",
+  "Tags": [
+    "SvcHost",
+    "ImageLoaded",
+    "Sysmon"
   ],
-"Condition": "$im"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        7
+      ]
+    },
+    "Computers": [],
+    "Criticality": 0,
+    "Author": "@0xrawsec",
+    "Comment": "Just an informational rule that can be further used to spot weird image loaded",
+    "Disable": true,
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'"
+  ],
+  "Condition": "$im"
 }
 
 {
-"Name": "SvcHostUnsignedDll",
-"Tags": ["SvcHost", "ImageLoaded", "Sysmon"],
-"Meta": {
-  "EventIDs": [7],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 6,
-  "Author": "@0xrawsec",
-  "Comment": "Images loaded by svchost and not signed"
-  },
-"Matches": [
-  "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'",
-  "$unsigned: Signed = 'false'"
+  "Name": "SvcHostUnsignedDll",
+  "Tags": [
+    "SvcHost",
+    "ImageLoaded",
+    "Sysmon"
   ],
-"Condition": "$im and $unsigned"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        7
+      ]
+    },
+    "Computers": [],
+    "Criticality": 6,
+    "Author": "@0xrawsec",
+    "Comment": "Images loaded by svchost and not signed",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'",
+    "$unsigned: Signed = 'false'"
+  ],
+  "Condition": "$im and $unsigned"
 }
 
 {
-"Name": "SvcHostUntrustedDLL",
-"Tags": ["SvcHost", "ImageLoaded", "Sysmon"],
-"Meta": {
-  "EventIDs": [7],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 7,
-  "Author": "@0xrawsec",
-  "Comment": "Images loaded by svchost and not signed by Windows. Needs to be ajusted according to the environment."
-  },
-"Matches": [
-  "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'",
-  "$trusted: Signature ~= '{{trusted-dll-sig}}'"
+  "Name": "SvcHostUntrustedDLL",
+  "Tags": [
+    "SvcHost",
+    "ImageLoaded",
+    "Sysmon"
   ],
-"Condition": "$im and !$trusted"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        7
+      ]
+    },
+    "Computers": [],
+    "Criticality": 7,
+    "Author": "@0xrawsec",
+    "Comment": "Images loaded by svchost and not signed by Windows. Needs to be ajusted according to the environment.",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$im: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\svchost\\.exe)'",
+    "$trusted: Signature ~= '{{trusted-dll-sig}}'"
+  ],
+  "Condition": "$im and !$trusted"
 }
 
 {
   "Name": "StopSvchostAccess",
-  "Tags": ["Invoke-Phant0m", "SvcHost"],
+  "Tags": [
+    "Invoke-Phant0m",
+    "SvcHost"
+  ],
   "Meta": {
-    "EventIDs": [10],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        10
+      ]
+    },
     "Computers": [],
-    "Traces": [],
     "Criticality": 7,
     "Comments": "Suspicious Process Access to SvcHost",
-    "Author": "0xrawsec"
+    "Author": "0xrawsec",
+    "Schema": "2.0.0"
   },
   "Matches": [
-    "$svchost: TargetImage ~= '(?i:windows\\\\sys(tem32|wow64)\\\\svchost\\.exe$)'",
-    "$system32: SourceImage ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\[^\\\\]*?\\.exe)'",
-    "$wl1: SourceImage ~= '(?i:C:\\\\Program Files.*?\\\\Windows Defender\\\\.*?\\.exe)'",
-    "$wl2: SourceImage ~= '(?i:C:\\\\Windows\\\\sys(tem32|wow64)\\\\wbem\\\\wmiprvse\\.exe)'",
-    "$wl3: SourceImage ~= '(?i:C:\\\\Windows\\\\sysmon(64)?\\.exe)'",
+    "$svchost: TargetImage ~= '{{bin-svchost}}'",
+    "$wl: SourceImage ~= '({{bin-av}}|{{bin-sysmon}}|{{bin-system-nr}}|{{bin-wmiprvse}})'",
     "$stopresume: GrantedAccess &= '0x0800'",
     "$terminate: GrantedAccess &= '0x0001'"
   ],
-  "Condition": "$svchost and ($stopresume or $terminate) and !($system32 or $wl1 or $wl2 or $wl3)"
+  "Condition": "$svchost and ($stopresume or $terminate) and !$wl"
 }
 
 {
   "Name": "MaliciousSvchostAccess",
-  "Tags": ["Invoke-Phant0m", "SvcHost"],
+  "Tags": [
+    "Invoke-Phant0m",
+    "SvcHost"
+  ],
   "Meta": {
-    "EventIDs": [10],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        10
+      ]
+    },
     "Computers": [],
-    "Traces": [],
     "Criticality": 10,
     "Comments": "Malicious Process Access to svchost.exe (generated by Invoke-Phant0m)",
-    "Author": "0xrawsec"
+    "Author": "0xrawsec",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$ct: CallTrace ~= 'UNKNOWN'",
@@ -140,17 +180,21 @@
 
 {
   "Name": "SvcHostSuspiciousNetConn",
-  "Tags": ["SvcHost"],
+  "Tags": [
+    "SvcHost"
+  ],
   "Meta": {
-    "EventIDs": [3],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        3
+      ]
+    },
     "Computers": [],
-    "Traces": [],
     "Criticality": 6,
-    "Comments": "Try to spot weird svchost connections",
-    "Author": "0xrawsec",
     "Comments": "Disabled because of FPs",
-    "Disable": true
+    "Author": "0xrawsec",
+    "Disable": true,
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$svchost: Image ~= '(?i:windows\\\\sys(wow64|tem32)\\\\svchost\\.exe$)'",
@@ -167,3 +211,4 @@
   ],
   "Condition": "$svchost and $init and !($dstmulticast or $dstlocalhost) and !($srcbootpc and $dstbootps) and !(($dstldap or $dstntp or $dstdomain or $dstepmap) and $dstprivip)"
 }
+

@@ -5,20 +5,16 @@
     "Exec"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 4,
-    "Traces": [
-      "*::ProcessGuid = ProcessGuid",
-      "*::ParentProcessGuid = ProcessGuid"
-    ],
     "Author": "@0xrawsec",
-    "Comment": "Looks for execution from windows local Temp"
+    "Comment": "Looks for execution from windows local Temp",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$pi: ParentImage ~= '^C:\\\\Users\\\\.*\\\\AppData\\\\Local\\\\Temp\\\\'",
@@ -34,16 +30,16 @@
     "Exec"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 3,
     "Author": "@0xrawsec",
-    "Comment": "Looks for execution from windows Temp"
+    "Comment": "Looks for execution from windows Temp",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$wtpi: ParentImage ~= '^C:\\\\Windows\\\\Temp'",
@@ -58,16 +54,16 @@
     "Heuristics"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 2,
     "Author": "@0xrawsec",
-    "Comment": "Match command line larger than 512 characters"
+    "Comment": "Match command line larger than 512 characters",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$lcl: CommandLine ~= '.{512,}'",
@@ -86,16 +82,16 @@
     "Heuristics"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 3,
     "Author": "@0xrawsec",
-    "Comment": "Go regexp has a limitation of 1000 repetition so cannot match more reps"
+    "Comment": "Go regexp has a limitation of 1000 repetition so cannot match more reps",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$lcl: CommandLine ~= '.{999,}'",
@@ -113,15 +109,15 @@
     "Heuristics"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 3,
-    "Author": "@0xrawsec"
+    "Author": "@0xrawsec",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$lb64: CommandLine ~= '[0-9A-Za-z]{512,}'"
@@ -137,16 +133,16 @@
     "Download"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 4,
     "Author": "0xrawsec",
-    "Comments": "Catches Executables started from internet TEMP directory"
+    "Comments": "Catches Executables started from internet TEMP directory",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$path1: Image ~= '(?i:appdata\\\\local\\\\microsoft\\\\windows\\\\temporary internet files\\\\)'",
@@ -163,16 +159,16 @@
     "Download"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 1,
     "Author": "0xrawsec",
-    "Comments": "Catches command lines containing download paths"
+    "Comments": "Catches command lines containing download paths",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$path1: CommandLine ~= '(?i:\\\\Downloads\\\\)'",
@@ -188,16 +184,16 @@
     "HTTP"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 1,
     "Author": "0xrawsec",
-    "Comments": "Contains heuristics to detect embedded http links in CL"
+    "Comments": "Contains heuristics to detect embedded http links in CL",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$http: CommandLine ~= '(?i:https?://)'"
@@ -212,17 +208,17 @@
     "CreateFile"
   ],
   "Meta": {
-    "EventIDs": [
-      11
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        11
+      ]
+    },
     "Computers": [],
     "Criticality": 4,
     "Author": "0xrawsec",
     "Comments": "Experimental rules to detect executable creations under SYSTEM directory. Criticality has to be adjusted accordingly.",
-    "Disable": true
+    "Disable": true,
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$target: TargetFilename ~= '(?i:c:\\\\Windows\\\\.*(\\.sys|\\.exe|\\.dll)$)'"
@@ -237,16 +233,16 @@
     "CreateFile"
   ],
   "Meta": {
-    "EventIDs": [
-      11
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        11
+      ]
+    },
     "Computers": [],
     "Criticality": 10,
     "Author": "0xrawsec",
-    "Comments": "Experimental rule to detect executable creations under Root directory. Criticality has to be adjusted accordingly."
+    "Comments": "Experimental rule to detect executable creations under Root directory. Criticality has to be adjusted accordingly.",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$smss: Image ~= '(?i:C:\\\\Windows\\\\System32\\\\smss\\.exe)'",
@@ -263,16 +259,16 @@
     "CreateFile"
   ],
   "Meta": {
-    "EventIDs": [
-      11
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        11
+      ]
+    },
     "Computers": [],
     "Criticality": 7,
     "Author": "0xrawsec",
-    "Comments": "Experimental rule to detect any executable creation by something not located under Windows directory"
+    "Comments": "Experimental rule to detect any executable creation by something not located under Windows directory",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$system: Image ~= '(?i:C:\\\\Windows)'",
@@ -290,16 +286,16 @@
     "CreateFile"
   ],
   "Meta": {
-    "EventIDs": [
-      11
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        11
+      ]
+    },
     "Computers": [],
     "Criticality": 8,
     "Author": "0xrawsec",
-    "Comments": "Experimental rule to detect executable files dropped by common utilities"
+    "Comments": "Experimental rule to detect executable files dropped by common utilities",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$susp: Image ~= '{{suspicious}}$'",
@@ -315,16 +311,16 @@
     "Heuristics"
   ],
   "Meta": {
-    "EventIDs": [
-      7
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        7
+      ]
+    },
     "Computers": [],
     "Criticality": 5,
     "Author": "0xrawsec",
-    "Comments": "Heuristics catching image loaded for which extension is unknown"
+    "Comments": "Heuristics catching image loaded for which extension is unknown",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$knownext: ImageLoaded ~= '{{exec-exts}}$'"
@@ -332,23 +328,22 @@
   "Condition": "!$knownext"
 }
 
-
 {
   "Name": "HeurRAT",
   "Tags": [
     "Heuristics"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 6,
     "Author": "@0xrawsec",
-    "Comment": "Tools usually used from scripts, should not be used directly from that many other binaries."
+    "Comment": "Tools usually used from scripts, should not be used directly from that many other binaries.",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$tools: Image ~= '(?i:\\\\(ping|systeminfo|net1?|xcopy|nbtstat)\\.exe$)'",
@@ -363,17 +358,17 @@
     "Heuristics"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 5,
     "Author": "@0xrawsec",
     "Comment": "Heuristic to catch Shell applications started from other processes than explorer.exe, cmd or powershell",
-    "Disable": false
+    "Disable": false,
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$shell: Image ~= '(?i:\\\\(powershell|cmd)\\.exe$)'",
@@ -388,20 +383,16 @@
     "Heuristics"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
-    "Traces": [
-      "*::ProcessGuid = ProcessGuid",
-      "*::ParentProcessGuid = ProcessGuid"
-    ],
     "Criticality": 7,
     "Author": "0xrawsec",
-    "Comments": "Heuristic to catch command line fetching remote payload"
+    "Comments": "Heuristic to catch command line fetching remote payload",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$susp: Image ~= '({{suspicious}}|(?i:\\\\wmic\\.exe))'",
@@ -418,16 +409,16 @@
     "Sysmon"
   ],
   "Meta": {
-    "EventIDs": [
-      8
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        8
+      ]
+    },
     "Computers": [],
     "Criticality": 6,
     "Author": "@0xrawsec",
-    "Comment": "Observed pattern when some injected shellcode gets executed. It was also observed in legitimate use cases. If observed with other suspicious events it might deserve attention."
+    "Comment": "Observed pattern when some injected shellcode gets executed. It was also observed in legitimate use cases. If observed with other suspicious events it might deserve attention.",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$stfunc: StartFunction = ''",
@@ -442,17 +433,17 @@
     "Heuristics"
   ],
   "Meta": {
-    "EventIDs": [
-      4663
-    ],
-    "Channels": [
-      "Security"
-    ],
+    "Events": {
+      "Security": [
+        4663
+      ]
+    },
     "Computers": [],
     "Criticality": 8,
     "Author": "@0xrawsec",
     "Comment": "Suspicious attempt to write a file. A process name located in C:\\Windows\\Users\\ trying to write to C:\\Windows",
-    "Documentation": "https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4663"
+    "Documentation": "https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4663",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$access: AccessMask &= '0x2'",
@@ -461,3 +452,4 @@
   ],
   "Condition": "$access and $target"
 }
+

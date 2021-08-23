@@ -1,80 +1,105 @@
 {
-"Name": "SuspiciousService",
-"Tags": ["SvcHost", "ImageLoaded", "Sysmon"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 4,
-  "Traces": [
-    "*::ProcessGuid = ProcessGuid",
-    "*::ParentProcessGuid = ProcessGuid"
+  "Name": "SuspiciousService",
+  "Tags": [
+    "SvcHost",
+    "ImageLoaded",
+    "Sysmon"
   ],
-  "Author": "@0xrawsec",
-  "Comment": "Tries to spot suspicious processes spawned by services.exe"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 4,
+    "Author": "@0xrawsec",
+    "Comment": "Tries to spot suspicious processes spawned by services.exe",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$parent: ParentImage ~= '(?i:C:\\\\Windows\\\\(System32|SysWOW64)\\\\services\\.exe)'",
-  "$windows: Image ~= '(?i:C:\\\\Windows\\\\)'",
-  "$programfile: Image ~= '(?i:C:\\\\(PROGRA~2|Program Files.*?)\\\\.*)'"
+  "Matches": [
+    "$parent: ParentImage ~= '(?i:C:\\\\Windows\\\\(System32|SysWOW64)\\\\services\\.exe)'",
+    "$windows: Image ~= '(?i:C:\\\\Windows\\\\)'",
+    "$programfile: Image ~= '(?i:C:\\\\(PROGRA~2|Program Files.*?)\\\\.*)'"
   ],
-"Condition": "$parent and !$windows and !$programfile"
+  "Condition": "$parent and !$windows and !$programfile"
 }
 
 {
-"Name": "SuspiciousServiceInstallation",
-"Tags": ["Services", "Registry", "Autorun"],
-"Meta": {
-  "EventIDs": [13],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "Author": "@0xrawsec",
-  "Comment": "Tries to spot suspicious service installation"
+  "Name": "SuspiciousServiceInstallation",
+  "Tags": [
+    "Services",
+    "Registry",
+    "Autorun"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        13
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "Author": "@0xrawsec",
+    "Comment": "Tries to spot suspicious service installation",
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$eventtype: EventType = 'SetValue'",
     "$key1: TargetObject ~= '(?i:^HKLM\\\\System\\\\CurrentControlSet\\\\services\\\\.*?\\\\ImagePath$)'",
     "$key2: TargetObject ~= '(?i:^HKLM\\\\System\\\\CurrentControlSet\\\\services\\\\.*?\\\\Parameters\\\\ServiceDll$)'",
     "$systemroot: Details ~= '(?i:%%SystemRoot%%)'",
     "$service: Image ~= '(?i:C:\\\\Windows\\\\system32\\\\services.exe)'"
   ],
-"Condition": "$eventtype and ($key1 or $key2) and !($systemroot or $service)"
+  "Condition": "$eventtype and ($key1 or $key2) and !($systemroot or $service)"
 }
 
 {
-"Name": "SuspiciousServiceCreated",
-"Tags": ["Services"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 7,
-  "Author": "@0xrawsec",
-  "Comment": "Spot suspicious service creation"
-  },
-"Matches": [
-  "$sc: Image ~= '(?i:sc.exe$)'",
-  "$op: CommandLine ~= '(?i: (create) )'",
-  "$binpath: CommandLine ~= '?i:(binPath=.*?C:\\\\Windows)'"
+  "Name": "SuspiciousServiceCreated",
+  "Tags": [
+    "Services"
   ],
-"Condition": "$sc and $op and !$binpath"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 7,
+    "Author": "@0xrawsec",
+    "Comment": "Spot suspicious service creation",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$sc: Image ~= '(?i:sc.exe$)'",
+    "$op: CommandLine ~= '(?i: (create) )'",
+    "$binpath: CommandLine ~= '?i:(binPath=.*?C:\\\\Windows)'"
+  ],
+  "Condition": "$sc and $op and !$binpath"
 }
 
 {
-"Name": "ServiceDeletion",
-"Tags": ["Services"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 3,
-  "Author": "@0xrawsec",
-  "Comment": "Spot service deletion"
-  },
-"Matches": [
-  "$sc: Image ~= '(?i:sc.exe$)'",
-  "$op: CommandLine ~= '(?i: (delete) )'"
+  "Name": "ServiceDeletion",
+  "Tags": [
+    "Services"
   ],
-"Condition": "$sc and $op"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 3,
+    "Author": "@0xrawsec",
+    "Comment": "Spot service deletion",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$sc: Image ~= '(?i:sc.exe$)'",
+    "$op: CommandLine ~= '(?i: (delete) )'"
+  ],
+  "Condition": "$sc and $op"
 }
+

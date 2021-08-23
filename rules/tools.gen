@@ -1,13 +1,19 @@
 {
   "Name": "SystemInfo.exe",
-  "Tags": ["Tool"],
+  "Tags": [
+    "Tool"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 2,
     "Author": "0xrawsec",
-    "Comment": "SystemInfo execution"
+    "Comment": "SystemInfo execution",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$exe: Image ~= '(?i:\\\\systeminfo\\.exe$)'"
@@ -17,14 +23,20 @@
 
 {
   "Name": "Tasklist.exe",
-  "Tags": ["Tool"],
+  "Tags": [
+    "Tool"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 2,
     "Author": "0xrawsec",
-    "Comment": "Tasklist execution"
+    "Comment": "Tasklist execution",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$exe: Image ~= '(?i:\\\\tasklist\\.exe$)'"
@@ -34,14 +46,20 @@
 
 {
   "Name": "Xcopy.exe",
-  "Tags": ["Tool"],
+  "Tags": [
+    "Tool"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 2,
     "Author": "0xrawsec",
-    "Comment": "xcopy execution"
+    "Comment": "xcopy execution",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$exe: Image ~= '(?i:\\\\xcopy\\.exe$)'"
@@ -51,14 +69,20 @@
 
 {
   "Name": "Net.exe",
-  "Tags": ["Tool"],
+  "Tags": [
+    "Tool"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 2,
     "Author": "0xrawsec",
-    "Comment": "net.exe execution"
+    "Comment": "net.exe execution",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$exe: Image ~= '(?i:\\\\net1?\\.exe$)'"
@@ -68,14 +92,20 @@
 
 {
   "Name": "Taskkill.exe",
-  "Tags": ["Tool"],
+  "Tags": [
+    "Tool"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 2,
     "Author": "0xrawsec",
-    "Comment": "taskkill.exe execution"
+    "Comment": "taskkill.exe execution",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$exe: Image ~= '(?i:\\\\taskkill\\.exe$)'"
@@ -85,14 +115,20 @@
 
 {
   "Name": "Reg.exe",
-  "Tags": ["Tool"],
+  "Tags": [
+    "Tool"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 2,
     "Author": "0xrawsec",
-    "Comment": "reg.exe execution"
+    "Comment": "reg.exe execution",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$exe: Image ~= '(?i:\\\\reg\\.exe$)'"
@@ -102,14 +138,20 @@
 
 {
   "Name": "Ping.exe",
-  "Tags": ["Tool"],
+  "Tags": [
+    "Tool"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 2,
     "Author": "0xrawsec",
-    "Comment": "ping.exe execution"
+    "Comment": "ping.exe execution",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$exe: Image ~= '(?i:\\\\ping\\.exe$)'"
@@ -119,17 +161,24 @@
 
 {
   "Name": "Nbtstat.exe",
-  "Tags": ["Tool"],
+  "Tags": [
+    "Tool"
+  ],
   "Meta": {
-    "EventIDs": [1],
-    "Channels": ["Microsoft-Windows-Sysmon/Operational"],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 2,
     "Author": "0xrawsec",
-    "Comment": "Nbtstat.exe execution"
+    "Comment": "Nbtstat.exe execution",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$exe: Image ~= '(?i:\\\\nbtstat\\.exe$)'"
   ],
   "Condition": "$exe"
 }
+

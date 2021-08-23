@@ -1,31 +1,45 @@
 {
-"Name": "DefenderMalwareDetected",
-"Tags": ["Defender"],
-"Meta": {
-  "EventIDs": [1006, 1116],
-  "Channels": ["Microsoft-Windows-Windows Defender/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "Author": "0xrawsec",
-  "Comments": "A malware as been detected by Windows Defender",
-  "Link": "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus#windows-defender-av-ids"
+  "Name": "DefenderMalwareDetected",
+  "Tags": [
+    "Defender"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Windows Defender/Operational": [
+        1006,
+        1116
+      ]
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "0xrawsec",
+    "Comments": "A malware as been detected by Windows Defender",
+    "Link": "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus#windows-defender-av-ids",
+    "Schema": "2.0.0"
   },
-"Matches": [],
-"Condition": ""
+  "Matches": [],
+  "Condition": ""
 }
 
 {
-"Name": "DefenderBehaviourDetected",
-"Tags": ["Defender"],
-"Meta": {
-  "EventIDs": [1015],
-  "Channels": ["Microsoft-Windows-Windows Defender/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "Author": "0xrawsec",
-  "Comments": "The antimalware platform detected suspicious behavior",
-  "Link": "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus#windows-defender-av-ids"
+  "Name": "DefenderBehaviourDetected",
+  "Tags": [
+    "Defender"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Windows Defender/Operational": [
+        1015
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "Author": "0xrawsec",
+    "Comments": "The antimalware platform detected suspicious behavior",
+    "Link": "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus#windows-defender-av-ids",
+    "Schema": "2.0.0"
   },
-"Matches": [],
-"Condition": ""
+  "Matches": [],
+  "Condition": ""
 }
+

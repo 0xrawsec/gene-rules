@@ -1,97 +1,123 @@
 {
-"Name": "NewADS",
-"Tags": ["ADS"],
-"Meta": {
-  "EventIDs": [15],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 0,
-  "ATTACK": [
-    {
-      "ID": "T1096",
-      "Tactic": "defense-evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1096"
-    }
+  "Name": "NewADS",
+  "Tags": [
+    "ADS"
   ],
-  "Author": "0xrawsec",
-  "Comments": "Catch all ADS creation events"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        15
+      ]
+    },
+    "Computers": [],
+    "Criticality": 0,
+    "ATTACK": [
+      {
+        "ID": "T1096",
+        "Tactic": "defense-evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1096"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Comments": "Catch all ADS creation events",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$broker: Image ~= '(?i:C:\\\\Windows\\\\system32\\\\browser_broker.exe)'",
-  "$target: TargetFilename ~= '(?i::Zone\\.Identifier$)'"
+  "Matches": [
+    "$broker: Image ~= '(?i:C:\\\\Windows\\\\system32\\\\browser_broker.exe)'",
+    "$target: TargetFilename ~= '(?i::Zone\\.Identifier$)'"
   ],
-"Condition": "!($broker and $target)"
+  "Condition": "!($broker and $target)"
 }
 
 {
-"Name": "SuspiciousADS",
-"Tags": ["ADS"],
-"Meta": {
-  "EventIDs": [15],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "ATTACK": [
-    {
-      "ID": "T1096",
-      "Tactic": "defense-evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1096"
-    }
+  "Name": "SuspiciousADS",
+  "Tags": [
+    "ADS"
   ],
-  "Author": "0xrawsec",
-  "Comments": "Catch ADS with suspicious extension"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        15
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "ATTACK": [
+      {
+        "ID": "T1096",
+        "Tactic": "defense-evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1096"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Comments": "Catch ADS with suspicious extension",
+    "Schema": "2.0.0"
   },
-"Matches": [
+  "Matches": [
     "$target: TargetFilename ~= '(?i:({{script-exts}}|{{exec-exts}}))$'"
   ],
-"Condition": "$target"
+  "Condition": "$target"
 }
 
 {
-"Name": "ExecutableADS",
-"Tags": ["ADS"],
-"Meta": {
-  "EventIDs": [15],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "ATTACK": [
-    {
-      "ID": "T1096",
-      "Tactic": "defense-evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1096"
-    }
+  "Name": "ExecutableADS",
+  "Tags": [
+    "ADS"
   ],
-  "Author": "0xrawsec",
-  "Comments": "Heuristics trying to catch EXE in ADS. If it is an EXE it is very likely the IMPHASH field is not null."
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        15
+      ]
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "ATTACK": [
+      {
+        "ID": "T1096",
+        "Tactic": "defense-evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1096"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Comments": "Heuristics trying to catch EXE in ADS. If it is an EXE it is very likely the IMPHASH field is not null.",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$unk:  Hash = 'Unknown'",
-  "$impash:  Hash ~= '(?i:(IMPHASH=00000000000000000000000000000000))'"
+  "Matches": [
+    "$unk:  Hash = 'Unknown'",
+    "$impash:  Hash ~= '(?i:(IMPHASH=00000000000000000000000000000000))'"
   ],
-"Condition": "!($impash or $unk)"
+  "Condition": "!($impash or $unk)"
 }
 
 {
-"Name": "HeurADSInCL",
-"Tags": ["Heuristics", "ADS"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 5,
-  "ATTACK": [
-    {
-      "ID": "T1096",
-      "Tactic": "defense-evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1096"
-    }
+  "Name": "HeurADSInCL",
+  "Tags": [
+    "Heuristics",
+    "ADS"
   ],
-  "Author": "0xrawsec",
-  "Comments": "Aims at catching the ADS like strings in CL"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "ATTACK": [
+      {
+        "ID": "T1096",
+        "Tactic": "defense-evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1096"
+      }
+    ],
+    "Author": "0xrawsec",
+    "Comments": "Aims at catching the ADS like strings in command line",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$ads:  CommandLine ~= '(?i:\\.[a-z0-9]{2,5}:\\w*?\\.[a-z0-9]{2,5})'"
+  "Matches": [
+    "$ads:  CommandLine ~= '(?i:\\.[a-z0-9]{2,5}:\\w*?\\.[a-z0-9]{2,5})'"
   ],
-"Condition": "$ads"
+  "Condition": "$ads"
 }
+

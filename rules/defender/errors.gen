@@ -1,15 +1,23 @@
 {
-"Name": "DefenderActionCriticallyFailed",
-"Tags": ["Defender"],
-"Meta": {
-  "EventIDs": [1119, 5008],
-  "Channels": ["Microsoft-Windows-Windows Defender/Operational"],
-  "Computers": [],
-  "Criticality": 8,
-  "Author": "0xrawsec",
-  "Comments": "The antimalware platform encountered a critical error when trying to take action on malware or other potentially unwanted software. There are more details in the event message.",
-  "Link": "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus#windows-defender-av-ids"
+  "Name": "DefenderActionCriticallyFailed",
+  "Tags": [
+    "Defender"
+  ],
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Windows Defender/Operational": [
+        1119,
+        5008
+      ]
+    },
+    "Computers": [],
+    "Criticality": 8,
+    "Author": "0xrawsec",
+    "Comments": "The antimalware platform encountered a critical error when trying to take action on malware or other potentially unwanted software. There are more details in the event message.",
+    "Link": "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus#windows-defender-av-ids",
+    "Schema": "2.0.0"
   },
-"Matches": [],
-"Condition": ""
+  "Matches": [],
+  "Condition": ""
 }
+

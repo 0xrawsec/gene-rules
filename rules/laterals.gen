@@ -1,131 +1,180 @@
 {
-"Name": "LogonFromExternal",
-"Tags": ["Lateral", "Security"],
-"Meta": {
-  "EventIDs": [4624],
-  "Channels": ["Security"],
-  "Computers": [],
-  "Criticality": 10,
-  "Author": "@0xrawsec"
-  },
-"Matches": [
-	"$iplh1: IpAddress = '-'",
-	"$iplh2: IpAddress = '127.0.0.1'",
-	"$iplh3: IpAddress = '::1'",
-  "$privip: IpAddress ~= '{{priv-ipv4}}'"
+  "Name": "LogonFromExternal",
+  "Tags": [
+    "Lateral",
+    "Security"
   ],
-"Condition": "!($privip or $iplh1 or $iplh2 or $iplh3)"
+  "Meta": {
+    "Events": {
+      "Security": [
+        4624
+      ]
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "@0xrawsec",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$iplh1: IpAddress = '-'",
+    "$iplh2: IpAddress = '127.0.0.1'",
+    "$iplh3: IpAddress = '::1'",
+    "$privip: IpAddress ~= '{{priv-ipv4}}'"
+  ],
+  "Condition": "!($privip or $iplh1 or $iplh2 or $iplh3)"
 }
 
 {
-"Name": "AnonymousNetworkLogon",
-"Tags": ["Lateral", "Security"],
-"Meta": {
-  "EventIDs": [4624],
-  "Channels": ["Security"],
-  "Computers": [],
-  "Criticality": 5,
-  "Author": "@0xrawsec"
-  },
-"Matches": [
-	"$logt: LogonType = '3'",
-	"$kerb: AuthenticationPackageName = 'Kerberos'",
-	"$user: TargetUserName = 'ANONYMOUS LOGON'",
-	"$iplh1: IpAddress = '-'",
-	"$iplh2: IpAddress = '127.0.0.1'"
+  "Name": "AnonymousNetworkLogon",
+  "Tags": [
+    "Lateral",
+    "Security"
   ],
-"Condition": "$logt and !$kerb and $user and !$iplh1 and !$iplh2"
+  "Meta": {
+    "Events": {
+      "Security": [
+        4624
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "Author": "@0xrawsec",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$logt: LogonType = '3'",
+    "$kerb: AuthenticationPackageName = 'Kerberos'",
+    "$user: TargetUserName = 'ANONYMOUS LOGON'",
+    "$iplh1: IpAddress = '-'",
+    "$iplh2: IpAddress = '127.0.0.1'"
+  ],
+  "Condition": "$logt and !$kerb and $user and !$iplh1 and !$iplh2"
 }
 
 {
-"Name": "ExplicitNetworkLogon",
-"Tags": ["Lateral", "Security"],
-"Meta": {
-  "EventIDs": [4624],
-  "Channels": ["Security"],
-  "Computers": [],
-  "Criticality": 5,
-  "Author": "@0xrawsec"
-  },
-"Matches": [
-	"$logt: LogonType = '3'",
-	"$user: TargetUserName = 'ANONYMOUS LOGON'",
-	"$iplh1: IpAddress = '-'",
-	"$iplh2: IpAddress = '127.0.0.1'",
-	"$enddol: TargetUserName ~= '\\$$'"
+  "Name": "ExplicitNetworkLogon",
+  "Tags": [
+    "Lateral",
+    "Security"
   ],
-"Condition": "$logt and !($user or $iplh1 or $iplh2 or $enddol)"
+  "Meta": {
+    "Events": {
+      "Security": [
+        4624
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "Author": "@0xrawsec",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$logt: LogonType = '3'",
+    "$user: TargetUserName = 'ANONYMOUS LOGON'",
+    "$iplh1: IpAddress = '-'",
+    "$iplh2: IpAddress = '127.0.0.1'",
+    "$enddol: TargetUserName ~= '\\$$'"
+  ],
+  "Condition": "$logt and !($user or $iplh1 or $iplh2 or $enddol)"
 }
 
 {
-"Name": "PsExec4624",
-"Tags": ["Lateral", "Security"],
-"Meta": {
-  "EventIDs": [4624],
-  "Channels": ["Security"],
-  "Computers": [],
-  "Criticality": 5,
-  "Author": "@0xrawsec"
-  },
-"Matches": [
-	"$psexec: ProcessName ~= '(?i:\\\\PSEXESVC\\.exe$)'"
+  "Name": "PsExec4624",
+  "Tags": [
+    "Lateral",
+    "Security"
   ],
-"Condition": "$psexec"
+  "Meta": {
+    "Events": {
+      "Security": [
+        4624
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "Author": "@0xrawsec",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$psexec: ProcessName ~= '(?i:\\\\PSEXESVC\\.exe$)'"
+  ],
+  "Condition": "$psexec"
 }
 
 {
-"Name": "AlternateExplicitCredentialUse",
-"Tags": ["Lateral", "Security"],
-"Meta": {
-  "EventIDs": [4648],
-  "Channels": ["Security"],
-  "Computers": [],
-  "Criticality": 4,
-  "Author": "@0xrawsec",
-  "Comment": "Experimental"
-  },
-"Matches": [
-	"$iplh1: IpAddress = '-'",
-	"$iplh2: IpAddress = '127.0.0.1'",
-	"$iplh3: IpAddress = '::1'",
-  "$wlpn: ProcessName ~= 'C:\\\\Windows\\\\System32\\\\winlogon\\.exe'",
-  "$wltsn: TargetServerName = 'localhost'"
+  "Name": "AlternateExplicitCredentialUse",
+  "Tags": [
+    "Lateral",
+    "Security"
   ],
-"Condition": "!$iplh1 and !$iplh2 and !$iplh3 and !$wlpn and !$wltsn"
+  "Meta": {
+    "Events": {
+      "Security": [
+        4648
+      ]
+    },
+    "Computers": [],
+    "Criticality": 4,
+    "Author": "@0xrawsec",
+    "Comment": "Experimental",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$iplh1: IpAddress = '-'",
+    "$iplh2: IpAddress = '127.0.0.1'",
+    "$iplh3: IpAddress = '::1'",
+    "$wlpn: ProcessName ~= 'C:\\\\Windows\\\\System32\\\\winlogon\\.exe'",
+    "$wltsn: TargetServerName = 'localhost'"
+  ],
+  "Condition": "!$iplh1 and !$iplh2 and !$iplh3 and !$wlpn and !$wltsn"
 }
 
 {
-"Name": "HeurCLWithCreds",
-"Tags": ["Heuristics", "Lateral"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 5,
-  "Author": "0xrawsec",
-  "Comments": "Experimental rule to catch command lines taking credentials as arguments."
-  },
-"Matches": [
-  "$ruser: CommandLine ~= '(?i: /U )'",
-  "$rhost: CommandLine ~= '(?i: /S )'",
-  "$rpwd: CommandLine ~= '(?i: /P )'"
+  "Name": "HeurCLWithCreds",
+  "Tags": [
+    "Heuristics",
+    "Lateral"
   ],
-"Condition": "$ruser and $rhost and $rpwd"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "Author": "0xrawsec",
+    "Comments": "Experimental rule to catch command lines taking credentials as arguments.",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$ruser: CommandLine ~= '(?i: /U )'",
+    "$rhost: CommandLine ~= '(?i: /S )'",
+    "$rpwd: CommandLine ~= '(?i: /P )'"
+  ],
+  "Condition": "$ruser and $rhost and $rpwd"
 }
 
 {
-"Name": "PrivUserLogon",
-"Tags": ["Heuristics", "Lateral"],
-"Meta": {
-  "EventIDs": [4672],
-  "Channels": ["Security"],
-  "Computers": [],
-  "Criticality": 5,
-  "Author": "0xrawsec",
-  "Comments": "",
-  "Disable": true
-  },
-"Matches": [
+  "Name": "PrivUserLogon",
+  "Tags": [
+    "Heuristics",
+    "Lateral"
   ],
-"Condition": ""
+  "Meta": {
+    "Events": {
+      "Security": [
+        4672
+      ]
+    },
+    "Computers": [],
+    "Criticality": 5,
+    "Author": "0xrawsec",
+    "Comments": "",
+    "Disable": true,
+    "Schema": "2.0.0"
+  },
+  "Matches": [],
+  "Condition": ""
 }
+

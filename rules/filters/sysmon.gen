@@ -1,32 +1,33 @@
 {
-    "Name": "ProcessCreate",
-    "Meta": {
-        "Channels": [
-            "Microsoft-Windows-Sysmon/Operational"
-        ],
-        "EventIDs": [
-            1
-        ],
-        "Filter": true,
-        "Comments": "Filter in any Sysmon ProcessCreate event"
+  "Name": "ProcessCreate",
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
     },
-    "Matches": [],
-    "Condition": ""
+    "Filter": true,
+    "Comments": "Filter in any Sysmon ProcessCreate event",
+    "Schema": "2.0.0"
+  },
+  "Matches": [],
+  "Condition": ""
 }
 
 {
-    "Name": "NetworkConnect",
-    "Meta": {
-        "Channels": [
-            "Microsoft-Windows-Sysmon/Operational"
-        ],
-        "EventIDs": [
-            3
-        ],
-        "Filter": true,
-        "Disable": true,
-        "Comments": "Filter in any Sysmon NetworkConnect event"
+  "Name": "NetworkConnect",
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        3
+      ]
     },
-    "Matches": [], 
-    "Condition": ""
+    "Filter": true,
+    "Disable": true,
+    "Comments": "Filter in any Sysmon NetworkConnect event",
+    "Schema": "2.0.0"
+  },
+  "Matches": [],
+  "Condition": ""
 }
+

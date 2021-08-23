@@ -1,49 +1,71 @@
 {
-"Name": "PsExec",
-"Tags": ["Powershell", "Heuristics"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 7,
-  "Author": "0xrawsec"
-  },
-"Matches": [
-  "$psexec: Product = 'Sysinternals PsExec'",
-  "$im: Image ~= '(?i:\\\\psexe(c|svc).exe$)'"
+  "Name": "PsExec",
+  "Tags": [
+    "Powershell",
+    "Heuristics"
   ],
-"Condition": "$psexec and $im"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 7,
+    "Author": "0xrawsec",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$psexec: Product = 'Sysinternals PsExec'",
+    "$im: Image ~= '(?i:\\\\psexe(c|svc).exe$)'"
+  ],
+  "Condition": "$psexec and $im"
 }
 
 {
-"Name": "HiddenPsExec",
-"Tags": ["Powershell", "Heuristics"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 9,
-  "Author": "0xrawsec"
-  },
-"Matches": [
-  "$psexec: Product = 'Sysinternals PsExec'",
-  "$im: Image ~= '(?i:\\\\psexe(c|svc).exe$)'"
+  "Name": "HiddenPsExec",
+  "Tags": [
+    "Powershell",
+    "Heuristics"
   ],
-"Condition": "$psexec and !$im"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 9,
+    "Author": "0xrawsec",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$psexec: Product = 'Sysinternals PsExec'",
+    "$im: Image ~= '(?i:\\\\psexe(c|svc).exe$)'"
+  ],
+  "Condition": "$psexec and !$im"
 }
 
 {
-"Name": "PsExecCommand",
-"Tags": ["Powershell", "Heuristics"],
-"Meta": {
-  "EventIDs": [1],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "Author": "0xrawsec"
-  },
-"Matches": [
-  "$psexesvc: ParentImage ~= '(?i:\\\\psexesvc.exe$)'"
+  "Name": "PsExecCommand",
+  "Tags": [
+    "Powershell",
+    "Heuristics"
   ],
-"Condition": "$psexesvc"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "Author": "0xrawsec",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$psexesvc: ParentImage ~= '(?i:\\\\psexesvc.exe$)'"
+  ],
+  "Condition": "$psexesvc"
 }
+

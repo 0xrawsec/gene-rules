@@ -1,75 +1,103 @@
 {
-"Name": "DriverLoadedUnusualPath",
-"Tags": ["DriverLoaded"],
-"Meta": {
-  "EventIDs": [6],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 4,
-  "Author": "@0xrawsec"
-  },
-"Matches": [
-  "$uspath1: ImageLoaded ~= '(?i:C:\\\\Windows\\\\Sys(wow64|tem32))'",
-  "$uspath2: ImageLoaded ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\drivers)'"
+  "Name": "DriverLoadedUnusualPath",
+  "Tags": [
+    "DriverLoaded"
   ],
-"Condition": "!$uspath1 and !$uspath2"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        6
+      ]
+    },
+    "Computers": [],
+    "Criticality": 4,
+    "Author": "@0xrawsec",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$uspath1: ImageLoaded ~= '(?i:C:\\\\Windows\\\\Sys(wow64|tem32))'",
+    "$uspath2: ImageLoaded ~= '(?i:C:\\\\Windows\\\\Sys(tem32|wow64)\\\\drivers)'"
+  ],
+  "Condition": "!$uspath1 and !$uspath2"
 }
 
 {
-"Name": "DriverLoadedNotValidSig",
-"Tags": ["DriverLoaded", "Signature"],
-"Meta": {
-  "EventIDs": [6],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 3,
-  "Author": "@0xrawsec",
-  "Comments":"It may happens that drivers have not valid signatures"
-  },
-"Matches": [
-  "$valid: SignatureStatus = 'Valid'"
+  "Name": "DriverLoadedNotValidSig",
+  "Tags": [
+    "DriverLoaded",
+    "Signature"
   ],
-"Condition": "!$valid"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        6
+      ]
+    },
+    "Computers": [],
+    "Criticality": 3,
+    "Author": "@0xrawsec",
+    "Comments": "It may happens that drivers have not valid signatures",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$valid: SignatureStatus = 'Valid'"
+  ],
+  "Condition": "!$valid"
 }
 
 {
-"Name": "DriverLoadedSuspiciousSigStatus",
-"Tags": ["DriverLoaded", "Signature"],
-"Meta": {
-  "EventIDs": [6],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 7,
-  "Author": "@0xrawsec",
-  "Comments":"Experimental"
-  },
-"Matches": [
-  "$valid: SignatureStatus = 'Valid'",
-  "$unavailable: SignatureStatus = 'Unavailable'"
+  "Name": "DriverLoadedSuspiciousSigStatus",
+  "Tags": [
+    "DriverLoaded",
+    "Signature"
   ],
-"Condition": "!$valid and !$unavailable"
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        6
+      ]
+    },
+    "Computers": [],
+    "Criticality": 7,
+    "Author": "@0xrawsec",
+    "Comments": "Experimental",
+    "Schema": "2.0.0"
+  },
+  "Matches": [
+    "$valid: SignatureStatus = 'Valid'",
+    "$unavailable: SignatureStatus = 'Unavailable'"
+  ],
+  "Condition": "!$valid and !$unavailable"
 }
 
 {
-"Name": "UntrustedDriverLoaded",
-"Tags": ["DriverLoaded", "Sysmon"],
-"Meta": {
-  "EventIDs": [6],
-  "Channels": ["Microsoft-Windows-Sysmon/Operational"],
-  "Computers": [],
-  "Criticality": 10,
-  "ATTACK": [
-    {
-      "ID": "T1014",
-      "Tactic": "Defense Evasion",
-      "Reference": "https://attack.mitre.org/techniques/T1014/"
-    }
+  "Name": "UntrustedDriverLoaded",
+  "Tags": [
+    "DriverLoaded",
+    "Sysmon"
   ],
-  "Author": "@0xrawsec",
-  "Comment": "Untrusted Driver Loaded. Need to be adjusted according to the environment."
+  "Meta": {
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        6
+      ]
+    },
+    "Computers": [],
+    "Criticality": 10,
+    "ATTACK": [
+      {
+        "ID": "T1014",
+        "Tactic": "Defense Evasion",
+        "Reference": "https://attack.mitre.org/techniques/T1014/"
+      }
+    ],
+    "Author": "@0xrawsec",
+    "Comment": "Untrusted Driver Loaded. Need to be adjusted according to the environment.",
+    "Schema": "2.0.0"
   },
-"Matches": [
-  "$trusted: Signature ~= '{{trusted-drv-sig}}'"
+  "Matches": [
+    "$trusted: Signature ~= '{{trusted-drv-sig}}'"
   ],
-"Condition": "!$trusted"
+  "Condition": "!$trusted"
 }
+

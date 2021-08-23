@@ -5,16 +5,16 @@
     "WHIDS"
   ],
   "Meta": {
-    "EventIDs": [
-      10
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        10
+      ]
+    },
     "Computers": [],
     "Criticality": 8,
     "Author": "0xrawsec",
-    "Comments": "Experimental rule to catch malicious accesses to Windows binaries. This works only with WHIDS and hooks enabled."
+    "Comments": "Experimental rule to catch malicious accesses to Windows binaries. This works only with WHIDS and hooks enabled.",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$ct: CallTrace ~= 'UNKNOWN'",
@@ -34,16 +34,16 @@
     "WHIDS"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 8,
     "Author": "@0xrawsec",
-    "Comments": "Experimental rule to detect some persistent RATs (i.e. interesting tools to monitor being called and not being a descendant process from Explorer.exe, typical of an interactive session)"
+    "Comments": "Experimental rule to detect some persistent RATs (i.e. interesting tools to monitor being called and not being a descendant process from Explorer.exe, typical of an interactive session)",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$exist: Ancestors ~= '(?i:^System\\|)'",
@@ -62,16 +62,16 @@
     "MSOffice"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 10,
     "Author": "@0xrawsec",
-    "Comments": "Generic rule to catch MS Office based malware"
+    "Comments": "Generic rule to catch MS Office based malware",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$anc: Ancestors ~= '{{msoffice}}'",
@@ -88,16 +88,16 @@
     "WebShell"
   ],
   "Meta": {
-    "EventIDs": [
-      1
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        1
+      ]
+    },
     "Computers": [],
     "Criticality": 10,
     "Author": "@0xrawsec",
-    "Comments": "Generic rule to catch webshells"
+    "Comments": "Generic rule to catch webshells",
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$anc: Ancestors ~= '{{webservers}}'",
@@ -105,3 +105,4 @@
   ],
   "Condition": "$tools and $anc"
 }
+

@@ -4,23 +4,23 @@
     "WHIDS"
   ],
   "Meta": {
-    "EventIDs": [
-      10
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        10
+      ]
+    },
     "Computers": [],
     "Criticality": 10,
     "Author": "0xrawsec",
-    "Comments": "Attempt to write (inject) into Explorer process. Built up for Windows 10 might generate some FPs on earlier windows versions.",
+    "Comments": "Attempt to write (inject) into Explorer process. Built up for Windows 10\u00a0might generate some FPs on earlier windows versions.",
     "ATTACK": [
       {
         "ID": "T1055",
         "Tactic": "privilege-escalation",
         "Reference": "https://attack.mitre.org/techniques/T1055"
       }
-    ]
+    ],
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$ga: GrantedAccess &= '0x20'",
@@ -41,23 +41,23 @@
     "WHIDS"
   ],
   "Meta": {
-    "EventIDs": [
-      10
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        10
+      ]
+    },
     "Computers": [],
     "Criticality": 8,
     "Author": "0xrawsec",
-    "Comments": "Experimental rule to catch generic process injection (write access to a foreign process without being its parent). Won't catch process hollowing since the parent injects into the child. NB: works only in WHIDS",
+    "Comments": "Experimental rule to catch generic process injection (write access to a foreign process without being its parent). Won't catch process hollowing since the parent injects into the child. NB:\u00a0works only in WHIDS",
     "ATTACK": [
       {
         "ID": "T1055",
         "Tactic": "privilege-escalation",
         "Reference": "https://attack.mitre.org/techniques/T1055"
       }
-    ]
+    ],
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$ga: GrantedAccess &= '0x20'",
@@ -77,12 +77,11 @@
     "WHIDS"
   ],
   "Meta": {
-    "EventIDs": [
-      10
-    ],
-    "Channels": [
-      "Microsoft-Windows-Sysmon/Operational"
-    ],
+    "Events": {
+      "Microsoft-Windows-Sysmon/Operational": [
+        10
+      ]
+    },
     "Computers": [],
     "Criticality": 8,
     "Author": "0xrawsec",
@@ -94,7 +93,8 @@
         "Reference": "https://attack.mitre.org/techniques/T1055"
       }
     ],
-    "Disable": true
+    "Disable": true,
+    "Schema": "2.0.0"
   },
   "Matches": [
     "$ga: GrantedAccess &= '0x20'",
@@ -114,3 +114,4 @@
   ],
   "Condition": "$ga and ($srcil and $tgtil) and !($srcisparent or $srcwl or $svcwl or ($srcservices and $tgtsvchost) or ($srccomptel and $tgtcomptel) or ($srcsrchidx and $tgtprothost) or ($srcsppsvc and $tgtsppext))"
 }
+
