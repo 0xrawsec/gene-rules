@@ -1,0 +1,52 @@
+{
+    "Name": "HeuristicPrivEsc",
+    "Tags": [
+        "PrivEsc",
+        "Heuristics"
+    ],
+    "Meta": {
+        "Events": {
+            "Microsoft-Windows-Sysmon/Operational": [
+                10
+            ]
+        },
+        "Computers": [],
+        "Criticality": 8,
+        "MinSysmonVersion": "v13.34",
+        "Author": "0xrawsec",
+        "Schema": "2.0.0"
+    },
+    "Matches": [
+        "$src_image_wl: SourceImage ~= '(?i:{{system}}(taskmgr)\\.exe)'",
+        "$sync_access: GrantedAccess = '0x100000'",
+        "$src_user: SourceUser ~= '(?i:NT AUTHORITY\\\\)'",
+        "$tgt_user: TargetUser ~= '(?i:NT AUTHORITY\\\\)'"
+    ],
+    "Condition": "!$sync_access and (!$src_user and $tgt_user) and !$src_image_wl"
+}
+
+{
+    "Name": "HeuristicSuspiciousAccess",
+    "Tags": [
+        "Heuristics"
+    ],
+    "Meta": {
+        "Events": {
+            "Microsoft-Windows-Sysmon/Operational": [
+                10
+            ]
+        },
+        "Computers": [],
+        "Criticality": 8,
+        "MinSysmonVersion": "v13.34",
+        "Author": "0xrawsec",
+        "Schema": "2.0.0"
+    },
+    "Matches": [
+        "$unk_calltrace: CallTrace ~= 'UNKNOWN'",
+        "$sync_access: GrantedAccess = '0x100000'",
+        "$src_user: SourceUser ~= '(?i:NT AUTHORITY\\\\)'",
+        "$tgt_user: TargetUser ~= '(?i:NT AUTHORITY\\\\)'"
+    ],
+    "Condition": "!$sync_access and (!$src_user and $tgt_user) and $unk_calltrace"
+}

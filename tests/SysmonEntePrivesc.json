@@ -1,0 +1,660 @@
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\system32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-c4ed-6318-0d00-000000000e00}",
+      "TargetProcessId": "796",
+      "TargetUser": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\system32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-c4ed-6318-1000-000000000e00}",
+      "TargetProcessId": "920",
+      "TargetUser": "NT AUTHORITY\\NETWORK SERVICE",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\system32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-c4ed-6318-1100-000000000e00}",
+      "TargetProcessId": "976",
+      "TargetUser": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\system32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-c4ed-6318-1300-000000000e00}",
+      "TargetProcessId": "444",
+      "TargetUser": "NT AUTHORITY\\LOCAL SERVICE",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\System32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-c4ed-6318-1500-000000000e00}",
+      "TargetProcessId": "792",
+      "TargetUser": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\system32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-c4ee-6318-1600-000000000e00}",
+      "TargetProcessId": "904",
+      "TargetUser": "NT AUTHORITY\\LOCAL SERVICE",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\system32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-c4ee-6318-1700-000000000e00}",
+      "TargetProcessId": "1116",
+      "TargetUser": "NT AUTHORITY\\LOCAL SERVICE",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\system32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-c4ee-6318-1800-000000000e00}",
+      "TargetProcessId": "1124",
+      "TargetUser": "NT AUTHORITY\\LOCAL SERVICE",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\System32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-c4ee-6318-1900-000000000e00}",
+      "TargetProcessId": "1164",
+      "TargetUser": "NT AUTHORITY\\NETWORK SERVICE",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\system32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-c4ee-6318-1e00-000000000e00}",
+      "TargetProcessId": "1400",
+      "TargetUser": "NT AUTHORITY\\NETWORK SERVICE",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\System32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-c4ee-6318-1f00-000000000e00}",
+      "TargetProcessId": "1416",
+      "TargetUser": "NT AUTHORITY\\LOCAL SERVICE",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
+{
+  "Event": {
+    "EventData": {
+      "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+a43d4|\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe+3ab9|UNKNOWN(00000000000000C8)",
+      "GrantedAccess": "0x1000",
+      "RuleName": "-",
+      "SourceImage": "\\\\vboxsvr\\Sysmon-VS-SysmonEnte\\entenloader.exe",
+      "SourceProcessGUID": "{0bd59c11-58d2-6318-1a03-000000000e00}",
+      "SourceProcessId": "5496",
+      "SourceThreadId": "7444",
+      "SourceUser": "WINDEV2204EVAL\\User",
+      "TargetImage": "C:\\Windows\\system32\\svchost.exe",
+      "TargetProcessGUID": "{0bd59c11-465f-6318-2200-000000000e00}",
+      "TargetProcessId": "1548",
+      "TargetUser": "NT AUTHORITY\\SYSTEM",
+      "UtcTime": "4242-04-24 13:37:42.422"
+    },
+    "System": {
+      "Channel": "Microsoft-Windows-Sysmon/Operational",
+      "Computer": "BLAHBLAH",
+      "Correlation": {
+        "ActivityID": "{00000000-0000-0000-0000-000000000000}",
+        "RelatedActivityID": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "EventID": 10,
+      "Execution": {
+        "ProcessID": 6448,
+        "ThreadID": 4012
+      },
+      "Keywords": {
+        "Name": "",
+        "Value": 9223372036854776000
+      },
+      "Level": {
+        "Name": "Information",
+        "Value": 4
+      },
+      "Opcode": {
+        "Name": "Info",
+        "Value": 0
+      },
+      "Provider": {
+        "Guid": "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}",
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "Task": {
+        "Name": "Process accessed (rule: ProcessAccess)",
+        "Value": 10
+      },
+      "TimeCreated": {
+        "SystemTime": "4242-04-24 13:37:42.422"
+      }
+    }
+  }
+}
